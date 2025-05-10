@@ -1,28 +1,32 @@
-// script.js - Adds interactivity for search and theme toggle
+// script.js - Theme toggle and live search support
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
   const searchBox = document.getElementById('searchBox');
-  const tools = document.querySelectorAll('.tool');
 
-  // Restore theme preference
+  // Restore saved theme
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
   }
 
-  toggleBtn.addEventListener('click', () => {
+  // Toggle theme
+  toggleBtn?.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
   });
 
-  // Filter tools based on input
-  searchBox.addEventListener('input', (e) => {
-    const term = e.target.value.toLowerCase();
-    tools.forEach(tool => {
-      const match = tool.textContent.toLowerCase().includes(term);
-      tool.style.display = match ? '' : 'none';
+  // Live filter for tables
+  searchBox?.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const allTables = document.querySelectorAll('table');
+    allTables.forEach(table => {
+      const rows = table.querySelectorAll('tbody tr, tr');
+      rows.forEach((row, index) => {
+        if (index === 0) return; // Skip header
+        const match = row.textContent.toLowerCase().includes(query);
+        row.style.display = match ? '' : 'none';
+      });
     });
   });
 });
