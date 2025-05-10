@@ -11,6 +11,31 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   
+<style>
+  .scrollable-table {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 1.5em;
+  }
+  details summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em;
+    background: var(--accent, #4fc3f7);
+    color: black;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+  }
+  details[open] summary::after {
+    content: " (Click to collapse)";
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  body.dark-mode summary {
+    background: #1f1f1f;
+    color: #fff;
+  }
+</style>
 </head>
 <body>
   <header>
@@ -23,6 +48,8 @@
   </section>
 <h1>Top AI Models and Tools (2025)</h1>
 <h2>General-Purpose AI Models</h2>
+<details open><summary>Click to expand/collapse</summary>
+<div class="scrollable-table">
 <table>
   <tr><th>Model</th><th>Developer</th><th>Strengths</th><th>Link</th></tr>
   <tr><td>GPT-4o</td><td>OpenAI</td><td>Multimodal, fast, highly interactive</td><td><a href="https://openai.com/gpt-4o" target="_blank">OpenAI GPT-4o</a></td></tr>
@@ -31,7 +58,11 @@
   <tr><td>Grok-3</td><td>xAI</td><td>Real-time info, X/Twitter integration</td><td><a href="https://x.ai" target="_blank">Grok AI</a></td></tr>
   <tr><td>Inflection-2.5</td><td>Inflection AI</td><td>Conversational, emotional intelligence</td><td><a href="https://inflection.ai" target="_blank">Inflection AI</a></td></tr>
 </table>
+</div>
+</details>
 <h2>Top Open-Weight AI Models</h2>
+<details open><summary>Click to expand/collapse</summary>
+<div class="scrollable-table">
 <table>
   <tr><th>Model</th><th>Developer</th><th>Strengths</th><th>Link</th></tr>
   <tr><td>DeepSeek-V3</td><td>DeepSeek</td><td>High performance, low cost</td><td><a href="https://github.com/deepseek-ai" target="_blank">DeepSeek GitHub</a></td></tr>
@@ -43,7 +74,11 @@
   <tr><td>Yi 34B</td><td>01.AI</td><td>Multilingual, efficient open-weight</td><td><a href="https://huggingface.co/01-ai/Yi-34B" target="_blank">Yi 34B</a></td></tr>
   <tr><td>Command R+</td><td>Cohere</td><td>Enterprise, retrieval-augmented</td><td><a href="https://cohere.ai" target="_blank">Cohere AI</a></td></tr>
 </table>
+</div>
+</details>
 <h2>Creative AI Tools</h2>
+<details open><summary>Click to expand/collapse</summary>
+<div class="scrollable-table">
 <table>
   <tr><th>Tool</th><th>Purpose</th><th>Capabilities</th><th>Link</th></tr>
   <tr><td>Suno AI (v3)</td><td>Music</td><td>Text-to-song, multiple genres</td><td><a href="https://suno.com" target="_blank">Suno AI</a></td></tr>
@@ -53,7 +88,11 @@
   <tr><td>Midjourney v6</td><td>Art</td><td>Artistic/realistic images</td><td><a href="https://midjourney.com" target="_blank">Midjourney</a></td></tr>
   <tr><td>D-ID</td><td>Avatars</td><td>Text/voice to video avatars</td><td><a href="https://www.d-id.com" target="_blank">D-ID</a></td></tr>
 </table>
+</div>
+</details>
 <h2>Specialized AI Models</h2>
+<details open><summary>Click to expand/collapse</summary>
+<div class="scrollable-table">
 <table>
   <tr><th>Model</th><th>Developer</th><th>Specialization</th><th>Link</th></tr>
   <tr><td>Perplexity AI</td><td>Perplexity</td><td>Research + citation</td><td><a href="https://www.perplexity.ai" target="_blank">Perplexity</a></td></tr>
@@ -62,7 +101,11 @@
   <tr><td>Synthesia</td><td>Synthesia</td><td>Presenter videos</td><td><a href="https://www.synthesia.io" target="_blank">Synthesia</a></td></tr>
   <tr><td>ElevenLabs</td><td>ElevenLabs</td><td>Voice cloning/synthesis</td><td><a href="https://www.elevenlabs.io" target="_blank">ElevenLabs</a></td></tr>
 </table>
+</div>
+</details>
 <h2>Model Comparison</h2>
+<details open><summary>Click to expand/collapse</summary>
+<div class="scrollable-table">
 <table>
   <tr><th>Model</th><th>Parameters</th><th>Context Length</th><th>Multimodal</th><th>Open-Weight</th><th>Features</th></tr>
   <tr><td>GPT-4o</td><td>N/A</td><td>128K</td><td>Yes</td><td>No</td><td>Fast, general-purpose</td></tr>
@@ -74,6 +117,8 @@
   <tr><td>Mixtral</td><td>MoE</td><td>32K</td><td>No</td><td>Yes</td><td>Efficient Mixture of Experts</td></tr>
   <tr><td>Yi 34B</td><td>34B</td><td>32K</td><td>No</td><td>Yes</td><td>Multilingual open-weight</td></tr>
 </table>
+</div>
+</details>
   <footer>
     <p>&copy; 2025 AI Tool Directory | <a href="LICENSE">MIT License</a></p>
   </footer>
