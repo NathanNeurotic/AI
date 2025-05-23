@@ -109,7 +109,7 @@ main {
 }
 
 .category-content.open {
-    max-height: 2000px;
+    max-height: 3000px; /* Increased for larger categories */
     opacity: 1;
 }
 
