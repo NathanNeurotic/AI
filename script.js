@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect for Header
     const header = document.querySelector('.typing-effect');
-    const text = 'AI Services Dashboard'; // Updated title
+    const text = 'AI Services Dashboard';
     header.textContent = '';
     let i = 0;
     function type() {
