@@ -1,144 +1,869 @@
-<!DOCTYPE html>
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top AI Models and Tools (2025)</title>
-  <meta name="description" content="Comprehensive comparison of the best AI models and tools in 2025. Includes GPT-4o, Claude 3, LLaMA 3, and more.">
-  <meta name="keywords" content="AI models, GPT-4o, Claude 3, LLaMA 3, Mistral, DeepSeek, Gemini, AI tools 2025, open source AI, creative AI, AI comparison">
-  <meta name="author" content="NathanNeurotic (Ripto)">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  
-<style>
-  .scrollable-table {
-    overflow-x: auto;
-    max-width: 100%;
-    margin-bottom: 1.5em;
-  }
-  details summary {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0.5em;
-    background: var(--accent, #4fc3f7);
-    color: black;
-    border-radius: 4px;
-    margin-bottom: 0.5em;
-  }
-  details[open] summary::after {
-    content: " (Click to collapse)";
-    font-weight: normal;
-    font-size: 0.9em;
-  }
-  body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  body.dark-mode a {
-    color: #64b5f6;
-  }
-  body.dark-mode table {
-    background-color: #1e1e1e;
-    border-color: #444;
-  }
-  body.dark-mode th {
-    background-color: #333;
-    color: #fff;
-  }
-  body.dark-mode td {
-    border-color: #444;
-  }
-  body.dark-mode summary {
-    background: #2c2c2c;
-    color: #fff;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Services Hacker Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🧠 Top AI Models and Tools (2025)</h1>
-    <button id="theme-toggle">Toggle Theme</button>
-  </header>
+    <header>
+        <h1 class="typing-effect">AI Services Hacker Dashboard</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search services..." aria-label="Search AI services">
+        </div>
+        <!-- Conversational AI and Chatbots -->
+        <section class="category" id="conversational-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Conversational AI and Chatbots
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://character.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Character AI</span>
+                    <span class="service-url">https://character.ai/</span>
+                </a>
+                <a href="https://www.chatgpt.com/" class="service-button" target="_blank">
+                    <span class="service-name">ChatGPT</span>
+                    <span class="service-url">https://www.chatgpt.com/</span>
+                </a>
+                <a href="https://claude.ai/new" class="service-button" target="_blank">
+                    <span class="service-name">Claude</span>
+                    <span class="service-url">https://claude.ai/new</span>
+                </a>
+                <a href="https://sourcegraph.com/cody" class="service-button" target="_blank">
+                    <span class="service-name">Cody</span>
+                    <span class="service-url">https://sourcegraph.com/cody</span>
+                </a>
+                <a href="https://www.copy.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Copy.ai</span>
+                    <span class="service-url">https://www.copy.ai/</span>
+                </a>
+                <a href="https://chat.deepseek.com/" class="service-button" target="_blank">
+                    <span class="service-name">DeepSeek</span>
+                    <span class="service-url">https://chat.deepseek.com/</span>
+                </a>
+                <a href="https://gemini.google.com/" class="service-button" target="_blank">
+                    <span class="service-name">Google Gemini</span>
+                    <span class="service-url">https://gemini.google.com/</span>
+                </a>
+                <a href="https://www.grok.com/" class="service-button" target="_blank">
+                    <span class="service-name">Grok</span>
+                    <span class="service-url">https://www.grok.com/</span>
+                </a>
+                <a href="https://x.ai/api" class="service-button" target="_blank">
+                    <span class="service-name">Grok API</span>
+                    <span class="service-url">https://x.ai/api</span>
+                </a>
+                <a href="https://x.ai/grok-voice" class="service-button" target="_blank">
+                    <span class="service-name">Grok Voice</span>
+                    <span class="service-url">https://x.ai/grok-voice</span>
+                </a>
+                <a href="https://developers.inflection.ai/login" class="service-button" target="_blank">
+                    <span class="service-name">Inflection AI</span>
+                    <span class="service-url">https://developers.inflection.ai/login</span>
+                </a>
+                <a href="https://www.intercom.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Intercom AI</span>
+                    <span class="service-url">https://www.intercom.com/ai</span>
+                </a>
+                <a href="https://www.jasper.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Jasper</span>
+                    <span class="service-url">https://www.jasper.ai/</span>
+                </a>
+                <a href="https://www.meta.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Meta AI</span>
+                    <span class="service-url">https://www.meta.ai/</span>
+                </a>
+                <a href="https://copilot.microsoft.com/" class="service-button" target="_blank">
+                    <span class="service-name">Microsoft Copilot</span>
+                    <span class="service-url">https://copilot.microsoft.com/</span>
+                </a>
+                <a href="https://chat.mistral.ai/chat" class="service-button" target="_blank">
+                    <span class="service-name">Mistral AI</span>
+                    <span class="service-url">https://chat.mistral.ai/chat</span>
+                </a>
+                <a href="https://www.perplexity.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Perplexity</span>
+                    <span class="service-url">https://www.perplexity.ai/</span>
+                </a>
+                <a href="https://poe.com/" class="service-button" target="_blank">
+                    <span class="service-name">Poe</span>
+                    <span class="service-url">https://poe.com/</span>
+                </a>
+                <a href="https://chat.qwen.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Qwen</span>
+                    <span class="service-url">https://chat.qwen.ai/</span>
+                </a>
+                <a href="https://rytr.me/" class="service-button" target="_blank">
+                    <span class="service-name">Rytr</span>
+                    <span class="service-url">https://rytr.me/</span>
+                </a>
+                <a href="https://www.sudowrite.com/" class="service-button" target="_blank">
+                    <span class="service-name">Sudowrite</span>
+                    <span class="service-url">https://www.sudowrite.com/</span>
+                </a>
+                <a href="https://writesonic.com/" class="service-button" target="_blank">
+                    <span class="service-name">Writesonic</span>
+                    <span class="service-url">https://writesonic.com/</span>
+                </a>
+                <a href="https://x.ai/chat" class="service-button" target="_blank">
+                    <span class="service-name">xAI Chat</span>
+                    <span class="service-url">https://x.ai/chat</span>
+                </a>
+                <a href="https://www.zendesk.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Zendesk AI</span>
+                    <span class="service-url">https://www.zendesk.com/ai</span>
+                </a>
+            </div>
+        </section>
 
-  <section class="search">
-    <input type="text" id="searchBox" placeholder="Search tables...">
-  </section>
-<h1>Top AI Models and Tools (2025)</h1>
-<h2>General-Purpose AI Models</h2>
-<details open><summary>Click to expand/collapse</summary>
-<div class="scrollable-table">
-<table>
-  <tr><th>Model</th><th>Developer</th><th>Strengths</th><th>Link</th></tr>
-  <tr><td>GPT-4o</td><td>OpenAI</td><td>Multimodal, fast, highly interactive</td><td><a href="https://openai.com/gpt-4o" target="_blank">OpenAI GPT-4o</a></td></tr>
-  <tr><td>Claude 3 Opus</td><td>Anthropic</td><td>Long context, safe, reasoning</td><td><a href="https://www.anthropic.com/index/claude-3" target="_blank">Anthropic Claude 3</a></td></tr>
-  <tr><td>Gemini 1.5 Pro</td><td>Google DeepMind</td><td>1M token memory, Google integration</td><td><a href="https://deepmind.google/technologies/gemini/" target="_blank">Gemini 1.5 Pro</a></td></tr>
-  <tr><td>Grok-3</td><td>xAI</td><td>Real-time info, X/Twitter integration</td><td><a href="https://x.ai" target="_blank">Grok AI</a></td></tr>
-  <tr><td>Inflection-2.5</td><td>Inflection AI</td><td>Conversational, emotional intelligence</td><td><a href="https://inflection.ai" target="_blank">Inflection AI</a></td></tr>
-</table>
-</div>
-</details>
-<h2>Top Open-Weight AI Models</h2>
-<details open><summary>Click to expand/collapse</summary>
-<div class="scrollable-table">
-<table>
-  <tr><th>Model</th><th>Developer</th><th>Strengths</th><th>Link</th></tr>
-  <tr><td>DeepSeek-V3</td><td>DeepSeek</td><td>High performance, low cost</td><td><a href="https://github.com/deepseek-ai" target="_blank">DeepSeek GitHub</a></td></tr>
-  <tr><td>LLaMA 3 (70B)</td><td>Meta</td><td>Open-source, efficient</td><td><a href="https://ai.meta.com/llama/" target="_blank">Meta LLaMA</a></td></tr>
-  <tr><td>Mistral Large 2</td><td>Mistral</td><td>Accurate, scalable</td><td><a href="https://mistral.ai" target="_blank">Mistral AI</a></td></tr>
-  <tr><td>Mixtral (MoE)</td><td>Mistral</td><td>Mixture of Experts, efficient compute</td><td><a href="https://mistral.ai/news/mixtral-of-experts-model" target="_blank">Mixtral</a></td></tr>
-  <tr><td>Mistral-7B-Instruct</td><td>Mistral</td><td>Lightweight, high performance</td><td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2" target="_blank">Mistral 7B</a></td></tr>
-  <tr><td>Qwen 3</td><td>Alibaba</td><td>Multilingual, high performance</td><td><a href="https://github.com/QwenLM" target="_blank">Qwen GitHub</a></td></tr>
-  <tr><td>Yi 34B</td><td>01.AI</td><td>Multilingual, efficient open-weight</td><td><a href="https://huggingface.co/01-ai/Yi-34B" target="_blank">Yi 34B</a></td></tr>
-  <tr><td>Command R+</td><td>Cohere</td><td>Enterprise, retrieval-augmented</td><td><a href="https://cohere.ai" target="_blank">Cohere AI</a></td></tr>
-</table>
-</div>
-</details>
-<h2>Creative AI Tools</h2>
-<details open><summary>Click to expand/collapse</summary>
-<div class="scrollable-table">
-<table>
-  <tr><th>Tool</th><th>Purpose</th><th>Capabilities</th><th>Link</th></tr>
-  <tr><td>Suno AI (v3)</td><td>Music</td><td>Text-to-song, multiple genres</td><td><a href="https://suno.com" target="_blank">Suno AI</a></td></tr>
-  <tr><td>Pika Labs</td><td>Video</td><td>Text-to-video, high fidelity</td><td><a href="https://pika.art" target="_blank">Pika Labs</a></td></tr>
-  <tr><td>Runway ML Gen-2</td><td>Video</td><td>Text-to-video + editing</td><td><a href="https://runwayml.com" target="_blank">Runway ML</a></td></tr>
-  <tr><td>Leonardo AI</td><td>Art/design</td><td>Game assets, concept art</td><td><a href="https://leonardo.ai" target="_blank">Leonardo AI</a></td></tr>
-  <tr><td>Midjourney v6</td><td>Art</td><td>Artistic/realistic images</td><td><a href="https://midjourney.com" target="_blank">Midjourney</a></td></tr>
-  <tr><td>D-ID</td><td>Avatars</td><td>Text/voice to video avatars</td><td><a href="https://www.d-id.com" target="_blank">D-ID</a></td></tr>
-</table>
-</div>
-</details>
-<h2>Specialized AI Models</h2>
-<details open><summary>Click to expand/collapse</summary>
-<div class="scrollable-table">
-<table>
-  <tr><th>Model</th><th>Developer</th><th>Specialization</th><th>Link</th></tr>
-  <tr><td>Perplexity AI</td><td>Perplexity</td><td>Research + citation</td><td><a href="https://www.perplexity.ai" target="_blank">Perplexity</a></td></tr>
-  <tr><td>Cohere Coral</td><td>Cohere</td><td>Enterprise NLP/chatbots</td><td><a href="https://cohere.ai" target="_blank">Cohere</a></td></tr>
-  <tr><td>Phind</td><td>Phind</td><td>Developer-focused IDE AI</td><td><a href="https://www.phind.com" target="_blank">Phind</a></td></tr>
-  <tr><td>Synthesia</td><td>Synthesia</td><td>Presenter videos</td><td><a href="https://www.synthesia.io" target="_blank">Synthesia</a></td></tr>
-  <tr><td>ElevenLabs</td><td>ElevenLabs</td><td>Voice cloning/synthesis</td><td><a href="https://www.elevenlabs.io" target="_blank">ElevenLabs</a></td></tr>
-</table>
-</div>
-</details>
-<h2>Model Comparison</h2>
-<details open><summary>Click to expand/collapse</summary>
-<div class="scrollable-table">
-<table>
-  <tr><th>Model</th><th>Parameters</th><th>Context Length</th><th>Multimodal</th><th>Open-Weight</th><th>Features</th></tr>
-  <tr><td>GPT-4o</td><td>N/A</td><td>128K</td><td>Yes</td><td>No</td><td>Fast, general-purpose</td></tr>
-  <tr><td>Claude 3 Opus</td><td>N/A</td><td>200K</td><td>No</td><td>No</td><td>Safe, long context</td></tr>
-  <tr><td>Gemini 1.5 Pro</td><td>N/A</td><td>1M</td><td>No</td><td>No</td><td>Google integration</td></tr>
-  <tr><td>DeepSeek-V3</td><td>37B</td><td>128K</td><td>No</td><td>Yes</td><td>Efficient, reasoning</td></tr>
-  <tr><td>LLaMA 3 (70B)</td><td>70B</td><td>128K</td><td>No</td><td>Yes</td><td>Efficient, scalable</td></tr>
-  <tr><td>Mistral Large 2</td><td>N/A</td><td>32K</td><td>No</td><td>Yes</td><td>Accurate, scalable</td></tr>
-  <tr><td>Mixtral</td><td>MoE</td><td>32K</td><td>No</td><td>Yes</td><td>Efficient Mixture of Experts</td></tr>
-  <tr><td>Yi 34B</td><td>34B</td><td>32K</td><td>No</td><td>Yes</td><td>Multilingual open-weight</td></tr>
-</table>
-</div>
-</details>
-  <footer>
-    <p>&copy; 2025 AI Tool Directory | <a href="LICENSE">MIT License</a></p>
-  </footer>
+        <!-- Image Generation and Design -->
+        <section class="category" id="image-generation">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Image Generation and Design
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.adobe.com/products/firefly/landpa.html" class="service-button" target="_blank">
+                    <span class="service-name">Adobe Firefly</span>
+                    <span class="service-url">https://www.adobe.com/products/firefly/landpa.html</span>
+                </a>
+                <a href="https://www.artbreeder.com/" class="service-button" target="_blank">
+                    <span class="service-name">Artbreeder</span>
+                    <span class="service-url">https://www.artbreeder.com/</span>
+                </a>
+                <a href="https://www.canva.com/ai/" class="service-button" target="_blank">
+                    <span class="service-name">Canva AI</span>
+                    <span class="service-url">https://www.canva.com/ai/</span>
+                </a>
+                <a href="https://www.craiyon.com/" class="service-button" target="_blank">
+                    <span class="service-name">Craiyon</span>
+                    <span class="service-url">https://www.craiyon.com/</span>
+                </a>
+                <a href="https://www.d-id.com/pricing/studio/" class="service-button" target="_blank">
+                    <span class="service-name">D-ID</span>
+                    <span class="service-url">https://www.d-id.com/pricing/studio/</span>
+                </a>
+                <a href="https://openai.com/dall-e" class="service-button" target="_blank">
+                    <span class="service-name">DALL-E</span>
+                    <span class="service-url">https://openai.com/dall-e</span>
+                </a>
+                <a href="https://davinci.ai/app" class="service-button" target="_blank">
+                    <span class="service-name">DaVinci AI</span>
+                    <span class="service-url">https://davinci.ai/app</span>
+                </a>
+                <a href="https://www.fal.ai/flux" class="service-button" target="_blank">
+                    <span class="service-name">Flux</span>
+                    <span class="service-url">https://www.fal.ai/flux</span>
+                </a>
+                <a href="https://higgsfield.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Higgsfield AI</span>
+                    <span class="service-url">https://higgsfield.ai/</span>
+                </a>
+                <a href="https://ideogram.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Ideogram</span>
+                    <span class="service-url">https://ideogram.ai/</span>
+                </a>
+                <a href="https://app.leonardo.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Leonardo AI</span>
+                    <span class="service-url">https://app.leonardo.ai/</span>
+                </a>
+                <a href="https://designer.microsoft.com/" class="service-button" target="_blank">
+                    <span class="service-name">Microsoft Designer</span>
+                    <span class="service-url">https://designer.microsoft.com/</span>
+                </a>
+                <a href="https://www.midjourney.com/explore?tab=top_month" class="service-button" target="_blank">
+                    <span class="service-name">MidJourney</span>
+                    <span class="service-url">https://www.midjourney.com/explore?tab=top_month</span>
+                </a>
+                <a href="https://nightcafe.studio/" class="service-button" target="_blank">
+                    <span class="service-name">NightCafe</span>
+                    <span class="service-url">https://nightcafe.studio/</span>
+                </a>
+                <a href="https://stablediffusionweb.com/" class="service-button" target="_blank">
+                    <span class="service-name">Stable Diffusion</span>
+                    <span class="service-url">https://stablediffusionweb.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Video Generation and Editing -->
+        <section class="category" id="video-generation">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Video Generation and Editing
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.descript.com/" class="service-button" target="_blank">
+                    <span class="service-name">Descript</span>
+                    <span class="service-url">https://www.descript.com/</span>
+                </a>
+                <a href="https://hailuoai.video/" class="service-button" target="_blank">
+                    <span class="service-name">Hailuo AI</span>
+                    <span class="service-url">https://hailuoai.video/</span>
+                </a>
+                <a href="https://invideo.io/" class="service-button" target="_blank">
+                    <span class="service-name">Invideo AI</span>
+                    <span class="service-url">https://invideo.io/</span>
+                </a>
+                <a href="https://www.klingai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Kling AI</span>
+                    <span class="service-url">https://www.klingai.com/</span>
+                </a>
+                <a href="https://lumalabs.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Luma Labs</span>
+                    <span class="service-url">https://lumalabs.ai/</span>
+                </a>
+                <a href="https://www.opus.pro/" class="service-button" target="_blank">
+                    <span class="service-name">Opus Clip</span>
+                    <span class="service-url">https://www.opus.pro/</span>
+                </a>
+                <a href="https://pika.art/login" class="service-button" target="_blank">
+                    <span class="service-name">Pika</span>
+                    <span class="service-url">https://pika.art/login</span>
+                </a>
+                <a href="https://app.runwayml.com/login" class="service-button" target="_blank">
+                    <span class="service-name">RunwayML</span>
+                    <span class="service-url">https://app.runwayml.com/login</span>
+                </a>
+                <a href="https://sora.chatgpt.com/" class="service-button" target="_blank">
+                    <span class="service-name">Sora</span>
+                    <span class="service-url">https://sora.chatgpt.com/</span>
+                </a>
+                <a href="https://www.synthesia.io/" class="service-button" target="_blank">
+                    <span class="service-name">Synthesia</span>
+                    <span class="service-url">https://www.synthesia.io/</span>
+                </a>
+                <a href="https://deepmind.google/technologies/veo/" class="service-button" target="_blank">
+                    <span class="service-name">Veo-2</span>
+                    <span class="service-url">https://deepmind.google/technologies/veo/</span>
+                </a>
+                <a href="https://www.veed.io/" class="service-button" target="_blank">
+                    <span class="service-name">Veed.io</span>
+                    <span class="service-url">https://www.veed.io/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Audio and Music Generation -->
+        <section class="category" id="audio-generation">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Audio and Music Generation
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.aiva.ai/" class="service-button" target="_blank">
+                    <span class="service-name">AIVA</span>
+                    <span class="service-url">https://www.aiva.ai/</span>
+                </a>
+                <a href="https://suno.ai/bark" class="service-button" target="_blank">
+                    <span class="service-name">Bark</span>
+                    <span class="service-url">https://suno.ai/bark</span>
+                </a>
+                <a href="https://elevenlabs.io/app/home" class="service-button" target="_blank">
+                    <span class="service-name">ElevenLabs</span>
+                    <span class="service-url">https://elevenlabs.io/app/home</span>
+                </a>
+                <a href="https://app.landr.com/" class="service-button" target="_blank">
+                    <span class="service-name">Landr</span>
+                    <span class="service-url">https://app.landr.com/</span>
+                </a>
+                <a href="https://mubert.com/" class="service-button" target="_blank">
+                    <span class="service-name">Mubert</span>
+                    <span class="service-url">https://mubert.com/</span>
+                </a>
+                <a href="https://suno.com/invite/@nathanneurotic" class="service-button" target="_blank">
+                    <span class="service-name">Suno</span>
+                    <span class="service-url">https://suno.com/invite/@nathanneurotic</span>
+                </a>
+                <a href="https://dreamtonics.com/synthesizerv/" class="service-button" target="_blank">
+                    <span class="service-name">Synthesizer V</span>
+                    <span class="service-url">https://dreamtonics.com/synthesizerv/</span>
+                </a>
+                <a href="https://www.udio.com/creators/NathanNeurotic" class="service-button" target="_blank">
+                    <span class="service-name">Udio</span>
+                    <span class="service-url">https://www.udio.com/creators/NathanNeurotic</span>
+                </a>
+                <a href="https://www.voicemod.net/ai-voices/" class="service-button" target="_blank">
+                    <span class="service-name">Voicemod AI Voices</span>
+                    <span class="service-url">https://www.voicemod.net/ai-voices/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Coding and Development -->
+        <section class="category" id="coding-development">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Coding and Development
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://bolt.new/" class="service-button" target="_blank">
+                    <span class="service-name">Bolt.new</span>
+                    <span class="service-url">https://bolt.new/</span>
+                </a>
+                <a href="https://codeium.com/" class="service-button" target="_blank">
+                    <span class="service-name">Codeium</span>
+                    <span class="service-url">https://codeium.com/</span>
+                </a>
+                <a href="https://www.tabnine.com/" class="service-button" target="_blank">
+                    <span class="service-name">Codota</span>
+                    <span class="service-url">https://www.tabnine.com/</span>
+                </a>
+                <a href="https://www.cursor.com/" class="service-button" target="_blank">
+                    <span class="service-name">Cursor</span>
+                    <span class="service-url">https://www.cursor.com/</span>
+                </a>
+                <a href="https://www.snyk.io/deepcode/" class="service-button" target="_blank">
+                    <span class="service-name">DeepCode</span>
+                    <span class="service-url">https://www.snyk.io/deepcode/</span>
+                </a>
+                <a href="https://github.com/features/copilot" class="service-button" target="_blank">
+                    <span class="service-name">GitHub Copilot</span>
+                    <span class="service-url">https://github.com/features/copilot</span>
+                </a>
+                <a href="https://www.phind.com/" class="service-button" target="_blank">
+                    <span class="service-name">Phind</span>
+                    <span class="service-url">https://www.phind.com/</span>
+                </a>
+                <a href="https://replit.com/" class="service-button" target="_blank">
+                    <span class="service-name">Replit</span>
+                    <span class="service-url">https://replit.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Research and Data Analysis -->
+        <section class="category" id="research-data">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Research and Data Analysis
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.duolingo.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Duolingo AI</span>
+                    <span class="service-url">https://www.duolingo.com/ai</span>
+                </a>
+                <a href="https://elicit.org/" class="service-button" target="_blank">
+                    <span class="service-name">Elicit</span>
+                    <span class="service-url">https://elicit.org/</span>
+                </a>
+                <a href="https://www.grammarly.com/" class="service-button" target="_blank">
+                    <span class="service-name">Grammarly</span>
+                    <span class="service-url">https://www.grammarly.com/</span>
+                </a>
+                <a href="https://huggingface.co/" class="service-button" target="_blank">
+                    <span class="service-name">Hugging Face</span>
+                    <span class="service-url">https://huggingface.co/</span>
+                </a>
+                <a href="https://dataplatform.cloud.ibm.com/" class="service-button" target="_blank">
+                    <span class="service-name">IBM Watson</span>
+                    <span class="service-url">https://dataplatform.cloud.ibm.com/</span>
+                </a>
+                <a href="https://kahoot.com/ai/" class="service-button" target="_blank">
+                    <span class="service-name">Kahoot! AI</span>
+                    <span class="service-url">https://kahoot.com/ai/</span>
+                </a>
+                <a href="https://www.kaggle.com/" class="service-button" target="_blank">
+                    <span class="service-name">Kaggle</span>
+                    <span class="service-url">https://www.kaggle.com/</span>
+                </a>
+                <a href="https://notebooklm.google/" class="service-button" target="_blank">
+                    <span class="service-name">NotebookLM</span>
+                    <span class="service-url">https://notebooklm.google/</span>
+                </a>
+                <a href="https://otio.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Otio</span>
+                    <span class="service-url">https://otio.ai/</span>
+                </a>
+                <a href="https://quillbot.com/" class="service-button" target="_blank">
+                    <span class="service-name">QuillBot</span>
+                    <span class="service-url">https://quillbot.com/</span>
+                </a>
+                <a href="https://www.squirrelai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Squirrel AI</span>
+                    <span class="service-url">https://www.squirrelai.com/</span>
+                </a>
+                <a href="https://www.tableau.com/products/ai" class="service-button" target="_blank">
+                    <span class="service-name">Tableau AI</span>
+                    <span class="service-url">https://www.tableau.com/products/ai</span>
+                </a>
+                <a href="https://www.wolframalpha.com/" class="service-button" target="_blank">
+                    <span class="service-name">Wolfram Alpha</span>
+                    <span class="service-url">https://www.wolframalpha.com/</span>
+                </a>
+                <a href="https://you.com/" class="service-button" target="_blank">
+                    <span class="service-name">YouChat</span>
+                    <span class="service-url">https://you.com/</span>
+                </a>
+                <a href="https://zapier.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Zapier AI</span>
+                    <span class="service-url">https://zapier.com/ai</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Developer Platforms and APIs -->
+        <section class="category" id="developer-platforms">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Developer Platforms and APIs
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://aws.amazon.com/sagemaker/" class="service-button" target="_blank">
+                    <span class="service-name">Amazon SageMaker</span>
+                    <span class="service-url">https://aws.amazon.com/sagemaker/</span>
+                </a>
+                <a href="https://azure.microsoft.com/en-us/products/ai-services/" class="service-button" target="_blank">
+                    <span class="service-name">Azure AI Services</span>
+                    <span class="service-url">https://azure.microsoft.com/en-us/products/ai-services/</span>
+                </a>
+                <a href="https://www.clarifai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Clarifai</span>
+                    <span class="service-url">https://www.clarifai.com/</span>
+                </a>
+                <a href="https://www.cortical.io/" class="service-button" target="_blank">
+                    <span class="service-name">Cortical</span>
+                    <span class="service-url">https://www.cortical.io/</span>
+                </a>
+                <a href="https://aistudio.google.com/prompts/new_chat" class="service-button" target="_blank">
+                    <span class="service-name">Google AI Studio</span>
+                    <span class="service-url">https://aistudio.google.com/prompts/new_chat</span>
+                </a>
+                <a href="https://shell.cloud.google.com/" class="service-button" target="_blank">
+                    <span class="service-name">Google Cloud Shell</span>
+                    <span class="service-url">https://shell.cloud.google.com/</span>
+                </a>
+                <a href="https://developers.google.com/" class="service-button" target="_blank">
+                    <span class="service-name">Google Developers</span>
+                    <span class="service-url">https://developers.google.com/</span>
+                </a>
+                <a href="https://labs.google.com/" class="service-button" target="_blank">
+                    <span class="service-name">Google Labs</span>
+                    <span class="service-url">https://labs.google.com/</span>
+                </a>
+                <a href="https://console.cloud.google.com/vertex-ai/studio/overview" class="service-button" target="_blank">
+                    <span class="service-name">Google Vertex AI</span>
+                    <span class="service-url">https://console.cloud.google.com/vertex-ai/studio/overview</span>
+                </a>
+                <a href="https://www.hume.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Hume AI</span>
+                    <span class="service-url">https://www.hume.ai/</span>
+                </a>
+                <a href="https://stability.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Stability AI</span>
+                    <span class="service-url">https://stability.ai/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Healthcare AI -->
+        <section class="category" id="healthcare-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Healthcare AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.aidoc.com/" class="service-button" target="_blank">
+                    <span class="service-name">Aidoc</span>
+                    <span class="service-url">https://www.aidoc.com/</span>
+                </a>
+                <a href="https://www.deepmind.com/health" class="service-button" target="_blank">
+                    <span class="service-name">DeepMind Health</span>
+                    <span class="service-url">https://www.deepmind.com/health</span>
+                </a>
+                <a href="https://www.merative.com/" class="service-button" target="_blank">
+                    <span class="service-name">Merative</span>
+                    <span class="service-url">https://www.merative.com/</span>
+                </a>
+                <a href="https://www.pathai.com/" class="service-button" target="_blank">
+                    <span class="service-name">PathAI</span>
+                    <span class="service-url">https://www.pathai.com/</span>
+                </a>
+                <a href="https://www.tempus.com/" class="service-button" target="_blank">
+                    <span class="service-name">Tempus</span>
+                    <span class="service-url">https://www.tempus.com/</span>
+                </a>
+                <a href="https://www.viz.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Viz.ai</span>
+                    <span class="service-url">https://www.viz.ai/</span>
+                </a>
+                <a href="https://www.welltok.com/" class="service-button" target="_blank">
+                    <span class="service-name">Welltok</span>
+                    <span class="service-url">https://www.welltok.com/</span>
+                </a>
+                <a href="https://www.xpertdox.com/" class="service-button" target="_blank">
+                    <span class="service-name">XpertDox</span>
+                    <span class="service-url">https://www.xpertdox.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Legaltech AI -->
+        <section class="category" id="legaltech-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Legaltech AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.casetext.com/" class="service-button" target="_blank">
+                    <span class="service-name">Casetext</span>
+                    <span class="service-url">https://www.casetext.com/</span>
+                </a>
+                <a href="https://www.clio.com/" class="service-button" target="_blank">
+                    <span class="service-name">Clio</span>
+                    <span class="service-url">https://www.clio.com/</span>
+                </a>
+                <a href="https://www.everlaw.com/" class="service-button" target="_blank">
+                    <span class="service-name">Everlaw</span>
+                    <span class="service-url">https://www.everlaw.com/</span>
+                </a>
+                <a href="https://www.harvey.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Harvey</span>
+                    <span class="service-url">https://www.harvey.ai/</span>
+                </a>
+                <a href="https://ironcladapp.com/" class="service-button" target="_blank">
+                    <span class="service-name">Ironclad</span>
+                    <span class="service-url">https://ironcladapp.com/</span>
+                </a>
+                <a href="https://www.lawgeex.com/" class="service-button" target="_blank">
+                    <span class="service-name">Lawgeex</span>
+                    <span class="service-url">https://www.lawgeex.com/</span>
+                </a>
+                <a href="https://www.nexlaw.ai/" class="service-button" target="_blank">
+                    <span class="service-name">NexLaw</span>
+                    <span class="service-url">https://www.nexlaw.ai/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Fintech AI -->
+        <section class="category" id="fintech-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Fintech AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://kasisto.com/" class="service-button" target="_blank">
+                    <span class="service-name">Kasisto</span>
+                    <span class="service-url">https://kasisto.com/</span>
+                </a>
+                <a href="https://www.klarna.com/ai/" class="service-button" target="_blank">
+                    <span class="service-name">Klarna AI</span>
+                    <span class="service-url">https://www.klarna.com/ai/</span>
+                </a>
+                <a href="https://personetics.com/" class="service-button" target="_blank">
+                    <span class="service-name">Personetics</span>
+                    <span class="service-url">https://personetics.com/</span>
+                </a>
+                <a href="https://plaid.com/ai/" class="service-button" target="_blank">
+                    <span class="service-name">Plaid AI</span>
+                    <span class="service-url">https://plaid.com/ai/</span>
+                </a>
+                <a href="https://stripe.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Stripe AI</span>
+                    <span class="service-url">https://stripe.com/ai</span>
+                </a>
+                <a href="https://www.upstart.com/" class="service-button" target="_blank">
+                    <span class="service-name">Upstart</span>
+                    <span class="service-url">https://www.upstart.com/</span>
+                </a>
+                <a href="https://www.wealthfront.com/" class="service-button" target="_blank">
+                    <span class="service-name">Wealthfront</span>
+                    <span class="service-url">https://www.wealthfront.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gaming AI -->
+        <section class="category" id="gaming-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Gaming AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.convai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Convai</span>
+                    <span class="service-url">https://www.convai.com/</span>
+                </a>
+                <a href="https://www.flawlessai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Flawless AI</span>
+                    <span class="service-url">https://www.flawlessai.com/</span>
+                </a>
+                <a href="https://www.inworld.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Inworld AI</span>
+                    <span class="service-url">https://www.inworld.ai/</span>
+                </a>
+                <a href="https://lumalabs.ai/genie" class="service-button" target="_blank">
+                    <span class="service-name">Luma AI Genie</span>
+                    <span class="service-url">https://lumalabs.ai/genie</span>
+                </a>
+                <a href="https://www.prometheanai.com/" class="service-button" target="_blank">
+                    <span class="service-name">Promethean AI</span>
+                    <span class="service-url">https://www.prometheanai.com/</span>
+                </a>
+                <a href="https://www.rosebud.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Rosebud AI</span>
+                    <span class="service-url">https://www.rosebud.ai/</span>
+                </a>
+                <a href="https://www.scenario.com/" class="service-button" target="_blank">
+                    <span class="service-name">Scenario</span>
+                    <span class="service-url">https://www.scenario.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3D Modeling AI -->
+        <section class="category" id="3d-modeling-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                3D Modeling AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.3daistudio.com/" class="service-button" target="_blank">
+                    <span class="service-name">3D AI Studio</span>
+                    <span class="service-url">https://www.3daistudio.com/</span>
+                </a>
+                <a href="https://www.kaedim3d.com/" class="service-button" target="_blank">
+                    <span class="service-name">Kaedim</span>
+                    <span class="service-url">https://www.kaedim3d.com/</span>
+                </a>
+                <a href="https://www.meshy.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Meshy</span>
+                    <span class="service-url">https://www.meshy.ai/</span>
+                </a>
+                <a href="https://openai.com/shap-e" class="service-button" target="_blank">
+                    <span class="service-name">Shap-E</span>
+                    <span class="service-url">https://openai.com/shap-e</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Agriculture AI -->
+        <section class="category" id="agriculture-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Agriculture AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.agrivi.com/" class="service-button" target="_blank">
+                    <span class="service-name">AGRIVI</span>
+                    <span class="service-url">https://www.agrivi.com/</span>
+                </a>
+                <a href="https://www.cattleeye.com/" class="service-button" target="_blank">
+                    <span class="service-name">CattleEye</span>
+                    <span class="service-url">https://www.cattleeye.com/</span>
+                </a>
+                <a href="https://www.itcagr.com/krishi-mitra" class="service-button" target="_blank">
+                    <span class="service-name">Krishi Mitra</span>
+                    <span class="service-url">https://www.itcagr.com/krishi-mitra</span>
+                </a>
+                <a href="https://robovision.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Robovision</span>
+                    <span class="service-url">https://robovision.ai/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Travel AI -->
+        <section class="category" id="travel-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Travel AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://amadeus.com/en/solutions/artificial-intelligence" class="service-button" target="_blank">
+                    <span class="service-name">Amadeus AI</span>
+                    <span class="service-url">https://amadeus.com/en/solutions/artificial-intelligence</span>
+                </a>
+                <a href="https://www.hopper.com/" class="service-button" target="_blank">
+                    <span class="service-name">Hopper</span>
+                    <span class="service-url">https://www.hopper.com/</span>
+                </a>
+                <a href="https://www.tripadvisor.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Tripadvisor AI</span>
+                    <span class="service-url">https://www.tripadvisor.com/ai</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Logistics AI -->
+        <section class="category" id="logistics-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Logistics AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.fourkites.com/" class="service-button" target="_blank">
+                    <span class="service-name">FourKites</span>
+                    <span class="service-url">https://www.fourkites.com/</span>
+                </a>
+                <a href="https://locus.sh/" class="service-button" target="_blank">
+                    <span class="service-name">Locus.sh</span>
+                    <span class="service-url">https://locus.sh/</span>
+                </a>
+                <a href="https://www.shippeo.com/" class="service-button" target="_blank">
+                    <span class="service-name">Shippeo</span>
+                    <span class="service-url">https://www.shippeo.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Retail AI -->
+        <section class="category" id="retail-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Retail AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.algolia.com/" class="service-button" target="_blank">
+                    <span class="service-name">Algolia</span>
+                    <span class="service-url">https://www.algolia.com/</span>
+                </a>
+                <a href="https://www.dynamicyield.com/" class="service-button" target="_blank">
+                    <span class="service-name">Dynamic Yield</span>
+                    <span class="service-url">https://www.dynamicyield.com/</span>
+                </a>
+                <a href="https://www.nexla.com/" class="service-button" target="_blank">
+                    <span class="service-name">Nexla</span>
+                    <span class="service-url">https://www.nexla.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Energy AI -->
+        <section class="category" id="energy-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Energy AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.enelx.com/" class="service-button" target="_blank">
+                    <span class="service-name">Enel X</span>
+                    <span class="service-url">https://www.enelx.com/</span>
+                </a>
+                <a href="https://www.stem.com/" class="service-button" target="_blank">
+                    <span class="service-name">Stem AI</span>
+                    <span class="service-url">https://www.stem.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Climate AI -->
+        <section class="category" id="climate-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Climate AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.climate.ai/" class="service-button" target="_blank">
+                    <span class="service-name">ClimateAI</span>
+                    <span class="service-url">https://www.climate.ai/</span>
+                </a>
+                <a href="https://www.pachama.com/" class="service-button" target="_blank">
+                    <span class="service-name">Pachama</span>
+                    <span class="service-url">https://www.pachama.com/</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Specialized AI -->
+        <section class="category" id="specialized-ai">
+            <h2 onclick="toggleCategory(this)" aria-expanded="false">
+                Specialized AI
+                <span class="chevron">▼</span>
+            </h2>
+            <div class="category-content">
+                <a href="https://www.darktrace.com/" class="service-button" target="_blank">
+                    <span class="service-name">Darktrace</span>
+                    <span class="service-url">https://www.darktrace.com/</span>
+                </a>
+                <a href="https://fireflies.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Fireflies.ai</span>
+                    <span class="service-url">https://fireflies.ai/</span>
+                </a>
+                <a href="https://www.gloat.com/" class="service-button" target="_blank">
+                    <span class="service-name">Gloat</span>
+                    <span class="service-url">https://www.gloat.com/</span>
+                </a>
+                <a href="https://www.gong.io/" class="service-button" target="_blank">
+                    <span class="service-name">Gong.io</span>
+                    <span class="service-url">https://www.gong.io/</span>
+                </a>
+                <a href="https://www.hailo.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Hailo</span>
+                    <span class="service-url">https://www.hailo.ai/</span>
+                </a>
+                <a href="https://www.lemonade.com/" class="service-button" target="_blank">
+                    <span class="service-name">Lemonade</span>
+                    <span class="service-url">https://www.lemonade.com/</span>
+                </a>
+                <a href="https://www.opendoor.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Opendoor AI</span>
+                    <span class="service-url">https://www.opendoor.com/ai</span>
+                </a>
+                <a href="https://www.roofstock.com/" class="service-button" target="_blank">
+                    <span class="service-name">Roofstock</span>
+                    <span class="service-url">https://www.roofstock.com/</span>
+                </a>
+                <a href="https://www.sportradar.com/ai" class="service-button" target="_blank">
+                    <span class="service-name">Sportradar AI</span>
+                    <span class="service-url">https://www.sportradar.com/ai</span>
+                </a>
+                <a href="https://www.vellum.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Vellum</span>
+                    <span class="service-url">https://www.vellum.ai/</span>
+                </a>
+                <a href="https://www.zesty.ai/" class="service-button" target="_blank">
+                    <span class="service-name">Zesty.ai</span>
+                    <span class="service-url">https://www.zesty.ai/</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
