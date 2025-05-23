@@ -20,8 +20,8 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
+    display: block;
+    word-wrap: break-word;
 }
 
 .typing-effect::after {
@@ -108,11 +108,13 @@ main {
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    visibility: hidden;
 }
 
 .category-content.open {
     max-height: 3000px;
     opacity: 1;
+    visibility: visible;
 }
 
 .service-button {
