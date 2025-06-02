@@ -34,7 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.service-button').forEach(button => {
             const name = button.querySelector('.service-name').textContent.toLowerCase();
             const url = button.querySelector('.service-url').textContent.toLowerCase();
-            button.style.display = (name.includes(query) || url.includes(query)) ? 'flex' : 'none';
+            const tagsSpan = button.querySelector('.service-tags');
+            let tagsMatch = false;
+            if (tagsSpan && tagsSpan.textContent) {
+                const tagsArray = tagsSpan.textContent.toLowerCase().split(',').map(tag => tag.trim());
+                tagsMatch = tagsArray.some(tag => tag.includes(query));
+            }
+            button.style.display = (name.includes(query) || url.includes(query) || tagsMatch) ? 'flex' : 'none';
         });
     });
 });
