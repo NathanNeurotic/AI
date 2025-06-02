@@ -1,4 +1,7 @@
-<script type="text/javascript">
+import re
+import sys
+
+html_content = """<script type="text/javascript">
         var gk_isXlsx = false;
         var gk_xlsxFileLookup = {};
         var gk_fileData = {};
@@ -74,11 +77,6 @@
                     <span class="service-name">ChatGPT</span>
                     <span class="service-url">https://www.chatgpt.com/</span>
                 </a>
-                <a href="https://chatgpt.com/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://chatgpt.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">ChatGPT</span>
-                    <span class="service-url">https://chatgpt.com/</span>
-                </a>
                 <a href="https://claude.ai/new" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://claude.ai/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Claude</span>
@@ -103,11 +101,6 @@
                     <img class="service-favicon" src="https://gemini.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Google Gemini</span>
                     <span class="service-url">https://gemini.google.com/</span>
-                </a>
-                <a href="https://gemini.google.com/app" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://gemini.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Gemini App</span>
-                    <span class="service-url">https://gemini.google.com/app</span>
                 </a>
                 <a href="https://www.grok.com/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://www.grok.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -148,11 +141,6 @@
                     <img class="service-favicon" src="https://copilot.microsoft.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Microsoft Copilot</span>
                     <span class="service-url">https://copilot.microsoft.com/</span>
-                </a>
-                <a href="https://chat.minimax.io/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://chat.minimax.io/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Minimax Chat</span>
-                    <span class="service-url">https://chat.minimax.io/</span>
                 </a>
                 <a href="https://chat.mistral.ai/chat" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://chat.mistral.ai/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -324,11 +312,6 @@
                     <span class="service-name">Hailuo AI</span>
                     <span class="service-url">https://hailuoai.video/</span>
                 </a>
-                <a href="https://hailuoai.video/subscribe" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://hailuoai.video/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Hailuo AI Subscribe</span>
-                    <span class="service-url">https://hailuoai.video/subscribe</span>
-                </a>
                 <a href="https://invideo.io/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://invideo.io/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Invideo AI</span>
@@ -434,11 +417,6 @@
                     <span class="service-name">Suno</span>
                     <span class="service-url">https://suno.com/invite/@nathanneurotic</span>
                 </a>
-                <a href="https://suno.com/create?wid=default" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://suno.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Suno Create</span>
-                    <span class="service-url">https://suno.com/create?wid=default</span>
-                </a>
                 <a href="https://dreamtonics.com/synthesizerv/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://dreamtonics.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Synthesizer V</span>
@@ -448,11 +426,6 @@
                     <img class="service-favicon" src="https://www.udio.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Udio</span>
                     <span class="service-url">https://www.udio.com/creators/NathanNeurotic</span>
-                </a>
-                <a href="https://www.udio.com/create" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://www.udio.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Udio Create</span>
-                    <span class="service-url">https://www.udio.com/create</span>
                 </a>
                 <a href="https://www.voicemod.net/ai-voices/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://www.voicemod.net/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -498,16 +471,6 @@
                     <img class="service-favicon" src="https://github.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">GitHub Copilot</span>
                     <span class="service-url">https://github.com/features/copilot</span>
-                </a>
-                <a href="https://github.com/copilot" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://github.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">GitHub Copilot Repo</span>
-                    <span class="service-url">https://github.com/copilot</span>
-                </a>
-                <a href="https://codeassist.google.com/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://codeassist.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Code Assist</span>
-                    <span class="service-url">https://codeassist.google.com/</span>
                 </a>
              <a href="https://jules.google.com/" class="service-button" target="_blank">
                 <img class="service-favicon" src="https://jules.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -679,50 +642,20 @@
                     <span class="service-name">Databricks (Mosaic AI)</span>
                     <span class="service-url">https://www.databricks.com/product/ai</span>
                 </a>
-                <a href="https://developer.android.com/ai/gemini-nano" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://developer.android.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Gemini Nano (Android)</span>
-                    <span class="service-url">https://developer.android.com/ai/gemini-nano</span>
-                </a>
-                <a href="https://ai.google.dev/gemini-api/docs?utm_source=gfd&utm_medium=referral&utm_campaign=ai_logo_garden&utm_content" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://ai.google.dev/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Gemini API Docs (Garden)</span>
-                    <span class="service-url">https://ai.google.dev/gemini-api/docs?utm_source=gfd&utm_medium=referral&utm_campaign=ai_logo_garden&utm_content</span>
-                </a>
                 <a href="https://aistudio.google.com/prompts/new_chat" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://aistudio.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Google AI Studio</span>
                     <span class="service-url">https://aistudio.google.com/prompts/new_chat</span>
-                </a>
-                <a href="https://aistudio.google.com/app/prompts/new_chat?utm_source=gfd&utm_medium=referral&utm_campaign=home_garden&utm_content=" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://aistudio.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google AI Studio (Garden)</span>
-                    <span class="service-url">https://aistudio.google.com/app/prompts/new_chat?utm_source=gfd&utm_medium=referral&utm_campaign=home_garden&utm_content=</span>
-                </a>
-                <a href="https://ai.google.dev/edge" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://ai.google.dev/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google AI Edge</span>
-                    <span class="service-url">https://ai.google.dev/edge</span>
                 </a>
                 <a href="https://shell.cloud.google.com/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://shell.cloud.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Google Cloud Shell</span>
                     <span class="service-url">https://shell.cloud.google.com/</span>
                 </a>
-                <a href="https://console.cloud.google.com/products/solutions/catalog?inv=1&invt=Aby_hw&project=engaged-timing-jxcbk" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://console.cloud.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Cloud Solutions Catalog</span>
-                    <span class="service-url">https://console.cloud.google.com/products/solutions/catalog?inv=1&invt=Aby_hw&project=engaged-timing-jxcbk</span>
-                </a>
                 <a href="https://developers.google.com/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://developers.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Google Developers</span>
                     <span class="service-url">https://developers.google.com/</span>
-                </a>
-                 <a href="https://console.home.google.com/projects?pli=1" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://console.home.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Home Projects Console</span>
-                    <span class="service-url">https://console.home.google.com/projects?pli=1</span>
                 </a>
                 <a href="https://labs.google.com/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://labs.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -734,20 +667,10 @@
                     <span class="service-name">Google Vertex AI</span>
                     <span class="service-url">https://console.cloud.google.com/vertex-ai/studio/overview</span>
                 </a>
-                <a href="https://console.cloud.google.com/vertex-ai/studio/overview?inv=1&invt=Aby_kQ&project=engaged-timing-jxcbk" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://console.cloud.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Vertex AI Studio (Engaged)</span>
-                    <span class="service-url">https://console.cloud.google.com/vertex-ai/studio/overview?inv=1&invt=Aby_kQ&project=engaged-timing-jxcbk</span>
-                </a>
                 <a href="https://www.hume.ai/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://www.hume.ai/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Hume AI</span>
                     <span class="service-url">https://www.hume.ai/</span>
-                </a>
-                <a href="https://www.minimax.io/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://www.minimax.io/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Minimax</span>
-                    <span class="service-url">https://www.minimax.io/</span>
                 </a>
                 <a href="https://ollama.com/" class="service-button" target="_blank">
                     <img class="service-favicon" src="https://ollama.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
@@ -763,71 +686,6 @@
                     <img class="service-favicon" src="https://stability.ai/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
                     <span class="service-name">Stability AI</span>
                     <span class="service-url">https://stability.ai/</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Google AI Ecosystem -->
-        <section class="category" id="google-ai-ecosystem">
-            <h2 onclick="toggleCategory(this)" aria-expanded="false">
-                Google AI Ecosystem
-                <span class="chevron">▼</span>
-            </h2>
-            <div class="category-content">
-                <a href="https://ai.google/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://ai.google/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">AI Google</span>
-                    <span class="service-url">https://ai.google/</span>
-                </a>
-                <a href="https://cloud.google.com/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://cloud.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Cloud</span>
-                    <span class="service-url">https://cloud.google.com/</span>
-                </a>
-                <a href="https://code.google.com/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://code.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Code</span>
-                    <span class="service-url">https://code.google.com/</span>
-                </a>
-                <a href="https://code.google.com/archive/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://code.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Code Archive</span>
-                    <span class="service-url">https://code.google.com/archive/</span>
-                </a>
-                <a href="https://deepmind.google/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://deepmind.google/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google DeepMind</span>
-                    <span class="service-url">https://deepmind.google/</span>
-                </a>
-                <a href="https://labs.google/about" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://labs.google/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Labs About</span>
-                    <span class="service-url">https://labs.google/about</span>
-                </a>
-                <a href="https://labs.google.com/experiments" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://labs.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Labs Experiments</span>
-                    <span class="service-url">https://labs.google.com/experiments</span>
-                </a>
-                <a href="https://labs.google.com/search/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://labs.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Labs Search</span>
-                    <span class="service-url">https://labs.google.com/search/</span>
-                </a>
-                <a href="https://labs.google.com/sessions" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://labs.google.com/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Labs Sessions</span>
-                    <span class="service-url">https://labs.google.com/sessions</span>
-                </a>
-                <a href="https://opensource.google/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://opensource.google/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Open Source</span>
-                    <span class="service-url">https://opensource.google/</span>
-                </a>
-                <a href="https://research.google/" class="service-button" target="_blank">
-                    <img class="service-favicon" src="https://research.google/favicon.ico" onerror="this.src='./favicon.ico'" alt="Service favicon">
-                    <span class="service-name">Google Research</span>
-                    <span class="service-url">https://research.google/</span>
                 </a>
             </div>
         </section>
@@ -1274,3 +1132,22 @@
     <script src="./script.js"></script>
 </body>
 </html>
+"""
+
+# Corrected regex:
+# - Look for <a
+# - Match any characters non-greedily until href=" (href_pattern)
+# - Capture the URL inside href attribute (url_pattern)
+# - Match any characters non-greedily until class="service-button" (class_pattern)
+# - Ensure to handle different order of attributes
+regex = re.compile(r'<a[^>]*href="([^"]*)"[^>]*class="service-button"[^>]*>|<a[^>]*class="service-button"[^>]*href="([^"]*)"[^>]*>')
+
+found_urls = []
+for match in regex.finditer(html_content):
+    # The URL can be in group 1 or group 2 depending on the order of attributes
+    url = match.group(1) or match.group(2)
+    if url:
+        found_urls.append(url)
+
+for url in found_urls:
+    print(url)
