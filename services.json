@@ -435,115 +435,115 @@
         "name": "AIVA",
         "url": "https://www.aiva.ai/",
         "favicon_url": "https://www.aiva.ai/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "AssemblyAI",
         "url": "https://www.assemblyai.com/",
         "favicon_url": "https://www.assemblyai.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "ElevenLabs",
         "url": "https://elevenlabs.io/app/home",
         "favicon_url": "https://elevenlabs.io/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Freebeat.ai",
         "url": "https://freebeat.ai/",
         "favicon_url": "https://freebeat.ai/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Landr",
         "url": "https://app.landr.com/",
         "favicon_url": "https://app.landr.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Mubert",
         "url": "https://mubert.com/",
         "favicon_url": "https://mubert.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Murf.ai",
         "url": "https://murf.ai/",
         "favicon_url": "https://murf.ai/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Play.ht",
         "url": "https://play.ht/",
         "favicon_url": "https://play.ht/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "SongBeast AI",
         "url": "https://songbeastai.com/",
         "favicon_url": "https://songbeastai.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "SoundGen.io",
         "url": "https://soundgen.io/",
         "favicon_url": "https://soundgen.io/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Soundraw",
         "url": "https://soundraw.io/",
         "favicon_url": "https://soundraw.io/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Suno",
         "url": "https://suno.com/invite/@nathanneurotic",
         "favicon_url": "https://suno.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Suno Create",
         "url": "https://suno.com/create?wid=default",
         "favicon_url": "https://suno.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Synthesizer V",
         "url": "https://dreamtonics.com/synthesizerv/",
         "favicon_url": "https://dreamtonics.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Udio",
         "url": "https://www.udio.com/creators/NathanNeurotic",
         "favicon_url": "https://www.udio.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Udio Create",
         "url": "https://www.udio.com/create",
         "favicon_url": "https://www.udio.com/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "Voicemod AI Voices",
         "url": "https://www.voicemod.net/ai-voices/",
         "favicon_url": "https://www.voicemod.net/favicon.ico",
-        "category": "\ud83d\udd0a Audio and Music"
+        "category": "\ud83d\udd0a Audio, Music, and Speech"
     },
     {
         "name": "ClimateAI",
         "url": "https://www.climate.ai/",
         "favicon_url": "https://www.climate.ai/favicon.ico",
-        "category": "\ud83c\udf0e Climate AI"
+        "category": "\ud83c\udf0e Climate"
     },
     {
         "name": "Pachama",
         "url": "https://www.pachama.com/",
         "favicon_url": "https://www.pachama.com/favicon.ico",
-        "category": "\ud83c\udf0e Climate AI"
+        "category": "\ud83c\udf0e Climate"
     },
     {
         "name": "Bolt.new",
@@ -1371,79 +1371,79 @@
         "name": "Darktrace",
         "url": "https://www.darktrace.com/",
         "favicon_url": "https://www.darktrace.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Fireflies.ai",
         "url": "https://fireflies.ai/",
         "favicon_url": "https://fireflies.ai/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Gloat",
         "url": "https://www.gloat.com/",
         "favicon_url": "https://www.gloat.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Gong.io",
         "url": "https://www.gong.io/",
         "favicon_url": "https://www.gong.io/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Hailo",
         "url": "https://www.hailo.ai/",
         "favicon_url": "https://www.hailo.ai/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Lemonade",
         "url": "https://www.lemonade.com/",
         "favicon_url": "https://www.lemonade.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Microsoft Power Automate (with AI Builder)",
         "url": "https://powerautomate.microsoft.com/en-us/ai-builder/",
         "favicon_url": "https://powerautomate.microsoft.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Opendoor AI",
         "url": "https://www.opendoor.com/ai",
         "favicon_url": "https://www.opendoor.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Roofstock",
         "url": "https://www.roofstock.com/",
         "favicon_url": "https://www.roofstock.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Sora",
         "url": "https://sora.chatgpt.com/",
         "favicon_url": "https://sora.chatgpt.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Sportradar AI",
         "url": "https://www.sportradar.com/ai",
         "favicon_url": "https://www.sportradar.com/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Vellum",
         "url": "https://www.vellum.ai/",
         "favicon_url": "https://www.vellum.ai/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Zesty.ai",
         "url": "https://www.zesty.ai/",
         "favicon_url": "https://www.zesty.ai/favicon.ico",
-        "category": "\ud83e\udd16 Others"
+        "category": "\ud83e\udd16 Specialized"
     },
     {
         "name": "Amadeus AI",
