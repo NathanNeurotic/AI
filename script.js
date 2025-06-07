@@ -1,3 +1,5 @@
+let allServices = [];
+
 document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
@@ -24,6 +26,7 @@ async function loadServices() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const services = await response.json();
+        allServices = services;
         const mainContainer = document.querySelector('main');
 
         // Clear existing static categories if any (optional, if HTML is pre-populated)
@@ -80,6 +83,8 @@ async function loadServices() {
             categoryContent.className = 'category-content';
 
             servicesInCategory.forEach(service => {
+                const serviceButton = createServiceButton(service, new Set(JSON.parse(localStorage.getItem('favorites') || '[]')), categoryName);
+
                 const serviceButton = document.createElement('a');
                 serviceButton.className = 'service-button';
                 serviceButton.href = service.url;
@@ -136,6 +141,8 @@ async function loadServices() {
             categorySection.appendChild(categoryContent);
             mainContainer.appendChild(categorySection);
         }
+
+        renderFavoritesCategory();
 
         // Restore Category States from localStorage after dynamic loading
         document.querySelectorAll('.category').forEach(category => {
@@ -218,5 +225,142 @@ function toggleCategory(header) {
         header.setAttribute('aria-expanded', 'true');
         localStorage.setItem(`category-${categoryId}`, 'open');
     }
+}
+
+function createServiceButton(service, favoritesSet, categoryName) {
+    const serviceButton = document.createElement('a');
+    serviceButton.className = 'service-button';
+    serviceButton.href = service.url;
+    serviceButton.target = '_blank';
+    serviceButton.rel = 'noopener noreferrer';
+    serviceButton.dataset.url = service.url;
+
+    const favicon = document.createElement('img');
+    favicon.alt = `${service.name} favicon`;
+    favicon.className = 'service-favicon';
+    favicon.src = service.favicon_url || './favicon.ico';
+    favicon.onerror = () => { favicon.src = './favicon.ico'; };
+
+    const serviceNameSpan = document.createElement('span');
+    serviceNameSpan.className = 'service-name';
+    serviceNameSpan.textContent = service.name;
+
+    const serviceUrlSpan = document.createElement('span');
+    serviceUrlSpan.className = 'service-url';
+    serviceUrlSpan.textContent = service.url;
+
+    const serviceTagsSpan = document.createElement('span');
+    serviceTagsSpan.className = 'service-tags';
+    serviceTagsSpan.style.display = 'none';
+
+    let tags = [];
+    if (service.tags && Array.isArray(service.tags)) {
+        tags = service.tags.slice();
+    }
+
+    if (categoryName) {
+        const catText = categoryName.replace(/^(\p{Emoji_Presentation}|\p{Emoji})\s*/u, '').trim();
+        if (!tags.includes(catText)) {
+            tags.push(catText);
+        }
+    }
+    serviceTagsSpan.textContent = tags.join(',');
+
+    const star = document.createElement('span');
+    star.className = 'favorite-star';
+    if (favoritesSet.has(service.url)) {
+        star.textContent = '★';
+        star.classList.add('favorited');
+    } else {
+        star.textContent = '☆';
+    }
+    star.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleFavorite(service.url);
+    });
+
+    serviceButton.appendChild(favicon);
+    serviceButton.appendChild(serviceNameSpan);
+    serviceButton.appendChild(serviceUrlSpan);
+    serviceButton.appendChild(serviceTagsSpan);
+    serviceButton.appendChild(star);
+
+    return serviceButton;
+}
+
+function toggleFavorite(url) {
+    let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    if (favorites.includes(url)) {
+        favorites = favorites.filter(u => u !== url);
+    } else {
+        favorites.push(url);
+    }
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    updateStars();
+}
+
+function updateStars() {
+    const favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+    document.querySelectorAll('.service-button').forEach(btn => {
+        const url = btn.dataset.url;
+        const star = btn.querySelector('.favorite-star');
+        if (!star) return;
+        if (favorites.has(url)) {
+            star.textContent = '★';
+            star.classList.add('favorited');
+        } else {
+            star.textContent = '☆';
+            star.classList.remove('favorited');
+        }
+    });
+    renderFavoritesCategory();
+}
+
+function renderFavoritesCategory() {
+    const mainContainer = document.querySelector('main');
+    let favoritesSection = document.getElementById('favorites');
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    const favoritesSet = new Set(favorites);
+    const favoriteServices = allServices.filter(s => favoritesSet.has(s.url));
+
+    if (favoriteServices.length === 0) {
+        if (favoritesSection) {
+            favoritesSection.remove();
+        }
+        return;
+    }
+
+    if (!favoritesSection) {
+        favoritesSection = document.createElement('section');
+        favoritesSection.className = 'category';
+        favoritesSection.id = 'favorites';
+
+        const header = document.createElement('h2');
+        header.innerHTML = '★ Favorites <span class="chevron">▼</span>';
+        header.setAttribute('aria-expanded', 'true');
+        header.onclick = () => toggleCategory(header);
+        header.tabIndex = 0;
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleCategory(header);
+            }
+        });
+
+        const content = document.createElement('div');
+        content.className = 'category-content open';
+        favoritesSection.appendChild(header);
+        favoritesSection.appendChild(content);
+
+        mainContainer.prepend(favoritesSection);
+    }
+
+    const content = favoritesSection.querySelector('.category-content');
+    content.innerHTML = '';
+    favoriteServices.forEach(service => {
+        const btn = createServiceButton(service, favoritesSet);
+        content.appendChild(btn);
+    });
 }
 

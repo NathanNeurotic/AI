@@ -140,6 +140,7 @@ main {
     box-shadow: inset 0 0 3px rgba(95, 170, 111, 0.3), 0 0 3px rgba(95, 170, 111, 0.2);
     animation: pulse 2s infinite;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
+    position: relative;
 }
 
 .service-button:hover {
@@ -158,6 +159,19 @@ main {
     height: 16px;
     margin-right: 8px;
     vertical-align: middle;
+}
+
+.favorite-star {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.favorite-star.favorited {
+    color: gold;
 }
 
 .service-name {
