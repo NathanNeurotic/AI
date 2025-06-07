@@ -4,16 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
-    headerTextElement.textContent = '';
-    let charIndex = 0;
-    function typeEffect() {
-        if (charIndex < textToType.length) {
-            headerTextElement.textContent += textToType.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeEffect, 100);
+
+    if (headerTextElement) {
+        headerTextElement.textContent = '';
+        let charIndex = 0;
+        function typeEffect() {
+            if (charIndex < textToType.length) {
+                headerTextElement.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeEffect, 100);
+            }
         }
+        typeEffect();
     }
-    typeEffect();
 
     // Load services and set up functionalities
     loadServices();
