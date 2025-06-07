@@ -20,13 +20,14 @@ body {
 }
 
 body.light-mode {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --accent-color: #007b5f;
-    --header-gradient: linear-gradient(180deg, #f0f0f0, #ffffff);
-    --section-gradient: linear-gradient(90deg, #f0f0f0, #ffffff);
-    --content-bg: rgba(240, 240, 240, 0.7);
-    --button-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(220, 220, 220, 0.9));
+    /* Softer palette for the light theme */
+    --bg-color: #f9f9f9;
+    --text-color: #222222;
+    --accent-color: #0b7c55;
+    --header-gradient: linear-gradient(180deg, #e9ece9, #f9f9f9);
+    --section-gradient: linear-gradient(90deg, #e9ece9, #f9f9f9);
+    --content-bg: rgba(255, 255, 255, 0.85);
+    --button-gradient: linear-gradient(135deg, #ffffff, #e6eae6);
 }
 
 header {
