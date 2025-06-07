@@ -152,6 +152,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     border: 2px solid var(--text-color);
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(102, 178, 102, 0.2);
@@ -175,6 +176,7 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
     gap: 1rem;
     padding: 1rem;
+    box-sizing: border-box;
     background: var(--content-bg);
     backdrop-filter: blur(3px);
     border: 2px solid var(--text-color);
