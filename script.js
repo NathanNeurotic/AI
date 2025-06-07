@@ -222,11 +222,15 @@ function createServiceButton(service, favoritesSet, categoryName) {
 
     const star = document.createElement('span');
     star.className = 'favorite-star';
+    star.tabIndex = 0;
+    star.setAttribute('role', 'button');
     if (favoritesSet.has(service.url)) {
         star.textContent = '★';
         star.classList.add('favorited');
+        star.setAttribute('aria-label', 'Remove from favorites');
     } else {
         star.textContent = '☆';
+        star.setAttribute('aria-label', 'Add to favorites');
     }
     star.tabIndex = 0;
     star.addEventListener('keydown', (e) => {
@@ -240,6 +244,13 @@ function createServiceButton(service, favoritesSet, categoryName) {
         e.preventDefault();
         e.stopPropagation();
         toggleFavorite(service.url);
+    });
+    star.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleFavorite(service.url);
+        }
     });
 
     serviceButton.appendChild(favicon);
@@ -271,9 +282,11 @@ function updateStars() {
         if (favorites.has(url)) {
             star.textContent = '★';
             star.classList.add('favorited');
+            star.setAttribute('aria-label', 'Remove from favorites');
         } else {
             star.textContent = '☆';
             star.classList.remove('favorited');
+            star.setAttribute('aria-label', 'Add to favorites');
         }
     });
     renderFavoritesCategory();
