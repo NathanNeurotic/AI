@@ -16,10 +16,12 @@ describe('search filtering', () => {
           <a class="service-button">
             <span class="service-name">Alpha</span>
             <span class="service-url">http://alpha.com</span>
+            <span class="service-tags">news,cat1</span>
           </a>
           <a class="service-button">
             <span class="service-name">Beta</span>
             <span class="service-url">http://beta.com</span>
+            <span class="service-tags">support</span>
           </a>
         </div>
       </section>
@@ -29,6 +31,7 @@ describe('search filtering', () => {
           <a class="service-button">
             <span class="service-name">Gamma</span>
             <span class="service-url">http://gamma.com</span>
+            <span class="service-tags"></span>
           </a>
         </div>
       </section>
@@ -57,6 +60,16 @@ describe('search filtering', () => {
     const cat2 = document.getElementById('cat2');
 
     searchInput.value = 'alpha';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+
+    expect(alphaBtn.style.display).toBe('flex');
+    expect(betaBtn.style.display).toBe('none');
+    expect(gammaBtn.style.display).toBe('none');
+    expect(cat1.style.display).toBe('');
+    expect(cat2.style.display).toBe('none');
+
+    // search by tag
+    searchInput.value = 'news';
     searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
 
     expect(alphaBtn.style.display).toBe('flex');
