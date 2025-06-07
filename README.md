@@ -45,15 +45,26 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 3.  **Open the site:**
     Simply open the `index.html` file in your web browser. No special server is needed as it's a static website.
 
+### Running Tests
+
+If you have Node.js installed, you can run the unit tests with:
+
+```bash
+npm test
+```
+
+This uses Jest with `jsdom` to verify basic functionality in `script.js`.
+
 ## Modifying the Site
 
 The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here's a brief overview of the file structure and how to make common modifications:
 
 ### File Structure
 
-*   `index.html`: The main HTML file containing the structure and content of the dashboard, including all service listings and categories.
+*   `index.html`: Mostly static HTML structure of the dashboard. Service listings are dynamically injected from `services.json` by `script.js`.
 *   `styles.css`: The primary stylesheet responsible for the visual appearance, layout, and retro theme of the site.
-*   `script.js`: Contains the JavaScript code for functionalities like the typing effect, category toggling (expand/collapse), search filtering, and localStorage for category states.
+*   `script.js`: Handles the typing effect, category toggling, search filtering, persistence of category states, and populates the page with data from `services.json`. 
+*   `services.json`: Stores the AI service data used to populate the dashboard.
 *   `favicon.ico`, `apple-touch-icon.png`, `favicon.png`: Site icons.
 *   `README.md`: This file – providing information about the project.
 *   `.github/workflows/static.yml`: GitHub Actions workflow for continuous deployment (e.g., to GitHub Pages).
