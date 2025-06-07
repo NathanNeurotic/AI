@@ -53,7 +53,8 @@ If you have Node.js installed, you can run the unit tests with:
 npm test
 ```
 
-This uses Jest with `jsdom` to verify basic functionality in `script.js`.
+This uses Jest with `jsdom` to verify functionality in `script.js`.
+The tests cover category toggling and the search filtering behavior.
 
 ## Modifying the Site
 
