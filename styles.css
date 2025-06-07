@@ -10,6 +10,7 @@
     --thanks-color: #4d8c4d;
     --font-family: 'VT323', monospace;
     --category-max-height: 400px;
+    --card-min-width: 300px;
 }
 
 body {
@@ -147,7 +148,7 @@ main {
 
 .category-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
     gap: 1rem;
     padding: 1rem;
     background: var(--content-bg);
