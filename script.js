@@ -1,6 +1,7 @@
 let allServices = [];
 
 document.addEventListener('DOMContentLoaded', () => {
+    applySavedTheme();
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
@@ -335,4 +336,18 @@ function renderFavoritesCategory() {
         content.appendChild(btn);
     });
 }
+
+function applySavedTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') {
+        document.body.classList.add('light-mode');
+    }
+}
+
+function toggleTheme() {
+    const isLight = document.body.classList.toggle('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+
+window.toggleTheme = toggleTheme;
 
