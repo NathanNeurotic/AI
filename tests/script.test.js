@@ -12,7 +12,7 @@ describe('toggleCategory', () => {
         <div class="category-content"></div>
       </section>
     `;
-    const dom = new JSDOM(html, { runScripts: 'dangerously' });
+  const dom = new JSDOM(html, { runScripts: 'dangerously', url: 'http://localhost' });
     window = dom.window;
     document = window.document;
     header = document.querySelector('h2');
