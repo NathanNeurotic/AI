@@ -124,6 +124,7 @@ Service data is stored in `services.json`. To add a new service or update an exi
 *   All custom styles are in `styles.css`.
 *   You can modify colors, fonts, spacing, layout, and other visual aspects by editing this file.
 *   The styles are generally organized by element or component (e.g., `header`, `category`, `service-button`).
+*   A built-in theme switcher toggles the `light-mode` class on `<body>` using `script.js` and remembers your choice in `localStorage`. Customize the default colors by changing the CSS variables defined at the top of `styles.css`.
 
 ### Modifying Functionality
 
