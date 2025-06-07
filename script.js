@@ -347,11 +347,13 @@ function applySavedTheme() {
     const saved = localStorage.getItem('theme');
     if (saved === 'light') {
         document.body.classList.add('light-mode');
+        document.documentElement.classList.add('light-mode');
     }
 }
 
 function toggleTheme() {
     const isLight = document.body.classList.toggle('light-mode');
+    document.documentElement.classList.toggle('light-mode', isLight);
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
 }
 
