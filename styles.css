@@ -8,7 +8,7 @@
     --button-gradient: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 60, 40, 0.9));
     --footer-gradient: linear-gradient(180deg, #1a2a1a, #0a0a0a);
     --thanks-color: #4d8c4d;
-    --font-family: 'VT323', monospace;
+    --font-family: 'Roboto Mono', monospace;
     --category-max-height: 400px;
     --scroll-track: #0a0a0a;
     --scroll-thumb: #5faa6f;
