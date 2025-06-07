@@ -63,8 +63,12 @@ describe('loadServices', () => {
   });
 
   test('service button includes thumbnail image when provided', () => {
-    const firstButton = document.querySelector('.service-button');
-    const thumb = firstButton.querySelector('img.service-thumbnail');
+    const buttons = Array.from(document.querySelectorAll('.service-button'));
+    const target = buttons.find(btn =>
+      btn.querySelector('.service-name').textContent === 'One'
+    );
+    expect(target).toBeDefined();
+    const thumb = target.querySelector('img.service-thumbnail');
     expect(thumb).not.toBeNull();
     expect(thumb.getAttribute('src')).toBe('thumb-one.png');
   });
