@@ -45,6 +45,16 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 3.  **Open the site:**
     Simply open the `index.html` file in your web browser. No special server is needed as it's a static website.
 
+### Running Tests
+
+If you have Node.js installed, you can run the unit tests with:
+
+```bash
+npm test
+```
+
+This uses Jest with `jsdom` to verify basic functionality in `script.js`.
+
 ## Modifying the Site
 
 The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here's a brief overview of the file structure and how to make common modifications:
