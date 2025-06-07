@@ -16,6 +16,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
     *   Interactive elements are properly handled in collapsed sections on mobile.
 *   **Persistent Category State:** Remembers which categories were left open or closed across sessions using browser localStorage.
 *   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header.
+*   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
 
 ## Getting Started
 
