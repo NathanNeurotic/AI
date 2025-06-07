@@ -73,20 +73,20 @@ The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here
 
 ### Adding or Editing Services
 
-To add a new service or modify an existing one:
+Service data is stored in `services.json`. To add a new service or update an existing one:
 
-1.  Open `index.html` in a text editor.
-2.  Locate the category section (e.g., `<section class="category" id="conversational-ai">`) where you want to add or edit a service.
-3.  Service entries are `<a>` tags with the class `service-button`. To add a new service, you can copy an existing one and modify its details:
-    ```html
-    <a href="NEW_SERVICE_URL" class="service-button" target="_blank">
-        <img class="service-favicon" src="NEW_SERVICE_FAVICON_URL" onerror="this.src='./favicon.ico'" alt="Service favicon">
-        <span class="service-name">New Service Name</span>
-        <span class="service-url">NEW_SERVICE_URL</span>
-    </a>
+1.  Open `services.json` in a text editor.
+2.  Add or edit an object in the JSON array with the fields `name`, `url`, `favicon_url`, and `category`.
+    ```json
+    {
+        "name": "Example Service",
+        "url": "https://example.com/",
+        "favicon_url": "https://example.com/favicon.ico",
+        "category": "My Category"
+    }
     ```
-    Replace `NEW_SERVICE_URL`, `NEW_SERVICE_FAVICON_URL` (or use a generic path if a direct favicon URL isn't available or reliable), and `New Service Name` with the appropriate information.
-4.  Ensure the HTML structure is maintained.
+    Ensure the new entry follows the same format as shown above.
+3.  Save the file. The site will automatically load the updated services when refreshed.
 
 ### Adding or Editing Categories
 
