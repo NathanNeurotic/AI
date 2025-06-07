@@ -169,6 +169,10 @@ main {
     font-size: 1.2rem;
     color: #ccc;
 }
+.favorite-star:focus {
+    outline: 2px solid #66b266;
+    outline-offset: 2px;
+}
 
 .favorite-star.favorited {
     color: gold;
