@@ -171,6 +171,15 @@ main {
     transform: rotate(180deg);
 }
 
+.category-title {
+    flex: 1;
+    text-align: center;
+}
+
+.category-emoji {
+    margin-right: 0.5rem;
+}
+
 .category-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
