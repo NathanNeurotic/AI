@@ -54,6 +54,13 @@ async function loadServices() {
             const categoryHeader = document.createElement('h2');
             categoryHeader.setAttribute('aria-expanded', 'false');
             categoryHeader.onclick = () => toggleCategory(categoryHeader); // Use arrow function to ensure 'this' context or pass element directly
+            categoryHeader.tabIndex = 0;
+            categoryHeader.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleCategory(categoryHeader);
+                }
+            });
 
             // Extract emoji and text for category title
             const emojiMatch = categoryName.match(/^(\p{Emoji_Presentation}|\p{Emoji})\s*/u);

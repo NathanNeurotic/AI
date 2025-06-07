@@ -43,4 +43,16 @@ describe('loadServices', () => {
     window.toggleCategory(firstHeader);
     expect(window.localStorage.getItem('category-apple')).toBe('open');
   });
+
+  test('pressing Enter toggles the category', () => {
+    const firstHeader = document.querySelector('.category h2');
+    const content = firstHeader.nextElementSibling;
+
+    expect(content.classList.contains('open')).toBe(false);
+
+    const event = new window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true });
+    firstHeader.dispatchEvent(event);
+
+    expect(content.classList.contains('open')).toBe(true);
+  });
 });
