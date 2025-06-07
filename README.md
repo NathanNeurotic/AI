@@ -18,6 +18,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
 *   **Persistent Category State:** Remembers which categories were left open or closed across sessions using browser localStorage.
 *   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header.
 *   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
+*   **Favorites:** Mark services with the star icon to quickly access them in a dedicated "Favorites" category that persists using `localStorage`.
 
 ## Getting Started
 
@@ -65,6 +66,10 @@ npm test
 
 The tests use Jest with `jsdom` to verify functionality in `script.js`.
 They cover category toggling and the search filtering behavior.
+
+## Using Favorites
+
+Click the star icon next to any service to mark it as a favorite. Favorited services appear under the "Favorites" category at the top of the page. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
 
 ## Modifying the Site
 
