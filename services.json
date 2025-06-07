@@ -609,8 +609,8 @@
         "name": "Google Code Assist",
         "url": "https://codeassist.google.com/",
         "favicon_url": "https://codeassist.google.com/favicon.ico",
-        "category": "💻 Coding and Development"
-        "thumbnail_url": "https://example.com/thumbs/google-code-assist.png",
+        "category": "💻 Coding and Development",
+        "thumbnail_url": "https://example.com/thumbs/google-code-assist.png"
     },
     {
         "name": "Jules",
@@ -952,7 +952,7 @@
         "name": "Google Code Assist",
         "url": "https://codeassist.google.com/",
         "favicon_url": "https://codeassist.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
+        "category": "✨ Google Ecosystem",
         "thumbnail_url": "https://example.com/thumbs/google-code-assist.png"
     },
     {
@@ -1651,7 +1651,7 @@
         "name": "Jasper",
         "url": "https://www.jasper.ai/",
         "favicon_url": "https://www.jasper.ai/favicon.ico",
-        "category": "📚 Articles and Reviews"
+        "category": "📚 Articles and Reviews",
         "thumbnail_url": "https://example.com/thumbs/jasper.png"
     },
     {
