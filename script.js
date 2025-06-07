@@ -137,6 +137,7 @@ async function loadServices() {
     }
 }
 
+
 function setupSearch() {
     const searchInput = document.getElementById('searchInput');
     if (!searchInput) return; // Guard clause if search input is not found

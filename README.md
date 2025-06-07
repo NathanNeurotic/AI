@@ -50,9 +50,8 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 ### Running Tests
 
+If you have Node.js installed (version 18 or newer), first install the dev dependencies:
 *Note: The tests require Node.js version 18 or later.*
-
-First install the dev dependencies:
 
 ```bash
 npm install

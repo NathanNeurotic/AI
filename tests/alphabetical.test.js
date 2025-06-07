@@ -5,7 +5,7 @@ const { JSDOM } = require('jsdom');
 describe('loadServices sorts services alphabetically', () => {
   test('services in each category are ordered by name', async () => {
     const html = '<main></main>';
-    const dom = new JSDOM(html, { runScripts: 'dangerously' });
+  const dom = new JSDOM(html, { runScripts: 'dangerously', url: 'http://localhost' });
     const { window } = dom;
     const { document } = window;
 
