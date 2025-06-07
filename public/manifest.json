@@ -1,0 +1,15 @@
+{
+  "name": "AI Services Dashboard",
+  "short_name": "AI Dashboard",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32 64x64 128x128 256x256 512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}

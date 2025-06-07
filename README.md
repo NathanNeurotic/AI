@@ -168,6 +168,16 @@ For most of these services, you typically need to:
 3.  Configure the build settings (usually minimal or none for a plain static site).
 4.  Deploy.
 
+## Installing the Dashboard as a PWA
+
+You can install the AI Services Dashboard on your device for quick access:
+
+1. Open the site in a modern browser such as Chrome or Edge.
+2. Click the install icon in the address bar or choose **Install App** from the browser menu.
+3. Confirm the prompt to add it to your home screen or applications list.
+
+After installation the dashboard can be launched like a native application and works offline thanks to the service worker.
+
 ## Contributing
 
 Contributions are welcome to enhance the AI Services Dashboard! If you have suggestions, bug reports, or want to add new services or features, please follow these steps:

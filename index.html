@@ -12,6 +12,7 @@
     <meta name="twitter:description" content="Curated dashboard of AI services" />
     <meta name="twitter:image" content="./favicon.ico" />
     <title>AI Services Dashboard</title>
+    <link rel="manifest" href="public/manifest.json" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
@@ -31,5 +32,10 @@
         <p>© 2025 <a href="https://www.github.com/NathanNeurotic/" target="_blank" rel="noopener noreferrer">NathanNeurotic</a>. All rights reserved.</p>
     </footer>
     <script src="./script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
 </body>
 </html>
