@@ -131,26 +131,26 @@ main {
 .service-button {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 42, 26, 0.9));
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 60, 40, 0.9));
     padding: 1rem;
-    border: 2px solid #66b266;
+    border: 2px solid #5faa6f;
     border-radius: 15px;
     text-decoration: none;
-    color: #66b266;
-    box-shadow: inset 0 0 3px rgba(102, 178, 102, 0.3), 0 0 3px rgba(102, 178, 102, 0.2);
+    color: #5faa6f;
+    box-shadow: inset 0 0 3px rgba(95, 170, 111, 0.3), 0 0 3px rgba(95, 170, 111, 0.2);
     animation: pulse 2s infinite;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .service-button:hover {
-    box-shadow: inset 0 0 5px rgba(102, 178, 102, 0.5), 0 0 8px rgba(102, 178, 102, 0.3);
+    box-shadow: inset 0 0 5px rgba(95, 170, 111, 0.5), 0 0 8px rgba(95, 170, 111, 0.3);
     transform: translateY(-2px);
     animation: none;
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: inset 0 0 3px rgba(102, 178, 102, 0.3), 0 0 3px rgba(102, 178, 102, 0.2); }
-    50% { box-shadow: inset 0 0 5px rgba(102, 178, 102, 0.5), 0 0 5px rgba(102, 178, 102, 0.3); }
+    0%, 100% { box-shadow: inset 0 0 3px rgba(95, 170, 111, 0.3), 0 0 3px rgba(95, 170, 111, 0.2); }
+    50% { box-shadow: inset 0 0 5px rgba(95, 170, 111, 0.5), 0 0 5px rgba(95, 170, 111, 0.3); }
 }
 
 .service-favicon {
@@ -171,6 +171,10 @@ main {
 .service-url {
     font-size: 1rem;
     word-break: break-all;
+}
+
+.service-tags {
+    display: none;
 }
 
 footer {
