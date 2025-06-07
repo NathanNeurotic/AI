@@ -1,4 +1,5 @@
-# AI Services Dashboard (formerly Top AI Models and Tools 2025)
+![image](https://github.com/user-attachments/assets/35ce02c4-4550-42a1-b37c-b5860d966489)
+# AI Services Dashboard
 
 ## Overview
 
@@ -26,6 +27,7 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 *   A modern web browser (e.g., Chrome, Firefox, Safari, Edge).
 *   Git for cloning the repository (optional, you can also download the source code as a ZIP file).
+*   Node.js 18+ (recommended if you plan to run the tests).
 
 ### Installation & Local Setup
 
@@ -49,6 +51,7 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 ### Running Tests
 
 If you have Node.js installed (version 18 or newer), first install the dev dependencies:
+*Note: The tests require Node.js version 18 or later.*
 
 ```bash
 npm install
@@ -71,7 +74,7 @@ The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here
 
 *   `index.html`: Mostly static HTML structure of the dashboard. Service listings are dynamically injected from `services.json` by `script.js`.
 *   `styles.css`: The primary stylesheet responsible for the visual appearance, layout, and retro theme of the site.
-*   `script.js`: Handles the typing effect, category toggling, search filtering, persistence of category states, and populates the page with data from `services.json`. 
+*   `script.js`: Handles the typing effect, category toggling, search filtering, persistence of category states, and populates the page with data from `services.json`.
 *   `services.json`: Stores the AI service data used to populate the dashboard.
 *   `favicon.ico`: Site icon.
 *   `README.md`: This file – providing information about the project.

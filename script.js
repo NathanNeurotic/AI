@@ -78,7 +78,7 @@ async function loadServices() {
                 serviceButton.target = '_blank';
 
                 const favicon = document.createElement('img');
-                favicon.alt = 'Service favicon';
+                favicon.alt = `${service.name} favicon`;
                 favicon.className = 'service-favicon';
                 favicon.src = service.favicon_url || './favicon.ico'; // Fallback favicon
                 favicon.onerror = () => { favicon.src = './favicon.ico'; }; // Handle broken favicons
@@ -195,3 +195,4 @@ function toggleCategory(header) {
         localStorage.setItem(`category-${categoryId}`, 'open');
     }
 }
+
