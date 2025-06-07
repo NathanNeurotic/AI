@@ -47,14 +47,20 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 ### Running Tests
 
-If you have Node.js installed, you can run the unit tests with:
+If you have Node.js installed, first install the dev dependencies:
+
+```bash
+npm install
+```
+
+This installs `jest` and `jsdom`. Once installed, run the unit tests with:
 
 ```bash
 npm test
 ```
 
-This uses Jest with `jsdom` to verify functionality in `script.js`.
-The tests cover category toggling and the search filtering behavior.
+The tests use Jest with `jsdom` to verify functionality in `script.js`.
+They cover category toggling and the search filtering behavior.
 
 ## Modifying the Site
 
