@@ -76,6 +76,7 @@ async function loadServices() {
                 serviceButton.className = 'service-button';
                 serviceButton.href = service.url;
                 serviceButton.target = '_blank';
+                serviceButton.rel = 'noopener noreferrer';
 
                 const favicon = document.createElement('img');
                 favicon.alt = `${service.name} favicon`;
