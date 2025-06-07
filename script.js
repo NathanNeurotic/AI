@@ -83,57 +83,11 @@ async function loadServices() {
             categoryContent.className = 'category-content';
 
             servicesInCategory.forEach(service => {
-                const serviceButton = createServiceButton(service, new Set(JSON.parse(localStorage.getItem('favorites') || '[]')), categoryName);
-
-                const serviceButton = document.createElement('a');
-                serviceButton.className = 'service-button';
-                serviceButton.href = service.url;
-                serviceButton.target = '_blank';
-                serviceButton.rel = 'noopener noreferrer';
-
-                const favicon = document.createElement('img');
-                favicon.alt = `${service.name} favicon`;
-                favicon.className = 'service-favicon';
-                favicon.src = service.favicon_url || './favicon.ico'; // Fallback favicon
-                favicon.onerror = () => { favicon.src = './favicon.ico'; }; // Handle broken favicons
-
-                const serviceNameSpan = document.createElement('span');
-                serviceNameSpan.className = 'service-name';
-                serviceNameSpan.textContent = service.name;
-
-                const serviceUrlSpan = document.createElement('span');
-                serviceUrlSpan.className = 'service-url';
-                serviceUrlSpan.textContent = service.url;
-
-                // Add service tags if provided. These are also used for search
-                // functionality. Always include the category text as a hidden
-                // tag so services can be found by their category name.
-                const serviceTagsSpan = document.createElement('span');
-                serviceTagsSpan.className = 'service-tags';
-
-                let tags = [];
-                if (service.tags && Array.isArray(service.tags)) {
-                    tags = service.tags.slice();
-                }
-
-                const catText = categoryName.replace(/^(\p{Emoji_Presentation}|\p{Emoji})\s*/u, '').trim();
-                if (!tags.includes(catText)) {
-                    tags.push(catText);
-                }
-
-                serviceTagsSpan.textContent = tags.join(',');
-                // Only display tags when the service actually defines some.
-                if (service.tags && Array.isArray(service.tags) && service.tags.length > 0) {
-                    serviceTagsSpan.style.display = 'inline';
-                } else {
-                    serviceTagsSpan.style.display = 'none';
-                }
-
-
-                serviceButton.appendChild(favicon);
-                serviceButton.appendChild(serviceNameSpan);
-                serviceButton.appendChild(serviceUrlSpan);
-                serviceButton.appendChild(serviceTagsSpan);
+                const serviceButton = createServiceButton(
+                    service,
+                    new Set(JSON.parse(localStorage.getItem('favorites') || '[]')),
+                    categoryName
+                );
                 categoryContent.appendChild(serviceButton);
             });
 
