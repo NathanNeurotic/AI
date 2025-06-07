@@ -61,9 +61,10 @@ The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here
 
 ### File Structure
 
-*   `index.html`: The main HTML file containing the structure and content of the dashboard, including all service listings and categories.
+*   `index.html`: Mostly static HTML structure of the dashboard. Service listings are dynamically injected from `services.json` by `script.js`.
 *   `styles.css`: The primary stylesheet responsible for the visual appearance, layout, and retro theme of the site.
-*   `script.js`: Contains the JavaScript code for functionalities like the typing effect, category toggling (expand/collapse), search filtering, and localStorage for category states.
+*   `script.js`: Handles the typing effect, category toggling, search filtering, persistence of category states, and populates the page with data from `services.json`. 
+*   `services.json`: Stores the AI service data used to populate the dashboard.
 *   `favicon.ico`, `apple-touch-icon.png`, `favicon.png`: Site icons.
 *   `README.md`: This file – providing information about the project.
 *   `.github/workflows/static.yml`: GitHub Actions workflow for continuous deployment (e.g., to GitHub Pages).
