@@ -40,8 +40,9 @@ async function loadServices() {
             return acc;
         }, {});
 
-        // Generate HTML for categories and services
-        for (const categoryName in categories) {
+        // Generate HTML for categories and services in alphabetical order
+        const sortedCategoryNames = Object.keys(categories).sort();
+        for (const categoryName of sortedCategoryNames) {
             const servicesInCategory = categories[categoryName];
             const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
