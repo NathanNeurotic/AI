@@ -183,6 +183,10 @@ footer p {
     font-size: 1.2rem;
 }
 
+footer a {
+    color: inherit;
+}
+
 footer .thanks {
     font-size: 1rem;
     color: #4d8c4d;
