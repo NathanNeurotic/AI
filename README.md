@@ -26,6 +26,7 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 *   A modern web browser (e.g., Chrome, Firefox, Safari, Edge).
 *   Git for cloning the repository (optional, you can also download the source code as a ZIP file).
+*   Node.js 18+ (recommended if you plan to run the tests).
 
 ### Installation & Local Setup
 
@@ -48,7 +49,7 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 ### Running Tests
 
-If you have Node.js installed, first install the dev dependencies:
+If you have Node.js 18 or later installed, first install the dev dependencies:
 
 ```bash
 npm install
