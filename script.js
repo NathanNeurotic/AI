@@ -41,7 +41,8 @@ async function loadServices() {
         }, {});
 
         // Generate HTML for categories and services in alphabetical order
-        const sortedCategoryNames = Object.keys(categories).sort();
+        const normalize = (name) => name.replace(/^(\p{Emoji_Presentation}|\p{Emoji})\s*/u, '').trim().toLowerCase();
+        const sortedCategoryNames = Object.keys(categories).sort((a, b) => normalize(a).localeCompare(normalize(b)));
         for (const categoryName of sortedCategoryNames) {
             const servicesInCategory = categories[categoryName];
             servicesInCategory.sort((a, b) => a.name.localeCompare(b.name));
