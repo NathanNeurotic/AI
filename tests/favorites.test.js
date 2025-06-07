@@ -45,4 +45,22 @@ describe('favorites management', () => {
     favSection = document.querySelector('#favorites');
     expect(favSection).toBeNull();
   });
+
+  test('toggling favorites via keyboard events', () => {
+    const star = document.querySelector('.favorite-star');
+
+    star.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+
+    expect(window.localStorage.getItem('favorites')).toBe(JSON.stringify(['http://alpha.com']));
+    let favSection = document.querySelector('#favorites');
+    expect(favSection).not.toBeNull();
+    expect(star.textContent).toBe('★');
+
+    star.dispatchEvent(new window.KeyboardEvent('keydown', { key: ' ', bubbles: true }));
+
+    expect(window.localStorage.getItem('favorites')).toBe(JSON.stringify([]));
+    favSection = document.querySelector('#favorites');
+    expect(favSection).toBeNull();
+    expect(star.textContent).toBe('☆');
+  });
 });
