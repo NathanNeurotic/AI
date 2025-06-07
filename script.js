@@ -1,4 +1,5 @@
 let allServices = [];
+const MAX_CATEGORY_HEIGHT = 400; // px - limit for open category height
 
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
@@ -113,7 +114,8 @@ async function loadServices() {
             const isOpen = localStorage.getItem(`category-${id}`) === 'open';
             if (isOpen) {
                 content.classList.add('open');
-                content.style.maxHeight = content.scrollHeight + 'px';
+                const height = Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT);
+                content.style.maxHeight = height + 'px';
                 chevron.classList.add('open');
                 header.setAttribute('aria-expanded', 'true');
             }
@@ -183,7 +185,8 @@ function toggleCategory(header) {
         localStorage.setItem(`category-${categoryId}`, 'closed');
     } else {
         content.classList.add('open');
-        content.style.maxHeight = content.scrollHeight + 'px';
+        const height = Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT);
+        content.style.maxHeight = height + 'px';
         chevron.classList.add('open');
         header.setAttribute('aria-expanded', 'true');
         localStorage.setItem(`category-${categoryId}`, 'open');
