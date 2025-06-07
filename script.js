@@ -228,6 +228,14 @@ function createServiceButton(service, favoritesSet, categoryName) {
     } else {
         star.textContent = '☆';
     }
+    star.tabIndex = 0;
+    star.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleFavorite(service.url);
+        }
+    });
     star.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
