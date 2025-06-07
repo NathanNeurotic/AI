@@ -40,6 +40,7 @@ body.light-mode {
     --font-family: 'Roboto', sans-serif;
     --scroll-track: #f0f0f0;
     --scroll-thumb: #a8d5a8;
+    --card-min-width: 300px;
 }
 
 * {
@@ -193,6 +194,8 @@ main {
     flex-direction: column;
     background: var(--button-gradient);
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
     border: 2px solid var(--accent-color);
     border-radius: 15px;
     text-decoration: none;
