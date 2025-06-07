@@ -207,6 +207,15 @@ function createServiceButton(service, favoritesSet, categoryName) {
     favicon.src = service.favicon_url || './favicon.ico';
     favicon.onerror = () => { favicon.src = './favicon.ico'; };
 
+    let thumbnail;
+    if (service.thumbnail_url) {
+        thumbnail = document.createElement('img');
+        thumbnail.className = 'service-thumbnail';
+        thumbnail.alt = `${service.name} thumbnail`;
+        thumbnail.src = service.thumbnail_url;
+        thumbnail.onerror = () => { thumbnail.style.display = 'none'; };
+    }
+
     const serviceNameSpan = document.createElement('span');
     serviceNameSpan.className = 'service-name';
     serviceNameSpan.textContent = service.name;
@@ -258,6 +267,9 @@ function createServiceButton(service, favoritesSet, categoryName) {
     });
 
     serviceButton.appendChild(favicon);
+    if (thumbnail) {
+        serviceButton.appendChild(thumbnail);
+    }
     serviceButton.appendChild(serviceNameSpan);
     serviceButton.appendChild(serviceUrlSpan);
     serviceButton.appendChild(serviceTagsSpan);

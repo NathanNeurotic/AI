@@ -4,7 +4,8 @@
         "url": "https://www.3daistudio.com/",
         "favicon_url": "https://www.3daistudio.com/favicon.ico",
         "category": "🔮 3D Modeling",
-        "tags": ["modeling", "design"]
+        "tags": ["modeling", "design"],
+        "thumbnail_url": "https://example.com/thumbs/3d-ai-studio.png"
     },
     {
         "name": "3DAIMaker",
@@ -609,6 +610,7 @@
         "url": "https://codeassist.google.com/",
         "favicon_url": "https://codeassist.google.com/favicon.ico",
         "category": "💻 Coding and Development"
+        "thumbnail_url": "https://example.com/thumbs/google-code-assist.png",
     },
     {
         "name": "Jules",
@@ -951,6 +953,7 @@
         "url": "https://codeassist.google.com/",
         "favicon_url": "https://codeassist.google.com/favicon.ico",
         "category": "✨ Google Ecosystem"
+        "thumbnail_url": "https://example.com/thumbs/google-code-assist.png"
     },
     {
         "name": "Google DeepMind",
@@ -1649,6 +1652,7 @@
         "url": "https://www.jasper.ai/",
         "favicon_url": "https://www.jasper.ai/favicon.ico",
         "category": "📚 Articles and Reviews"
+        "thumbnail_url": "https://example.com/thumbs/jasper.png"
     },
     {
         "name": "Sudowrite",

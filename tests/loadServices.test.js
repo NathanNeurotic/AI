@@ -17,7 +17,13 @@ describe('loadServices', () => {
     document.body.appendChild(scriptEl);
 
     const servicesData = [
-      { name: 'One', url: 'http://one.com', favicon_url: 'one.ico', category: 'Banana' },
+      {
+        name: 'One',
+        url: 'http://one.com',
+        favicon_url: 'one.ico',
+        category: 'Banana',
+        thumbnail_url: 'thumb-one.png'
+      },
       { name: 'Two', url: 'http://two.com', favicon_url: 'two.ico', category: 'Apple' }
     ];
 
@@ -54,5 +60,16 @@ describe('loadServices', () => {
     firstHeader.dispatchEvent(event);
 
     expect(content.classList.contains('open')).toBe(true);
+  });
+
+  test('service button includes thumbnail image when provided', () => {
+    const buttons = Array.from(document.querySelectorAll('.service-button'));
+    const target = buttons.find(btn =>
+      btn.querySelector('.service-name').textContent === 'One'
+    );
+    expect(target).toBeDefined();
+    const thumb = target.querySelector('img.service-thumbnail');
+    expect(thumb).not.toBeNull();
+    expect(thumb.getAttribute('src')).toBe('thumb-one.png');
   });
 });
