@@ -1,4 +1,5 @@
-# AI Services Dashboard (formerly Top AI Models and Tools 2025)
+![image](https://github.com/user-attachments/assets/35ce02c4-4550-42a1-b37c-b5860d966489)
+# AI Services Dashboard
 
 ## Overview
 
