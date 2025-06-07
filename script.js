@@ -235,7 +235,6 @@ function createServiceButton(service, favoritesSet, categoryName) {
         star.textContent = '☆';
         star.setAttribute('aria-label', 'Add to favorites');
     }
-    star.tabIndex = 0;
     star.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
