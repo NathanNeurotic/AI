@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         typeEffect();
     }
 
-    // Load services and set up functionalities
-    loadServices();
+    // Load services and set up functionalities only if a <main> element exists
+    if (document.querySelector('main')) {
+        loadServices();
+    }
 });
 
 async function loadServices() {
