@@ -70,7 +70,7 @@ They cover category toggling and the search filtering behavior.
 
 ## Using Favorites
 
-Click the star icon next to any service to mark it as a favorite. Favorited services appear under the "Favorites" category at the top of the page. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
+Click the star icon next to any service to mark it as a favorite. Favorited services appear in the "Favorites" category directly below the search box. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
 
 ## Modifying the Site
 
