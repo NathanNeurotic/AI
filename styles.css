@@ -162,7 +162,6 @@ main {
 }
 
 .category-content.open {
-    max-height: 3000px;
     opacity: 1;
     visibility: visible;
 }

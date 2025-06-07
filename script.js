@@ -113,6 +113,7 @@ async function loadServices() {
             const isOpen = localStorage.getItem(`category-${id}`) === 'open';
             if (isOpen) {
                 content.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + 'px';
                 chevron.classList.add('open');
                 header.setAttribute('aria-expanded', 'true');
             }
@@ -175,12 +176,14 @@ function toggleCategory(header) {
     const categoryId = header.parentElement.id;
 
     if (isOpen) {
+        content.style.maxHeight = '0px';
         content.classList.remove('open');
         chevron.classList.remove('open');
         header.setAttribute('aria-expanded', 'false');
         localStorage.setItem(`category-${categoryId}`, 'closed');
     } else {
         content.classList.add('open');
+        content.style.maxHeight = content.scrollHeight + 'px';
         chevron.classList.add('open');
         header.setAttribute('aria-expanded', 'true');
         localStorage.setItem(`category-${categoryId}`, 'open');
