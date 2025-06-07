@@ -569,6 +569,12 @@
         "category": "💻 Coding and Development"
     },
     {
+        "name": "Codex by OpenAI",
+        "url": "https://chatgpt.com/codex",
+        "favicon_url": "https://chatgpt.com/favicon.ico",
+        "category": "💻 Coding and Development"
+    },
+    {
         "name": "Codota",
         "url": "https://www.tabnine.com/",
         "favicon_url": "https://www.tabnine.com/favicon.ico",
