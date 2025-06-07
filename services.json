@@ -285,7 +285,15 @@
         "name": "Claude",
         "url": "https://claude.ai/new",
         "favicon_url": "https://claude.ai/favicon.ico",
-        "category": "👽 All-in-One"
+        "category": "👽 All-in-One",
+        "tags": ["chatbot", "anthropic"]
+    },
+    {
+        "name": "Claude",
+        "url": "https://claude.ai/new",
+        "favicon_url": "https://claude.ai/favicon.ico",
+        "category": "💻 Coding and Development",
+        "tags": ["chatbot", "anthropic"]
     },
     {
         "name": "Cody",
@@ -1275,7 +1283,15 @@
         "name": "Hugging Face",
         "url": "https://huggingface.co/",
         "favicon_url": "https://huggingface.co/favicon.ico",
-        "category": "🔍 Research and Data Analysis"
+        "category": "🔍 Research and Data Analysis",
+        "tags": ["models", "datasets", "transformers"]
+    },
+    {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/",
+        "favicon_url": "https://huggingface.co/favicon.ico",
+        "category": "🌐 Developer Platforms and APIs",
+        "tags": ["models", "datasets", "transformers"]
     },
     {
         "name": "IBM Watson",

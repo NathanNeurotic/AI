@@ -104,10 +104,19 @@ async function loadServices() {
                 // For now, service.tags is not in services.json, so this will be hidden or empty
                 const serviceTagsSpan = document.createElement('span');
                 serviceTagsSpan.className = 'service-tags';
-                serviceTagsSpan.style.display = 'none'; // Hidden as per original structure
+                serviceTagsSpan.style.display = 'none';
+
+                let tags = [];
                 if (service.tags && Array.isArray(service.tags)) {
-                     serviceTagsSpan.textContent = service.tags.join(',');
+                    tags = service.tags.slice();
                 }
+
+                const catText = categoryName.replace(/^(\p{Emoji_Presentation}|\p{Emoji})\s*/u, '').trim();
+                if (!tags.includes(catText)) {
+                    tags.push(catText);
+                }
+
+                serviceTagsSpan.textContent = tags.join(',');
 
 
                 serviceButton.appendChild(favicon);
