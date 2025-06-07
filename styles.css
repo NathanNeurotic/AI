@@ -9,6 +9,7 @@
     --footer-gradient: linear-gradient(180deg, #1a2a1a, #0a0a0a);
     --thanks-color: #4d8c4d;
     --font-family: 'VT323', monospace;
+    --category-max-height: 400px;
 }
 
 body {
@@ -156,7 +157,7 @@ main {
     border-radius: 0 0 10px 10px;
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
+    overflow-y: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
     visibility: hidden;
 }
@@ -164,6 +165,8 @@ main {
 .category-content.open {
     opacity: 1;
     visibility: visible;
+    max-height: var(--category-max-height);
+    overflow-y: auto;
 }
 
 .service-button {
