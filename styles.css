@@ -6,6 +6,8 @@
     --section-gradient: linear-gradient(90deg, #0a0a0a, #1a2a1a);
     --content-bg: rgba(42, 42, 42, 0.7);
     --button-gradient: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 60, 40, 0.9));
+    --footer-gradient: linear-gradient(180deg, #1a2a1a, #0a0a0a);
+    --thanks-color: #4d8c4d;
 }
 
 body {
@@ -28,6 +30,8 @@ body.light-mode {
     --section-gradient: linear-gradient(90deg, #e9ece9, #f9f9f9);
     --content-bg: rgba(255, 255, 255, 0.85);
     --button-gradient: linear-gradient(135deg, #ffffff, #e6eae6);
+    --footer-gradient: linear-gradient(180deg, #f9f9f9, #e9ece9);
+    --thanks-color: #2e8b57;
 }
 
 header {
@@ -229,7 +233,7 @@ main {
 }
 
 footer {
-    background: linear-gradient(180deg, #1a2a1a, #0a0a0a);
+    background: var(--footer-gradient);
     padding: 1rem;
     text-align: center;
     border-top: 2px solid var(--text-color);
@@ -248,7 +252,7 @@ footer a {
 
 footer .thanks {
     font-size: 1rem;
-    color: #4d8c4d;
+    color: var(--thanks-color);
 }
 
 footer .thanks a {
