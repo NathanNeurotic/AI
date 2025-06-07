@@ -347,7 +347,12 @@ function renderFavoritesCategory() {
         favoritesSection.appendChild(header);
         favoritesSection.appendChild(content);
 
-        mainContainer.prepend(favoritesSection);
+        const searchContainer = mainContainer.querySelector('.search-container');
+        if (searchContainer) {
+            mainContainer.insertBefore(favoritesSection, searchContainer.nextSibling);
+        } else {
+            mainContainer.prepend(favoritesSection);
+        }
     }
 
     const content = favoritesSection.querySelector('.category-content');
