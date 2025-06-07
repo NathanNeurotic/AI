@@ -328,7 +328,10 @@ function renderFavoritesCategory() {
         favoritesSection.id = 'favorites';
 
         const header = document.createElement('h2');
-        header.innerHTML = '★ Favorites <span class="chevron">▼</span>';
+        header.innerHTML =
+            `<span class="category-emoji">⭐</span>
+             <span class="category-title">Favorites</span>
+             <span class="chevron">▼</span>`;
         header.setAttribute('aria-expanded', 'true');
         header.onclick = () => toggleCategory(header);
         header.tabIndex = 0;
