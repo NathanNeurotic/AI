@@ -42,6 +42,11 @@ body.light-mode {
     --scroll-thumb: #a8d5a8;
 }
 
+html.light-mode {
+    --scroll-track: #f0f0f0;
+    --scroll-thumb: #a8d5a8;
+}
+
 * {
     scrollbar-color: var(--scroll-thumb) var(--scroll-track);
 }
