@@ -43,6 +43,7 @@ async function loadServices() {
         // Generate HTML for categories and services
         for (const categoryName in categories) {
             const servicesInCategory = categories[categoryName];
+            servicesInCategory.sort((a, b) => a.name.localeCompare(b.name));
             const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
             const categorySection = document.createElement('section');
