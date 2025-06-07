@@ -245,13 +245,6 @@ function createServiceButton(service, favoritesSet, categoryName) {
         e.stopPropagation();
         toggleFavorite(service.url);
     });
-    star.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleFavorite(service.url);
-        }
-    });
 
     serviceButton.appendChild(favicon);
     serviceButton.appendChild(serviceNameSpan);
