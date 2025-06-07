@@ -8,12 +8,13 @@
     --button-gradient: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 60, 40, 0.9));
     --footer-gradient: linear-gradient(180deg, #1a2a1a, #0a0a0a);
     --thanks-color: #4d8c4d;
+    --font-family: 'VT323', monospace;
 }
 
 body {
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     color: var(--text-color);
-    font-family: 'VT323', monospace;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -22,16 +23,17 @@ body {
 }
 
 body.light-mode {
-    /* Lighter, more colorful palette for the light theme */
-    --bg-color: #fafbff;
+    /* Brighter palette with soft gradients */
+    --bg-color: radial-gradient(circle at top left, #ffffff 0%, #e9f3ff 100%);
     --text-color: #333333;
     --accent-color: #007acc;
-    --header-gradient: linear-gradient(180deg, #e0f2ff, #fafbff);
-    --section-gradient: linear-gradient(90deg, #e0f2ff, #fafbff);
-    --content-bg: rgba(255, 255, 255, 0.95);
-    --button-gradient: linear-gradient(135deg, #ffffff, #dfefff);
-    --footer-gradient: linear-gradient(180deg, #fafbff, #e0f2ff);
+    --header-gradient: linear-gradient(180deg, #ffffff 0%, #dfe9ff 100%);
+    --section-gradient: linear-gradient(90deg, #f8fbff 0%, #e0ecff 100%);
+    --content-bg: rgba(255, 255, 255, 0.85);
+    --button-gradient: linear-gradient(135deg, #ffffff 0%, #e6f3ff 100%);
+    --footer-gradient: linear-gradient(180deg, #e0ecff 0%, #ffffff 100%);
     --thanks-color: #007acc;
+    --font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -46,7 +48,7 @@ header {
     background: none;
     border: 2px solid var(--text-color);
     color: var(--text-color);
-    font-family: 'VT323', monospace;
+    font-family: var(--font-family);
     font-size: 1rem;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
@@ -97,7 +99,7 @@ main {
     backdrop-filter: blur(3px);
     border: 2px solid var(--text-color);
     color: var(--text-color);
-    font-family: 'VT323', monospace;
+    font-family: var(--font-family);
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     width: 80%;
