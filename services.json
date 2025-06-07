@@ -3,13 +3,15 @@
         "name": "3D AI Studio",
         "url": "https://www.3daistudio.com/",
         "favicon_url": "https://www.3daistudio.com/favicon.ico",
-        "category": "🔮 3D Modeling"
+        "category": "🔮 3D Modeling",
+        "tags": ["modeling", "design"]
     },
     {
         "name": "3DAIMaker",
         "url": "https://3daimaker.com/",
         "favicon_url": "https://3daimaker.com/favicon.ico",
-        "category": "🔮 3D Modeling"
+        "category": "🔮 3D Modeling",
+        "tags": ["creator"]
     },
     {
         "name": "AI 3D Model Generator",
@@ -419,7 +421,8 @@
         "name": "Writer.com",
         "url": "https://writer.com/",
         "favicon_url": "https://writer.com/favicon.ico",
-        "category": "👽 All-in-One"
+        "category": "👽 All-in-One",
+        "tags": ["writing"]
     },
     {
         "name": "Writesonic",
@@ -1651,7 +1654,8 @@
         "name": "Writer.com",
         "url": "https://writer.com/",
         "favicon_url": "https://writer.com/favicon.ico",
-        "category": "📚 Articles and Reviews"
+        "category": "📚 Articles and Reviews",
+        "tags": ["writing"]
     },
     {
         "name": "Writesonic",

@@ -100,11 +100,11 @@ async function loadServices() {
                 serviceUrlSpan.className = 'service-url';
                 serviceUrlSpan.textContent = service.url;
 
-                // Add service tags if they exist in your services.json (assuming they might be added later)
-                // For now, service.tags is not in services.json, so this will be hidden or empty
+                // Add service tags if provided. These are also used for search
+                // functionality. Always include the category text as a hidden
+                // tag so services can be found by their category name.
                 const serviceTagsSpan = document.createElement('span');
                 serviceTagsSpan.className = 'service-tags';
-                serviceTagsSpan.style.display = 'none';
 
                 let tags = [];
                 if (service.tags && Array.isArray(service.tags)) {
@@ -117,6 +117,12 @@ async function loadServices() {
                 }
 
                 serviceTagsSpan.textContent = tags.join(',');
+                // Only display tags when the service actually defines some.
+                if (service.tags && Array.isArray(service.tags) && service.tags.length > 0) {
+                    serviceTagsSpan.style.display = 'inline';
+                } else {
+                    serviceTagsSpan.style.display = 'none';
+                }
 
 
                 serviceButton.appendChild(favicon);
