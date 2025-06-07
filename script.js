@@ -194,3 +194,4 @@ function toggleCategory(header) {
         localStorage.setItem(`category-${categoryId}`, 'open');
     }
 }
+
