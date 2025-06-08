@@ -13,6 +13,7 @@
     --scroll-track: #0a0a0a;
     --scroll-thumb: #5faa6f;
     --card-min-width: 300px;
+    --category-min-width: 300px;
 }
 
 body {
@@ -41,6 +42,7 @@ body.light-mode {
     --scroll-track: #f0f0f0;
     --scroll-thumb: #a8d5a8;
     --card-min-width: 300px;
+    --category-min-width: 300px;
 }
 
 html.light-mode {
@@ -82,6 +84,19 @@ header {
     margin-top: 1rem;
 }
 
+#viewToggle {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
 #header-favicon {
     display: block;
     width: 50px;
@@ -113,6 +128,21 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
     flex: 1;
+}
+
+body.block-view main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--category-min-width), 1fr));
+    gap: 1rem;
+}
+
+body.block-view main > .search-container,
+body.block-view main > #favorites {
+    grid-column: 1 / -1;
+}
+
+body.block-view .category {
+    margin-bottom: 0;
 }
 
 .search-container {
