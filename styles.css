@@ -225,6 +225,7 @@ body.block-view .category {
     max-height: 0;
     opacity: 0;
     overflow-y: hidden;
+    overflow-x: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
     visibility: hidden;
 }
@@ -234,6 +235,7 @@ body.block-view .category {
     visibility: visible;
     max-height: var(--category-max-height);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .service-button {
@@ -302,6 +304,7 @@ body.block-view .category {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    word-break: break-word;
 }
 
 .service-url {
