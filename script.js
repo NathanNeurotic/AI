@@ -361,7 +361,8 @@ function renderFavoritesCategory() {
         header.innerHTML =
             `<span class="category-emoji">⭐</span>
              <span class="category-title">Favorites</span>
-             <span class="chevron">▼</span>`;
+             <span class="chevron">▼</span>
+             <span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
         header.setAttribute('aria-expanded', 'true');
         header.onclick = () => toggleCategory(header);
         header.tabIndex = 0;
@@ -369,6 +370,19 @@ function renderFavoritesCategory() {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 toggleCategory(header);
+            }
+        });
+
+        const viewToggle = header.querySelector('.category-view-toggle');
+        viewToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleCategoryView('favorites');
+        });
+        viewToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleCategoryView('favorites');
             }
         });
 
@@ -391,6 +405,21 @@ function renderFavoritesCategory() {
         const btn = createServiceButton(service, favoritesSet);
         content.appendChild(btn);
     });
+
+    const view = localStorage.getItem('view-favorites');
+    if (view === 'list') {
+        favoritesSection.classList.add('list-view');
+        const toggle = favoritesSection.querySelector('.category-view-toggle');
+        if (toggle) {
+            toggle.classList.add('active');
+        }
+    } else {
+        favoritesSection.classList.remove('list-view');
+        const toggle = favoritesSection.querySelector('.category-view-toggle');
+        if (toggle) {
+            toggle.classList.remove('active');
+        }
+    }
 }
 
 function applySavedTheme() {
