@@ -84,7 +84,7 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}${textContent} <span class="chevron">▼</span>`;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> <span class="chevron">▼</span>`;
 
 
             const categoryContent = document.createElement('div');
