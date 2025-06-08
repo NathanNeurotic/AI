@@ -84,7 +84,19 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> <span class="chevron">▼</span>`;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> <span class="chevron">▼</span><span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
+            const viewToggle = categoryHeader.querySelector('.category-view-toggle');
+            viewToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleCategoryView(categoryId);
+            });
+            viewToggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleCategoryView(categoryId);
+                }
+            });
 
 
             const categoryContent = document.createElement('div');
@@ -119,6 +131,11 @@ async function loadServices() {
                 content.style.maxHeight = height + 'px';
                 chevron.classList.add('open');
                 header.setAttribute('aria-expanded', 'true');
+            }
+
+            const view = localStorage.getItem(`view-${id}`);
+            if (view === 'list') {
+                category.classList.add('list-view');
             }
         });
 
@@ -400,4 +417,13 @@ function toggleView() {
 }
 
 window.toggleView = toggleView;
+
+function toggleCategoryView(categoryId) {
+    const section = document.getElementById(categoryId);
+    if (!section) return;
+    const isList = section.classList.toggle('list-view');
+    localStorage.setItem(`view-${categoryId}`, isList ? 'list' : 'grid');
+}
+
+window.toggleCategoryView = toggleCategoryView;
 

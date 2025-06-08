@@ -20,6 +20,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
 *   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header.
 *   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
 *   **Favorites:** Mark services with the star icon to quickly access them in a dedicated "Favorites" category that persists using `localStorage`.
+*   **Category View Toggle:** Each category can switch between grid and list layouts independently, and the choice is remembered.
 
 ## Getting Started
 

@@ -202,6 +202,15 @@ body.block-view .category {
     transform: rotate(180deg);
 }
 
+.category-view-toggle {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.category-view-toggle:focus {
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
 .category-title {
     flex: 1;
     text-align: center;
@@ -236,6 +245,20 @@ body.block-view .category {
     max-height: var(--category-max-height);
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.category.list-view .category-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.category.list-view .service-button {
+    flex-direction: row;
+    align-items: center;
+}
+.category.list-view .service-name {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
 }
 
 .service-button {
@@ -310,6 +333,10 @@ body.block-view .category {
 .service-url {
     font-size: 1rem;
     word-break: break-all;
+}
+
+.category.list-view .service-url {
+    margin-left: auto;
 }
 
 .service-tags {
