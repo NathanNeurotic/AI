@@ -103,6 +103,20 @@ header {
     margin-left: 0.5rem;
 }
 
+#installBtn {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: none;
+}
+
 #header-favicon {
     display: block;
     width: 50px;
