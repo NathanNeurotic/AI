@@ -1,6 +1,5 @@
 const CACHE_NAME = 'ai-dashboard-cache-v1';
 const URLS_TO_CACHE = [
-  './',
   './index.html',
   './styles.css',
   './script.js',
