@@ -4,6 +4,7 @@ const MAX_CATEGORY_HEIGHT = 400; // px - limit for open category height
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
     applySavedView();
+    updateToggleButtons();
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
@@ -136,6 +137,10 @@ async function loadServices() {
             const view = localStorage.getItem(`view-${id}`);
             if (view === 'list') {
                 category.classList.add('list-view');
+                const toggle = header.querySelector('.category-view-toggle');
+                if (toggle) {
+                    toggle.classList.add('active');
+                }
             }
         });
 
@@ -400,6 +405,7 @@ function toggleTheme() {
     const isLight = document.body.classList.toggle('light-mode');
     document.documentElement.classList.toggle('light-mode', isLight);
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    updateToggleButtons();
 }
 
 window.toggleTheme = toggleTheme;
@@ -414,6 +420,7 @@ function applySavedView() {
 function toggleView() {
     const isBlock = document.body.classList.toggle('block-view');
     localStorage.setItem('view', isBlock ? 'block' : 'list');
+    updateToggleButtons();
 }
 
 window.toggleView = toggleView;
@@ -423,7 +430,22 @@ function toggleCategoryView(categoryId) {
     if (!section) return;
     const isList = section.classList.toggle('list-view');
     localStorage.setItem(`view-${categoryId}`, isList ? 'list' : 'grid');
+    const toggle = section.querySelector('.category-view-toggle');
+    if (toggle) {
+        toggle.classList.toggle('active', isList);
+    }
 }
 
 window.toggleCategoryView = toggleCategoryView;
+
+function updateToggleButtons() {
+    const themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+        themeBtn.classList.toggle('active', document.body.classList.contains('light-mode'));
+    }
+    const viewBtn = document.getElementById('viewToggle');
+    if (viewBtn) {
+        viewBtn.classList.toggle('active', document.body.classList.contains('block-view'));
+    }
+}
 
