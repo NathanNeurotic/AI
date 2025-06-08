@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/35ce02c4-4550-42a1-b37c-b5860d966489)
+![image](https://github.com/user-attachments/assets/ae546f20-b87e-4a4e-8f17-9d9dbbfc0507)
 # AI Services Dashboard
 
 ## Overview
