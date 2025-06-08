@@ -84,6 +84,11 @@ header {
     cursor: pointer;
     margin-top: 1rem;
 }
+#themeToggle.active,
+#viewToggle.active {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
 
 #viewToggle {
     background: none;
@@ -210,6 +215,12 @@ body.block-view .category {
     outline: 2px solid var(--text-color);
     outline-offset: 2px;
 }
+.category-view-toggle.active {
+    color: var(--accent-color);
+}
+body.block-view .category-view-toggle {
+    display: none;
+}
 
 .category-title {
     flex: 1;
@@ -259,6 +270,12 @@ body.block-view .category {
 .category.list-view .service-name {
     margin-bottom: 0;
     margin-right: 0.5rem;
+}
+.category.list-view .service-thumbnail {
+    width: 80px;
+    max-height: 60px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
 }
 
 .service-button {
