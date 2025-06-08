@@ -1,12 +1,12 @@
 const CACHE_NAME = 'ai-dashboard-cache-v1';
 const URLS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/services.json',
-  '/favicon.ico',
-  '/public/manifest.json'
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './services.json',
+  './favicon.ico',
+  './public/manifest.json'
 ];
 
 self.addEventListener('install', event => {
