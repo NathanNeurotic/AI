@@ -3,6 +3,7 @@ const MAX_CATEGORY_HEIGHT = 400; // px - limit for open category height
 
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
+    applySavedView();
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
@@ -378,4 +379,18 @@ function toggleTheme() {
 }
 
 window.toggleTheme = toggleTheme;
+
+function applySavedView() {
+    const saved = localStorage.getItem('view');
+    if (saved === 'block') {
+        document.body.classList.add('block-view');
+    }
+}
+
+function toggleView() {
+    const isBlock = document.body.classList.toggle('block-view');
+    localStorage.setItem('view', isBlock ? 'block' : 'list');
+}
+
+window.toggleView = toggleView;
 
