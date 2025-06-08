@@ -218,9 +218,6 @@ body.block-view .category {
 .category-view-toggle.active {
     color: var(--accent-color);
 }
-body.block-view .category-view-toggle {
-    display: none;
-}
 
 .category-title {
     flex: 1;
