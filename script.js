@@ -1,10 +1,38 @@
 let allServices = [];
+let deferredPrompt = null;
 const MAX_CATEGORY_HEIGHT = 400; // px - limit for open category height
 
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
     applySavedView();
     updateToggleButtons();
+
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+        installBtn.style.display = 'none';
+        installBtn.addEventListener('click', async () => {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            await deferredPrompt.userChoice;
+            deferredPrompt = null;
+            installBtn.style.display = 'none';
+        });
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        if (installBtn) {
+            installBtn.style.display = 'inline-block';
+        }
+    });
+
+    window.addEventListener('appinstalled', () => {
+        if (installBtn) {
+            installBtn.style.display = 'none';
+        }
+        deferredPrompt = null;
+    });
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
