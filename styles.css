@@ -52,6 +52,7 @@ html.light-mode {
 
 * {
     scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+    box-sizing: border-box;
 }
 ::-webkit-scrollbar {
     width: 8px;
