@@ -314,7 +314,14 @@ function renderFavoritesCategory() {
     let favoritesSection = document.getElementById('favorites');
     const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
     const favoritesSet = new Set(favorites);
-    const favoriteServices = allServices.filter(s => favoritesSet.has(s.url));
+    const favoriteServices = [];
+    const seen = new Set();
+    for (const service of allServices) {
+        if (favoritesSet.has(service.url) && !seen.has(service.url)) {
+            favoriteServices.push(service);
+            seen.add(service.url);
+        }
+    }
 
     if (favoriteServices.length === 0) {
         if (favoritesSection) {
