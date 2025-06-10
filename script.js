@@ -437,12 +437,13 @@ function renderFavoritesCategory() {
         return;
     }
 
+    let header;
     if (!favoritesSection) {
         favoritesSection = document.createElement('section');
         favoritesSection.className = 'category';
         favoritesSection.id = 'favorites';
 
-        const header = document.createElement('h2');
+        header = document.createElement('h2');
         header.innerHTML =
             `<span class="category-emoji">⭐</span>
              <span class="category-title">Favorites</span>
@@ -485,7 +486,7 @@ function renderFavoritesCategory() {
             mainContainer.prepend(favoritesSection);
         }
     } else {
-        const header = favoritesSection.querySelector('h2');
+        header = favoritesSection.querySelector('h2');
         if (header) {
             ensureClearFavoritesButton(header);
         }
@@ -497,6 +498,19 @@ function renderFavoritesCategory() {
         const btn = createServiceButton(service, favoritesSet);
         content.appendChild(btn);
     });
+
+    // Apply collapsed or expanded state based on stored preference
+    const state = localStorage.getItem('category-favorites');
+    const chevron = header.querySelector('.chevron');
+    if (state === 'closed') {
+        content.classList.remove('open');
+        if (chevron) chevron.classList.remove('open');
+        header.setAttribute('aria-expanded', 'false');
+    } else {
+        content.classList.add('open');
+        if (chevron) chevron.classList.add('open');
+        header.setAttribute('aria-expanded', 'true');
+    }
 
     const view = localStorage.getItem('view-favorites');
     if (view === 'list') {
