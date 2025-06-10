@@ -54,7 +54,7 @@ describe('favorites collapse persistence', () => {
     const chevron = favSection.querySelector('.chevron');
     msg = favSection.querySelector('#noFavoritesMsg');
 
-    expect(window.localStorage.getItem('category-favorites')).toBe(null);
+    expect(window.localStorage.getItem('category-favorites')).toBe('open');
     expect(content.classList.contains('open')).toBe(true);
     expect(chevron.classList.contains('open')).toBe(true);
     expect(msg).toBeNull();

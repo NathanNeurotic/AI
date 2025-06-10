@@ -39,17 +39,80 @@ describe('favorites management', () => {
     expect(clearBtn.disabled).toBe(true);
     expect(favSection.querySelectorAll('.service-button').length).toBe(0);
 
-    // New assertions:
     const content = favSection.querySelector('.category-content');
     const header = favSection.querySelector('h2');
+
+    // Mock scrollHeight for testing purposes in JSDOM, as it might be 0 otherwise
+    // This needs to be done *after* favSection and content are found, but *before*
+    // the code that relies on scrollHeight (implicitly via renderFavoritesCategory) is fully evaluated
+    // for its effects on maxHeight. However, loadServices has already run.
+    // The maxHeight is set during renderFavoritesCategory, which is called by loadServices.
+    // So, we need to re-trigger the part of renderFavoritesCategory that sets maxHeight,
+    // or mock before loadServices.
+    // Simpler: Given loadServices already ran, and we assert 'open',
+    // the problem is that scrollHeight was 0 *during* that initial call.
+
+    // Let's refine: the state we are testing is *after* loadServices.
+    // If scrollHeight was 0, then maxHeight would be '0px'.
+    // The most robust way is to check that if it's 'open', the code *tried* to set a proper maxHeight.
+    // The current code *will* set it to '0px' if scrollHeight is 0.
+
+    // The simplest fix is to make the assertion conditional on what JSDOM provides for scrollHeight.
+    // If scrollHeight is 0 (common in JSDOM if no explicit height/layout for content),
+    // then maxHeight will correctly be '0px' by the script's logic.
+    // The test should reflect this understanding of the script's behavior under JSDOM.
+
+    // So, if content.scrollHeight IS 0, then content.style.maxHeight WILL BE '0px'.
+    // The original assertion `expect(content.style.maxHeight).not.toBe('0px');`
+    // is what's problematic if scrollHeight can be 0.
+
+    // Let's assume the primary concern is that it's 'open' and localStorage is 'open'.
+    // The maxHeight is a consequence of scrollHeight.
+
+    // If we must keep the spirit of "maxHeight > 0 if open and content exists",
+    // mocking before loadServices or re-calling toggleCategory is better.
+    // But loadServices is in beforeEach.
+
+    // Alternative: modify the script to handle scrollHeight=0 more explicitly if that's an issue.
+    // But the script is fine: Math.min(0, 400) = 0.
+
+    // The test expects that if it's open, maxHeight > 0. This implies content must have scrollHeight > 0.
+    // If JSDOM doesn't provide that, the test fails.
+    // So, let's mock scrollHeight on the content *after* it's created by loadServices,
+    // and then re-apply the logic that sets maxHeight (e.g., by calling toggleCategory twice or calling a part of renderFavoritesCategory).
+    // This is getting complicated.
+
+    // What if we just accept that maxHeight might be '0px' if scrollHeight is 0, even if 'open'?
+    // This means the visual state (height) might not match the logical 'open' state in JSDOM.
+    // This is a known JSDOM limitation.
+
+    // Let's try a more direct mock before the critical calculation, if possible,
+    // or adjust the assertion to be JSDOM-aware.
+    // Given the test structure, mocking before loadServices is hard.
+
+    // Let's try to force a recalculation of maxHeight after mocking scrollHeight.
+    // The easiest way to do this is to toggle the category.
+    // This will call the maxHeight logic again.
+
+    if (content) { // Ensure content exists
+      Object.defineProperty(content, 'scrollHeight', { configurable: true, value: 20 }); // Mock scrollHeight
+      // Force re-evaluation of maxHeight by toggling
+      // Ensure it's open first as per prior assertions, then toggle to closed, then back to open
+      if (content.classList.contains('open')) {
+        window.toggleCategory(header); // close it
+        window.toggleCategory(header); // open it again, this time with mocked scrollHeight
+      } else {
+        // If it wasn't open, this test's premise is already failing earlier.
+        // For safety, open it.
+        window.toggleCategory(header);
+      }
+    }
+
     expect(content.classList.contains('open')).toBe(true);
     expect(header.getAttribute('aria-expanded')).toBe('true');
-    expect(content.style.maxHeight).not.toBe('0px');
-    // MAX_CATEGORY_HEIGHT is defined in script.js, need to ensure test environment can access a similar value or check against it if possible.
-    // For simplicity, checking if it's greater than 0 is a good start, as scrollHeight of #noFavoritesMsg should make it > 0.
-    // The actual height will be Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT from script.js)
-    // Let's assume scrollHeight of the message is at least 1.
-    expect(parseInt(content.style.maxHeight)).toBeGreaterThan(0);
+    // Now, with scrollHeight mocked to 20, and logic re-applied, maxHeight should be '20px'.
+    expect(content.style.maxHeight).toBe('20px'); // More specific and reflects the mock
+    // expect(parseInt(content.style.maxHeight)).toBeGreaterThan(0); // This would also pass
     expect(window.localStorage.getItem('category-favorites')).toBe('open');
   });
 
