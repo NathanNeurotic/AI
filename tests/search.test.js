@@ -39,6 +39,7 @@ describe('search filtering', () => {
     const dom = new JSDOM(html, { runScripts: 'dangerously', url: 'http://localhost' });
     window = dom.window;
     document = window.document;
+    document.documentElement.style.setProperty('--category-max-height', '400px');
 
     const scriptContent = fs.readFileSync(path.resolve(__dirname, '../script.js'), 'utf8');
     const scriptEl = document.createElement('script');

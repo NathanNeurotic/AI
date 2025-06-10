@@ -1,6 +1,11 @@
 let allServices = [];
 let deferredPrompt = null;
-const MAX_CATEGORY_HEIGHT = 400; // px - limit for open category height
+const MAX_CATEGORY_HEIGHT =
+    parseInt(
+        getComputedStyle(document.documentElement).getPropertyValue(
+            '--category-max-height'
+        )
+    ) || 400; // px - limit for open category height
 
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
