@@ -379,6 +379,13 @@ function updateStars() {
     renderFavoritesCategory();
 }
 
+function clearFavorites() {
+    localStorage.removeItem('favorites');
+    updateStars();
+}
+
+window.clearFavorites = clearFavorites;
+
 function renderFavoritesCategory() {
     const mainContainer = document.querySelector('main');
     let favoritesSection = document.getElementById('favorites');
@@ -436,7 +443,14 @@ function renderFavoritesCategory() {
 
         const content = document.createElement('div');
         content.className = 'category-content open';
+
+        const clearBtn = document.createElement('button');
+        clearBtn.id = 'clearFavoritesBtn';
+        clearBtn.textContent = 'Clear Favorites';
+        clearBtn.addEventListener('click', clearFavorites);
+
         favoritesSection.appendChild(header);
+        favoritesSection.appendChild(clearBtn);
         favoritesSection.appendChild(content);
 
         const searchContainer = mainContainer.querySelector('.search-container');
@@ -444,6 +458,16 @@ function renderFavoritesCategory() {
             mainContainer.insertBefore(favoritesSection, searchContainer.nextSibling);
         } else {
             mainContainer.prepend(favoritesSection);
+        }
+    } else {
+        let btn = favoritesSection.querySelector('#clearFavoritesBtn');
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.id = 'clearFavoritesBtn';
+            btn.textContent = 'Clear Favorites';
+            btn.addEventListener('click', clearFavorites);
+            const content = favoritesSection.querySelector('.category-content');
+            favoritesSection.insertBefore(btn, content);
         }
     }
 
