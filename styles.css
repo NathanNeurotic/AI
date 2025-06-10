@@ -251,6 +251,13 @@ body.block-view .category {
     box-shadow: 0 0 8px rgba(102, 178, 102, 0.3);
 }
 
+.no-results {
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 1rem;
+}
+
 .category {
     margin-bottom: 1.5rem;
 }

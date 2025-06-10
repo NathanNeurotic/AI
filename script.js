@@ -211,6 +211,17 @@ function setupSearch() {
             button.style.display = (name.includes(query) || url.includes(query) || tagsMatch) ? 'flex' : 'none';
         });
 
+        const visibleButtons = Array.from(document.querySelectorAll('.service-button'))
+            .filter(btn => btn.style.display !== 'none').length;
+        const noResultsEl = document.getElementById('noResults');
+        if (noResultsEl) {
+            if (query !== '' && visibleButtons === 0) {
+                noResultsEl.hidden = false;
+            } else {
+                noResultsEl.hidden = true;
+            }
+        }
+
         // Optional: Hide categories if all services within them are hidden
         document.querySelectorAll('.category').forEach(category => {
             const services = category.querySelectorAll('.service-button');
