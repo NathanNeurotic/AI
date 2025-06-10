@@ -117,6 +117,18 @@ header {
     display: none;
 }
 
+#clearFavoritesBtn {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
 #sidebar {
     position: fixed;
     top: 0;
