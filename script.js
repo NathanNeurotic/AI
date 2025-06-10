@@ -243,7 +243,9 @@ function setupSearch() {
 }
 
 function toggleCategory(header) {
-    const content = header.nextElementSibling;
+    // Always target the category content element even if other elements
+    // are inserted between the header and the content (e.g. clear button)
+    const content = header.parentElement.querySelector('.category-content');
     const chevron = header.querySelector('.chevron');
     const isOpen = content.classList.contains('open');
     const categoryId = header.parentElement.id;
