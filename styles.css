@@ -143,10 +143,23 @@ header {
     color: var(--text-color);
     text-decoration: none;
     margin-bottom: 0.5rem;
+    padding: 0.25rem 0 0.25rem 1rem;
+    border-bottom: 1px solid var(--text-color);
+    position: relative;
+}
+
+#sidebar a::before {
+    content: "\2022"; /* bullet */
+    position: absolute;
+    left: 0;
+}
+
+#sidebar a:last-child {
+    border-bottom: none;
 }
 
 #sidebarToggle {
-    background: none;
+    background: var(--button-gradient);
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
