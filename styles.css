@@ -192,6 +192,14 @@ header {
     left: calc(200px + 1rem);
 }
 
+body.sidebar-open header,
+body.sidebar-open main,
+body.sidebar-open footer {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
 #header-favicon {
     display: block;
     width: 50px;
@@ -402,7 +410,7 @@ body.block-view .category {
 .service-favicon {
     width: 16px;
     height: 16px;
-    margin-right: 8px;
+    margin-right: 4px;
     vertical-align: middle;
 }
 
@@ -435,8 +443,9 @@ body.block-view .category {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 0.25rem;
     word-break: break-word;
 }
 
