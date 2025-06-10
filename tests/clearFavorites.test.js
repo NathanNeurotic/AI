@@ -48,7 +48,7 @@ describe('clearFavorites button', () => {
     btn.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
     expect(window.localStorage.getItem('favorites')).toBe(null);
-    expect(window.localStorage.getItem('category-favorites')).toBe(null);
+    expect(window.localStorage.getItem('category-favorites')).toBe('open');
     expect(window.localStorage.getItem('view-favorites')).toBe(null);
     favSection = document.getElementById('favorites');
     expect(favSection).not.toBeNull();

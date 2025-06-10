@@ -542,9 +542,9 @@ function renderFavoritesCategory() {
         const height = Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT);
         content.style.maxHeight = height + 'px';
 
-        // If the section is empty and its stored state was 'closed', or if no state was stored,
-        // update localStorage to 'open' because we are now defaulting it to open.
-        if (storedState === null || (favoriteServices.length === 0 && storedState === 'closed')) {
+        // If the section is empty and it was previously closed, or if it's the first time loading (no state stored),
+        // default to open and save this state.
+        if ((favoriteServices.length === 0 && storedState === 'closed') || storedState === null) {
             localStorage.setItem('category-favorites', 'open');
         }
     } else {

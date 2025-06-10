@@ -26,6 +26,17 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  const requestUrl = new URL(event.request.url);
+
+  // Network first for script.js and services.json
+  if (requestUrl.pathname.endsWith('/script.js') || requestUrl.pathname.endsWith('/services.json')) {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Cache first for other requests
   event.respondWith(
     caches.match(event.request).then(response => response || fetch(event.request))
   );
