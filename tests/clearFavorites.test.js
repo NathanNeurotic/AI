@@ -33,7 +33,7 @@ describe('clearFavorites button', () => {
     dom.window.close();
   });
 
-  test('clearing favorites removes section and resets star', () => {
+  test('clearing favorites disables button and shows message', () => {
     let favSection = document.getElementById('favorites');
     const star = document.querySelector('.favorite-star');
     const btn = document.getElementById('clearFavoritesBtn');
@@ -51,7 +51,11 @@ describe('clearFavorites button', () => {
     expect(window.localStorage.getItem('category-favorites')).toBe(null);
     expect(window.localStorage.getItem('view-favorites')).toBe(null);
     favSection = document.getElementById('favorites');
-    expect(favSection).toBeNull();
+    expect(favSection).not.toBeNull();
+    expect(favSection.querySelectorAll('.service-button').length).toBe(0);
+    const msg = favSection.querySelector('#noFavoritesMsg');
+    expect(msg).not.toBeNull();
+    expect(btn.disabled).toBe(true);
     expect(star.textContent).toBe('☆');
   });
 });

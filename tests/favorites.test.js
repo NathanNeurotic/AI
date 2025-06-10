@@ -30,6 +30,16 @@ describe('favorites management', () => {
     dom.window.close();
   });
 
+  test('initially shows empty favorites section', () => {
+    const favSection = document.getElementById('favorites');
+    expect(favSection).not.toBeNull();
+    const msg = favSection.querySelector('#noFavoritesMsg');
+    expect(msg).not.toBeNull();
+    const clearBtn = document.getElementById('clearFavoritesBtn');
+    expect(clearBtn.disabled).toBe(true);
+    expect(favSection.querySelectorAll('.service-button').length).toBe(0);
+  });
+
   test('adding and removing favorites updates storage and UI', () => {
     const star = document.querySelector('.favorite-star');
     star.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
@@ -44,7 +54,12 @@ describe('favorites management', () => {
 
     expect(window.localStorage.getItem('favorites')).toBe(JSON.stringify([]));
     favSection = document.querySelector('#favorites');
-    expect(favSection).toBeNull();
+    expect(favSection).not.toBeNull();
+    expect(favSection.querySelectorAll('.service-button').length).toBe(0);
+    const msg = favSection.querySelector('#noFavoritesMsg');
+    expect(msg).not.toBeNull();
+    const clearBtn = document.getElementById('clearFavoritesBtn');
+    expect(clearBtn.disabled).toBe(true);
   });
 
   test('toggling favorites via keyboard events', () => {
@@ -61,7 +76,9 @@ describe('favorites management', () => {
 
     expect(window.localStorage.getItem('favorites')).toBe(JSON.stringify([]));
     favSection = document.querySelector('#favorites');
-    expect(favSection).toBeNull();
+    expect(favSection).not.toBeNull();
+    const msg = favSection.querySelector('#noFavoritesMsg');
+    expect(msg).not.toBeNull();
     expect(star.textContent).toBe('☆');
   });
 });
