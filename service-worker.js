@@ -1,4 +1,5 @@
-const CACHE_NAME = 'ai-dashboard-cache-v1';
+// Bump cache version to ensure users receive the latest files
+const CACHE_NAME = 'ai-dashboard-cache-v2';
 const URLS_TO_CACHE = [
   './index.html',
   './styles.css',
