@@ -15,6 +15,7 @@ describe('loadServices error handling', () => {
     const scriptContent = fs.readFileSync(path.resolve(__dirname, '../script.js'), 'utf8');
     const scriptEl = document.createElement('script');
     scriptEl.textContent = scriptContent;
+    window.fetch = jest.fn(); // Mock fetch before script execution
     document.body.appendChild(scriptEl);
   });
 

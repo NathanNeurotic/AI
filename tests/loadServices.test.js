@@ -15,7 +15,6 @@ describe('loadServices', () => {
     const scriptContent = fs.readFileSync(path.resolve(__dirname, '../script.js'), 'utf8');
     const scriptEl = document.createElement('script');
     scriptEl.textContent = scriptContent;
-    document.body.appendChild(scriptEl);
 
     const servicesData = [
       {
@@ -31,6 +30,7 @@ describe('loadServices', () => {
     window.fetch = jest.fn(() =>
       Promise.resolve({ ok: true, json: () => Promise.resolve(servicesData) })
     );
+    document.body.appendChild(scriptEl);
 
     await window.loadServices();
   });
@@ -41,24 +41,25 @@ describe('loadServices', () => {
 
   test('renders categories alphabetically', () => {
     const sections = document.querySelectorAll('.category');
-    expect(sections[0].id).toBe('apple');
-    expect(sections[1].id).toBe('banana');
+    expect(sections[0].id).toBe('favorites');
+    expect(sections[1].id).toBe('apple');
+    expect(sections[2].id).toBe('banana');
   });
 
   test('localStorage key uses category id', () => {
-    const firstHeader = document.querySelector('.category h2');
-    window.toggleCategory(firstHeader);
+    const appleHeader = document.querySelectorAll('.category h2')[1];
+    window.toggleCategory(appleHeader);
     expect(window.localStorage.getItem('category-apple')).toBe('open');
   });
 
   test('pressing Enter toggles the category', () => {
-    const firstHeader = document.querySelector('.category h2');
-    const content = firstHeader.parentElement.querySelector('.category-content');
+    const appleHeader = document.querySelectorAll('.category h2')[1];
+    const content = appleHeader.parentElement.querySelector('.category-content');
 
     expect(content.classList.contains('open')).toBe(false);
 
     const event = new window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true });
-    firstHeader.dispatchEvent(event);
+    appleHeader.dispatchEvent(event);
 
     expect(content.classList.contains('open')).toBe(true);
   });
