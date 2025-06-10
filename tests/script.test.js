@@ -15,6 +15,7 @@ describe('toggleCategory', () => {
   const dom = new JSDOM(html, { runScripts: 'dangerously', url: 'http://localhost' });
     window = dom.window;
     document = window.document;
+    document.documentElement.style.setProperty('--category-max-height', '400px');
     header = document.querySelector('h2');
     content = document.querySelector('.category-content');
     chevron = document.querySelector('.chevron');
