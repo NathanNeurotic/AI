@@ -15,7 +15,6 @@ describe('sidebar navigation', () => {
     const scriptContent = fs.readFileSync(path.resolve(__dirname, '../script.js'), 'utf8');
     const scriptEl = document.createElement('script');
     scriptEl.textContent = scriptContent;
-    document.body.appendChild(scriptEl);
 
     const services = [
       { name: 'One', url: 'http://one.com', category: 'Alpha' },
@@ -23,6 +22,7 @@ describe('sidebar navigation', () => {
     ];
 
     window.fetch = jest.fn(() => Promise.resolve({ ok: true, json: () => Promise.resolve(services) }));
+    document.body.appendChild(scriptEl);
 
     await window.loadServices();
   });
@@ -33,10 +33,14 @@ describe('sidebar navigation', () => {
 
   test('buildSidebar lists categories and repo link', () => {
     const links = document.querySelectorAll('#sidebar a');
-    expect(links.length).toBe(3);
-    expect(links[0].getAttribute('href')).toBe('#alpha');
-    expect(links[0].textContent).toBe('Alpha');
-    expect(links[2].getAttribute('href')).toBe('https://www.github.com/NathanNeurotic/AI');
+    expect(links.length).toBe(4);
+    expect(links[0].getAttribute('href')).toBe('#favorites');
+    expect(links[0].textContent).toBe('Favorites');
+    expect(links[1].getAttribute('href')).toBe('#alpha');
+    expect(links[1].textContent).toBe('Alpha');
+    expect(links[2].getAttribute('href')).toBe('#beta');
+    expect(links[2].textContent).toBe('Beta');
+    expect(links[3].getAttribute('href')).toBe('https://www.github.com/NathanNeurotic/AI');
   });
 
   test('toggleSidebar toggles open class', () => {
