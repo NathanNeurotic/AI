@@ -389,6 +389,8 @@ function updateStars() {
 
 function clearFavorites() {
     localStorage.removeItem('favorites');
+    localStorage.removeItem('category-favorites');
+    localStorage.removeItem('view-favorites');
     updateStars();
 }
 
