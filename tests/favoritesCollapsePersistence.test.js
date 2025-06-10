@@ -30,7 +30,7 @@ describe('favorites collapse persistence', () => {
     dom.window.close();
   });
 
-  test('favorites remain collapsed after clearing and re-adding', () => {
+  test('favorites section persists with message after clearing and updates on re-add', () => {
     const star = document.querySelector('.favorite-star');
     star.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
@@ -42,15 +42,22 @@ describe('favorites collapse persistence', () => {
     const clearBtn = document.getElementById('clearFavoritesBtn');
     clearBtn.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
+    let favSection = document.getElementById('favorites');
+    let msg = favSection.querySelector('#noFavoritesMsg');
+    expect(msg).not.toBeNull();
+    expect(clearBtn.disabled).toBe(true);
+
     star.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
-    const favSection = document.getElementById('favorites');
+    favSection = document.getElementById('favorites');
     const content = favSection.querySelector('.category-content');
     const chevron = favSection.querySelector('.chevron');
+    msg = favSection.querySelector('#noFavoritesMsg');
 
-    expect(window.localStorage.getItem('category-favorites')).toBe('closed');
-    expect(content.classList.contains('open')).toBe(false);
-    expect(chevron.classList.contains('open')).toBe(false);
-    expect(favSection.querySelector('h2').getAttribute('aria-expanded')).toBe('false');
+    expect(window.localStorage.getItem('category-favorites')).toBe(null);
+    expect(content.classList.contains('open')).toBe(true);
+    expect(chevron.classList.contains('open')).toBe(true);
+    expect(msg).toBeNull();
+    expect(clearBtn.disabled).toBe(false);
   });
 });

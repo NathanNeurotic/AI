@@ -432,13 +432,6 @@ function renderFavoritesCategory() {
         }
     }
 
-    if (favoriteServices.length === 0) {
-        if (favoritesSection) {
-            favoritesSection.remove();
-        }
-        return;
-    }
-
     let header;
     if (!favoritesSection) {
         favoritesSection = document.createElement('section');
@@ -496,10 +489,22 @@ function renderFavoritesCategory() {
 
     const content = favoritesSection.querySelector('.category-content');
     content.innerHTML = '';
-    favoriteServices.forEach(service => {
-        const btn = createServiceButton(service, favoritesSet);
-        content.appendChild(btn);
-    });
+
+    if (favoriteServices.length === 0) {
+        const msg = document.createElement('p');
+        msg.id = 'noFavoritesMsg';
+        msg.textContent = 'No favorites saved.';
+        content.appendChild(msg);
+        const clearBtn = header.querySelector('#clearFavoritesBtn');
+        if (clearBtn) clearBtn.disabled = true;
+    } else {
+        favoriteServices.forEach(service => {
+            const btn = createServiceButton(service, favoritesSet);
+            content.appendChild(btn);
+        });
+        const clearBtn = header.querySelector('#clearFavoritesBtn');
+        if (clearBtn) clearBtn.disabled = false;
+    }
 
     // Apply collapsed or expanded state based on stored preference
     const state = localStorage.getItem('category-favorites');
