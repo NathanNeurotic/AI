@@ -58,4 +58,17 @@ describe('clearFavorites button', () => {
     expect(btn.disabled).toBe(true);
     expect(star.textContent).toBe('☆');
   });
+
+  test('button re-enabled after favorite re-added', () => {
+    const star = document.querySelector('.favorite-star');
+    const btn = document.getElementById('clearFavoritesBtn');
+
+    btn.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+
+    expect(btn.disabled).toBe(true);
+
+    star.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+
+    expect(btn.disabled).toBe(false);
+  });
 });

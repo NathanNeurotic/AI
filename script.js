@@ -495,15 +495,17 @@ function renderFavoritesCategory() {
         msg.id = 'noFavoritesMsg';
         msg.textContent = 'No favorites saved.';
         content.appendChild(msg);
-        const clearBtn = header.querySelector('#clearFavoritesBtn');
-        if (clearBtn) clearBtn.disabled = true;
     } else {
         favoriteServices.forEach(service => {
             const btn = createServiceButton(service, favoritesSet);
             content.appendChild(btn);
         });
-        const clearBtn = header.querySelector('#clearFavoritesBtn');
-        if (clearBtn) clearBtn.disabled = false;
+    }
+
+    ensureClearFavoritesButton(header);
+    const btn = header.querySelector('#clearFavoritesBtn');
+    if (btn) {
+        btn.disabled = favoriteServices.length === 0;
     }
 
     // Apply collapsed or expanded state based on stored preference
