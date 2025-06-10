@@ -52,7 +52,7 @@ describe('loadServices', () => {
 
   test('pressing Enter toggles the category', () => {
     const firstHeader = document.querySelector('.category h2');
-    const content = firstHeader.nextElementSibling;
+    const content = firstHeader.parentElement.querySelector('.category-content');
 
     expect(content.classList.contains('open')).toBe(false);
 
