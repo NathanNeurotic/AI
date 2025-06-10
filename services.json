@@ -4,7 +4,10 @@
         "url": "https://www.3daistudio.com/",
         "favicon_url": "https://www.3daistudio.com/favicon.ico",
         "category": "🔮 3D Modeling",
-        "tags": ["modeling", "design"],
+        "tags": [
+            "modeling",
+            "design"
+        ],
         "thumbnail_url": "https://example.com/thumbs/3d-ai-studio.png"
     },
     {
@@ -12,7 +15,9 @@
         "url": "https://3daimaker.com/",
         "favicon_url": "https://3daimaker.com/favicon.ico",
         "category": "🔮 3D Modeling",
-        "tags": ["creator"]
+        "tags": [
+            "creator"
+        ]
     },
     {
         "name": "AI 3D Model Generator",
@@ -36,12 +41,6 @@
         "name": "Backflip AI",
         "url": "https://www.backflip.ai/",
         "favicon_url": "https://www.backflip.ai/favicon.ico",
-        "category": "🔮 3D Modeling"
-    },
-    {
-        "name": "Bing Image Creator",
-        "url": "https://www.bing.com/images/create?&amp;ctype=image#",
-        "favicon_url": "https://www.bing.com/favicon.ico",
         "category": "🔮 3D Modeling"
     },
     {
@@ -289,20 +288,10 @@
         "url": "https://claude.ai/new",
         "favicon_url": "https://claude.ai/favicon.ico",
         "category": "👽 All-in-One",
-        "tags": ["chatbot", "anthropic"]
-    },
-    {
-        "name": "Claude",
-        "url": "https://claude.ai/new",
-        "favicon_url": "https://claude.ai/favicon.ico",
-        "category": "💻 Coding and Development",
-        "tags": ["chatbot", "anthropic"]
-    },
-    {
-        "name": "Cody",
-        "url": "https://sourcegraph.com/cody",
-        "favicon_url": "https://sourcegraph.com/favicon.ico",
-        "category": "👽 All-in-One"
+        "tags": [
+            "anthropic",
+            "chatbot"
+        ]
     },
     {
         "name": "Copy.ai",
@@ -356,7 +345,8 @@
         "name": "Jasper",
         "url": "https://www.jasper.ai/",
         "favicon_url": "https://www.jasper.ai/favicon.ico",
-        "category": "👽 All-in-One"
+        "category": "👽 All-in-One",
+        "thumbnail_url": "https://example.com/thumbs/jasper.png"
     },
     {
         "name": "Meta AI",
@@ -423,7 +413,9 @@
         "url": "https://writer.com/",
         "favicon_url": "https://writer.com/favicon.ico",
         "category": "👽 All-in-One",
-        "tags": ["writing"]
+        "tags": [
+            "writing"
+        ]
     },
     {
         "name": "Writesonic",
@@ -739,12 +731,6 @@
         "category": "🌐 Developer Platforms and APIs"
     },
     {
-        "name": "Google Labs",
-        "url": "https://labs.google.com/",
-        "favicon_url": "https://labs.google.com/favicon.ico",
-        "category": "🌐 Developer Platforms and APIs"
-    },
-    {
         "name": "Google Vertex AI",
         "url": "https://console.cloud.google.com/vertex-ai/studio/overview",
         "favicon_url": "https://console.cloud.google.com/favicon.ico",
@@ -889,51 +875,9 @@
         "category": "✨ Google Ecosystem"
     },
     {
-        "name": "Gemini API Docs (Garden)",
-        "url": "https://ai.google.dev/gemini-api/docs?utm_source=gfd&amp;utm_medium=referral&amp;utm_campaign=ai_logo_garden&amp;utm_content",
-        "favicon_url": "https://ai.google.dev/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Gemini Nano (Android)",
-        "url": "https://developer.android.com/ai/gemini-nano",
-        "favicon_url": "https://developer.android.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google AI Edge",
-        "url": "https://ai.google.dev/edge",
-        "favicon_url": "https://ai.google.dev/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google AI Studio",
-        "url": "https://aistudio.google.com/prompts/new_chat",
-        "favicon_url": "https://aistudio.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google AI Studio (Garden)",
-        "url": "https://aistudio.google.com/app/prompts/new_chat?utm_source=gfd&amp;utm_medium=referral&amp;utm_campaign=home_garden&amp;utm_content=",
-        "favicon_url": "https://aistudio.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
         "name": "Google Cloud",
         "url": "https://cloud.google.com/",
         "favicon_url": "https://cloud.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Cloud Shell",
-        "url": "https://shell.cloud.google.com/",
-        "favicon_url": "https://shell.cloud.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Cloud Solutions Catalog",
-        "url": "https://console.cloud.google.com/products/solutions/catalog?inv=1&amp;invt=Aby_hw&amp;project=engaged-timing-jxcbk",
-        "favicon_url": "https://console.cloud.google.com/favicon.ico",
         "category": "✨ Google Ecosystem"
     },
     {
@@ -949,34 +893,9 @@
         "category": "✨ Google Ecosystem"
     },
     {
-        "name": "Google Code Assist",
-        "url": "https://codeassist.google.com/",
-        "favicon_url": "https://codeassist.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem",
-        "thumbnail_url": "https://example.com/thumbs/google-code-assist.png"
-    },
-    {
         "name": "Google DeepMind",
         "url": "https://deepmind.google/",
         "favicon_url": "https://deepmind.google/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Developers",
-        "url": "https://developers.google.com/",
-        "favicon_url": "https://developers.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Gemini",
-        "url": "https://gemini.google.com/",
-        "favicon_url": "https://gemini.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Home Projects Console",
-        "url": "https://console.home.google.com/projects?pli=1",
-        "favicon_url": "https://console.home.google.com/favicon.ico",
         "category": "✨ Google Ecosystem"
     },
     {
@@ -1013,24 +932,6 @@
         "name": "Google Research",
         "url": "https://research.google/",
         "favicon_url": "https://research.google/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Vertex AI",
-        "url": "https://console.cloud.google.com/vertex-ai/studio/overview",
-        "favicon_url": "https://console.cloud.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Google Vertex AI Studio (Engaged)",
-        "url": "https://console.cloud.google.com/vertex-ai/studio/overview?inv=1&amp;invt=Aby_kQ&amp;project=engaged-timing-jxcbk",
-        "favicon_url": "https://console.cloud.google.com/favicon.ico",
-        "category": "✨ Google Ecosystem"
-    },
-    {
-        "name": "Jules",
-        "url": "https://jules.google.com/",
-        "favicon_url": "https://jules.google.com/favicon.ico",
         "category": "✨ Google Ecosystem"
     },
     {
@@ -1115,12 +1016,6 @@
         "name": "Canva AI",
         "url": "https://www.canva.com/ai/",
         "favicon_url": "https://www.canva.com/favicon.ico",
-        "category": "🎨 Image Generation and Design"
-    },
-    {
-        "name": "ChatGPT",
-        "url": "https://www.chatgpt.com/",
-        "favicon_url": "https://www.chatgpt.com/favicon.ico",
         "category": "🎨 Image Generation and Design"
     },
     {
@@ -1295,15 +1190,12 @@
         "name": "Hugging Face",
         "url": "https://huggingface.co/",
         "favicon_url": "https://huggingface.co/favicon.ico",
-        "category": "🔍 Research and Data Analysis",
-        "tags": ["models", "datasets", "transformers"]
-    },
-    {
-        "name": "Hugging Face",
-        "url": "https://huggingface.co/",
-        "favicon_url": "https://huggingface.co/favicon.ico",
         "category": "🌐 Developer Platforms and APIs",
-        "tags": ["models", "datasets", "transformers"]
+        "tags": [
+            "datasets",
+            "models",
+            "transformers"
+        ]
     },
     {
         "name": "IBM Watson",
@@ -1321,12 +1213,6 @@
         "name": "Kahoot! AI",
         "url": "https://kahoot.com/ai/",
         "favicon_url": "https://kahoot.com/favicon.ico",
-        "category": "🔍 Research and Data Analysis"
-    },
-    {
-        "name": "NotebookLM",
-        "url": "https://notebooklm.google/",
-        "favicon_url": "https://notebooklm.google/favicon.ico",
         "category": "🔍 Research and Data Analysis"
     },
     {
@@ -1450,12 +1336,6 @@
         "category": "🤖 Specialized"
     },
     {
-        "name": "Sora",
-        "url": "https://sora.chatgpt.com/",
-        "favicon_url": "https://sora.chatgpt.com/favicon.ico",
-        "category": "🤖 Specialized"
-    },
-    {
         "name": "Sportradar AI",
         "url": "https://www.sportradar.com/ai",
         "favicon_url": "https://www.sportradar.com/favicon.ico",
@@ -1558,12 +1438,6 @@
         "category": "🎬 Video Generation and Editing"
     },
     {
-        "name": "Luma Labs",
-        "url": "https://lumalabs.ai/",
-        "favicon_url": "https://lumalabs.ai/favicon.ico",
-        "category": "🎬 Video Generation and Editing"
-    },
-    {
         "name": "Neural Frames",
         "url": "https://www.neuralframes.com/",
         "favicon_url": "https://www.neuralframes.com/favicon.ico",
@@ -1640,38 +1514,6 @@
         "url": "https://sourcegraph.com/cody",
         "favicon_url": "https://sourcegraph.com/favicon.ico",
         "category": "💻 Coding and Development"
-    },
-    {
-        "name": "GitHub Copilot",
-        "url": "https://github.com/features/copilot",
-        "favicon_url": "https://github.com/favicon.ico",
-        "category": "👽 All-in-One"
-    },
-    {
-        "name": "Jasper",
-        "url": "https://www.jasper.ai/",
-        "favicon_url": "https://www.jasper.ai/favicon.ico",
-        "category": "📚 Articles and Reviews",
-        "thumbnail_url": "https://example.com/thumbs/jasper.png"
-    },
-    {
-        "name": "Sudowrite",
-        "url": "https://www.sudowrite.com/",
-        "favicon_url": "https://www.sudowrite.com/favicon.ico",
-        "category": "📚 Articles and Reviews"
-    },
-    {
-        "name": "Writer.com",
-        "url": "https://writer.com/",
-        "favicon_url": "https://writer.com/favicon.ico",
-        "category": "📚 Articles and Reviews",
-        "tags": ["writing"]
-    },
-    {
-        "name": "Writesonic",
-        "url": "https://writesonic.com/",
-        "favicon_url": "https://writesonic.com/favicon.ico",
-        "category": "📚 Articles and Reviews"
     },
     {
         "name": "Luma Labs",
