@@ -449,10 +449,21 @@ function renderFavoritesCategory() {
         const clearBtn = document.createElement('button');
         clearBtn.id = 'clearFavoritesBtn';
         clearBtn.textContent = 'Clear Favorites';
-        clearBtn.addEventListener('click', clearFavorites);
+        clearBtn.type = 'button';
+        clearBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            clearFavorites();
+        });
+        clearBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                e.stopPropagation();
+                clearFavorites();
+            }
+        });
 
         favoritesSection.appendChild(header);
-        favoritesSection.appendChild(clearBtn);
+        header.appendChild(clearBtn);
         favoritesSection.appendChild(content);
 
         const searchContainer = mainContainer.querySelector('.search-container');
@@ -467,9 +478,20 @@ function renderFavoritesCategory() {
             btn = document.createElement('button');
             btn.id = 'clearFavoritesBtn';
             btn.textContent = 'Clear Favorites';
-            btn.addEventListener('click', clearFavorites);
-            const content = favoritesSection.querySelector('.category-content');
-            favoritesSection.insertBefore(btn, content);
+            btn.type = 'button';
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                clearFavorites();
+            });
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    clearFavorites();
+                }
+            });
+            const header = favoritesSection.querySelector('h2');
+            header.appendChild(btn);
         }
     }
 
