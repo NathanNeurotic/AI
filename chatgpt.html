@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini 2.5 Pro vs GPT-4.5 Comparison</title>
     <link rel="manifest" href="public/manifest.json">
+    <link rel="stylesheet" href="styles.css">
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
@@ -21,6 +22,8 @@
     </style>
 </head>
 <body>
+    <nav id="sidebar"></nav>
+    <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
 
 <h1>Gemini 2.5 Pro vs GPT-4.5 (ChatGPT)</h1>
 
@@ -143,5 +146,6 @@
       navigator.serviceWorker.register('service-worker.js');
     }
 </script>
+<script src="./script.js"></script>
 </body>
 </html>
