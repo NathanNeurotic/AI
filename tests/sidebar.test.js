@@ -30,11 +30,12 @@ describe('sidebar navigation', () => {
     window.close();
   });
 
-  test('buildSidebar lists categories', () => {
+  test('buildSidebar lists categories and repo link', () => {
     const links = document.querySelectorAll('#sidebar a');
-    expect(links.length).toBe(2);
+    expect(links.length).toBe(3);
     expect(links[0].getAttribute('href')).toBe('#alpha');
     expect(links[0].textContent).toBe('Alpha');
+    expect(links[2].getAttribute('href')).toBe('https://www.github.com/NathanNeurotic/AI');
   });
 
   test('toggleSidebar toggles open class', () => {

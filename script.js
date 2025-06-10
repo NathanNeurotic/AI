@@ -531,6 +531,12 @@ function buildSidebar() {
         });
         sidebar.appendChild(link);
     });
+    const repoLink = document.createElement('a');
+    repoLink.href = 'https://www.github.com/NathanNeurotic/AI';
+    repoLink.textContent = 'GitHub Repository';
+    repoLink.target = '_blank';
+    repoLink.rel = 'noopener noreferrer';
+    sidebar.appendChild(repoLink);
 }
 
 function toggleSidebar() {
