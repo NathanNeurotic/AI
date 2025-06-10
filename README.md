@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/ae546f20-b87e-4a4e-8f17-9d9dbbfc0507)
+[![image](https://github.com/user-attachments/assets/2bddd6c3-b6a7-4a90-b3d1-0d2cc7e62606)](https://nathanneurotic.github.io/AI)
+
 # AI Services Dashboard
 
 ## Overview
