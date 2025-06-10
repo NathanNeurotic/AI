@@ -42,9 +42,14 @@ describe('clearFavorites button', () => {
     expect(favSection).not.toBeNull();
     expect(star.textContent).toBe('★');
 
+    window.localStorage.setItem('category-favorites', 'closed');
+    window.localStorage.setItem('view-favorites', 'list');
+
     btn.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
     expect(window.localStorage.getItem('favorites')).toBe(null);
+    expect(window.localStorage.getItem('category-favorites')).toBe(null);
+    expect(window.localStorage.getItem('view-favorites')).toBe(null);
     favSection = document.getElementById('favorites');
     expect(favSection).toBeNull();
     expect(star.textContent).toBe('☆');
