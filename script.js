@@ -279,12 +279,6 @@ function createServiceButton(service, favoritesSet, categoryName) {
     serviceButton.rel = 'noopener noreferrer';
     serviceButton.dataset.url = service.url;
 
-    const favicon = document.createElement('img');
-    favicon.alt = `${service.name} favicon`;
-    favicon.className = 'service-favicon';
-    favicon.src = service.favicon_url || './favicon.ico';
-    favicon.onerror = () => { favicon.src = './favicon.ico'; };
-
     let thumbnail;
     if (service.thumbnail_url) {
         thumbnail = document.createElement('img');
@@ -296,7 +290,15 @@ function createServiceButton(service, favoritesSet, categoryName) {
 
     const serviceNameSpan = document.createElement('span');
     serviceNameSpan.className = 'service-name';
-    serviceNameSpan.textContent = service.name;
+
+    const favicon = document.createElement('img');
+    favicon.alt = `${service.name} favicon`;
+    favicon.className = 'service-favicon';
+    favicon.src = service.favicon_url || './favicon.ico';
+    favicon.onerror = () => { favicon.src = './favicon.ico'; };
+
+    serviceNameSpan.appendChild(favicon);
+    serviceNameSpan.appendChild(document.createTextNode(service.name));
 
     const serviceUrlSpan = document.createElement('span');
     serviceUrlSpan.className = 'service-url';
@@ -344,7 +346,6 @@ function createServiceButton(service, favoritesSet, categoryName) {
         toggleFavorite(service.url);
     });
 
-    serviceButton.appendChild(favicon);
     if (thumbnail) {
         serviceButton.appendChild(thumbnail);
     }
@@ -607,6 +608,7 @@ function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     if (!sidebar) return;
     sidebar.classList.toggle('open');
+    document.body.classList.toggle('sidebar-open', sidebar.classList.contains('open'));
 }
 
 window.toggleSidebar = toggleSidebar;
