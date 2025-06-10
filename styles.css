@@ -158,6 +158,12 @@ header {
     top: 1rem;
     left: 1rem;
     z-index: 1100;
+    transition: left 0.3s ease;
+}
+
+#sidebar.open + header #sidebarToggle,
+#sidebar.open + #sidebarToggle {
+    left: calc(200px + 1rem);
 }
 
 #header-favicon {
