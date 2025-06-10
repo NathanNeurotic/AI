@@ -232,7 +232,12 @@ function setupSearch() {
             const services = category.querySelectorAll('.service-button');
             const allHidden = Array.from(services).every(service => service.style.display === 'none');
             const categoryHeader = category.querySelector('h2');
-             if (query === '') { // If search query is empty, show all categories normally
+
+            if (category.id === 'favorites') {
+                category.style.display = ''; // Always show favorites category
+                if (categoryHeader) categoryHeader.style.display = '';
+            } else
+            if (query === '') { // If search query is empty, show all categories normally
                 category.style.display = '';
                 if (categoryHeader) categoryHeader.style.display = '';
             } else {
@@ -508,17 +513,48 @@ function renderFavoritesCategory() {
         btn.disabled = favoriteServices.length === 0;
     }
 
-    // Apply collapsed or expanded state based on stored preference
-    const state = localStorage.getItem('category-favorites');
+    // Determine and apply the collapsed or expanded state for the Favorites category
+    const storedState = localStorage.getItem('category-favorites');
     const chevron = header.querySelector('.chevron');
-    if (state === 'closed') {
-        content.classList.remove('open');
-        if (chevron) chevron.classList.remove('open');
-        header.setAttribute('aria-expanded', 'false');
-    } else {
+    // Note: 'content' is favoritesSection.querySelector('.category-content')
+    //       'header' is favoritesSection.querySelector('h2')
+    //       'favoriteServices' is an array of favorite service objects
+    //       'MAX_CATEGORY_HEIGHT' is a globally available constant
+
+    let shouldBeOpen = false;
+    // Determine if the category should be open:
+    // 1. If it's empty.
+    // 2. If no state is stored (first time).
+    // 3. If the stored state is 'open'.
+    if (favoriteServices.length === 0 || storedState === null || storedState === 'open') {
+        shouldBeOpen = true;
+    }
+    // Otherwise, it remains closed (i.e., it's not empty AND storedState is 'closed')
+
+    if (shouldBeOpen) {
         content.classList.add('open');
-        if (chevron) chevron.classList.add('open');
+        if (chevron) {
+            chevron.classList.add('open');
+        }
         header.setAttribute('aria-expanded', 'true');
+
+        // Calculate and set maxHeight. This code runs after content.innerHTML is populated.
+        const height = Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT);
+        content.style.maxHeight = height + 'px';
+
+        // If the section is empty and its stored state was 'closed', or if no state was stored,
+        // update localStorage to 'open' because we are now defaulting it to open.
+        if (storedState === null || (favoriteServices.length === 0 && storedState === 'closed')) {
+            localStorage.setItem('category-favorites', 'open');
+        }
+    } else {
+        // This case means: favoriteServices.length > 0 AND storedState === 'closed'
+        content.classList.remove('open');
+        if (chevron) {
+            chevron.classList.remove('open');
+        }
+        header.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = '0px';
     }
 
     const view = localStorage.getItem('view-favorites');

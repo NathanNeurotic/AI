@@ -38,6 +38,19 @@ describe('favorites management', () => {
     const clearBtn = document.getElementById('clearFavoritesBtn');
     expect(clearBtn.disabled).toBe(true);
     expect(favSection.querySelectorAll('.service-button').length).toBe(0);
+
+    // New assertions:
+    const content = favSection.querySelector('.category-content');
+    const header = favSection.querySelector('h2');
+    expect(content.classList.contains('open')).toBe(true);
+    expect(header.getAttribute('aria-expanded')).toBe('true');
+    expect(content.style.maxHeight).not.toBe('0px');
+    // MAX_CATEGORY_HEIGHT is defined in script.js, need to ensure test environment can access a similar value or check against it if possible.
+    // For simplicity, checking if it's greater than 0 is a good start, as scrollHeight of #noFavoritesMsg should make it > 0.
+    // The actual height will be Math.min(content.scrollHeight, MAX_CATEGORY_HEIGHT from script.js)
+    // Let's assume scrollHeight of the message is at least 1.
+    expect(parseInt(content.style.maxHeight)).toBeGreaterThan(0);
+    expect(window.localStorage.getItem('category-favorites')).toBe('open');
   });
 
   test('adding and removing favorites updates storage and UI', () => {
