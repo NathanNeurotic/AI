@@ -150,12 +150,14 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1100;
 }
 
 #header-favicon {
