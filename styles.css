@@ -427,9 +427,6 @@ body.block-view .category {
 }
 
 .favorite-star {
-    position: absolute;
-    top: 8px;
-    right: 8px;
     cursor: pointer;
     font-size: 1.5rem;
     color: #ccc;
@@ -456,6 +453,9 @@ body.block-view .category {
 .service-url {
     font-size: 0.9rem;
     word-break: break-all;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .category.list-view .service-url {
