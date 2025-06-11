@@ -78,8 +78,8 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
@@ -95,8 +95,8 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
@@ -108,8 +108,8 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
@@ -126,6 +126,8 @@ header {
     cursor: pointer;
     margin-left: 0.5rem;
     margin: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
 }
 
 .btn-small {
@@ -179,8 +181,8 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     position: fixed;
@@ -386,7 +388,7 @@ body.block-view .category {
     display: flex;
     flex-direction: column;
     background: var(--button-gradient);
-    padding: 1rem;
+    padding: 0.75rem;
     width: 100%;
     box-sizing: border-box;
     border: 2px solid var(--accent-color);
@@ -429,7 +431,7 @@ body.block-view .category {
     top: 8px;
     right: 8px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ccc;
 }
 .favorite-star:focus {
@@ -442,7 +444,7 @@ body.block-view .category {
 }
 
 .service-name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: inline-flex;
@@ -452,7 +454,7 @@ body.block-view .category {
 }
 
 .service-url {
-    font-size: 1rem;
+    font-size: 0.9rem;
     word-break: break-all;
 }
 
