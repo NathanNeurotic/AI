@@ -581,7 +581,16 @@ body.mobile-view .category h2 {
 body.mobile-view #searchInput {
     width: 90%;
 }
+
+/* Hide the view toggle when mobile layout is active */
+body.mobile-view #viewToggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    #viewToggle {
+        display: none;
+    }
     .category-content {
         grid-template-columns: 1fr;
     }
