@@ -89,12 +89,26 @@ header {
     margin-top: 1rem;
 }
 #themeToggle.active,
-#viewToggle.active {
+#viewToggle.active,
+#mobileToggle.active {
     background: var(--accent-color);
     color: var(--bg-color);
 }
 
 #viewToggle {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+#mobileToggle {
     background: none;
     border: 2px solid var(--text-color);
     color: var(--text-color);
@@ -466,6 +480,7 @@ body.block-view .category {
 
 #themeToggle:hover,
 #viewToggle:hover,
+#mobileToggle:hover,
 #installBtn:hover,
 #clearFavoritesBtn:hover,
 #sidebarToggle:hover,
@@ -541,6 +556,22 @@ footer .thanks a:hover {
 }
 
 /* Responsive Design */
+
+body.mobile-view .category-content {
+    grid-template-columns: 1fr;
+}
+
+body.mobile-view header h1 {
+    font-size: 1.6rem;
+}
+
+body.mobile-view .category h2 {
+    font-size: 1.2rem;
+}
+
+body.mobile-view #searchInput {
+    width: 90%;
+}
 @media (max-width: 768px) {
     .category-content {
         grid-template-columns: 1fr;
