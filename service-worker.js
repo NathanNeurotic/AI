@@ -8,8 +8,8 @@ const URLS_TO_CACHE = [
   './favicon.ico',
   './public/manifest.json'
 ];
-self.CACHE_NAME = CACHE_NAME;
-self.URLS_TO_CACHE = URLS_TO_CACHE;
+self.CACHE_NAME = globalThis.CACHE_NAME = CACHE_NAME;
+self.URLS_TO_CACHE = globalThis.URLS_TO_CACHE = URLS_TO_CACHE;
 
 self.addEventListener('install', event => {
   event.waitUntil(
