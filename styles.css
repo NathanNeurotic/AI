@@ -122,12 +122,15 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 0.6rem;
-    padding: 0.1rem 0.2rem;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 0.5rem;
     margin: 0.5rem;
+}
+
+.btn-small {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
 }
 
 #sidebar {
@@ -410,7 +413,6 @@ body.block-view .category {
 .service-favicon {
     width: 16px;
     height: 16px;
-    margin-right: 4px;
     vertical-align: middle;
 }
 

@@ -412,6 +412,7 @@ function ensureClearFavoritesButton(header) {
     let btn = header.querySelector('#clearFavoritesBtn');
     if (!btn) {
         btn = document.createElement('button');
+        btn.classList.add('btn-small');
         btn.id = 'clearFavoritesBtn';
         btn.textContent = 'Clear Favorites';
         btn.type = 'button';
