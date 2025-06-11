@@ -278,7 +278,13 @@ body.block-view .category {
 
 #searchInput:focus {
     outline: none;
-    box-shadow: 0 0 8px rgba(102, 178, 102, 0.3);
+    box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+    animation: glow 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color); }
+    to { box-shadow: 0 0 20px var(--accent-color), 0 0 30px var(--accent-color); }
 }
 
 .no-results {
