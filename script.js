@@ -358,13 +358,14 @@ function createServiceButton(service, favoritesSet, categoryName) {
         toggleFavorite(service.url);
     });
 
+    serviceUrlSpan.appendChild(star);
+
     if (thumbnail) {
         serviceButton.appendChild(thumbnail);
     }
     serviceButton.appendChild(serviceNameSpan);
     serviceButton.appendChild(serviceUrlSpan);
     serviceButton.appendChild(serviceTagsSpan);
-    serviceButton.appendChild(star);
 
     return serviceButton;
 }
