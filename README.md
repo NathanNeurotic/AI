@@ -14,6 +14,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
 *   **Direct Links:** Each service entry links directly to the respective service's website.
 *   **Favicon Display:** Shows favicons for listed services for quick visual identification.
 *   **Optional Thumbnails:** When provided, a small preview image is displayed above the service name.
+*   **Offline Caching:** Favicons and thumbnails from `services.json` are cached for offline use.
 *   **Responsive Design:** Optimized for various screen sizes, including mobile devices.
     *   Header text wraps correctly on narrow screens.
     *   Interactive elements are properly handled in collapsed sections on mobile.
@@ -182,6 +183,7 @@ You can install the AI Services Dashboard on your device for quick access:
 3. Confirm the prompt to add it to your home screen or applications list.
 
 After installation the dashboard can be launched like a native application and works offline thanks to the service worker.
+Favicons and thumbnails defined in `services.json` are now pre-cached during installation.
 
 ## Contributing
 

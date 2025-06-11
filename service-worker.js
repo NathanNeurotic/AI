@@ -1,5 +1,5 @@
 // Bump cache version to ensure users receive the latest files
-const CACHE_NAME = 'ai-dashboard-cache-v2';
+const CACHE_NAME = 'ai-dashboard-cache-v3';
 const URLS_TO_CACHE = [
   './index.html',
   './styles.css',
@@ -11,7 +11,24 @@ const URLS_TO_CACHE = [
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(URLS_TO_CACHE))
+    (async () => {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.addAll(URLS_TO_CACHE);
+      try {
+        const resp = await fetch('./services.json');
+        const services = await resp.json();
+        for (const svc of services) {
+          if (svc.favicon_url) {
+            try { await cache.add(svc.favicon_url); } catch (e) { /* ignore */ }
+          }
+          if (svc.thumbnail_url) {
+            try { await cache.add(svc.thumbnail_url); } catch (e) { /* ignore */ }
+          }
+        }
+      } catch (err) {
+        console.error('Failed to cache service assets', err);
+      }
+    })()
   );
   self.skipWaiting();
 });
