@@ -82,10 +82,9 @@ describe('service worker', () => {
     // populate cache via install
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
-    ctx.fetch.mockResolvedValue({ json: () => Promise.resolve([]) });
+    ctx.fetch.mockResolvedValueOnce({ json: () => Promise.resolve([]) });
     listeners['install'](installEvent);
     await installPromise;
-    ctx.fetch.mockClear();
 
     const fetchEvent = {
       request: { url: 'https://example.com/script.js' },
@@ -115,10 +114,9 @@ describe('service worker', () => {
     const { listeners, caches, CACHE_NAME } = ctx;
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
-    ctx.fetch.mockResolvedValue({ json: () => Promise.resolve([]) });
+    ctx.fetch.mockResolvedValueOnce({ json: () => Promise.resolve([]) });
     listeners['install'](installEvent);
     await installPromise;
-    ctx.fetch.mockClear();
 
     ctx.fetch.mockResolvedValueOnce('network-services');
     const fetchEvent = {
