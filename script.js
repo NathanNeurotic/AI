@@ -188,6 +188,7 @@ async function loadServices() {
 
         // Re-initialize search functionality
         setupSearch();
+        populateTagDropdown();
 
     } catch (error) {
         console.error('Failed to load services:', error);
@@ -202,7 +203,8 @@ function setupSearch() {
     if (!searchInput) return; // Guard clause if search input is not found
 
     searchInput.addEventListener('input', () => {
-        const query = searchInput.value.toLowerCase().trim();
+        const raw = searchInput.value.toLowerCase().trim();
+        const tokens = raw.split(',').map(t => t.trim()).filter(Boolean);
         document.querySelectorAll('.service-button').forEach(button => {
             const name = button.querySelector('.service-name').textContent.toLowerCase();
             const url = button.querySelector('.service-url').textContent.toLowerCase();
@@ -210,17 +212,22 @@ function setupSearch() {
             let tagsMatch = false;
             if (tagsSpan && tagsSpan.textContent) {
                 const tagsArray = tagsSpan.textContent.toLowerCase().split(',').map(tag => tag.trim());
-                tagsMatch = tagsArray.some(tag => tag.includes(query));
+                if (tokens.length > 0) {
+                    tagsMatch = tokens.every(token => tagsArray.some(tag => tag.includes(token)));
+                } else {
+                    tagsMatch = tagsArray.some(tag => tag.includes(raw));
+                }
             }
+            const textMatch = name.includes(raw) || url.includes(raw);
             // Show button if query matches name, URL, or tags
-            button.style.display = (name.includes(query) || url.includes(query) || tagsMatch) ? 'flex' : 'none';
+            button.style.display = (textMatch || tagsMatch) ? 'flex' : 'none';
         });
 
         const visibleButtons = Array.from(document.querySelectorAll('.service-button'))
             .filter(btn => btn.style.display !== 'none').length;
         const noResultsEl = document.getElementById('noResults');
         if (noResultsEl) {
-            if (query !== '' && visibleButtons === 0) {
+            if (raw !== '' && visibleButtons === 0) {
                 noResultsEl.hidden = false;
             } else {
                 noResultsEl.hidden = true;
@@ -662,4 +669,23 @@ function toggleSidebar() {
 
 window.toggleSidebar = toggleSidebar;
 window.buildSidebar = buildSidebar;
+
+function populateTagDropdown() {
+    const datalist = document.getElementById('tagOptions');
+    if (!datalist) return;
+    const tagSet = new Set();
+    for (const service of allServices) {
+        if (Array.isArray(service.tags)) {
+            service.tags.forEach(tag => tagSet.add(tag));
+        }
+    }
+    datalist.innerHTML = '';
+    Array.from(tagSet).sort().forEach(tag => {
+        const option = document.createElement('option');
+        option.value = tag;
+        datalist.appendChild(option);
+    });
+}
+
+window.populateTagDropdown = populateTagDropdown;
 

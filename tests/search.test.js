@@ -86,4 +86,22 @@ describe('search filtering', () => {
     expect(cat1.style.display).toBe('');
     expect(cat2.style.display).toBe('');
   });
+
+  test('supports filtering by multiple tags', () => {
+    const buttons = document.querySelectorAll('.service-button');
+    const [alphaBtn, betaBtn] = buttons;
+    const cat1 = document.getElementById('cat1');
+
+    searchInput.value = 'news, cat1';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+
+    expect(alphaBtn.style.display).toBe('flex');
+    expect(betaBtn.style.display).toBe('none');
+    expect(cat1.style.display).toBe('');
+
+    searchInput.value = 'news, support';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+
+    buttons.forEach(btn => expect(btn.style.display).toBe('none'));
+  });
 });
