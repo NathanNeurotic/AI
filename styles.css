@@ -456,6 +456,22 @@ body.block-view .category {
     color: gold;
 }
 
+#themeToggle:hover,
+#viewToggle:hover,
+#installBtn:hover,
+#clearFavoritesBtn:hover,
+#sidebarToggle:hover,
+.category-view-toggle:hover,
+.favorite-star:hover {
+    box-shadow: 0 0 8px rgba(95, 170, 111, 0.4);
+    transform: translateY(-2px);
+}
+
+#sidebar a:hover {
+    background: var(--button-gradient);
+    border-radius: 5px;
+}
+
 .service-name {
     font-size: 1.2rem;
     font-weight: bold;
