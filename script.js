@@ -203,8 +203,8 @@ function setupSearch() {
     if (!searchInput) return; // Guard clause if search input is not found
 
     searchInput.addEventListener('input', () => {
-        const raw = searchInput.value.toLowerCase().trim();
-        const tokens = raw.split(',').map(t => t.trim()).filter(Boolean);
+        const query = searchInput.value.toLowerCase().trim();
+        const tokens = query.split(',').map(t => t.trim()).filter(Boolean);
         document.querySelectorAll('.service-button').forEach(button => {
             const name = button.querySelector('.service-name').textContent.toLowerCase();
             const url = button.querySelector('.service-url').textContent.toLowerCase();
@@ -215,10 +215,10 @@ function setupSearch() {
                 if (tokens.length > 0) {
                     tagsMatch = tokens.every(token => tagsArray.some(tag => tag.includes(token)));
                 } else {
-                    tagsMatch = tagsArray.some(tag => tag.includes(raw));
+                    tagsMatch = tagsArray.some(tag => tag.includes(query));
                 }
             }
-            const textMatch = name.includes(raw) || url.includes(raw);
+            const textMatch = name.includes(query) || url.includes(query);
             // Show button if query matches name, URL, or tags
             button.style.display = (textMatch || tagsMatch) ? 'flex' : 'none';
         });
@@ -227,7 +227,7 @@ function setupSearch() {
             .filter(btn => btn.style.display !== 'none').length;
         const noResultsEl = document.getElementById('noResults');
         if (noResultsEl) {
-            if (raw !== '' && visibleButtons === 0) {
+            if (query !== '' && visibleButtons === 0) {
                 noResultsEl.hidden = false;
             } else {
                 noResultsEl.hidden = true;
