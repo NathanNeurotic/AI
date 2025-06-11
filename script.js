@@ -10,6 +10,7 @@ const MAX_CATEGORY_HEIGHT =
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
     applySavedView();
+    applySavedMobileView();
     updateToggleButtons();
 
     buildSidebar();
@@ -605,6 +606,13 @@ function applySavedView() {
     }
 }
 
+function applySavedMobileView() {
+    const saved = localStorage.getItem('mobileView');
+    if (saved === 'on') {
+        document.body.classList.add('mobile-view');
+    }
+}
+
 function toggleView() {
     const isBlock = document.body.classList.toggle('block-view');
     localStorage.setItem('view', isBlock ? 'block' : 'list');
@@ -612,6 +620,14 @@ function toggleView() {
 }
 
 window.toggleView = toggleView;
+
+function toggleMobileView() {
+    const isMobile = document.body.classList.toggle('mobile-view');
+    localStorage.setItem('mobileView', isMobile ? 'on' : 'off');
+    updateToggleButtons();
+}
+
+window.toggleMobileView = toggleMobileView;
 
 function toggleCategoryView(categoryId) {
     const section = document.getElementById(categoryId);
@@ -634,6 +650,10 @@ function updateToggleButtons() {
     const viewBtn = document.getElementById('viewToggle');
     if (viewBtn) {
         viewBtn.classList.toggle('active', document.body.classList.contains('block-view'));
+    }
+    const mobileBtn = document.getElementById('mobileToggle');
+    if (mobileBtn) {
+        mobileBtn.classList.toggle('active', document.body.classList.contains('mobile-view'));
     }
 }
 
