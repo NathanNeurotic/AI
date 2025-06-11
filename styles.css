@@ -122,8 +122,8 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 0.5rem;
