@@ -415,7 +415,9 @@ body.block-view .category {
 }
 
 .service-button:hover {
-    box-shadow: inset 0 0 5px rgba(95, 170, 111, 0.5), 0 0 8px rgba(95, 170, 111, 0.3);
+    box-shadow: inset 0 0 8px rgba(95, 170, 111, 0.6), 0 0 12px rgba(95, 170, 111, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
     transform: translateY(-2px);
     animation: none;
 }
@@ -463,7 +465,9 @@ body.block-view .category {
 #sidebarToggle:hover,
 .category-view-toggle:hover,
 .favorite-star:hover {
-    box-shadow: 0 0 8px rgba(95, 170, 111, 0.4);
+    box-shadow: 0 0 12px rgba(95, 170, 111, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
     transform: translateY(-2px);
 }
 
