@@ -310,6 +310,7 @@ body.block-view .category {
 
 .category {
     margin-bottom: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .category h2 {
@@ -330,7 +331,15 @@ body.block-view .category {
 }
 
 .category h2:hover {
-    box-shadow: 0 0 10px rgba(102, 178, 102, 0.3);
+    box-shadow: 0 0 12px rgba(95, 170, 111, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.category:hover {
+    box-shadow: 0 0 12px rgba(95, 170, 111, 0.4);
+    background: rgba(255, 255, 255, 0.03);
+    transform: translateY(-2px);
 }
 
 .chevron {
@@ -575,6 +584,10 @@ body.mobile-view #searchInput {
 @media (max-width: 768px) {
     .category-content {
         grid-template-columns: 1fr;
+    }
+
+    body.block-view main {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
     header h1 {
