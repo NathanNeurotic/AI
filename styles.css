@@ -399,6 +399,7 @@ body.block-view .category {
     background: var(--button-gradient);
     padding: 0.75rem;
     padding-right: 2rem; /* space for favorite star */
+    width: 100%;
     max-width: var(--card-max-width);
     margin: 0 auto;
     min-width: 0;
