@@ -343,6 +343,7 @@ body.block-view .category {
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    min-width: 0;
     background: var(--content-bg);
     backdrop-filter: blur(3px);
     border: 2px solid var(--text-color);
@@ -391,6 +392,7 @@ body.block-view .category {
     padding: 0.75rem;
     padding-right: 2rem; /* space for favorite star */
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     border: 2px solid var(--accent-color);
     border-radius: 15px;
