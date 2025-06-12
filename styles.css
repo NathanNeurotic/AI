@@ -531,6 +531,19 @@ body.block-view .category {
     gap: 0.25rem;
 }
 
+.copy-link {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.8rem;
+}
+.copy-link:focus {
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
 .category.list-view .service-url {
     margin-left: auto;
 }
