@@ -276,6 +276,13 @@ body.block-view .category {
     text-align: center;
 }
 
+.tag-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--thanks-color);
+}
+
 #searchInput {
     background: var(--content-bg);
     backdrop-filter: blur(3px);
