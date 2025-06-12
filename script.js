@@ -1,5 +1,6 @@
 let allServices = [];
 let deferredPrompt = null;
+let sidebarObserver = null;
 const MAX_CATEGORY_HEIGHT =
     parseInt(
         getComputedStyle(document.documentElement).getPropertyValue(
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateToggleButtons();
 
     buildSidebar();
+    setupSidebarHighlighting();
 
     const sidebarToggle = document.getElementById('sidebarToggle');
     if (sidebarToggle) {
@@ -186,6 +188,7 @@ async function loadServices() {
         });
 
         buildSidebar();
+        setupSidebarHighlighting();
 
         // Re-initialize search functionality
         setupSearch();
@@ -727,6 +730,30 @@ function toggleSidebar() {
 window.toggleSidebar = toggleSidebar;
 window.buildSidebar = buildSidebar;
 
+function setupSidebarHighlighting() {
+    if (sidebarObserver) {
+        sidebarObserver.disconnect();
+    }
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar || !('IntersectionObserver' in window)) return;
+    const links = sidebar.querySelectorAll('a[href^="#"]');
+    const sections = document.querySelectorAll('.category');
+    if (!links.length || !sections.length) return;
+
+    sidebarObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio >= 0.5) {
+                const id = entry.target.id;
+                links.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => sidebarObserver.observe(section));
+}
+
 function populateTagDropdown() {
     const datalist = document.getElementById('tagOptions');
     if (!datalist) return;
@@ -747,4 +774,5 @@ function populateTagDropdown() {
 window.populateTagDropdown = populateTagDropdown;
 window.expandAllCategories = expandAllCategories;
 window.collapseAllCategories = collapseAllCategories;
+window.setupSidebarHighlighting = setupSidebarHighlighting;
 

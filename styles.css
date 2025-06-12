@@ -198,6 +198,12 @@ header {
     position: relative;
 }
 
+#sidebar a.active {
+    background: var(--button-gradient);
+    border-radius: 5px;
+    color: var(--bg-color);
+}
+
 #sidebar a::before {
     content: "\2022"; /* bullet */
     position: absolute;
