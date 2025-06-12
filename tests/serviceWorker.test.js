@@ -141,4 +141,12 @@ describe('service worker', () => {
     expect(caches.match).toHaveBeenCalledWith(fetchEventFail.request);
     expect(fallback).toBe(cacheStore.get(toAbsolute('./services.json')));
   });
+
+  test('message SKIP_WAITING triggers skipWaiting', () => {
+    const ctx = setupServiceWorker();
+    const { listeners, self } = ctx;
+    const evt = { data: { type: 'SKIP_WAITING' } };
+    listeners['message'](evt);
+    expect(self.skipWaiting).toHaveBeenCalled();
+  });
 });

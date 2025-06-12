@@ -69,6 +69,41 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('main')) {
         loadServices();
     }
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').then(reg => {
+            function notify(worker) {
+                const bar = document.getElementById('updateNotification');
+                if (!bar) return;
+                bar.hidden = false;
+                const refresh = document.getElementById('refreshBtn');
+                if (refresh) {
+                    refresh.onclick = () => {
+                        worker.postMessage({ type: 'SKIP_WAITING' });
+                    };
+                }
+            }
+
+            if (reg.waiting) {
+                notify(reg.waiting);
+            }
+
+            reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                if (newWorker) {
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && reg.waiting) {
+                            notify(reg.waiting);
+                        }
+                    });
+                }
+            });
+
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                window.location.reload();
+            });
+        });
+    }
 });
 
 async function loadServices() {

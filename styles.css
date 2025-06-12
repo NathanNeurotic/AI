@@ -653,3 +653,18 @@ body.mobile-view #viewToggle {
         width: 90%;
     }
 }
+
+#updateNotification {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-color);
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: none;
+}
+#updateNotification[hidden] {
+    display: none;
+}
