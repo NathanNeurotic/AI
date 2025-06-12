@@ -124,7 +124,7 @@ describe('favorites management', () => {
     let favSection = document.querySelector('#favorites');
     expect(favSection).not.toBeNull();
     expect(favSection.querySelectorAll('.service-button').length).toBe(1);
-    expect(star.textContent).toBe('★');
+    expect(star.classList.contains('favorited')).toBe(true);
 
     star.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
 
@@ -146,7 +146,7 @@ describe('favorites management', () => {
     expect(window.localStorage.getItem('favorites')).toBe(JSON.stringify(['http://alpha.com']));
     let favSection = document.querySelector('#favorites');
     expect(favSection).not.toBeNull();
-    expect(star.textContent).toBe('★');
+    expect(star.classList.contains('favorited')).toBe(true);
 
     star.dispatchEvent(new window.KeyboardEvent('keydown', { key: ' ', bubbles: true }));
 
@@ -155,6 +155,6 @@ describe('favorites management', () => {
     expect(favSection).not.toBeNull();
     const msg = favSection.querySelector('#noFavoritesMsg');
     expect(msg).not.toBeNull();
-    expect(star.textContent).toBe('☆');
+    expect(star.classList.contains('favorited')).toBe(false);
   });
 });
