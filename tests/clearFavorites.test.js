@@ -40,7 +40,7 @@ describe('clearFavorites button', () => {
 
     expect(btn).not.toBeNull();
     expect(favSection).not.toBeNull();
-    expect(star.textContent).toBe('★');
+    expect(star.classList.contains('favorited')).toBe(true);
 
     window.localStorage.setItem('category-favorites', 'closed');
     window.localStorage.setItem('view-favorites', 'list');
@@ -56,7 +56,7 @@ describe('clearFavorites button', () => {
     const msg = favSection.querySelector('#noFavoritesMsg');
     expect(msg).not.toBeNull();
     expect(btn.disabled).toBe(true);
-    expect(star.textContent).toBe('☆');
+    expect(star.classList.contains('favorited')).toBe(false);
   });
 
   test('button re-enabled after favorite re-added', () => {

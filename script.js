@@ -8,6 +8,10 @@ const MAX_CATEGORY_HEIGHT =
         )
     ) || 400; // px - limit for open category height
 
+const STAR_FILLED_PATH = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7881 3.21068C11.2364 2.13274 12.7635 2.13273 13.2118 3.21068L15.2938 8.2164L20.6979 8.64964C21.8616 8.74293 22.3335 10.1952 21.4469 10.9547L17.3295 14.4817L18.5874 19.7551C18.8583 20.8908 17.6229 21.7883 16.6266 21.1798L11.9999 18.3538L7.37329 21.1798C6.37697 21.7883 5.14158 20.8908 5.41246 19.7551L6.67038 14.4817L2.55303 10.9547C1.66639 10.1952 2.13826 8.74293 3.302 8.64964L8.70609 8.2164L10.7881 3.21068Z"/></svg>';
+const STAR_OUTLINE_PATH = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4806 3.4987C11.6728 3.03673 12.3272 3.03673 12.5193 3.4987L14.6453 8.61016C14.7263 8.80492 14.9095 8.93799 15.1197 8.95485L20.638 9.39724C21.1367 9.43722 21.339 10.0596 20.959 10.3851L16.7546 13.9866C16.5945 14.1238 16.5245 14.3391 16.5734 14.5443L17.8579 19.9292C17.974 20.4159 17.4446 20.8005 17.0176 20.5397L12.2932 17.6541C12.1132 17.5441 11.8868 17.5441 11.7068 17.6541L6.98238 20.5397C6.55539 20.8005 6.02594 20.4159 6.14203 19.9292L7.42652 14.5443C7.47546 14.3391 7.4055 14.1238 7.24531 13.9866L3.04099 10.3851C2.661 10.0596 2.86323 9.43722 3.36197 9.39724L8.88022 8.95485C9.09048 8.93799 9.27363 8.80492 9.35464 8.61016L11.4806 3.4987Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const CHEVRON_SVG = '<svg class="chevron" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5303 16.2803C12.2374 16.5732 11.7626 16.5732 11.4697 16.2803L3.96967 8.78033C3.67678 8.48744 3.67678 8.01256 3.96967 7.71967C4.26256 7.42678 4.73744 7.42678 5.03033 7.71967L12 14.6893L18.9697 7.71967C19.2626 7.42678 19.7374 7.42678 20.0303 7.71967C20.3232 8.01256 20.3232 8.48744 20.0303 8.78033L12.5303 16.2803Z"/></svg>';
+
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
     applySavedView();
@@ -163,7 +167,7 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> <span class="chevron">▼</span><span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
             const viewToggle = categoryHeader.querySelector('.category-view-toggle');
             viewToggle.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -408,16 +412,16 @@ function createServiceButton(service, favoritesSet, categoryName) {
     }
     serviceTagsSpan.textContent = tags.join(',');
 
-    const star = document.createElement('span');
-    star.className = 'favorite-star';
+    const span = document.createElement('span');
+    span.innerHTML = favoritesSet.has(service.url) ? STAR_FILLED_PATH : STAR_OUTLINE_PATH;
+    const star = span.querySelector('svg');
+    star.classList.add('favorite-star');
     star.tabIndex = 0;
     star.setAttribute('role', 'button');
     if (favoritesSet.has(service.url)) {
-        star.textContent = '★';
         star.classList.add('favorited');
         star.setAttribute('aria-label', 'Remove from favorites');
     } else {
-        star.textContent = '☆';
         star.setAttribute('aria-label', 'Add to favorites');
     }
     star.addEventListener('keydown', (e) => {
@@ -455,21 +459,19 @@ function toggleFavorite(url) {
     updateStars();
 }
 
+function setStarState(star, filled) {
+    star.innerHTML = filled ? STAR_FILLED_PATH : STAR_OUTLINE_PATH;
+    star.classList.toggle('favorited', filled);
+    star.setAttribute('aria-label', filled ? 'Remove from favorites' : 'Add to favorites');
+}
+
 function updateStars() {
     const favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
     document.querySelectorAll('.service-button').forEach(btn => {
         const url = btn.dataset.url;
         const star = btn.querySelector('.favorite-star');
         if (!star) return;
-        if (favorites.has(url)) {
-            star.textContent = '★';
-            star.classList.add('favorited');
-            star.setAttribute('aria-label', 'Remove from favorites');
-        } else {
-            star.textContent = '☆';
-            star.classList.remove('favorited');
-            star.setAttribute('aria-label', 'Add to favorites');
-        }
+        setStarState(star, favorites.has(url));
     });
     renderFavoritesCategory();
 }
@@ -530,7 +532,7 @@ function renderFavoritesCategory() {
         header.innerHTML =
             `<span class="category-emoji">⭐</span>
              <span class="category-title">Favorites</span>
-             <span class="chevron">▼</span>
+             ${CHEVRON_SVG}
              <span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
         header.setAttribute('aria-expanded', 'true');
         header.onclick = () => toggleCategory(header);
@@ -719,15 +721,24 @@ window.toggleCategoryView = toggleCategoryView;
 function updateToggleButtons() {
     const themeBtn = document.getElementById('themeToggle');
     if (themeBtn) {
-        themeBtn.classList.toggle('active', document.body.classList.contains('light-mode'));
+        const isLight = document.body.classList.contains('light-mode');
+        themeBtn.classList.toggle('active', isLight);
+        themeBtn.innerHTML = isLight ?
+            '<svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>' :
+            '<svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     }
     const viewBtn = document.getElementById('viewToggle');
     if (viewBtn) {
-        viewBtn.classList.toggle('active', document.body.classList.contains('block-view'));
+        const isBlock = document.body.classList.contains('block-view');
+        viewBtn.classList.toggle('active', isBlock);
+        viewBtn.innerHTML = isBlock ?
+            '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>' :
+            '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>';
     }
     const mobileBtn = document.getElementById('mobileToggle');
     if (mobileBtn) {
         mobileBtn.classList.toggle('active', document.body.classList.contains('mobile-view'));
+        mobileBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
     }
 }
 
