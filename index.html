@@ -20,28 +20,28 @@
 </head>
 <body>
     <nav id="sidebar"></nav>
-    <button id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+    <button id="sidebarToggle" aria-label="Toggle sidebar" title="Toggle sidebar">☰</button>
     <header>
         <img id="header-favicon" src="./favicon.ico" alt="AI Services Dashboard Favicon" />
         <h1 class="typing-effect">AI Services Dashboard</h1>
-        <button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
             <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
-        <button id="viewToggle" onclick="toggleView()" aria-label="Toggle category view">
+        <button id="viewToggle" onclick="toggleView()" aria-label="Toggle category view" title="Toggle category view">
             <svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         </button>
-        <button id="mobileToggle" onclick="toggleMobileView()" aria-label="Toggle mobile view">
+        <button id="mobileToggle" onclick="toggleMobileView()" aria-label="Toggle mobile view" title="Toggle mobile view">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
         </button>
-        <button id="installBtn" aria-label="Install app">Install App</button>
+        <button id="installBtn" aria-label="Install app" title="Install app">Install App</button>
     </header>
     <main>
         <div class="search-container">
             <input id="searchInput" type="text" placeholder="Search services..." aria-label="Search AI services" list="tagOptions" />
             <datalist id="tagOptions"></datalist>
             <small class="tag-hint">Search by tag using "tag1,tag2"</small>
-            <button id="expandAllBtn" onclick="expandAllCategories()" type="button">Expand All</button>
-            <button id="collapseAllBtn" onclick="collapseAllCategories()" type="button">Collapse All</button>
+            <button id="expandAllBtn" onclick="expandAllCategories()" type="button" title="Expand all categories">Expand All</button>
+            <button id="collapseAllBtn" onclick="collapseAllCategories()" type="button" title="Collapse all categories">Collapse All</button>
         </div>
         <p id="noResults" class="no-results" hidden>No results found.</p>
         <!-- Service listings will be dynamically injected here by script.js -->
@@ -51,7 +51,7 @@
         <p><a href="https://www.github.com/NathanNeurotic/AI" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
     </footer>
     <div id="updateNotification" hidden>
-        New version available <button id="refreshBtn">Refresh</button>
+        New version available <button id="refreshBtn" title="Refresh to update">Refresh</button>
     </div>
     <script src="./script.js"></script>
 </body>
