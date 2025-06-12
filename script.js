@@ -167,7 +167,7 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view" title="Toggle category view">☰</span>`;
             const viewToggle = categoryHeader.querySelector('.category-view-toggle');
             viewToggle.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -382,6 +382,7 @@ function createServiceButton(service, favoritesSet, categoryName) {
     copyBtn.className = 'copy-link';
     copyBtn.textContent = '📋';
     copyBtn.setAttribute('aria-label', `Copy ${service.name} URL`);
+    copyBtn.title = `Copy ${service.name} URL`;
     copyBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -463,6 +464,7 @@ function setStarState(star, filled) {
     star.innerHTML = filled ? STAR_FILLED_PATH : STAR_OUTLINE_PATH;
     star.classList.toggle('favorited', filled);
     star.setAttribute('aria-label', filled ? 'Remove from favorites' : 'Add to favorites');
+    star.title = filled ? 'Remove from favorites' : 'Add to favorites';
 }
 
 function updateStars() {
@@ -492,6 +494,7 @@ function ensureClearFavoritesButton(header) {
         btn.classList.add('btn-small');
         btn.id = 'clearFavoritesBtn';
         btn.textContent = 'Clear Favorites';
+        btn.title = 'Clear all favorites';
         btn.type = 'button';
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -533,7 +536,7 @@ function renderFavoritesCategory() {
             `<span class="category-emoji">⭐</span>
              <span class="category-title">Favorites</span>
              ${CHEVRON_SVG}
-             <span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view">☰</span>`;
+             <span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view" title="Toggle category view">☰</span>`;
         header.setAttribute('aria-expanded', 'true');
         header.onclick = () => toggleCategory(header);
         header.tabIndex = 0;
