@@ -317,6 +317,24 @@ function createServiceButton(service, favoritesSet, categoryName) {
     serviceUrlSpan.className = 'service-url';
     serviceUrlSpan.textContent = service.url;
 
+    const copyBtn = document.createElement('button');
+    copyBtn.type = 'button';
+    copyBtn.className = 'copy-link';
+    copyBtn.textContent = '📋';
+    copyBtn.setAttribute('aria-label', `Copy ${service.name} URL`);
+    copyBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        navigator.clipboard.writeText(service.url).then(() => {
+            const original = copyBtn.textContent;
+            copyBtn.textContent = 'Copied!';
+            setTimeout(() => {
+                copyBtn.textContent = original;
+            }, 1000);
+        });
+    });
+    serviceUrlSpan.appendChild(copyBtn);
+
     const serviceTagsSpan = document.createElement('span');
     serviceTagsSpan.className = 'service-tags';
     serviceTagsSpan.style.display = 'none';
