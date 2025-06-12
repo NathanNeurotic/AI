@@ -284,6 +284,24 @@ function toggleCategory(header) {
     }
 }
 
+function expandAllCategories() {
+    document.querySelectorAll('.category h2').forEach(header => {
+        const content = header.parentElement.querySelector('.category-content');
+        if (content && !content.classList.contains('open')) {
+            toggleCategory(header);
+        }
+    });
+}
+
+function collapseAllCategories() {
+    document.querySelectorAll('.category h2').forEach(header => {
+        const content = header.parentElement.querySelector('.category-content');
+        if (content && content.classList.contains('open')) {
+            toggleCategory(header);
+        }
+    });
+}
+
 function createServiceButton(service, favoritesSet, categoryName) {
     const serviceButton = document.createElement('a');
     serviceButton.className = 'service-button';
@@ -727,4 +745,6 @@ function populateTagDropdown() {
 }
 
 window.populateTagDropdown = populateTagDropdown;
+window.expandAllCategories = expandAllCategories;
+window.collapseAllCategories = collapseAllCategories;
 
