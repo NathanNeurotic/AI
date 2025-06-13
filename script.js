@@ -413,10 +413,9 @@ function createServiceButton(service, favoritesSet, categoryName) {
     }
     serviceTagsSpan.textContent = tags.join(',');
 
-    const span = document.createElement('span');
-    span.innerHTML = favoritesSet.has(service.url) ? STAR_FILLED_PATH : STAR_OUTLINE_PATH;
-    const star = span.querySelector('svg');
+    const star = document.createElement('span');
     star.classList.add('favorite-star');
+    star.innerHTML = favoritesSet.has(service.url) ? STAR_FILLED_PATH : STAR_OUTLINE_PATH;
     star.tabIndex = 0;
     star.setAttribute('role', 'button');
     if (favoritesSet.has(service.url)) {

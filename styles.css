@@ -513,10 +513,16 @@ body.block-view .category {
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
-    fill: #ccc;
     position: absolute;
     top: 0.5rem;
     right: 0.25rem;
+    display: inline-block;
+    color: #ccc;
+}
+.favorite-star svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
 }
 .favorite-star:focus {
     outline: 2px solid var(--text-color);
@@ -524,7 +530,7 @@ body.block-view .category {
 }
 
 .favorite-star.favorited {
-    fill: gold;
+    color: gold;
 }
 
 #themeToggle:hover,
