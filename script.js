@@ -688,6 +688,8 @@ function applySavedMobileView() {
     const saved = localStorage.getItem('mobileView');
     if (saved === 'on') {
         document.body.classList.add('mobile-view');
+    } else {
+        document.body.classList.add('desktop-view');
     }
 }
 
@@ -700,7 +702,9 @@ function toggleView() {
 window.toggleView = toggleView;
 
 function toggleMobileView() {
-    const isMobile = document.body.classList.toggle('mobile-view');
+    const isMobile = !document.body.classList.contains('mobile-view');
+    document.body.classList.toggle('mobile-view', isMobile);
+    document.body.classList.toggle('desktop-view', !isMobile);
     localStorage.setItem('mobileView', isMobile ? 'on' : 'off');
     updateToggleButtons();
 }
@@ -739,7 +743,10 @@ function updateToggleButtons() {
     }
     const mobileBtn = document.getElementById('mobileToggle');
     if (mobileBtn) {
-        mobileBtn.classList.toggle('active', document.body.classList.contains('mobile-view'));
+        const isMobile = document.body.classList.contains('mobile-view');
+        mobileBtn.classList.toggle('active', isMobile);
+        mobileBtn.title = isMobile ? 'Switch to desktop view' : 'Switch to mobile view';
+        mobileBtn.setAttribute('aria-label', mobileBtn.title);
         mobileBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
     }
 }

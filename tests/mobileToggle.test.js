@@ -21,18 +21,21 @@ describe('toggleMobileView', () => {
     window.close();
   });
 
-  test('toggles mobile-view class and localStorage state', () => {
+  test('toggles view classes and localStorage state', () => {
     expect(document.body.classList.contains('mobile-view')).toBe(false);
+    expect(document.body.classList.contains('desktop-view')).toBe(true);
     expect(window.localStorage.getItem('mobileView')).toBe(null);
 
     window.toggleMobileView();
 
     expect(document.body.classList.contains('mobile-view')).toBe(true);
+    expect(document.body.classList.contains('desktop-view')).toBe(false);
     expect(window.localStorage.getItem('mobileView')).toBe('on');
 
     window.toggleMobileView();
 
     expect(document.body.classList.contains('mobile-view')).toBe(false);
+    expect(document.body.classList.contains('desktop-view')).toBe(true);
     expect(window.localStorage.getItem('mobileView')).toBe('off');
   });
 });
