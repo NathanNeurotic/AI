@@ -643,14 +643,14 @@ body.mobile-view #searchInput {
     width: 90%;
 }
 
-/* Hide the view toggle when mobile layout is active */
+/* View toggle is now always visible for easier layout switching */
 body.mobile-view #viewToggle {
-    display: none;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
     body:not(.desktop-view) #viewToggle {
-        display: none;
+        display: inline-block;
     }
     body:not(.desktop-view) .category-content {
         grid-template-columns: 1fr;
