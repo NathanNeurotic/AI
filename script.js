@@ -705,6 +705,15 @@ function toggleMobileView() {
 
 window.toggleMobileView = toggleMobileView;
 
+function toggleDesktopView() {
+    const isDesktop = !document.body.classList.contains('desktop-view');
+    document.body.classList.toggle('desktop-view', isDesktop);
+    document.body.classList.toggle('mobile-view', !isDesktop);
+    updateToggleButtons();
+}
+
+window.toggleDesktopView = toggleDesktopView;
+
 function toggleCategoryView(categoryId) {
     const section = document.getElementById(categoryId);
     if (!section) return;
@@ -742,6 +751,14 @@ function updateToggleButtons() {
         mobileBtn.title = isMobile ? 'Switch to desktop view' : 'Switch to mobile view';
         mobileBtn.setAttribute('aria-label', mobileBtn.title);
         mobileBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
+    }
+    const desktopBtn = document.getElementById('desktopToggle');
+    if (desktopBtn) {
+        const isDesktop = document.body.classList.contains('desktop-view');
+        desktopBtn.classList.toggle('active', isDesktop);
+        desktopBtn.title = isDesktop ? 'Switch to mobile view' : 'Switch to desktop view';
+        desktopBtn.setAttribute('aria-label', desktopBtn.title);
+        desktopBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
     }
 }
 
