@@ -685,7 +685,10 @@ function applySavedView() {
 }
 
 function applySavedMobileView() {
-    document.body.classList.add('desktop-view');
+    const saved = localStorage.getItem('mobileView');
+    const isMobile = saved === 'mobile';
+    document.body.classList.toggle('mobile-view', isMobile);
+    document.body.classList.toggle('desktop-view', !isMobile);
 }
 
 function toggleView() {
@@ -700,6 +703,7 @@ function toggleMobileView() {
     const isMobile = !document.body.classList.contains('mobile-view');
     document.body.classList.toggle('mobile-view', isMobile);
     document.body.classList.toggle('desktop-view', !isMobile);
+    localStorage.setItem('mobileView', isMobile ? 'mobile' : 'desktop');
     updateToggleButtons();
 }
 
@@ -709,6 +713,7 @@ function toggleDesktopView() {
     const isDesktop = !document.body.classList.contains('desktop-view');
     document.body.classList.toggle('desktop-view', isDesktop);
     document.body.classList.toggle('mobile-view', !isDesktop);
+    localStorage.setItem('mobileView', isDesktop ? 'desktop' : 'mobile');
     updateToggleButtons();
 }
 
