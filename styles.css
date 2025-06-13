@@ -649,10 +649,10 @@ body.mobile-view #viewToggle {
 }
 
 @media (max-width: 768px) {
-    #viewToggle {
+    body:not(.desktop-view) #viewToggle {
         display: none;
     }
-    .category-content {
+    body:not(.desktop-view) .category-content {
         grid-template-columns: 1fr;
     }
 
