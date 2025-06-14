@@ -265,6 +265,13 @@ header h1 {
     animation: blink 0.7s infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .typing-effect::after {
+        animation: none;
+        content: none;
+    }
+}
+
 .service-total {
     display: block;
     font-size: 1rem;
