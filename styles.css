@@ -263,6 +263,14 @@ body.sidebar-open footer {
     transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
+/* Prevent layout shift on small screens when sidebar is open */
+body.mobile-view.sidebar-open header,
+body.mobile-view.sidebar-open main,
+body.mobile-view.sidebar-open footer {
+    margin-left: 0;
+    width: 100%;
+}
+
 #header-favicon {
     display: block;
     width: 50px;
