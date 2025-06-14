@@ -29,7 +29,7 @@ describe('loadServices error handling', () => {
     await window.loadServices();
 
     const main = document.querySelector('main');
-    expect(main.textContent).toContain('Failed to load services');
+    expect(main.textContent).toContain('Error loading essential service data: Network failed. Please check network or file access.');
   });
 
   test('displays error message when response is not ok', async () => {
@@ -38,6 +38,6 @@ describe('loadServices error handling', () => {
     await window.loadServices();
 
     const main = document.querySelector('main');
-    expect(main.textContent).toContain('Failed to load services');
+    expect(main.textContent).toContain('Error loading essential service data: HTTP error! status: 500 while fetching services.json. Please check network or file access.');
   });
 });
