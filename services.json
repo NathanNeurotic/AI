@@ -4347,5 +4347,1139 @@
       "machinelearning",
       "platform"
     ]
+  },
+  {
+    "name": "UrbanFootprint",
+    "url": "https://urbanfootprint.com/",
+    "favicon_url": "https://urbanfootprint.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Climate Engine",
+    "url": "https://climateengine.org/",
+    "favicon_url": "https://climateengine.org/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Planetary AI",
+    "url": "https://www.planetary.ai/",
+    "favicon_url": "https://www.planetary.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Everledger",
+    "url": "https://www.everledger.io/",
+    "favicon_url": "https://www.everledger.io/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Reejig",
+    "url": "https://reejig.com/",
+    "favicon_url": "https://reejig.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "DeepMind AlphaFold",
+    "url": "https://www.deepmind.com/research/highlighted-research/alphafold",
+    "favicon_url": "https://www.deepmind.com/research/highlighted-research/alphafold/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "InstaDeep",
+    "url": "https://www.instadeep.com/",
+    "favicon_url": "https://www.instadeep.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Valo Health",
+    "url": "https://www.valohealth.com/",
+    "favicon_url": "https://www.valohealth.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Terray Therapeutics",
+    "url": "https://terraytx.com/",
+    "favicon_url": "https://terraytx.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Qmunity",
+    "url": "https://quantum-machines.co/",
+    "favicon_url": "https://quantum-machines.co/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Citrine Informatics",
+    "url": "https://citrine.io/",
+    "favicon_url": "https://citrine.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Kebotix",
+    "url": "https://www.kebotix.com/",
+    "favicon_url": "https://www.kebotix.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Exodigo",
+    "url": "https://www.exodigo.com/",
+    "favicon_url": "https://www.exodigo.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Aura Intelligent Systems",
+    "url": "https://auraintelligent.com/",
+    "favicon_url": "https://auraintelligent.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Seeq",
+    "url": "https://www.seeq.com/",
+    "favicon_url": "https://www.seeq.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "InOrbit",
+    "url": "https://www.inorbit.ai/",
+    "favicon_url": "https://www.inorbit.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Formant",
+    "url": "https://formant.io/",
+    "favicon_url": "https://formant.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Realtime Robotics",
+    "url": "https://rtr.ai/",
+    "favicon_url": "https://rtr.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Replica Studios",
+    "url": "https://www.replicastudios.com/",
+    "favicon_url": "https://www.replicastudios.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Move.ai",
+    "url": "https://www.move.ai/",
+    "favicon_url": "https://www.move.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "Mostly AI",
+    "url": "https://mostly.ai/synthetic-data-generation",
+    "favicon_url": "https://mostly.ai/synthetic-data-generation/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Superb AI",
+    "url": "https://www.superb-ai.com/",
+    "favicon_url": "https://www.superb-ai.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Labelbox",
+    "url": "https://labelbox.com/",
+    "favicon_url": "https://labelbox.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Weights & Biases",
+    "url": "https://wandb.ai/",
+    "favicon_url": "https://wandb.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Comet ML",
+    "url": "https://www.comet.com/site/",
+    "favicon_url": "https://www.comet.com/site/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Arize AI",
+    "url": "https://www.arize.com/",
+    "favicon_url": "https://www.arize.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Pachyderm",
+    "url": "https://www.pachyderm.com/",
+    "favicon_url": "https://www.pachyderm.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Iterative.ai",
+    "url": "https://iterative.ai/",
+    "favicon_url": "https://iterative.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "AppZen",
+    "url": "https://www.appzen.com/",
+    "favicon_url": "https://www.appzen.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Highspot",
+    "url": "https://www.highspot.com/",
+    "favicon_url": "https://www.highspot.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Forethought",
+    "url": "https://forethought.ai/",
+    "favicon_url": "https://forethought.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Observe.ai",
+    "url": "https://www.observe.ai/",
+    "favicon_url": "https://www.observe.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Pypestream",
+    "url": "https://www.pypestream.com/",
+    "favicon_url": "https://www.pypestream.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Lawyer.com AI",
+    "url": "https://www.lawyer.com/ai/",
+    "favicon_url": "https://www.lawyer.com/ai/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Eightfold AI",
+    "url": "https://eightfold.ai/",
+    "favicon_url": "https://eightfold.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Moveworks",
+    "url": "https://www.moveworks.com/",
+    "favicon_url": "https://www.moveworks.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Textio",
+    "url": "https://textio.com/",
+    "favicon_url": "https://textio.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Cognito Forms",
+    "url": "https://www.cognitoforms.com/ai",
+    "favicon_url": "https://www.cognitoforms.com/ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Zeni AI",
+    "url": "https://zeni.ai/",
+    "favicon_url": "https://zeni.ai/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Varda Space Industries",
+    "url": "https://www.varda.com/",
+    "favicon_url": "https://www.varda.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Orbital Insight",
+    "url": "https://orbitalinsight.com/",
+    "favicon_url": "https://orbitalinsight.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Blackshark.ai",
+    "url": "https://blackshark.ai/",
+    "favicon_url": "https://blackshark.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Hawk AI",
+    "url": "https://hawk.ai/",
+    "favicon_url": "https://hawk.ai/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Augury",
+    "url": "https://www.augury.com/",
+    "favicon_url": "https://www.augury.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Senseye",
+    "url": "https://www.senseye.io/",
+    "favicon_url": "https://www.senseye.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "PTV Group Optima",
+    "url": "https://www.ptvgroup.com/en/solutions/traffic-software/ptv-optima/",
+    "favicon_url": "https://www.ptvgroup.com/en/solutions/traffic-software/ptv-optima/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Waycare",
+    "url": "https://waycaretech.com/",
+    "favicon_url": "https://waycaretech.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "NoTraffic",
+    "url": "https://notraffic.tech/",
+    "favicon_url": "https://notraffic.tech/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "FreightWaves SONAR AI",
+    "url": "https://www.freightwaves.com/sonar",
+    "favicon_url": "https://www.freightwaves.com/sonar/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Verity",
+    "url": "https://www.exotec.com/verity/",
+    "favicon_url": "https://www.exotec.com/verity/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Intellian",
+    "url": "https://intellian.com/",
+    "favicon_url": "https://intellian.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Planet Labs Analytics",
+    "url": "https://www.planet.com/products/planet-analytics/",
+    "favicon_url": "https://www.planet.com/products/planet-analytics/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Descartes Labs",
+    "url": "https://www.descarteslabs.com/",
+    "favicon_url": "https://www.descarteslabs.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "HydroBuddy.ai",
+    "url": "https://hydrobuddy.ai/",
+    "favicon_url": "https://hydrobuddy.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "AeroVironment Quantix Mapper",
+    "url": "https://www.avinc.com/uas/quantix-mapper/",
+    "favicon_url": "https://www.avinc.com/uas/quantix-mapper/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Leonardo.Ai",
+    "url": "https://leonardo.ai/",
+    "favicon_url": "https://leonardo.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Stability AI Clipdrop",
+    "url": "https://clipdrop.co/",
+    "favicon_url": "https://clipdrop.co/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Fliki.ai",
+    "url": "https://fliki.ai/",
+    "favicon_url": "https://fliki.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "DeepMotion",
+    "url": "https://www.deepmotion.com/",
+    "favicon_url": "https://www.deepmotion.com/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "Audio Strip",
+    "url": "https://audiostrip.co/",
+    "favicon_url": "https://audiostrip.co/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Splice",
+    "url": "https://splice.com/",
+    "favicon_url": "https://splice.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Jukebox",
+    "url": "https://openai.com/research/jukebox",
+    "favicon_url": "https://openai.com/research/jukebox/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Atomwise",
+    "url": "https://www.atomwise.com/",
+    "favicon_url": "https://www.atomwise.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "OpenEye Scientific",
+    "url": "https://www.eyesopen.com/products/orion",
+    "favicon_url": "https://www.eyesopen.com/products/orion/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Gencove",
+    "url": "https://www.gencove.com/",
+    "favicon_url": "https://www.gencove.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Sophia Genetics",
+    "url": "https://www.sophiagenetics.com/",
+    "favicon_url": "https://www.sophiagenetics.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Snyk",
+    "url": "https://snyk.io/",
+    "favicon_url": "https://snyk.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Trellix",
+    "url": "https://www.trellix.com/en-us/solutions/extended-detection-response/xdrs.html",
+    "favicon_url": "https://www.trellix.com/en-us/solutions/extended-detection-response/xdrs.html/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Forter",
+    "url": "https://www.forter.com/",
+    "favicon_url": "https://www.forter.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Seon",
+    "url": "https://seon.io/",
+    "favicon_url": "https://seon.io/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "BioCatch",
+    "url": "https://www.biocatch.com/",
+    "favicon_url": "https://www.biocatch.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Constructor.io",
+    "url": "https://constructor.io/",
+    "favicon_url": "https://constructor.io/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Narvar",
+    "url": "https://corp.narvar.com/platform/ai/",
+    "favicon_url": "https://corp.narvar.com/platform/ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Contentsquare",
+    "url": "https://contentsquare.com/",
+    "favicon_url": "https://contentsquare.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Sapient AI",
+    "url": "https://www.sapient.ai/",
+    "favicon_url": "https://www.sapient.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "SkyHive",
+    "url": "https://skyhive.ai/",
+    "favicon_url": "https://skyhive.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Pymetrics",
+    "url": "https://www.pymetrics.com/",
+    "favicon_url": "https://www.pymetrics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Diligent",
+    "url": "https://www.diligent.com/solutions/ai-insights/",
+    "favicon_url": "https://www.diligent.com/solutions/ai-insights/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Ontra",
+    "url": "https://www.ontra.ai/",
+    "favicon_url": "https://www.ontra.ai/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "ThoughtRiver",
+    "url": "https://www.thoughtriver.com/",
+    "favicon_url": "https://www.thoughtriver.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "SpotDraft",
+    "url": "https://spotdraft.com/",
+    "favicon_url": "https://spotdraft.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Compliance.ai",
+    "url": "https://www.compliance.ai/",
+    "favicon_url": "https://www.compliance.ai/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Valerann",
+    "url": "https://www.valerann.com/",
+    "favicon_url": "https://www.valerann.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "OBJaverse",
+    "url": "https://www.deepmind.com/open-source/objaverse",
+    "favicon_url": "https://www.deepmind.com/open-source/objaverse/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "Polytope",
+    "url": "https://www.polytope.ai/",
+    "favicon_url": "https://www.polytope.ai/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "Givaudan Carto",
+    "url": "https://www.givaudan.com/fragrance-beauty/active-beauty/carto-artificial-intelligence-fragrance-creation-tool",
+    "favicon_url": "https://www.givaudan.com/fragrance-beauty/active-beauty/carto-artificial-intelligence-fragrance-creation-tool/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Tastewise",
+    "url": "https://tastewise.io/",
+    "favicon_url": "https://tastewise.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Chef Robotics",
+    "url": "https://www.chefrobotics.com/",
+    "favicon_url": "https://www.chefrobotics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "ZenRobotics",
+    "url": "https://zenrobotics.com/",
+    "favicon_url": "https://zenrobotics.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Recycleye",
+    "url": "https://www.recycleye.com/",
+    "favicon_url": "https://www.recycleye.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "AMP Robotics",
+    "url": "https://www.amprobotics.com/",
+    "favicon_url": "https://www.amprobotics.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Greyparrot",
+    "url": "https://greyparrot.ai/",
+    "favicon_url": "https://greyparrot.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "One Concern",
+    "url": "https://www.oneconcern.com/",
+    "favicon_url": "https://www.oneconcern.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Tomorrow.io",
+    "url": "https://www.tomorrow.io/",
+    "favicon_url": "https://www.tomorrow.io/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "IBM Weather Company",
+    "url": "https://www.ibm.com/weather",
+    "favicon_url": "https://www.ibm.com/weather/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Heuritech",
+    "url": "https://heuritech.com/",
+    "favicon_url": "https://heuritech.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Refabric",
+    "url": "https://www.refabric.ai/",
+    "favicon_url": "https://www.refabric.ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Lectra Valia Fashion",
+    "url": "https://www.lectra.com/en/solutions/valia-fashion",
+    "favicon_url": "https://www.lectra.com/en/solutions/valia-fashion/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Six Atomic",
+    "url": "https://www.sixatomic.com/",
+    "favicon_url": "https://www.sixatomic.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Sewbo",
+    "url": "https://sewbo.com/",
+    "favicon_url": "https://sewbo.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Nuance Mix",
+    "url": "https://www.nuance.com/omni-channel-customer-engagement/mix/",
+    "favicon_url": "https://www.nuance.com/omni-channel-customer-engagement/mix/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Century Tech",
+    "url": "https://www.century.tech/",
+    "favicon_url": "https://www.century.tech/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Knewton Alta",
+    "url": "https://www.knewton.com/products/alta/",
+    "favicon_url": "https://www.knewton.com/products/alta/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "DreamBox Learning",
+    "url": "https://www.dreambox.com/",
+    "favicon_url": "https://www.dreambox.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Carnegie Learning Mika",
+    "url": "https://www.carnegielearning.com/who-we-are/ai-in-education/",
+    "favicon_url": "https://www.carnegielearning.com/who-we-are/ai-in-education/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Querium",
+    "url": "https://querium.com/",
+    "favicon_url": "https://querium.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "DWE.ai",
+    "url": "https://dwe.ai/",
+    "favicon_url": "https://dwe.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Saildrone",
+    "url": "https://www.saildrone.com/",
+    "favicon_url": "https://www.saildrone.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "XOCEAN",
+    "url": "https://www.xocean.com/",
+    "favicon_url": "https://www.xocean.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "ICEYE",
+    "url": "https://www.iceye.com/",
+    "favicon_url": "https://www.iceye.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "GE Digital GridOS",
+    "url": "https://www.ge.com/digital/products/grid-software",
+    "favicon_url": "https://www.ge.com/digital/products/grid-software/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Siemens Grid Software",
+    "url": "https://www.siemens.com/global/en/products/energy/grid-software.html",
+    "favicon_url": "https://www.siemens.com/global/en/products/energy/grid-software.html/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Urbint",
+    "url": "https://www.urbint.com/",
+    "favicon_url": "https://www.urbint.com/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Sense",
+    "url": "https://sense.com/",
+    "favicon_url": "https://sense.com/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Span.IO",
+    "url": "https://www.span.io/",
+    "favicon_url": "https://www.span.io/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Moixa",
+    "url": "https://www.moixa.com/",
+    "favicon_url": "https://www.moixa.com/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "OpenGrid",
+    "url": "https://opengrid.com/",
+    "favicon_url": "https://opengrid.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "NIST AI-Driven Materials Science",
+    "url": "https://www.nist.gov/mml/mmsd/data-and-ai-driven-materials-science-group",
+    "favicon_url": "https://www.nist.gov/mml/mmsd/data-and-ai-driven-materials-science-group/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Cortechs.ai NeuroQuant",
+    "url": "https://www.cortechs.ai/",
+    "favicon_url": "https://www.cortechs.ai/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Insitro",
+    "url": "https://www.insitro.com/",
+    "favicon_url": "https://www.insitro.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Concentric AI",
+    "url": "https://www.concentric.ai/",
+    "favicon_url": "https://www.concentric.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Locomation",
+    "url": "https://locomation.com/",
+    "favicon_url": "https://locomation.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Plus.ai",
+    "url": "https://plus.ai/",
+    "favicon_url": "https://plus.ai/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Genies",
+    "url": "https://genies.com/",
+    "favicon_url": "https://genies.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Lumen5",
+    "url": "https://lumen5.com/",
+    "favicon_url": "https://lumen5.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Arize AI",
+    "url": "https://www.arize.com/",
+    "favicon_url": "https://www.arize.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
   }
 ]
