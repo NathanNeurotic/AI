@@ -774,7 +774,9 @@ function renderFavoritesCategory() {
 
 function applySavedTheme() {
     const saved = localStorage.getItem('theme');
-    if (saved === 'light') {
+    const osPrefersLight = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: light)').matches;
+    if (saved === 'light' || (saved === null && osPrefersLight)) {
         document.body.classList.add('light-mode');
         document.documentElement.classList.add('light-mode');
     }

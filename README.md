@@ -19,7 +19,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
     *   Header text wraps correctly on narrow screens.
     *   Interactive elements are properly handled in collapsed sections on mobile.
 *   **Persistent Category State:** Remembers which categories were left open or closed across sessions using browser localStorage.
-*   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header.
+*   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header. On first visit, the page follows your operating system's light or dark preference.
 *   **Service Counts:** The header shows the total number of available services, and each category title displays how many entries it contains.
 *   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
 *   **Favorites:** Mark services with the star icon to quickly access them in a dedicated "Favorites" category that persists using `localStorage`.
@@ -144,7 +144,7 @@ Service data is stored in `services.json`. To add a new service or update an exi
 *   All custom styles are in `styles.css`.
 *   You can modify colors, fonts, spacing, layout, and other visual aspects by editing this file.
 *   The styles are generally organized by element or component (e.g., `header`, `category`, `service-button`).
-*   A built-in theme switcher toggles the `light-mode` class on `<body>` using `script.js` and remembers your choice in `localStorage`. Customize the default colors by changing the CSS variables defined at the top of `styles.css`.
+*   A built-in theme switcher toggles the `light-mode` class on `<body>` using `script.js` and remembers your choice in `localStorage`. If no theme is stored, the page defaults to your OS preference. Customize the default colors by changing the CSS variables defined at the top of `styles.css`.
 
 ### Modifying Functionality
 
