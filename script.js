@@ -875,7 +875,10 @@ function buildSidebar() {
         if (!titleEl) return;
         const link = document.createElement('a');
         link.href = `#${section.id}`;
-        link.textContent = titleEl.textContent;
+        const count = section.querySelectorAll('.service-button').length;
+        link.textContent = section.id === 'favorites'
+            ? titleEl.textContent
+            : `${titleEl.textContent}(${count})`;
         link.addEventListener('click', () => {
             toggleSidebar();
         });
