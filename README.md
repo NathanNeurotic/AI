@@ -23,8 +23,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
 *   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
 *   **Favorites:** Mark services with the star icon to quickly access them in a dedicated "Favorites" category that persists using `localStorage`.
 *   **Category View Toggle:** Each category can switch between grid and list layouts independently, and the choice is remembered.
-*   **Mobile View Toggle:** Force a single-column layout regardless of screen size with the "Mobile View" button.
-*   **Desktop View Toggle:** Force the multi-column layout with the "Desktop View" button.
+*   **Device View Toggle:** Quickly switch between single-column mobile and multi-column desktop layouts using one button.
 *   **View Preference Persistence:** Your mobile or desktop choice is saved in `localStorage` and reapplied on future visits.
 
 ## Getting Started
