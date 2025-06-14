@@ -5858,5 +5858,68 @@
     "tags": [
       "allinone"
     ]
-  }
+  },
+{
+  "name": "OldPhoto.ai",
+  "url": "https://oldphoto.ai/",
+  "favicon_url": "https://oldphoto.ai/favicon.ico",
+  "category": "🎨 Image Generation and Design",
+  "tags": [
+    "image"
+  ]
+},
+{
+  "name": "PS2AI",
+  "url": "https://ps2ai.com/",
+  "favicon_url": "https://ps2ai.com/favicon.ico",
+  "category": "🎨 Image Generation and Design",
+  "tags": [
+    "image"
+  ]
+},
+{
+  "name": "Azure OpenAI Service for Government (IL6)",
+  "url": "https://devblogs.microsoft.com/azuregov/azure-openai-authorization/",
+  "favicon_url": "https://azure.microsoft.com/favicon.ico",
+  "category": "🧠 Machine Learning Platforms",
+  "tags": [
+    "machinelearning"
+  ]
+},
+{
+  "name": "Azure AI Foundry",
+  "url": "https://azure.microsoft.com/en-us/solutions/ai/foundry",
+  "favicon_url": "https://azure.microsoft.com/favicon.ico",
+  "category": "🧠 Machine Learning Platforms",
+  "tags": [
+    "machinelearning"
+  ]
+},
+{
+  "name": "Microsoft Entra Verified ID",
+  "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+  "favicon_url": "https://www.microsoft.com/favicon.ico",
+  "category": "🤖 Specialized",
+  "tags": [
+    "specialized"
+  ]
+},
+{
+  "name": "Microsoft Copilot Studio",
+  "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
+  "favicon_url": "https://www.microsoft.com/favicon.ico",
+  "category": "🤖 Specialized",
+  "tags": [
+    "specialized"
+  ]
+},
+{
+  "name": "Microsoft Dynamics 365 Copilot",
+  "url": "https://www.microsoft.com/en-us/dynamics-365/solutions/ai",
+  "favicon_url": "https://www.microsoft.com/favicon.ico",
+  "category": "🤖 Specialized",
+  "tags": [
+    "specialized"
+  ]
+}
 ]
