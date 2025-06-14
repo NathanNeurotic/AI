@@ -3608,5 +3608,188 @@
       "music",
       "speech"
     ]
+  },
+  {
+    "name": "Arcwise AI",
+    "url": "https://www.arcwise.ai/",
+    "favicon_url": "https://www.arcwise.ai/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Aiberry",
+    "url": "https://www.aiberry.com/",
+    "favicon_url": "https://www.aiberry.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "BuildFire AI",
+    "url": "https://buildfire.com/ai/",
+    "favicon_url": "https://buildfire.com/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Camira AI",
+    "url": "https://camira.ai/",
+    "favicon_url": "https://camira.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Coqui",
+    "url": "https://coqui.ai/",
+    "favicon_url": "https://coqui.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Daydream",
+    "url": "https://daydream.shop/",
+    "favicon_url": "https://daydream.shop/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Fathom AI",
+    "url": "https://fathom.fm/",
+    "favicon_url": "https://fathom.fm/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Katalist AI",
+    "url": "https://www.katalist.ai/",
+    "favicon_url": "https://www.katalist.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video",
+      "generation",
+      "editing"
+    ]
+  },
+  {
+    "name": "Miro AI",
+    "url": "https://miro.com/ai/",
+    "favicon_url": "https://miro.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Nanonets",
+    "url": "https://nanonets.com/",
+    "favicon_url": "https://nanonets.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "PredictNow.ai",
+    "url": "https://www.predictnow.ai/",
+    "favicon_url": "https://www.predictnow.ai/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Rephrase.ai",
+    "url": "https://rephrase.ai/",
+    "favicon_url": "https://rephrase.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video",
+      "generation",
+      "editing"
+    ]
+  },
+  {
+    "name": "SlidesAI",
+    "url": "https://slidesai.io/",
+    "favicon_url": "https://slidesai.io/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Tome",
+    "url": "https://tome.app/",
+    "favicon_url": "https://tome.app/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Typeface",
+    "url": "https://www.typeface.ai/",
+    "favicon_url": "https://www.typeface.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Unspun (FitOS)",
+    "url": "https://unspun.io/",
+    "favicon_url": "https://unspun.io/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "WebWhiz AI",
+    "url": "https://webwhiz.ai/",
+    "favicon_url": "https://webwhiz.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Wonder Dynamics (Wonder Studio)",
+    "url": "https://wonderdynamics.com/",
+    "favicon_url": "https://wonderdynamics.com/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video",
+      "generation",
+      "editing"
+    ]
   }
 ]
