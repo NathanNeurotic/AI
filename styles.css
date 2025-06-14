@@ -90,8 +90,7 @@ header {
 }
 #themeToggle.active,
 #viewToggle.active,
-#mobileToggle.active,
-#desktopToggle.active {
+#deviceToggle.active {
     background: var(--accent-color);
     color: var(--bg-color);
 }
@@ -109,20 +108,7 @@ header {
     margin-left: 0.5rem;
 }
 
-#mobileToggle {
-    background: none;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    font-size: 0.8rem;
-    padding: 0.2rem 0.4rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-}
-
-#desktopToggle {
+#deviceToggle {
     background: none;
     border: 2px solid var(--text-color);
     color: var(--text-color);
@@ -137,8 +123,7 @@ header {
 
 #themeToggle svg,
 #viewToggle svg,
-#mobileToggle svg,
-#desktopToggle svg {
+#deviceToggle svg {
     width: 1rem;
     height: 1rem;
     fill: currentColor;
@@ -560,8 +545,7 @@ body.block-view .category {
 
 #themeToggle:hover,
 #viewToggle:hover,
-#mobileToggle:hover,
-#desktopToggle:hover,
+#deviceToggle:hover,
 #installBtn:hover,
 #expandAllBtn:hover,
 #collapseAllBtn:hover,
