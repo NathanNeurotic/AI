@@ -20,6 +20,7 @@ The AI Services Dashboard is a static webpage designed to provide a curated list
     *   Interactive elements are properly handled in collapsed sections on mobile.
 *   **Persistent Category State:** Remembers which categories were left open or closed across sessions using browser localStorage.
 *   **Themed Interface:** Retro-terminal aesthetic with a typing effect in the header.
+*   **Service Counts:** The header shows the total number of available services, and each category title displays how many entries it contains.
 *   **Alphabetical Sorting:** Categories and services are automatically sorted alphabetically when `script.js` dynamically loads `services.json`.
 *   **Favorites:** Mark services with the star icon to quickly access them in a dedicated "Favorites" category that persists using `localStorage`.
 *   **Category View Toggle:** Each category can switch between grid and list layouts independently, and the choice is remembered.
@@ -84,6 +85,10 @@ They cover category toggling and the search filtering behavior.
 ## Using Favorites
 
 Click the star icon next to any service to mark it as a favorite. Favorited services appear in the "Favorites" category directly below the search box. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
+
+## Service Counts
+
+When the page finishes loading, the main heading displays the total number of available services, such as `AI Services Dashboard (150 services)`. Every category heading also shows its own count in parentheses so you can see at a glance how many tools are in each section.
 
 ## Modifying the Site
 
