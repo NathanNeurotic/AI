@@ -16,4 +16,5 @@ jobs:
           node-version-file: 'package.json'
           cache: 'npm'
       - run: npm install
+      - run: npm run lint
       - run: npm test

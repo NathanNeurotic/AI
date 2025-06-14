@@ -6,9 +6,11 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
     "jest": "^29.7.0",
     "jsdom": "^22.1.0"
   }
