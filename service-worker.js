@@ -5,7 +5,7 @@ const URLS_TO_CACHE = [
   './styles.css',
   './script.js',
   './services.json',
-  './favicon.ico',
+  './public/favicon.ico',
   './public/manifest.json'
 ];
 self.CACHE_NAME = globalThis.CACHE_NAME = CACHE_NAME;
