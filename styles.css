@@ -128,7 +128,8 @@ header {
 }
 
 #expandAllBtn,
-#collapseAllBtn {
+#collapseAllBtn,
+#clearSearchBtn {
     background: none;
     border: 2px solid var(--text-color);
     color: var(--text-color);
@@ -551,6 +552,7 @@ body.block-view .category {
 #installBtn:hover,
 #expandAllBtn:hover,
 #collapseAllBtn:hover,
+#clearSearchBtn:hover,
 #clearFavoritesBtn:hover,
 #sidebarToggle:hover,
 .category-view-toggle:hover,
