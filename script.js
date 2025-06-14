@@ -880,7 +880,8 @@ function buildSidebar() {
         if (!titleEl) return;
         const link = document.createElement('a');
         link.href = `#${section.id}`;
-        link.textContent = titleEl.textContent;
+        const plainText = titleEl.textContent.replace(/\(\d+\)$/, '').trim();
+        link.textContent = plainText;
         link.addEventListener('click', () => {
             toggleSidebar();
         });
