@@ -5517,5 +5517,346 @@
     "tags": [
       "legal"
     ]
+  },
+  {
+    "name": "Blockade Labs",
+    "url": "https://www.blockadelabs.com/",
+    "favicon_url": "https://www.blockadelabs.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Audio.com",
+    "url": "https://audio.com/",
+    "favicon_url": "https://audio.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "StemRoller",
+    "url": "https://www.stemroller.com/",
+    "favicon_url": "https://www.stemroller.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Accentize",
+    "url": "https://www.accentize.com/",
+    "favicon_url": "https://www.accentize.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Topaz Labs",
+    "url": "https://www.topazlabs.com/",
+    "favicon_url": "https://www.topazlabs.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "PicWish",
+    "url": "https://picwish.com/",
+    "favicon_url": "https://picwish.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Playground AI",
+    "url": "https://playgroundai.com/",
+    "favicon_url": "https://playgroundai.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Tamr",
+    "url": "https://www.tamr.com/",
+    "favicon_url": "https://www.tamr.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "BigID",
+    "url": "https://bigid.com/",
+    "favicon_url": "https://bigid.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Collibra",
+    "url": "https://www.collibra.com/",
+    "favicon_url": "https://www.collibra.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Alation",
+    "url": "https://www.alation.com/",
+    "favicon_url": "https://www.alation.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Monte Carlo",
+    "url": "https://www.montecarlodata.com/",
+    "favicon_url": "https://www.montecarlodata.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Datafold",
+    "url": "https://www.datafold.com/",
+    "favicon_url": "https://www.datafold.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Fero Labs",
+    "url": "https://www.ferolabs.com/",
+    "favicon_url": "https://www.ferolabs.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Anomalo",
+    "url": "https://www.anomalo.com/",
+    "favicon_url": "https://www.anomalo.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "WhyLabs",
+    "url": "https://whylabs.ai/",
+    "favicon_url": "https://whylabs.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "CausaLens",
+    "url": "https://causalens.com/",
+    "favicon_url": "https://causalens.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "ChowNow",
+    "url": "https://www.chownow.com/",
+    "favicon_url": "https://www.chownow.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Toast",
+    "url": "https://pos.toasttab.com/",
+    "favicon_url": "https://pos.toasttab.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Grubhub",
+    "url": "https://www.grubhub.com/",
+    "favicon_url": "https://www.grubhub.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Deliveroo",
+    "url": "https://deliveroo.co.uk/",
+    "favicon_url": "https://deliveroo.co.uk/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Flexport",
+    "url": "https://www.flexport.com/",
+    "favicon_url": "https://www.flexport.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Project44",
+    "url": "https://www.project44.com/",
+    "favicon_url": "https://www.project44.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Nodalview",
+    "url": "https://nodalview.com/",
+    "favicon_url": "https://nodalview.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Zumper",
+    "url": "https://www.zumper.com/",
+    "favicon_url": "https://www.zumper.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Realtor.com",
+    "url": "https://www.realtor.com/",
+    "favicon_url": "https://www.realtor.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Pendo",
+    "url": "https://www.pendo.io/",
+    "favicon_url": "https://www.pendo.io/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Amplitude",
+    "url": "https://amplitude.com/",
+    "favicon_url": "https://amplitude.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Mixpanel",
+    "url": "https://mixpanel.com/",
+    "favicon_url": "https://mixpanel.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Freshworks",
+    "url": "https://www.freshworks.com/",
+    "favicon_url": "https://www.freshworks.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Kore.ai",
+    "url": "https://kore.ai/",
+    "favicon_url": "https://kore.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Civitas Learning",
+    "url": "https://www.civitaslearning.com/",
+    "favicon_url": "https://www.civitaslearning.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Polis",
+    "url": "https://pol.is/",
+    "favicon_url": "https://pol.is/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "AI.builders",
+    "url": "https://ai.builders/",
+    "favicon_url": "https://ai.builders/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
   }
 ]
