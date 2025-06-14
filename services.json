@@ -1030,8 +1030,96 @@
     ]
   },
   {
+    "name": "Azure AI Bot Service",
+    "url": "https://azure.microsoft.com/en-us/products/bot-services/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Content Safety",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Document Intelligence",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Search",
+    "url": "https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
     "name": "Azure AI Services",
     "url": "https://azure.microsoft.com/en-us/products/ai-services/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Speech",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Studio",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-studio/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure AI Vision",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Azure OpenAI Service",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
     "favicon_url": "https://azure.microsoft.com/favicon.ico",
     "category": "🌐 Developer Platforms and APIs",
     "tags": [
