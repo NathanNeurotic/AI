@@ -378,6 +378,8 @@ body.block-view .category {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    word-break: break-word;
     box-sizing: border-box;
     border: 2px solid var(--text-color);
     border-radius: 10px;
@@ -694,6 +696,12 @@ body.mobile-view #viewToggle {
 
     #searchInput {
         width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .category h2 {
+        font-size: 1rem;
     }
 }
 
