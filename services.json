@@ -5947,67 +5947,257 @@
       "allinone"
     ]
   },
-{
-  "name": "OldPhoto.ai",
-  "url": "https://oldphoto.ai/",
-  "favicon_url": "https://oldphoto.ai/favicon.ico",
-  "category": "🎨 Image Generation and Design",
-  "tags": [
-    "image"
-  ]
-},
-{
-  "name": "PS2AI",
-  "url": "https://ps2ai.com/",
-  "favicon_url": "https://ps2ai.com/favicon.ico",
-  "category": "🎨 Image Generation and Design",
-  "tags": [
-    "image"
-  ]
-},
-{
-  "name": "Azure OpenAI Service for Government (IL6)",
-  "url": "https://devblogs.microsoft.com/azuregov/azure-openai-authorization/",
-  "favicon_url": "https://azure.microsoft.com/favicon.ico",
-  "category": "🧠 Machine Learning Platforms",
-  "tags": [
-    "machinelearning"
-  ]
-},
-{
-  "name": "Azure AI Foundry",
-  "url": "https://azure.microsoft.com/en-us/solutions/ai/foundry",
-  "favicon_url": "https://azure.microsoft.com/favicon.ico",
-  "category": "🧠 Machine Learning Platforms",
-  "tags": [
-    "machinelearning"
-  ]
-},
-{
-  "name": "Microsoft Entra Verified ID",
-  "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
-  "favicon_url": "https://www.microsoft.com/favicon.ico",
-  "category": "🤖 Specialized",
-  "tags": [
-    "specialized"
-  ]
-},
-{
-  "name": "Microsoft Copilot Studio",
-  "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
-  "favicon_url": "https://www.microsoft.com/favicon.ico",
-  "category": "🤖 Specialized",
-  "tags": [
-    "specialized"
-  ]
-},
-{
-  "name": "Microsoft Dynamics 365 Copilot",
-  "url": "https://www.microsoft.com/en-us/dynamics-365/solutions/ai",
-  "favicon_url": "https://www.microsoft.com/favicon.ico",
-  "category": "🤖 Specialized",
-  "tags": [
-    "specialized"
-  ]
-}
+  {
+    "name": "OldPhoto.ai",
+    "url": "https://oldphoto.ai/",
+    "favicon_url": "https://oldphoto.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "PS2AI",
+    "url": "https://ps2ai.com/",
+    "favicon_url": "https://ps2ai.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image"
+    ]
+  },
+  {
+    "name": "Azure OpenAI Service for Government (IL6)",
+    "url": "https://devblogs.microsoft.com/azuregov/azure-openai-authorization/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Azure AI Foundry",
+    "url": "https://azure.microsoft.com/en-us/solutions/ai/foundry",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Microsoft Entra Verified ID",
+    "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Microsoft Copilot Studio",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Microsoft Dynamics 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/dynamics-365/solutions/ai",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Acelab",
+    "url": "https://acelab.ai/",
+    "favicon_url": "https://acelab.ai/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "architecture",
+      "construction"
+    ]
+  },
+  {
+    "name": "AccuWeather For Business (SkyGuard AI)",
+    "url": "https://www.accuweather.com/business/skyguard",
+    "favicon_url": "https://www.accuweather.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "weather",
+      "alerts"
+    ]
+  },
+  {
+    "name": "Adobe Acrobat AI Assistant",
+    "url": "https://www.adobe.com/acrobat/ai-assistant.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "pdf",
+      "productivity"
+    ]
+  },
+  {
+    "name": "Adobe Experience Platform AI Services",
+    "url": "https://experience.adobe.com/solutions/experience-platform/services.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "marketing",
+      "analytics"
+    ]
+  },
+  {
+    "name": "Adobe Express",
+    "url": "https://www.adobe.com/express/",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "design",
+      "social"
+    ]
+  },
+  {
+    "name": "Adobe Frame.io",
+    "url": "https://www.adobe.com/products/video/frame-io/features.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Adobe Sensei",
+    "url": "https://www.adobe.com/sensei.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "adobe",
+      "framework"
+    ]
+  },
+  {
+    "name": "Amazon Q Business",
+    "url": "https://aws.amazon.com/q/business/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "assistant",
+      "business"
+    ]
+  },
+  {
+    "name": "Amazon HealthScribe",
+    "url": "https://aws.amazon.com/blogs/aws/now-generally-available-aws-healthscribe/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "transcription",
+      "clinical"
+    ]
+  },
+  {
+    "name": "Amazon Lookout for Equipment",
+    "url": "https://aws.amazon.com/lookout-for-equipment/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "Amazon Lookout for Metrics",
+    "url": "https://aws.amazon.com/lookout-for-metrics/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "anomaly",
+      "business"
+    ]
+  },
+  {
+    "name": "Amazon Monitron",
+    "url": "https://aws.amazon.com/monitron/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "AI Tools Directory",
+    "url": "https://aitools.fyi/",
+    "favicon_url": "https://aitools.fyi/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "directory",
+      "catalog"
+    ]
+  },
+  {
+    "name": "Futurepedia",
+    "url": "https://www.futurepedia.io/",
+    "favicon_url": "https://www.futurepedia.io/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "directory",
+      "catalog"
+    ]
+  },
+  {
+    "name": "There's An AI For That",
+    "url": "https://theresanaiforthat.com/",
+    "favicon_url": "https://theresanaiforthat.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "directory",
+      "catalog"
+    ]
+  },
+  {
+    "name": "This Person Does Not Exist",
+    "url": "https://thispersondoesnotexist.com/",
+    "favicon_url": "https://thispersondoesnotexist.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "faces",
+      "generator"
+    ]
+  },
+  {
+    "name": "This Cat Does Not Exist",
+    "url": "https://thiscatdoesnotexist.com/",
+    "favicon_url": "https://thiscatdoesnotexist.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "cats",
+      "generator"
+    ]
+  },
+  {
+    "name": "Retro Diffusion",
+    "url": "https://runware.ai/blog/retro-diffusion-creating-authentic-pixel-art-with-ai-at-scale",
+    "favicon_url": "https://runware.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "pixel",
+      "retro"
+    ]
+  },
+  {
+    "name": "ImagineArt AI Aesthetic Generator",
+    "url": "https://www.imagine.art/features/ai-aesthetic-generator",
+    "favicon_url": "https://www.imagine.art/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "style",
+      "aesthetics"
+    ]
+  }
 ]
