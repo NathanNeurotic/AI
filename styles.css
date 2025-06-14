@@ -254,6 +254,10 @@ header {
     transition: left 0.3s ease;
 }
 
+body.sidebar-open #sidebarToggle {
+    left: calc(200px + 1rem);
+}
+
 
 body.sidebar-open header,
 body.sidebar-open main,
