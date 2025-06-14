@@ -386,13 +386,45 @@ function createServiceButton(service, favoritesSet, categoryName) {
     copyBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        navigator.clipboard.writeText(service.url).then(() => {
-            const original = copyBtn.textContent;
-            copyBtn.textContent = 'Copied!';
+
+        const original = copyBtn.textContent;
+        const showMessage = (msg) => {
+            copyBtn.textContent = msg;
             setTimeout(() => {
                 copyBtn.textContent = original;
             }, 1000);
-        });
+        };
+
+        const fallbackCopy = () => {
+            const textarea = document.createElement('textarea');
+            textarea.value = service.url;
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                const success = document.execCommand('copy');
+                document.body.removeChild(textarea);
+                if (success) {
+                    showMessage('Copied!');
+                } else {
+                    showMessage('Copy failed');
+                }
+            } catch (err) {
+                document.body.removeChild(textarea);
+                showMessage('Copy failed');
+            }
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(service.url)
+                .then(() => {
+                    showMessage('Copied!');
+                })
+                .catch(fallbackCopy);
+        } else {
+            fallbackCopy();
+        }
     });
     serviceUrlSpan.appendChild(copyBtn);
 
