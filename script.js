@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             headerTextElement.textContent = '';
             let charIndex = 0;
-            function typeEffect() {
+            const typeEffect = () => {
                 if (charIndex < textToType.length) {
                     headerTextElement.textContent += textToType.charAt(charIndex);
                     charIndex++;
                     setTimeout(typeEffect, 100);
                 }
-            }
+            };
             typeEffect();
         }
     }

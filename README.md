@@ -83,6 +83,16 @@ npm test
 The tests use Jest with `jsdom` to verify functionality in `script.js`.
 They cover category toggling and the search filtering behavior.
 
+### Linting
+
+Run ESLint to check for code quality issues:
+
+```bash
+npm run lint
+```
+
+The configuration uses the recommended rules for browser environments and includes overrides for the test suite.
+
 ## Using Favorites
 
 Click the star icon next to any service to mark it as a favorite. Favorited services appear in the "Favorites" category directly below the search box. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
