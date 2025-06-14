@@ -580,16 +580,12 @@
     "name": "Krishi Mitra",
     "url": "https://www.itcagr.com/krishi-mitra",
     "favicon_url": "https://www.itcagr.com/favicon.ico",
-
     "category": "🌲 Agriculture",
     "tags": [
       "agriculture"
     ]
   },
   {
-    "name": "Krishi Mitra",
-    "url": "https://www.itcagr.com/krishi-mitra",
-    "favicon_url": "https://www.itcagr.com/favicon.ico",
     "name": "PrecisionHawk",
     "url": "https://precisionhawk.com/",
     "favicon_url": "https://precisionhawk.com/favicon.ico",
@@ -623,10 +619,6 @@
     "category": "🌲 Agriculture"
   },
   {
-    "name": "PrecisionHawk",
-    "url": "https://precisionhawk.com/",
-    "favicon_url": "https://precisionhawk.com/favicon.ico",
-
     "name": "Prospera",
     "url": "https://www.prospera.ag/",
     "favicon_url": "https://www.prospera.ag/favicon.ico",
@@ -654,37 +646,6 @@
     ]
   },
   {
-    "name": "Prospera",
-    "url": "https://www.prospera.ag/",
-    "favicon_url": "https://www.prospera.ag/favicon.ico",
-    "category": "🌲 Agriculture",
-    "tags": [
-      "agriculture"
-    ]
-  },
-  {
-    "name": "Robovision",
-    "url": "https://robovision.ai/",
-    "favicon_url": "https://robovision.ai/favicon.ico",
-    "category": "🌲 Agriculture",
-    "tags": [
-      "agriculture"
-    ]
-  },
-  {
-    "name": "Taranis",
-    "url": "https://taranis.com/",
-    "favicon_url": "https://taranis.com/favicon.ico",
-    "category": "🌲 Agriculture",
-    "tags": [
-      "agriculture"
-    ]
-  },
-  {
-    "name": "AI.builders",
-    "url": "https://ai.builders/",
-    "favicon_url": "https://ai.builders/favicon.ico",
-    "category": "👽 All-in-One",
     "name": "Microsoft FarmBeats for Azure Data Manager for Agriculture",
     "url": "https://azure.microsoft.com/en-us/solutions/agriculture/",
     "favicon_url": "https://azure.microsoft.com/favicon.ico",
@@ -760,6 +721,1233 @@
     "name": "Amazon DeepRacer",
     "url": "https://aws.amazon.com/deepracer/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "deepracer",
+      "learning",
+      "reinforcement"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon Fraud Detector",
+    "url": "https://aws.amazon.com/fraud-detector/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "detector",
+      "fraud",
+      "prevention"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon Prime Video / Music (AI for recommendations)",
+    "url": "https://www.amazon.com/primevideo",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "music",
+      "prime",
+      "recommendation",
+      "recommendations",
+      "video"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon Q Business",
+    "url": "https://aws.amazon.com/q/business/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "assistant",
+      "business"
+    ]
+  },
+  {
+    "name": "Amazon Rekognition",
+    "url": "https://aws.amazon.com/rekognition/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "computer",
+      "rekognition",
+      "vision"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon Robotics",
+    "url": "https://www.amazonrobotics.com/",
+    "favicon_url": "https://www.amazonrobotics.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "robotics",
+      "warehouse"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon Supply Chain",
+    "url": "https://aws.amazon.com/aws-supply-chain/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "chain",
+      "supply"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amazon.com (Recommendation Engine)",
+    "url": "https://www.amazon.com/",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "com",
+      "commerce",
+      "recommendation"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amplify (Manufacturing Execution System with AI)",
+    "url": "https://www.amplify.ai/",
+    "favicon_url": "https://www.amplify.ai/favicon.ico",
+    "tags": [
+      "amplify",
+      "execution",
+      "manufacturing"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Amplitude (AI features)",
+    "url": "https://amplitude.com/solutions/ai-for-product",
+    "favicon_url": "https://amplitude.com/favicon.ico",
+    "tags": [
+      "amplitude",
+      "analytics",
+      "product"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "AnimeDiffusion",
+    "url": "(Often community-run or API-based, e.g., on Hugging Face)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "animediffusion",
+      "art",
+      "generative"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Apple Health (AI for health insights)",
+    "url": "https://www.apple.com/ios/health/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "health",
+      "insights"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Apple Keyboard (Predictive Text, Autocorrect)",
+    "url": "(Integrated into iOS/macOS)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "apple",
+      "autocorrect",
+      "keyboard",
+      "nlp",
+      "predictive",
+      "productivity",
+      "text"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Apple Maps (AI for navigation, Look Around)",
+    "url": "https://www.apple.com/ios/maps/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "around",
+      "geospatial",
+      "look",
+      "maps",
+      "navigation"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Apple Music (AI for recommendations)",
+    "url": "https://www.apple.com/apple-music/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "music",
+      "recommendation",
+      "recommendations"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Aquantix",
+    "url": "https://aquantix.ai/",
+    "favicon_url": "https://aquantix.ai/favicon.ico",
+    "tags": [
+      "aquantix",
+      "water"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Ardoq (AI Features)",
+    "url": "https://www.ardoq.com/ai",
+    "favicon_url": "https://www.ardoq.com/favicon.ico",
+    "tags": [
+      "architecture",
+      "ardoq",
+      "enterprise"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Asana (AI features)",
+    "url": "https://asana.com/",
+    "favicon_url": "https://asana.com/favicon.ico",
+    "tags": [
+      "asana",
+      "productivity"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "BenchSci",
+    "url": "https://www.benchsci.com/",
+    "favicon_url": "https://www.benchsci.com/favicon.ico",
+    "tags": [
+      "benchsci",
+      "life",
+      "sciences"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Blue Vision Labs (acquired by Lyft)",
+    "url": "(Service integrated into Lyft)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "acquired",
+      "blue",
+      "environmental",
+      "lyft",
+      "vision"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Bright Machines",
+    "url": "https://www.brightmachines.com/",
+    "favicon_url": "https://www.brightmachines.com/favicon.ico",
+    "tags": [
+      "bright",
+      "factory",
+      "machines"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Carbon Chain",
+    "url": "https://carbonchain.com/",
+    "favicon_url": "https://carbonchain.com/favicon.ico",
+    "tags": [
+      "carbon",
+      "chain",
+      "supply"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Character.ai",
+    "url": "[suspicious link removed]",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "character",
+      "language",
+      "large",
+      "models"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "ChowNow (OrderBetter AI)",
+    "url": "https://orderbetter.ai/",
+    "favicon_url": "https://orderbetter.ai/favicon.ico",
+    "tags": [
+      "chownow",
+      "food",
+      "orderbetter"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Civitas (AI for Government)",
+    "url": "https://www.civitas.ai/",
+    "favicon_url": "https://www.civitas.ai/favicon.ico",
+    "tags": [
+      "civitas",
+      "government",
+      "public",
+      "sector"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Cognex (VisionPro Deep Learning)",
+    "url": "https://www.cognex.com/products/deep-learning",
+    "favicon_url": "https://www.cognex.com/favicon.ico",
+    "tags": [
+      "cognex",
+      "deep",
+      "industrial",
+      "learning",
+      "visionpro"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Collibra (AI Governance)",
+    "url": "https://www.collibra.com/solutions/ai-governance",
+    "favicon_url": "https://www.collibra.com/favicon.ico",
+    "tags": [
+      "collibra",
+      "governance"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Core ML (Apple)",
+    "url": "https://developer.apple.com/documentation/coreml/",
+    "favicon_url": "https://developer.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "core",
+      "device",
+      "ml"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Covariant.ai",
+    "url": "https://covariant.ai/",
+    "favicon_url": "https://covariant.ai/favicon.ico",
+    "tags": [
+      "covariant",
+      "robotics"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Crystal (AI for Sales)",
+    "url": "https://www.crystalknows.com/",
+    "favicon_url": "https://www.crystalknows.com/favicon.ico",
+    "tags": [
+      "crystal",
+      "sales"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Deliveroo (AI-driven logistics)",
+    "url": "https://corporate.deliveroo.co.uk/technology/",
+    "favicon_url": "https://corporate.deliveroo.co.uk/favicon.ico",
+    "tags": [
+      "deliveroo",
+      "delivery",
+      "driven",
+      "food",
+      "logistics"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "ElevenLabs (Voice Library & API)",
+    "url": "https://elevenlabs.io/",
+    "favicon_url": "https://elevenlabs.io/favicon.ico",
+    "tags": [
+      "elevenlabs",
+      "library",
+      "voice"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Enthought (Horizon)",
+    "url": "https://www.enthought.com/platform/horizon",
+    "favicon_url": "https://www.enthought.com/favicon.ico",
+    "tags": [
+      "enthought",
+      "horizon",
+      "scientific"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Exabyte.io",
+    "url": "https://www.exabyte.io/",
+    "favicon_url": "https://www.exabyte.io/favicon.ico",
+    "tags": [
+      "exabyte",
+      "materials",
+      "science"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Face ID (Apple)",
+    "url": "https://support.apple.com/en-us/102551",
+    "favicon_url": "https://support.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "biometric",
+      "face"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Facebook Feed Ranking (AI-powered)",
+    "url": "https://www.facebook.com/help/110994966629156",
+    "favicon_url": "https://www.facebook.com/favicon.ico",
+    "tags": [
+      "facebook",
+      "feed",
+      "media",
+      "ranking",
+      "social"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Formlabs (Automation API with AI)",
+    "url": "https://formlabs.com/automation-ecosystem/api/",
+    "favicon_url": "https://formlabs.com/favicon.ico",
+    "tags": [
+      "formlabs",
+      "industrial"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Freshworks (Freddy AI)",
+    "url": "https://www.freshworks.com/freshsales-crm/freddy-ai/",
+    "favicon_url": "https://www.freshworks.com/favicon.ico",
+    "tags": [
+      "crm",
+      "customer",
+      "freddy",
+      "freshworks"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Gero.ai",
+    "url": "https://gero.ai/",
+    "favicon_url": "https://gero.ai/favicon.ico",
+    "tags": [
+      "gero",
+      "longevity"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Gingko Bioworks (Cell Engineering Platform with AI)",
+    "url": "https://www.gingkobioworks.com/",
+    "favicon_url": "https://www.gingkobioworks.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "bioworks",
+      "cell",
+      "engineering",
+      "gingko"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google AdSense (AI optimization)",
+    "url": "https://adsense.google.com/start/",
+    "favicon_url": "https://adsense.google.com/favicon.ico",
+    "tags": [
+      "adsense",
+      "advertising",
+      "google",
+      "optimization"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Arts & Culture (AI features)",
+    "url": "https://artsandculture.google.com/",
+    "favicon_url": "https://artsandculture.google.com/favicon.ico",
+    "tags": [
+      "arts",
+      "cultural",
+      "culture",
+      "google"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Assistant / Gemini in Android (On-device AI)",
+    "url": "https://assistant.google.com/, https://developer.android.com/ai",
+    "favicon_url": "https://assistant.google.com/favicon.ico",
+    "tags": [
+      "android",
+      "assistant",
+      "conversational",
+      "device",
+      "gemini",
+      "google"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Chrome (AI features)",
+    "url": "https://www.google.com/chrome/",
+    "favicon_url": "https://www.google.com/favicon.ico",
+    "tags": [
+      "chrome",
+      "google",
+      "productivity"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Cloud Contact Center AI Platform",
+    "url": "https://cloud.google.com/contact-center-ai",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "tags": [
+      "center",
+      "contact",
+      "conversational",
+      "google"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Cloud Document AI",
+    "url": "https://cloud.google.com/document-ai",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "tags": [
+      "document",
+      "google"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Maps (AI for Traffic, ETA, Live View)",
+    "url": "https://maps.google.com/",
+    "favicon_url": "https://maps.google.com/favicon.ico",
+    "tags": [
+      "eta",
+      "geospatial",
+      "google",
+      "live",
+      "maps",
+      "navigation",
+      "traffic"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Play Store (AI for recommendations)",
+    "url": "https://play.google.com/store",
+    "favicon_url": "https://play.google.com/favicon.ico",
+    "tags": [
+      "google",
+      "play",
+      "recommendation",
+      "recommendations",
+      "store"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Search (RankBrain, MUM, BERT, Gemini integration)",
+    "url": "https://www.google.com/search",
+    "favicon_url": "https://www.google.com/favicon.ico",
+    "tags": [
+      "bert",
+      "gemini",
+      "google",
+      "integration",
+      "mum",
+      "rankbrain",
+      "search"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Translate (AI for real-time translation)",
+    "url": "https://translate.google.com/",
+    "favicon_url": "https://translate.google.com/favicon.ico",
+    "tags": [
+      "google",
+      "nlp",
+      "real",
+      "time",
+      "translate",
+      "translation"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Google Workspace (AI in Docs, Sheets, Slides, Gmail)",
+    "url": "https://workspace.google.com/",
+    "favicon_url": "https://workspace.google.com/favicon.ico",
+    "tags": [
+      "docs",
+      "gmail",
+      "google",
+      "productivity",
+      "sheets",
+      "slides",
+      "workspace"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Grain.com",
+    "url": "https://grain.com/",
+    "favicon_url": "https://grain.com/favicon.ico",
+    "tags": [
+      "com",
+      "grain",
+      "meeting"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Grok Voice",
+    "url": "https://x.ai/grok-voice",
+    "favicon_url": "https://x.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "HubSpot (Breeze AI)",
+    "url": "https://www.hubspot.com/ai",
+    "favicon_url": "https://www.hubspot.com/favicon.ico",
+    "tags": [
+      "breeze",
+      "crm",
+      "hubspot",
+      "marketing"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Garage (AI solutions)",
+    "url": "https://www.ibm.com/garage",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "consulting",
+      "garage",
+      "ibm"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Maximo Application Suite (AI features)",
+    "url": "https://www.ibm.com/products/maximo",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "application",
+      "ibm",
+      "industrial",
+      "maximo"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Security QRadar Suite (AI features)",
+    "url": "https://www.ibm.com/products/qradar-suite",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "cybersecurity",
+      "ibm",
+      "qradar",
+      "security"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Sterling Supply Chain Intelligence Suite (AI features)",
+    "url": "https://www.ibm.com/products/sterling-supply-chain-intelligence-suite",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "chain",
+      "ibm",
+      "sterling",
+      "supply"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Turbonomic (AI for AIOps)",
+    "url": "https://www.ibm.com/cloud/turbonomic",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "aiops",
+      "ibm",
+      "turbonomic"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "IBM Z and Cloud Modernization Stack (AI capabilities)",
+    "url": "https://www.ibm.com/products/z-and-cloud-modernization-stack",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "capabilities",
+      "enterprise",
+      "ibm",
+      "modernization",
+      "stack"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Image Creator in Bing (Microsoft)",
+    "url": "https://www.bing.com/create",
+    "favicon_url": "https://www.bing.com/favicon.ico",
+    "tags": [
+      "art",
+      "bing",
+      "creator",
+      "generative",
+      "image",
+      "microsoft"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Inflection AI",
+    "url": "https://developers.inflection.ai/login",
+    "favicon_url": "https://developers.inflection.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Instrument Systems (Luminance Pro AI)",
+    "url": "https://www.instrumentsystems.com/en/products/light-measurement/luminance-and-color-measurement-cameras/luminance-pro-ai/",
+    "favicon_url": "https://www.instrumentsystems.com/favicon.ico",
+    "tags": [
+      "industrial",
+      "instrument",
+      "luminance",
+      "pro"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Intercom",
+    "url": "https://www.intercom.com/",
+    "favicon_url": "https://www.intercom.com/favicon.ico",
+    "tags": [
+      "business",
+      "intercom"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Intercom AI",
+    "url": "https://www.intercom.com/ai",
+    "favicon_url": "https://www.intercom.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Jasper",
+    "url": "https://www.jasper.ai/",
+    "favicon_url": "https://www.jasper.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "thumbnail_url": "https://example.com/thumbs/jasper.png",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Kayrros",
+    "url": "https://www.kayrros.com/",
+    "favicon_url": "https://www.kayrros.com/favicon.ico",
+    "tags": [
+      "environmental",
+      "kayrros"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "LabGenius",
+    "url": "https://www.labgenius.com/",
+    "favicon_url": "https://www.labgenius.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "labgenius"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Landing.ai (LandingLens)",
+    "url": "https://landing.ai/landinglens/",
+    "favicon_url": "https://landing.ai/favicon.ico",
+    "tags": [
+      "industrial",
+      "landing",
+      "landinglens"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Materials Zone",
+    "url": "https://www.materials.zone/",
+    "favicon_url": "https://www.materials.zone/favicon.ico",
+    "tags": [
+      "materials",
+      "science",
+      "zone"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Mercor",
+    "url": "https://www.mercor.ai/",
+    "favicon_url": "https://www.mercor.ai/favicon.ico",
+    "tags": [
+      "business",
+      "mercor"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Meta AI (across apps)",
+    "url": "https://about.fb.com/news/2024/04/introducing-meta-ai-our-new-assistant/",
+    "favicon_url": "https://about.fb.com/favicon.ico",
+    "tags": [
+      "across",
+      "conversational",
+      "generative",
+      "meta"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Meta Reality Labs (AI for VR/AR)",
+    "url": "https://www.metarealitylabs.com/",
+    "favicon_url": "https://www.metarealitylabs.com/favicon.ico",
+    "tags": [
+      "ar",
+      "meta",
+      "reality",
+      "vr"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "tags": [
+      "365",
+      "business",
+      "copilot",
+      "microsoft"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Azure AI Language (Text Analytics)",
+    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-language",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "azure",
+      "language",
+      "large",
+      "microsoft",
+      "models",
+      "text"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Azure Percept (Edge AI)",
+    "url": "https://azure.microsoft.com/en-us/products/azure-percept",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "tags": [
+      "azure",
+      "edge",
+      "microsoft",
+      "percept"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Copilot",
+    "url": "https://copilot.microsoft.com/",
+    "favicon_url": "https://copilot.microsoft.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Microsoft Defender for Cloud Apps (AI-powered)",
+    "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps",
+    "favicon_url": "https://learn.microsoft.com/favicon.ico",
+    "tags": [
+      "cybersecurity",
+      "defender",
+      "microsoft"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Immersive Reader (AI features)",
+    "url": "https://support.microsoft.com/en-us/topic/microsoft-immersive-reader-f967a5b3-2415-4673-bc97-f70355f30328",
+    "favicon_url": "https://support.microsoft.com/favicon.ico",
+    "tags": [
+      "accessibility",
+      "edtech",
+      "immersive",
+      "microsoft",
+      "reader"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Lens (AI features)",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-lens",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "tags": [
+      "lens",
+      "microsoft",
+      "productivity"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Project Cortex (SharePoint Syntex)",
+    "url": "(now integrated into Microsoft 365 services as part of Microsoft Viva Topics)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "cortex",
+      "knowledge",
+      "microsoft",
+      "project",
+      "sharepoint",
+      "syntex"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft Teams AI Features (Granular)",
+    "url": "https://nboldapp.com/top-10-ai-features-in-microsoft-teams-for-better-teamwork/",
+    "favicon_url": "https://nboldapp.com/favicon.ico",
+    "tags": [
+      "communication",
+      "granular",
+      "microsoft",
+      "teams"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Microsoft To Do (AI suggestions)",
+    "url": "https://todo.microsoft.com/",
+    "favicon_url": "https://todo.microsoft.com/favicon.ico",
+    "tags": [
+      "microsoft",
+      "productivity",
+      "suggestions"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Minimax Chat",
+    "url": "https://chat.minimax.io/",
+    "favicon_url": "https://chat.minimax.io/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Mistral AI",
+    "url": "https://chat.mistral.ai/chat",
+    "favicon_url": "https://chat.mistral.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Mixpanel (AI features)",
+    "url": "https://mixpanel.com/solutions/ai-for-product-analytics/",
+    "favicon_url": "https://mixpanel.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "mixpanel",
+      "product"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Monday.com (AI features)",
+    "url": "https://monday.com/ai/",
+    "favicon_url": "https://monday.com/favicon.ico",
+    "tags": [
+      "com",
+      "monday",
+      "project"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Netflix Recommendation Engine",
+    "url": "https://help.netflix.com/en/node/100632",
+    "favicon_url": "https://help.netflix.com/favicon.ico",
+    "tags": [
+      "netflix",
+      "recommendation"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Notion AI",
+    "url": "https://www.notion.so/product/ai",
+    "favicon_url": "https://www.notion.so/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "NVIDIA BioNeMo",
+    "url": "https://developer.nvidia.com/bionemo",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "bionemo",
+      "discovery",
+      "drug",
+      "nvidia"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "NVIDIA Metropolis",
+    "url": "https://www.nvidia.com/en-us/industries/smart-cities/metropolis/",
+    "favicon_url": "https://www.nvidia.com/favicon.ico",
+    "tags": [
+      "city",
+      "metropolis",
+      "nvidia",
+      "smart",
+      "vision"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "NVIDIA NeMo",
+    "url": "https://developer.nvidia.com/nemo",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "generative",
+      "nemo",
+      "nvidia"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "NVIDIA Omniverse (AI-enabled features)",
+    "url": "https://www.nvidia.com/en-us/omniverse/",
+    "favicon_url": "https://www.nvidia.com/favicon.ico",
+    "tags": [
+      "digital",
+      "enabled",
+      "nvidia",
+      "omniverse",
+      "simulation",
+      "twin"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "NVIDIA Riva",
+    "url": "https://developer.nvidia.com/riva",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "conversational",
+      "nvidia",
+      "riva"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "NVIDIA TAO Toolkit",
+    "url": "https://developer.nvidia.com/tao",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "mlops",
+      "nvidia",
+      "tao",
+      "toolkit",
+      "vision"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "OCI Anomaly Detection (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "anomaly",
+      "detection",
+      "oci",
+      "oracle"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Oracle Digital Assistant",
+    "url": "https://www.oracle.com/chatbots/digital-assistant/",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "assistant",
+      "conversational",
+      "digital",
+      "oracle"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Oracle Fusion Cloud Applications (AI features)",
+    "url": "https://www.oracle.com/applications/ai-ml.html",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "enterprise",
+      "fusion",
+      "oracle"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Path Robotics",
+    "url": "https://www.pathrobotics.com/",
+    "favicon_url": "https://www.pathrobotics.com/favicon.ico",
+    "tags": [
+      "industrial",
+      "path",
+      "robotics"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Pendo (AI features)",
+    "url": "https://www.pendo.io/platform/ai/",
+    "favicon_url": "https://www.pendo.io/favicon.ico",
+    "tags": [
+      "analytics",
+      "pendo",
+      "product"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Perplexity",
+    "url": "https://www.perplexity.ai/",
+    "favicon_url": "https://www.perplexity.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Picarro",
+    "url": "https://www.picarro.com/",
+    "favicon_url": "https://www.picarro.com/favicon.ico",
+    "tags": [
+      "environmental",
+      "picarro"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Pika Labs",
+    "url": "https://pika.art/",
+    "favicon_url": "https://pika.art/favicon.ico",
+    "tags": [
+      "generative",
+      "pika"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Pitch (AI-powered presentations)",
+    "url": "https://pitch.com/",
+    "favicon_url": "https://pitch.com/favicon.ico",
+    "tags": [
+      "pitch",
+      "presentations",
+      "productivity"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Plus One Robotics (PickOne)",
+    "url": "https://plusonerobotics.com/",
+    "favicon_url": "https://plusonerobotics.com/favicon.ico",
+    "tags": [
+      "one",
+      "pickone",
+      "plus",
+      "robotics",
+      "warehouse"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Poe",
+    "url": "https://poe.com/",
+    "favicon_url": "https://poe.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Polymateria",
+    "url": "https://polymateria.com/",
+    "favicon_url": "https://polymateria.com/favicon.ico",
+    "tags": [
+      "materials",
+      "polymateria",
+      "science"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "QuantumBlack (McKinsey & Company)",
     "url": "https://www.mckinsey.com/capabilities/quantumblack/overview",
     "favicon_url": "https://www.mckinsey.com/favicon.ico",
@@ -769,8 +1957,4085 @@
       "mckinsey",
       "quantumblack"
     ],
-    "category": "✨ AI Consulting/Solutions"
+    "category": "👽 All-in-One"
   },
+  {
+    "name": "QuickBooks (AI features)",
+    "url": "https://quickbooks.intuit.com/",
+    "favicon_url": "https://quickbooks.intuit.com/favicon.ico",
+    "tags": [
+      "business",
+      "quickbooks"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Qwen",
+    "url": "https://chat.qwen.ai/",
+    "favicon_url": "https://chat.qwen.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Recursion Pharmaceuticals (Phenom-seq)",
+    "url": "https://www.recursionpharma.com/platform/#phenom-seq",
+    "favicon_url": "https://www.recursionpharma.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "pharmaceuticals",
+      "phenom",
+      "recursion",
+      "seq"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Replit (Ghostwriter)",
+    "url": "https://replit.com/site/ghostwriter",
+    "favicon_url": "https://replit.com/favicon.ico",
+    "tags": [
+      "generative",
+      "ghostwriter",
+      "replit"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Retrain.ai",
+    "url": "https://www.retrain.ai/",
+    "favicon_url": "https://www.retrain.ai/favicon.ico",
+    "tags": [
+      "retrain",
+      "workforce"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "RightHand Robotics",
+    "url": "https://www.righthandrobotics.com/",
+    "favicon_url": "https://www.righthandrobotics.com/favicon.ico",
+    "tags": [
+      "righthand",
+      "robotics"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Runway",
+    "url": "https://runwayml.com/",
+    "favicon_url": "https://runwayml.com/favicon.ico",
+    "tags": [
+      "generative",
+      "runway"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Rytr",
+    "url": "https://rytr.me/",
+    "favicon_url": "https://rytr.me/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Salesforce Einstein (Sales Cloud)",
+    "url": "https://www.salesforce.com/solutions/ai/generative-ai/",
+    "favicon_url": "https://www.salesforce.com/favicon.ico",
+    "tags": [
+      "business",
+      "einstein",
+      "sales",
+      "salesforce"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Salesforce Net Zero Cloud (AI features)",
+    "url": "https://www.salesforce.com/products/net-zero-cloud/",
+    "favicon_url": "https://www.salesforce.com/favicon.ico",
+    "tags": [
+      "net",
+      "salesforce",
+      "sustainability",
+      "zero"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "SAP AI Core",
+    "url": "https://www.sap.com/products/technology-platform/ai-core.html",
+    "favicon_url": "https://www.sap.com/favicon.ico",
+    "tags": [
+      "core",
+      "enterprise",
+      "mlops",
+      "sap"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "SAP Business AI",
+    "url": "https://www.sap.com/products/technology-platform/ai.html",
+    "favicon_url": "https://www.sap.com/favicon.ico",
+    "tags": [
+      "business",
+      "enterprise",
+      "sap"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "SatSure",
+    "url": "https://satsure.co/",
+    "favicon_url": "https://satsure.co/favicon.ico",
+    "tags": [
+      "geospatial",
+      "satsure"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Schrodinger (AI-enabled platform)",
+    "url": "https://www.schrodinger.com/",
+    "favicon_url": "https://www.schrodinger.com/favicon.ico",
+    "tags": [
+      "discovery",
+      "drug",
+      "enabled",
+      "schrodinger"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Schrodinger (LiveDesign)",
+    "url": "https://www.schrodinger.com/livedesign",
+    "favicon_url": "https://www.schrodinger.com/favicon.ico",
+    "tags": [
+      "discovery",
+      "drug",
+      "livedesign",
+      "schrodinger"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "ServiceNow (Now Platform AI)",
+    "url": "https://www.servicenow.com/ai.html",
+    "favicon_url": "https://www.servicenow.com/favicon.ico",
+    "tags": [
+      "now",
+      "servicenow",
+      "workflow"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Slack (Slack GPT)",
+    "url": "https://slack.com/ai",
+    "favicon_url": "https://slack.com/favicon.ico",
+    "tags": [
+      "communication",
+      "gpt",
+      "slack"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Spotify Recommendation Engine",
+    "url": "https://spotify.com/",
+    "favicon_url": "https://spotify.com/favicon.ico",
+    "tags": [
+      "recommendation",
+      "spotify"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "StormGeo (AI-powered Weather)",
+    "url": "https://www.stormgeo.com/",
+    "favicon_url": "https://www.stormgeo.com/favicon.ico",
+    "tags": [
+      "energy",
+      "maritime",
+      "stormgeo",
+      "weather"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Sudowrite",
+    "url": "https://www.sudowrite.com/",
+    "favicon_url": "https://www.sudowrite.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Symbio Robotics (SymbioDCS)",
+    "url": "https://symbiorobotics.com/",
+    "favicon_url": "https://symbiorobotics.com/favicon.ico",
+    "tags": [
+      "robotics",
+      "symbio",
+      "symbiodcs"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Tableau with AI",
+    "url": "https://www.tableau.com/products/features/ai",
+    "favicon_url": "https://www.tableau.com/favicon.ico",
+    "tags": [
+      "business",
+      "tableau"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Tesla Autopilot / FSD (AI)",
+    "url": "https://www.tesla.com/autopilot",
+    "favicon_url": "https://www.tesla.com/favicon.ico",
+    "tags": [
+      "autonomous",
+      "autopilot",
+      "driving",
+      "fsd",
+      "tesla"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Tesla Optimus (AI for Humanoid Robot)",
+    "url": "https://www.tesla.com/AI",
+    "favicon_url": "https://www.tesla.com/favicon.ico",
+    "tags": [
+      "humanoid",
+      "optimus",
+      "robot",
+      "robotics",
+      "tesla"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "TextFX (Google)",
+    "url": "https://textfx.withgoogle.com/",
+    "favicon_url": "https://textfx.withgoogle.com/favicon.ico",
+    "tags": [
+      "generative",
+      "google",
+      "text",
+      "textfx"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "The Climate Corporation (FieldView)",
+    "url": "https://climate.com/",
+    "favicon_url": "https://climate.com/favicon.ico",
+    "tags": [
+      "agriculture",
+      "climate",
+      "corporation",
+      "environmental",
+      "fieldview"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "TikTok Content Moderation (AI for harmful content)",
+    "url": "(Internal systems)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "content",
+      "harmful",
+      "moderation",
+      "tiktok"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "TikTok For You Page Algorithm",
+    "url": "https://www.tiktok.com/for-you",
+    "favicon_url": "https://www.tiktok.com/favicon.ico",
+    "tags": [
+      "algorithm",
+      "page",
+      "recommendation",
+      "tiktok",
+      "you"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Toast (AI-powered scheduling)",
+    "url": "https://pos.toasttab.com/restaurant-management/schedules",
+    "favicon_url": "https://pos.toasttab.com/favicon.ico",
+    "tags": [
+      "food",
+      "scheduling",
+      "toast"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Truepic",
+    "url": "https://www.truepic.com/",
+    "favicon_url": "https://www.truepic.com/favicon.ico",
+    "tags": [
+      "authenticity",
+      "truepic"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Two Hat (AI content moderation)",
+    "url": "https://www.twohat.com/",
+    "favicon_url": "https://www.twohat.com/favicon.ico",
+    "tags": [
+      "content",
+      "hat",
+      "moderation",
+      "two"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Vanti Analytics",
+    "url": "https://www.vantianalytics.com/",
+    "favicon_url": "https://www.vantianalytics.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "industrial",
+      "vanti"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Waymo (Autonomous Driving AI)",
+    "url": "https://waymo.com/",
+    "favicon_url": "https://waymo.com/favicon.ico",
+    "tags": [
+      "autonomous",
+      "driving",
+      "waymo"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "WhyLabs (whylogs)",
+    "url": "https://www.whylabs.ai/",
+    "favicon_url": "https://www.whylabs.ai/favicon.ico",
+    "tags": [
+      "mlops",
+      "whylabs",
+      "whylogs"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Workday (AI for HR/Finance)",
+    "url": "https://www.workday.com/solutions/ai.html",
+    "favicon_url": "https://www.workday.com/favicon.ico",
+    "tags": [
+      "finance",
+      "hr",
+      "workday"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Workera",
+    "url": "https://www.workera.ai/",
+    "favicon_url": "https://www.workera.ai/favicon.ico",
+    "tags": [
+      "workera",
+      "workforce"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Writer.com",
+    "url": "https://writer.com/",
+    "favicon_url": "https://writer.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "writing"
+    ]
+  },
+  {
+    "name": "Writesonic",
+    "url": "https://writesonic.com/",
+    "favicon_url": "https://writesonic.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "xAI Chat",
+    "url": "https://x.ai/chat",
+    "favicon_url": "https://x.ai/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Xero (AI features)",
+    "url": "https://www.xero.com/",
+    "favicon_url": "https://www.xero.com/favicon.ico",
+    "tags": [
+      "business",
+      "xero"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "YouTube (AI for recommendations, Content ID, moderation)",
+    "url": "https://www.youtube.com/",
+    "favicon_url": "https://www.youtube.com/favicon.ico",
+    "tags": [
+      "content",
+      "moderation",
+      "recommendation",
+      "recommendations",
+      "youtube"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Zendesk AI",
+    "url": "https://www.zendesk.com/ai",
+    "favicon_url": "https://www.zendesk.com/favicon.ico",
+    "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
+    "name": "Zoho Desk (Answer Bot)",
+    "url": "https://www.zoho.com/desk/",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "tags": [
+      "answer",
+      "bot",
+      "customer",
+      "desk",
+      "zoho"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "Zoom (AI Companion)",
+    "url": "https://www.zoom.us/ai-companion",
+    "favicon_url": "https://www.zoom.us/favicon.ico",
+    "tags": [
+      "companion",
+      "meeting",
+      "zoom"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
+    "name": "AI Pool Tools",
+    "url": "https://tools.aipoool.com/",
+    "favicon_url": "./favicon.ico",
+    "category": "📚 Articles and Reviews",
+    "tags": [
+      "articles",
+      "reviews"
+    ]
+  },
+  {
+    "name": "SongBeast AI Review by Decortweaks",
+    "url": "https://decortweaks.com/songbeast-ai-review/",
+    "favicon_url": "./favicon.ico",
+    "category": "📚 Articles and Reviews",
+    "tags": [
+      "articles",
+      "reviews"
+    ]
+  },
+  {
+    "name": "3Play Media",
+    "url": "https://www.3playmedia.com/",
+    "favicon_url": "https://www.3playmedia.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Accentize",
+    "url": "https://www.accentize.com/",
+    "favicon_url": "https://www.accentize.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "AIVA",
+    "url": "https://www.aiva.ai/",
+    "favicon_url": "https://www.aiva.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Amper Music",
+    "url": "https://www.ampermusic.com/",
+    "favicon_url": "https://www.ampermusic.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "AssemblyAI",
+    "url": "https://www.assemblyai.com/",
+    "favicon_url": "https://www.assemblyai.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Audio Strip",
+    "url": "https://audiostrip.co/",
+    "favicon_url": "https://audiostrip.co/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Audio.com",
+    "url": "https://audio.com/",
+    "favicon_url": "https://audio.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "AudioStack.ai",
+    "url": "https://audiostack.ai/",
+    "favicon_url": "https://audiostack.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Coqui",
+    "url": "https://coqui.ai/",
+    "favicon_url": "https://coqui.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/app/home",
+    "favicon_url": "https://elevenlabs.io/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Hook",
+    "url": "https://hook.ai/",
+    "favicon_url": "https://hook.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Jukebox",
+    "url": "https://openai.com/research/jukebox",
+    "favicon_url": "https://openai.com/research/jukebox/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Landr",
+    "url": "https://app.landr.com/",
+    "favicon_url": "https://app.landr.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Soundry AI",
+    "url": "https://soundry.ai/",
+    "favicon_url": "https://soundry.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Splice",
+    "url": "https://splice.com/",
+    "favicon_url": "https://splice.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio"
+    ]
+  },
+  {
+    "name": "StemRoller",
+    "url": "https://www.stemroller.com/",
+    "favicon_url": "https://www.stemroller.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Suno",
+    "url": "https://suno.com/invite/@nathanneurotic",
+    "favicon_url": "https://suno.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Suno Create",
+    "url": "https://suno.com/create?wid=default",
+    "favicon_url": "https://suno.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Symbl.ai",
+    "url": "https://symbl.ai/",
+    "favicon_url": "https://symbl.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Synthesizer V",
+    "url": "https://dreamtonics.com/synthesizerv/",
+    "favicon_url": "https://dreamtonics.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Udio",
+    "url": "https://www.udio.com/creators/NathanNeurotic",
+    "favicon_url": "https://www.udio.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Udio Create",
+    "url": "https://www.udio.com/create",
+    "favicon_url": "https://www.udio.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Voicemod AI Voices",
+    "url": "https://www.voicemod.net/ai-voices/",
+    "favicon_url": "https://www.voicemod.net/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Truepic",
+    "url": "https://www.truepic.com/",
+    "favicon_url": "https://www.truepic.com/favicon.ico",
+    "tags": [
+      "authenticity",
+      "truepic"
+    ],
+    "category": "✨ Authenticity AI"
+  },
+  {
+    "name": "Tesla Autopilot / FSD (AI)",
+    "url": "https://www.tesla.com/autopilot",
+    "favicon_url": "https://www.tesla.com/favicon.ico",
+    "tags": [
+      "autonomous",
+      "autopilot",
+      "driving",
+      "fsd",
+      "tesla"
+    ],
+    "category": "✨ Autonomous Driving AI"
+  },
+  {
+    "name": "Waymo (Autonomous Driving AI)",
+    "url": "https://waymo.com/",
+    "favicon_url": "https://waymo.com/favicon.ico",
+    "tags": [
+      "autonomous",
+      "driving",
+      "waymo"
+    ],
+    "category": "✨ Autonomous Driving AI"
+  },
+  {
+    "name": "Face ID (Apple)",
+    "url": "https://support.apple.com/en-us/102551",
+    "favicon_url": "https://support.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "biometric",
+      "face"
+    ],
+    "category": "✨ Biometric AI"
+  },
+  {
+    "name": "Gingko Bioworks (Cell Engineering Platform with AI)",
+    "url": "https://www.gingkobioworks.com/",
+    "favicon_url": "https://www.gingkobioworks.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "bioworks",
+      "cell",
+      "engineering",
+      "gingko"
+    ],
+    "category": "🩺 Biotech AI"
+  },
+  {
+    "name": "LabGenius",
+    "url": "https://www.labgenius.com/",
+    "favicon_url": "https://www.labgenius.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "labgenius"
+    ],
+    "category": "🩺 Biotech AI"
+  },
+  {
+    "name": "Recursion Pharmaceuticals (Phenom-seq)",
+    "url": "https://www.recursionpharma.com/platform/#phenom-seq",
+    "favicon_url": "https://www.recursionpharma.com/favicon.ico",
+    "tags": [
+      "biotech",
+      "pharmaceuticals",
+      "phenom",
+      "recursion",
+      "seq"
+    ],
+    "category": "🩺 Biotech AI"
+  },
+  {
+    "name": "Tableau with AI",
+    "url": "https://www.tableau.com/products/features/ai",
+    "favicon_url": "https://www.tableau.com/favicon.ico",
+    "tags": [
+      "business",
+      "tableau"
+    ],
+    "category": "🔍 Business Intelligence AI"
+  },
+  {
+    "name": "Heliogen",
+    "url": "https://heliogen.com/",
+    "favicon_url": "https://heliogen.com/favicon.ico",
+    "tags": [
+      "clean",
+      "energy",
+      "heliogen"
+    ],
+    "category": "💡 Clean Energy AI"
+  },
+  {
+    "name": "NVIDIA Earth-2",
+    "url": "https://www.nvidia.com/en-us/climatetech/earth-2/",
+    "favicon_url": "https://www.nvidia.com/favicon.ico",
+    "tags": [
+      "climate",
+      "earth",
+      "nvidia"
+    ],
+    "category": "🌎 Climate AI"
+  },
+  {
+    "name": "OCI Anomaly Detection (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "anomaly",
+      "detection",
+      "oci",
+      "oracle"
+    ],
+    "category": "✨ Cloud AI"
+  },
+  {
+    "name": "Amazon CodeCatalyst (AI features)",
+    "url": "https://aws.amazon.com/codecatalyst/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "codecatalyst",
+      "developer"
+    ],
+    "category": "💻 Developer AI"
+  },
+  {
+    "name": "Microsoft Teams AI Features (Granular)",
+    "url": "https://nboldapp.com/top-10-ai-features-in-microsoft-teams-for-better-teamwork/",
+    "favicon_url": "https://nboldapp.com/favicon.ico",
+    "tags": [
+      "communication",
+      "granular",
+      "microsoft",
+      "teams"
+    ],
+    "category": "✨ Communication AI"
+  },
+  {
+    "name": "Slack (Slack GPT)",
+    "url": "https://slack.com/ai",
+    "favicon_url": "https://slack.com/favicon.ico",
+    "tags": [
+      "communication",
+      "gpt",
+      "slack"
+    ],
+    "category": "✨ Communication AI"
+  },
+  {
+    "name": "Amazon Rekognition",
+    "url": "https://aws.amazon.com/rekognition/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "computer",
+      "rekognition",
+      "vision"
+    ],
+    "category": "👁️ Computer Vision"
+  },
+  {
+    "name": "TikTok Content Moderation (AI for harmful content)",
+    "url": "(Internal systems)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "content",
+      "harmful",
+      "moderation",
+      "tiktok"
+    ],
+    "category": "✍️ Content Moderation AI"
+  },
+  {
+    "name": "Two Hat (AI content moderation)",
+    "url": "https://www.twohat.com/",
+    "favicon_url": "https://www.twohat.com/favicon.ico",
+    "tags": [
+      "content",
+      "hat",
+      "moderation",
+      "two"
+    ],
+    "category": "✍️ Content Moderation AI"
+  },
+  {
+    "name": "Google Cloud Contact Center AI Platform",
+    "url": "https://cloud.google.com/contact-center-ai",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "tags": [
+      "center",
+      "contact",
+      "conversational",
+      "google"
+    ],
+    "category": "💬 Conversational AI"
+  },
+  {
+    "name": "NVIDIA Riva",
+    "url": "https://developer.nvidia.com/riva",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "conversational",
+      "nvidia",
+      "riva"
+    ],
+    "category": "💬 Conversational AI"
+  },
+  {
+    "name": "Oracle Digital Assistant",
+    "url": "https://www.oracle.com/chatbots/digital-assistant/",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "assistant",
+      "conversational",
+      "digital",
+      "oracle"
+    ],
+    "category": "💬 Conversational AI"
+  },
+  {
+    "name": "Meta AI (across apps)",
+    "url": "https://about.fb.com/news/2024/04/introducing-meta-ai-our-new-assistant/",
+    "favicon_url": "https://about.fb.com/favicon.ico",
+    "tags": [
+      "across",
+      "conversational",
+      "generative",
+      "meta"
+    ],
+    "category": "💬 Conversational AI/Generative AI"
+  },
+  {
+    "name": "Google Assistant / Gemini in Android (On-device AI)",
+    "url": "https://assistant.google.com/, https://developer.android.com/ai",
+    "favicon_url": "https://assistant.google.com/favicon.ico",
+    "tags": [
+      "android",
+      "assistant",
+      "conversational",
+      "device",
+      "gemini",
+      "google"
+    ],
+    "category": "💬 Conversational AI/On-device AI"
+  },
+  {
+    "name": "Amazon Alexa",
+    "url": "https://www.amazon.com/alexa",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "alexa",
+      "amazon",
+      "conversational",
+      "home",
+      "smart"
+    ],
+    "category": "🎨 Conversational AI/Smart Home AI"
+  },
+  {
+    "name": "Freshworks (Freddy AI)",
+    "url": "https://www.freshworks.com/freshsales-crm/freddy-ai/",
+    "favicon_url": "https://www.freshworks.com/favicon.ico",
+    "tags": [
+      "crm",
+      "customer",
+      "freddy",
+      "freshworks"
+    ],
+    "category": "💬 CRM/Customer Service AI"
+  },
+  {
+    "name": "Google Arts & Culture (AI features)",
+    "url": "https://artsandculture.google.com/",
+    "favicon_url": "https://artsandculture.google.com/favicon.ico",
+    "tags": [
+      "arts",
+      "cultural",
+      "culture",
+      "google"
+    ],
+    "category": "✨ Cultural AI"
+  },
+  {
+    "name": "Zoho Desk (Answer Bot)",
+    "url": "https://www.zoho.com/desk/",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "tags": [
+      "answer",
+      "bot",
+      "customer",
+      "desk",
+      "zoho"
+    ],
+    "category": "💬 Customer Service AI"
+  },
+  {
+    "name": "IBM Security QRadar Suite (AI features)",
+    "url": "https://www.ibm.com/products/qradar-suite",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "cybersecurity",
+      "ibm",
+      "qradar",
+      "security"
+    ],
+    "category": "🛡️ Cybersecurity AI"
+  },
+  {
+    "name": "Microsoft Defender for Cloud Apps (AI-powered)",
+    "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps",
+    "favicon_url": "https://learn.microsoft.com/favicon.ico",
+    "tags": [
+      "cybersecurity",
+      "defender",
+      "microsoft"
+    ],
+    "category": "🛡️ Cybersecurity AI"
+  },
+  {
+    "name": "Collibra (AI Governance)",
+    "url": "https://www.collibra.com/solutions/ai-governance",
+    "favicon_url": "https://www.collibra.com/favicon.ico",
+    "tags": [
+      "collibra",
+      "governance"
+    ],
+    "category": "✨ Data Governance AI"
+  },
+  {
+    "name": "Canva (Magic Studio AI)",
+    "url": "https://www.canva.com/magic-studio/",
+    "favicon_url": "https://www.canva.com/favicon.ico",
+    "tags": [
+      "canva",
+      "design",
+      "magic"
+    ],
+    "category": "🎨 Design AI"
+  },
+  {
+    "name": "NVIDIA Omniverse (AI-enabled features)",
+    "url": "https://www.nvidia.com/en-us/omniverse/",
+    "favicon_url": "https://www.nvidia.com/favicon.ico",
+    "tags": [
+      "digital",
+      "enabled",
+      "nvidia",
+      "omniverse",
+      "simulation",
+      "twin"
+    ],
+    "category": "✨ Digital Twin/Simulation AI"
+  },
+  {
+    "name": "Google Cloud Document AI",
+    "url": "https://cloud.google.com/document-ai",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "tags": [
+      "document",
+      "google"
+    ],
+    "category": "✍️ Document AI"
+  },
+  {
+    "name": "NVIDIA BioNeMo",
+    "url": "https://developer.nvidia.com/bionemo",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "bionemo",
+      "discovery",
+      "drug",
+      "nvidia"
+    ],
+    "category": "🩺 Drug Discovery AI"
+  },
+  {
+    "name": "Schrodinger (AI-enabled platform)",
+    "url": "https://www.schrodinger.com/",
+    "favicon_url": "https://www.schrodinger.com/favicon.ico",
+    "tags": [
+      "discovery",
+      "drug",
+      "enabled",
+      "schrodinger"
+    ],
+    "category": "🩺 Drug Discovery AI"
+  },
+  {
+    "name": "Schrodinger (LiveDesign)",
+    "url": "https://www.schrodinger.com/livedesign",
+    "favicon_url": "https://www.schrodinger.com/favicon.ico",
+    "tags": [
+      "discovery",
+      "drug",
+      "livedesign",
+      "schrodinger"
+    ],
+    "category": "🩺 Drug Discovery AI"
+  },
+  {
+    "name": "Amazon.com (Recommendation Engine)",
+    "url": "https://www.amazon.com/",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "com",
+      "commerce",
+      "recommendation"
+    ],
+    "category": "🛒 E-commerce AI"
+  },
+  {
+    "name": "Microsoft Azure Percept (Edge AI)",
+    "url": "https://azure.microsoft.com/en-us/products/azure-percept",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "tags": [
+      "azure",
+      "edge",
+      "microsoft",
+      "percept"
+    ],
+    "category": "✨ Edge AI"
+  },
+  {
+    "name": "Microsoft Immersive Reader (AI features)",
+    "url": "https://support.microsoft.com/en-us/topic/microsoft-immersive-reader-f967a5b3-2415-4673-bc97-f70355f30328",
+    "favicon_url": "https://support.microsoft.com/favicon.ico",
+    "tags": [
+      "accessibility",
+      "edtech",
+      "immersive",
+      "microsoft",
+      "reader"
+    ],
+    "category": "🎓 EdTech AI/Accessibility AI"
+  },
+  {
+    "name": "IBM Z and Cloud Modernization Stack (AI capabilities)",
+    "url": "https://www.ibm.com/products/z-and-cloud-modernization-stack",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "capabilities",
+      "enterprise",
+      "ibm",
+      "modernization",
+      "stack"
+    ],
+    "category": "✨ Enterprise AI"
+  },
+  {
+    "name": "Oracle Fusion Cloud Applications (AI features)",
+    "url": "https://www.oracle.com/applications/ai-ml.html",
+    "favicon_url": "https://www.oracle.com/favicon.ico",
+    "tags": [
+      "enterprise",
+      "fusion",
+      "oracle"
+    ],
+    "category": "✨ Enterprise AI"
+  },
+  {
+    "name": "SAP Business AI",
+    "url": "https://www.sap.com/products/technology-platform/ai.html",
+    "favicon_url": "https://www.sap.com/favicon.ico",
+    "tags": [
+      "business",
+      "enterprise",
+      "sap"
+    ],
+    "category": "✨ Enterprise AI"
+  },
+  {
+    "name": "Ardoq (AI Features)",
+    "url": "https://www.ardoq.com/ai",
+    "favicon_url": "https://www.ardoq.com/favicon.ico",
+    "tags": [
+      "architecture",
+      "ardoq",
+      "enterprise"
+    ],
+    "category": "✨ Enterprise Architecture AI"
+  },
+  {
+    "name": "Blue Vision Labs (acquired by Lyft)",
+    "url": "(Service integrated into Lyft)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "acquired",
+      "blue",
+      "environmental",
+      "lyft",
+      "vision"
+    ],
+    "category": "🌎 Environmental AI"
+  },
+  {
+    "name": "Kayrros",
+    "url": "https://www.kayrros.com/",
+    "favicon_url": "https://www.kayrros.com/favicon.ico",
+    "tags": [
+      "environmental",
+      "kayrros"
+    ],
+    "category": "🌎 Environmental AI"
+  },
+  {
+    "name": "Picarro",
+    "url": "https://www.picarro.com/",
+    "favicon_url": "https://www.picarro.com/favicon.ico",
+    "tags": [
+      "environmental",
+      "picarro"
+    ],
+    "category": "🌎 Environmental AI"
+  },
+  {
+    "name": "Bright Machines",
+    "url": "https://www.brightmachines.com/",
+    "favicon_url": "https://www.brightmachines.com/favicon.ico",
+    "tags": [
+      "bright",
+      "factory",
+      "machines"
+    ],
+    "category": "🤖 Factory Automation AI"
+  },
+  {
+    "name": "Feedzai",
+    "url": "https://feedzai.com/",
+    "favicon_url": "https://feedzai.com/favicon.ico",
+    "tags": [
+      "feedzai",
+      "financial"
+    ],
+    "category": "💰 Financial AI"
+  },
+  {
+    "name": "Deliveroo (AI-driven logistics)",
+    "url": "https://corporate.deliveroo.co.uk/technology/",
+    "favicon_url": "https://corporate.deliveroo.co.uk/favicon.ico",
+    "tags": [
+      "deliveroo",
+      "delivery",
+      "driven",
+      "food",
+      "logistics"
+    ],
+    "category": "🍲 Food Delivery AI"
+  },
+  {
+    "name": "ChowNow (OrderBetter AI)",
+    "url": "https://orderbetter.ai/",
+    "favicon_url": "https://orderbetter.ai/favicon.ico",
+    "tags": [
+      "chownow",
+      "food",
+      "orderbetter"
+    ],
+    "category": "🍲 Food Service AI"
+  },
+  {
+    "name": "Toast (AI-powered scheduling)",
+    "url": "https://pos.toasttab.com/restaurant-management/schedules",
+    "favicon_url": "https://pos.toasttab.com/favicon.ico",
+    "tags": [
+      "food",
+      "scheduling",
+      "toast"
+    ],
+    "category": "🍲 Food Service AI"
+  },
+  {
+    "name": "Amazon Fraud Detector",
+    "url": "https://aws.amazon.com/fraud-detector/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "detector",
+      "fraud",
+      "prevention"
+    ],
+    "category": "💰 Fraud Prevention AI"
+  },
+  {
+    "name": "Amazon CodeWhisperer",
+    "url": "https://aws.amazon.com/codewhisperer/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "codewhisperer",
+      "generative"
+    ],
+    "category": "✨ Generative AI"
+  },
+  {
+    "name": "NVIDIA NeMo",
+    "url": "https://developer.nvidia.com/nemo",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "generative",
+      "nemo",
+      "nvidia"
+    ],
+    "category": "✨ Generative AI"
+  },
+  {
+    "name": "Pika Labs",
+    "url": "https://pika.art/",
+    "favicon_url": "https://pika.art/favicon.ico",
+    "tags": [
+      "generative",
+      "pika"
+    ],
+    "category": "✨ Generative AI"
+  },
+  {
+    "name": "Replit (Ghostwriter)",
+    "url": "https://replit.com/site/ghostwriter",
+    "favicon_url": "https://replit.com/favicon.ico",
+    "tags": [
+      "generative",
+      "ghostwriter",
+      "replit"
+    ],
+    "category": "✨ Generative AI"
+  },
+  {
+    "name": "Runway",
+    "url": "https://runwayml.com/",
+    "favicon_url": "https://runwayml.com/favicon.ico",
+    "tags": [
+      "generative",
+      "runway"
+    ],
+    "category": "✨ Generative AI"
+  },
+  {
+    "name": "AnimeDiffusion",
+    "url": "(Often community-run or API-based, e.g., on Hugging Face)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "animediffusion",
+      "art",
+      "generative"
+    ],
+    "category": "🎨 Generative Art AI"
+  },
+  {
+    "name": "Image Creator in Bing (Microsoft)",
+    "url": "https://www.bing.com/create",
+    "favicon_url": "https://www.bing.com/favicon.ico",
+    "tags": [
+      "art",
+      "bing",
+      "creator",
+      "generative",
+      "image",
+      "microsoft"
+    ],
+    "category": "🎨 Generative Art AI"
+  },
+  {
+    "name": "Amazon DeepComposer",
+    "url": "https://aws.amazon.com/deepcomposer/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "deepcomposer",
+      "generative",
+      "music"
+    ],
+    "category": "🔊 Generative Music AI"
+  },
+  {
+    "name": "TextFX (Google)",
+    "url": "https://textfx.withgoogle.com/",
+    "favicon_url": "https://textfx.withgoogle.com/favicon.ico",
+    "tags": [
+      "generative",
+      "google",
+      "text",
+      "textfx"
+    ],
+    "category": "✍️ Generative Text AI"
+  },
+  {
+    "name": "SatSure",
+    "url": "https://satsure.co/",
+    "favicon_url": "https://satsure.co/favicon.ico",
+    "tags": [
+      "geospatial",
+      "satsure"
+    ],
+    "category": "🧭 Geospatial AI"
+  },
+  {
+    "name": "Apple Maps (AI for navigation, Look Around)",
+    "url": "https://www.apple.com/ios/maps/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "around",
+      "geospatial",
+      "look",
+      "maps",
+      "navigation"
+    ],
+    "category": "🧭 Geospatial/Navigation AI"
+  },
+  {
+    "name": "Google Maps (AI for Traffic, ETA, Live View)",
+    "url": "https://maps.google.com/",
+    "favicon_url": "https://maps.google.com/favicon.ico",
+    "tags": [
+      "eta",
+      "geospatial",
+      "google",
+      "live",
+      "maps",
+      "navigation",
+      "traffic"
+    ],
+    "category": "🧭 Geospatial/Navigation AI"
+  },
+  {
+    "name": "Apple Health (AI for health insights)",
+    "url": "https://www.apple.com/ios/health/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "health",
+      "insights"
+    ],
+    "category": "🩺 Health AI"
+  },
+  {
+    "name": "Workday (AI for HR/Finance)",
+    "url": "https://www.workday.com/solutions/ai.html",
+    "favicon_url": "https://www.workday.com/favicon.ico",
+    "tags": [
+      "finance",
+      "hr",
+      "workday"
+    ],
+    "category": "💰 HR/Finance AI"
+  },
+  {
+    "name": "Cognex (VisionPro Deep Learning)",
+    "url": "https://www.cognex.com/products/deep-learning",
+    "favicon_url": "https://www.cognex.com/favicon.ico",
+    "tags": [
+      "cognex",
+      "deep",
+      "industrial",
+      "learning",
+      "visionpro"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "Formlabs (Automation API with AI)",
+    "url": "https://formlabs.com/automation-ecosystem/api/",
+    "favicon_url": "https://formlabs.com/favicon.ico",
+    "tags": [
+      "formlabs",
+      "industrial"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "IBM Maximo Application Suite (AI features)",
+    "url": "https://www.ibm.com/products/maximo",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "application",
+      "ibm",
+      "industrial",
+      "maximo"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "Instrument Systems (Luminance Pro AI)",
+    "url": "https://www.instrumentsystems.com/en/products/light-measurement/luminance-and-color-measurement-cameras/luminance-pro-ai/",
+    "favicon_url": "https://www.instrumentsystems.com/favicon.ico",
+    "tags": [
+      "industrial",
+      "instrument",
+      "luminance",
+      "pro"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "Landing.ai (LandingLens)",
+    "url": "https://landing.ai/landinglens/",
+    "favicon_url": "https://landing.ai/favicon.ico",
+    "tags": [
+      "industrial",
+      "landing",
+      "landinglens"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "Vanti Analytics",
+    "url": "https://www.vantianalytics.com/",
+    "favicon_url": "https://www.vantianalytics.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "industrial",
+      "vanti"
+    ],
+    "category": "🏭 Industrial AI"
+  },
+  {
+    "name": "Path Robotics",
+    "url": "https://www.pathrobotics.com/",
+    "favicon_url": "https://www.pathrobotics.com/favicon.ico",
+    "tags": [
+      "industrial",
+      "path",
+      "robotics"
+    ],
+    "category": "🏭 Industrial Robotics AI"
+  },
+  {
+    "name": "ServiceNow (Now Platform AI)",
+    "url": "https://www.servicenow.com/ai.html",
+    "favicon_url": "https://www.servicenow.com/favicon.ico",
+    "tags": [
+      "now",
+      "servicenow",
+      "workflow"
+    ],
+    "category": "✨ IT/Workflow AI"
+  },
+  {
+    "name": "Microsoft Project Cortex (SharePoint Syntex)",
+    "url": "(now integrated into Microsoft 365 services as part of Microsoft Viva Topics)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "cortex",
+      "knowledge",
+      "microsoft",
+      "project",
+      "sharepoint",
+      "syntex"
+    ],
+    "category": "✨ Knowledge Management AI"
+  },
+  {
+    "name": "Character.ai",
+    "url": "[suspicious link removed]",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "character",
+      "language",
+      "large",
+      "models"
+    ],
+    "category": "✨ Large Language Models"
+  },
+  {
+    "name": "Microsoft Azure AI Language (Text Analytics)",
+    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-language",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "azure",
+      "language",
+      "large",
+      "microsoft",
+      "models",
+      "text"
+    ],
+    "category": "✨ Large Language Models"
+  },
+  {
+    "name": "Casetext (CoCounsel)",
+    "url": "https://casetext.com/",
+    "favicon_url": "https://casetext.com/favicon.ico",
+    "tags": [
+      "casetext",
+      "cocounsel",
+      "legal"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "DISCO (Cecilia AI)",
+    "url": "https://www.csdisco.com/products/cecilia-ai/",
+    "favicon_url": "https://www.csdisco.com/favicon.ico",
+    "tags": [
+      "cecilia",
+      "disco",
+      "legal"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "DocJuris",
+    "url": "https://docjuris.com/",
+    "favicon_url": "https://docjuris.com/favicon.ico",
+    "tags": [
+      "docjuris",
+      "legal"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Everlaw (AI Assistant)",
+    "url": "https://www.everlaw.com/platform/everlaw-ai-assistant/",
+    "favicon_url": "https://www.everlaw.com/favicon.ico",
+    "tags": [
+      "assistant",
+      "everlaw",
+      "legal"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Kira Systems (Litera)",
+    "url": "https://www.litera.com/",
+    "favicon_url": "https://www.litera.com/favicon.ico",
+    "tags": [
+      "kira",
+      "legal",
+      "litera"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "LegalZoom (AI features)",
+    "url": "https://www.legalzoom.com/",
+    "favicon_url": "https://www.legalzoom.com/favicon.ico",
+    "tags": [
+      "legal",
+      "legalzoom"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Lexion",
+    "url": "https://www.lexion.ai/",
+    "favicon_url": "https://www.lexion.ai/favicon.ico",
+    "tags": [
+      "legal",
+      "lexion"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Luminance",
+    "url": "https://www.luminance.com/",
+    "favicon_url": "https://www.luminance.com/favicon.ico",
+    "tags": [
+      "legal",
+      "luminance"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Relativity (aiR)",
+    "url": "https://www.relativity.com/products/relativityone/ai/",
+    "favicon_url": "https://www.relativity.com/favicon.ico",
+    "tags": [
+      "air",
+      "legal",
+      "relativity"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "Reveal",
+    "url": "https://www.revealdata.com/",
+    "favicon_url": "https://www.revealdata.com/favicon.ico",
+    "tags": [
+      "legal",
+      "reveal"
+    ],
+    "category": "💼 Legal AI"
+  },
+  {
+    "name": "BenchSci",
+    "url": "https://www.benchsci.com/",
+    "favicon_url": "https://www.benchsci.com/favicon.ico",
+    "tags": [
+      "benchsci",
+      "life",
+      "sciences"
+    ],
+    "category": "🩺 Life Sciences AI"
+  },
+  {
+    "name": "Gero.ai",
+    "url": "https://gero.ai/",
+    "favicon_url": "https://gero.ai/favicon.ico",
+    "tags": [
+      "gero",
+      "longevity"
+    ],
+    "category": "✨ Longevity AI"
+  },
+  {
+    "name": "Databricks",
+    "url": "https://www.databricks.com/",
+    "favicon_url": "https://www.databricks.com/favicon.ico",
+    "tags": [
+      "databricks",
+      "learning",
+      "machine",
+      "mlops",
+      "platforms"
+    ],
+    "category": "🧠 Machine Learning Platforms"
+  },
+  {
+    "name": "Google Cloud Vertex AI",
+    "url": "https://cloud.google.com/vertex-ai",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "tags": [
+      "google",
+      "learning",
+      "machine",
+      "mlops",
+      "platforms",
+      "vertex"
+    ],
+    "category": "🧠 Machine Learning Platforms"
+  },
+  {
+    "name": "Microsoft Azure Machine Learning",
+    "url": "https://azure.microsoft.com/en-us/products/machine-learning/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Mostly AI",
+    "url": "https://mostly.ai/synthetic-data-generation",
+    "favicon_url": "https://mostly.ai/synthetic-data-generation/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Pachyderm",
+    "url": "https://www.pachyderm.com/",
+    "favicon_url": "https://www.pachyderm.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Scale AI",
+    "url": "https://scale.com/",
+    "favicon_url": "https://scale.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Snorkel AI",
+    "url": "https://snorkel.ai/",
+    "favicon_url": "https://snorkel.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "SpinQ",
+    "url": "https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence",
+    "favicon_url": "https://www.spinquanta.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Striveworks",
+    "url": "https://www.striveworks.com/",
+    "favicon_url": "https://www.striveworks.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Superb AI",
+    "url": "https://www.superb-ai.com/",
+    "favicon_url": "https://www.superb-ai.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Tamr",
+    "url": "https://www.tamr.com/",
+    "favicon_url": "https://www.tamr.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "VAST Data",
+    "url": "https://vastdata.com/",
+    "favicon_url": "https://vastdata.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Weights & Biases",
+    "url": "https://wandb.ai/",
+    "favicon_url": "https://wandb.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "WhyLabs",
+    "url": "https://whylabs.ai/",
+    "favicon_url": "https://whylabs.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning"
+    ]
+  },
+  {
+    "name": "Amplify (Manufacturing Execution System with AI)",
+    "url": "https://www.amplify.ai/",
+    "favicon_url": "https://www.amplify.ai/favicon.ico",
+    "tags": [
+      "amplify",
+      "execution",
+      "manufacturing"
+    ],
+    "category": "🏭 Manufacturing AI"
+  },
+  {
+    "name": "StormGeo (AI-powered Weather)",
+    "url": "https://www.stormgeo.com/",
+    "favicon_url": "https://www.stormgeo.com/favicon.ico",
+    "tags": [
+      "energy",
+      "maritime",
+      "stormgeo",
+      "weather"
+    ],
+    "category": "💡 Maritime/Energy AI"
+  },
+  {
+    "name": "HubSpot (Breeze AI)",
+    "url": "https://www.hubspot.com/ai",
+    "favicon_url": "https://www.hubspot.com/favicon.ico",
+    "tags": [
+      "breeze",
+      "crm",
+      "hubspot",
+      "marketing"
+    ],
+    "category": "📈 Marketing/CRM AI"
+  },
+  {
+    "name": "Exabyte.io",
+    "url": "https://www.exabyte.io/",
+    "favicon_url": "https://www.exabyte.io/favicon.ico",
+    "tags": [
+      "exabyte",
+      "materials",
+      "science"
+    ],
+    "category": "✨ Materials Science AI"
+  },
+  {
+    "name": "Materials Zone",
+    "url": "https://www.materials.zone/",
+    "favicon_url": "https://www.materials.zone/favicon.ico",
+    "tags": [
+      "materials",
+      "science",
+      "zone"
+    ],
+    "category": "✨ Materials Science AI"
+  },
+  {
+    "name": "Polymateria",
+    "url": "https://polymateria.com/",
+    "favicon_url": "https://polymateria.com/favicon.ico",
+    "tags": [
+      "materials",
+      "polymateria",
+      "science"
+    ],
+    "category": "✨ Materials Science AI"
+  },
+  {
+    "name": "Grain.com",
+    "url": "https://grain.com/",
+    "favicon_url": "https://grain.com/favicon.ico",
+    "tags": [
+      "com",
+      "grain",
+      "meeting"
+    ],
+    "category": "✨ Meeting AI"
+  },
+  {
+    "name": "Zoom (AI Companion)",
+    "url": "https://www.zoom.us/ai-companion",
+    "favicon_url": "https://www.zoom.us/favicon.ico",
+    "tags": [
+      "companion",
+      "meeting",
+      "zoom"
+    ],
+    "category": "✨ Meeting AI"
+  },
+  {
+    "name": "WhyLabs (whylogs)",
+    "url": "https://www.whylabs.ai/",
+    "favicon_url": "https://www.whylabs.ai/favicon.ico",
+    "tags": [
+      "mlops",
+      "whylabs",
+      "whylogs"
+    ],
+    "category": "🧠 MLOps/Data AI"
+  },
+  {
+    "name": "SAP AI Core",
+    "url": "https://www.sap.com/products/technology-platform/ai-core.html",
+    "favicon_url": "https://www.sap.com/favicon.ico",
+    "tags": [
+      "core",
+      "enterprise",
+      "mlops",
+      "sap"
+    ],
+    "category": "🧠 MLOps/Enterprise AI"
+  },
+  {
+    "name": "NVIDIA TAO Toolkit",
+    "url": "https://developer.nvidia.com/tao",
+    "favicon_url": "https://developer.nvidia.com/favicon.ico",
+    "tags": [
+      "mlops",
+      "nvidia",
+      "tao",
+      "toolkit",
+      "vision"
+    ],
+    "category": "🧠 MLOps/Vision AI"
+  },
+  {
+    "name": "Audio.com (by Epidemic Sound)",
+    "url": "https://www.audio.com/",
+    "favicon_url": "https://www.audio.com/favicon.ico",
+    "tags": [
+      "audio",
+      "com",
+      "epidemic",
+      "music",
+      "sound"
+    ],
+    "category": "🔊 Music AI"
+  },
+  {
+    "name": "LANDR (AI Mastering)",
+    "url": "https://www.landr.com/",
+    "favicon_url": "https://www.landr.com/favicon.ico",
+    "tags": [
+      "landr",
+      "mastering",
+      "music"
+    ],
+    "category": "🔊 Music AI"
+  },
+  {
+    "name": "Apple Keyboard (Predictive Text, Autocorrect)",
+    "url": "(Integrated into iOS/macOS)",
+    "favicon_url": "./favicon.ico",
+    "tags": [
+      "apple",
+      "autocorrect",
+      "keyboard",
+      "nlp",
+      "predictive",
+      "productivity",
+      "text"
+    ],
+    "category": "🗣️ NLP/Productivity AI"
+  },
+  {
+    "name": "Google Translate (AI for real-time translation)",
+    "url": "https://translate.google.com/",
+    "favicon_url": "https://translate.google.com/favicon.ico",
+    "tags": [
+      "google",
+      "nlp",
+      "real",
+      "time",
+      "translate",
+      "translation"
+    ],
+    "category": "🗣️ NLP/Translation AI"
+  },
+  {
+    "name": "Core ML (Apple)",
+    "url": "https://developer.apple.com/documentation/coreml/",
+    "favicon_url": "https://developer.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "core",
+      "device",
+      "ml"
+    ],
+    "category": "✨ On-device ML"
+  },
+  {
+    "name": "Amplitude (AI features)",
+    "url": "https://amplitude.com/solutions/ai-for-product",
+    "favicon_url": "https://amplitude.com/favicon.ico",
+    "tags": [
+      "amplitude",
+      "analytics",
+      "product"
+    ],
+    "category": "🔍 Product Analytics AI"
+  },
+  {
+    "name": "Mixpanel (AI features)",
+    "url": "https://mixpanel.com/solutions/ai-for-product-analytics/",
+    "favicon_url": "https://mixpanel.com/favicon.ico",
+    "tags": [
+      "analytics",
+      "mixpanel",
+      "product"
+    ],
+    "category": "🔍 Product Analytics AI"
+  },
+  {
+    "name": "Pendo (AI features)",
+    "url": "https://www.pendo.io/platform/ai/",
+    "favicon_url": "https://www.pendo.io/favicon.ico",
+    "tags": [
+      "analytics",
+      "pendo",
+      "product"
+    ],
+    "category": "🔍 Product Analytics AI"
+  },
+  {
+    "name": "Asana (AI features)",
+    "url": "https://asana.com/",
+    "favicon_url": "https://asana.com/favicon.ico",
+    "tags": [
+      "asana",
+      "productivity"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Google Chrome (AI features)",
+    "url": "https://www.google.com/chrome/",
+    "favicon_url": "https://www.google.com/favicon.ico",
+    "tags": [
+      "chrome",
+      "google",
+      "productivity"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Google Workspace (AI in Docs, Sheets, Slides, Gmail)",
+    "url": "https://workspace.google.com/",
+    "favicon_url": "https://workspace.google.com/favicon.ico",
+    "tags": [
+      "docs",
+      "gmail",
+      "google",
+      "productivity",
+      "sheets",
+      "slides",
+      "workspace"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Microsoft Lens (AI features)",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-lens",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "tags": [
+      "lens",
+      "microsoft",
+      "productivity"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Microsoft To Do (AI suggestions)",
+    "url": "https://todo.microsoft.com/",
+    "favicon_url": "https://todo.microsoft.com/favicon.ico",
+    "tags": [
+      "microsoft",
+      "productivity",
+      "suggestions"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Pitch (AI-powered presentations)",
+    "url": "https://pitch.com/",
+    "favicon_url": "https://pitch.com/favicon.ico",
+    "tags": [
+      "pitch",
+      "presentations",
+      "productivity"
+    ],
+    "category": "📝 Productivity AI"
+  },
+  {
+    "name": "Monday.com (AI features)",
+    "url": "https://monday.com/ai/",
+    "favicon_url": "https://monday.com/favicon.ico",
+    "tags": [
+      "com",
+      "monday",
+      "project"
+    ],
+    "category": "✨ Project Management AI"
+  },
+  {
+    "name": "Civitas (AI for Government)",
+    "url": "https://www.civitas.ai/",
+    "favicon_url": "https://www.civitas.ai/favicon.ico",
+    "tags": [
+      "civitas",
+      "government",
+      "public",
+      "sector"
+    ],
+    "category": "✨ Public Sector AI"
+  },
+  {
+    "name": "Amazon Prime Video / Music (AI for recommendations)",
+    "url": "https://www.amazon.com/primevideo",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "music",
+      "prime",
+      "recommendation",
+      "recommendations",
+      "video"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "Apple Music (AI for recommendations)",
+    "url": "https://www.apple.com/apple-music/",
+    "favicon_url": "https://www.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "music",
+      "recommendation",
+      "recommendations"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "Google Play Store (AI for recommendations)",
+    "url": "https://play.google.com/store",
+    "favicon_url": "https://play.google.com/favicon.ico",
+    "tags": [
+      "google",
+      "play",
+      "recommendation",
+      "recommendations",
+      "store"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "Netflix Recommendation Engine",
+    "url": "https://help.netflix.com/en/node/100632",
+    "favicon_url": "https://help.netflix.com/favicon.ico",
+    "tags": [
+      "netflix",
+      "recommendation"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "Spotify Recommendation Engine",
+    "url": "https://spotify.com/",
+    "favicon_url": "https://spotify.com/favicon.ico",
+    "tags": [
+      "recommendation",
+      "spotify"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "TikTok For You Page Algorithm",
+    "url": "https://www.tiktok.com/for-you",
+    "favicon_url": "https://www.tiktok.com/favicon.ico",
+    "tags": [
+      "algorithm",
+      "page",
+      "recommendation",
+      "tiktok",
+      "you"
+    ],
+    "category": "✨ Recommendation AI"
+  },
+  {
+    "name": "YouTube (AI for recommendations, Content ID, moderation)",
+    "url": "https://www.youtube.com/",
+    "favicon_url": "https://www.youtube.com/favicon.ico",
+    "tags": [
+      "content",
+      "moderation",
+      "recommendation",
+      "recommendations",
+      "youtube"
+    ],
+    "category": "✍️ Recommendation/Content Moderation AI"
+  },
+  {
+    "name": "Amazon DeepRacer",
+    "url": "https://aws.amazon.com/deepracer/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "deepracer",
+      "learning",
+      "reinforcement"
+    ],
+    "category": "✨ Reinforcement Learning AI"
+  },
+  {
+    "name": "Dataminr for Nonprofits",
+    "url": "https://www.dataminr.com/company/dataminr-for-nonprofits/",
+    "favicon_url": "https://www.dataminr.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Algolia",
+    "url": "https://www.algolia.com/",
+    "favicon_url": "https://www.algolia.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Amazon Go Stores (Just Walk Out Technology)",
+    "url": "https://www.amazon.com/b?node=16008589011",
+    "favicon_url": "https://www.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "just",
+      "out",
+      "retail",
+      "stores",
+      "technology",
+      "walk"
+    ],
+    "category": "🛒 Retail"
+  },
+  {
+    "name": "ChowNow",
+    "url": "https://www.chownow.com/",
+    "favicon_url": "https://www.chownow.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Constructor.io",
+    "url": "https://constructor.io/",
+    "favicon_url": "https://constructor.io/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Contentsquare",
+    "url": "https://contentsquare.com/",
+    "favicon_url": "https://contentsquare.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Daydream",
+    "url": "https://daydream.shop/",
+    "favicon_url": "https://daydream.shop/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Deliveroo",
+    "url": "https://deliveroo.co.uk/",
+    "favicon_url": "https://deliveroo.co.uk/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Dynamic Yield",
+    "url": "https://www.dynamicyield.com/",
+    "favicon_url": "https://www.dynamicyield.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Grubhub",
+    "url": "https://www.grubhub.com/",
+    "favicon_url": "https://www.grubhub.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Heuritech",
+    "url": "https://heuritech.com/",
+    "favicon_url": "https://heuritech.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Lectra Valia Fashion",
+    "url": "https://www.lectra.com/en/solutions/valia-fashion",
+    "favicon_url": "https://www.lectra.com/en/solutions/valia-fashion/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Lily AI",
+    "url": "https://www.lily.ai/",
+    "favicon_url": "https://www.lily.ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Narvar",
+    "url": "https://corp.narvar.com/platform/ai/",
+    "favicon_url": "https://corp.narvar.com/platform/ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Nexla",
+    "url": "https://www.nexla.com/",
+    "favicon_url": "https://www.nexla.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Refabric",
+    "url": "https://www.refabric.ai/",
+    "favicon_url": "https://www.refabric.ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Riskified",
+    "url": "https://www.riskified.com/",
+    "favicon_url": "https://www.riskified.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Six Atomic",
+    "url": "https://www.sixatomic.com/",
+    "favicon_url": "https://www.sixatomic.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Toast",
+    "url": "https://pos.toasttab.com/",
+    "favicon_url": "https://pos.toasttab.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Unspun (FitOS)",
+    "url": "https://unspun.io/",
+    "favicon_url": "https://unspun.io/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Covariant.ai",
+    "url": "https://covariant.ai/",
+    "favicon_url": "https://covariant.ai/favicon.ico",
+    "tags": [
+      "covariant",
+      "robotics"
+    ],
+    "category": "🤖 Robotics AI"
+  },
+  {
+    "name": "RightHand Robotics",
+    "url": "https://www.righthandrobotics.com/",
+    "favicon_url": "https://www.righthandrobotics.com/favicon.ico",
+    "tags": [
+      "righthand",
+      "robotics"
+    ],
+    "category": "🤖 Robotics AI"
+  },
+  {
+    "name": "Symbio Robotics (SymbioDCS)",
+    "url": "https://symbiorobotics.com/",
+    "favicon_url": "https://symbiorobotics.com/favicon.ico",
+    "tags": [
+      "robotics",
+      "symbio",
+      "symbiodcs"
+    ],
+    "category": "🤖 Robotics AI"
+  },
+  {
+    "name": "Tesla Optimus (AI for Humanoid Robot)",
+    "url": "https://www.tesla.com/AI",
+    "favicon_url": "https://www.tesla.com/favicon.ico",
+    "tags": [
+      "humanoid",
+      "optimus",
+      "robot",
+      "robotics",
+      "tesla"
+    ],
+    "category": "🤖 Robotics AI"
+  },
+  {
+    "name": "Amazon Robotics",
+    "url": "https://www.amazonrobotics.com/",
+    "favicon_url": "https://www.amazonrobotics.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "robotics",
+      "warehouse"
+    ],
+    "category": "🤖 Robotics/Warehouse AI"
+  },
+  {
+    "name": "Crystal (AI for Sales)",
+    "url": "https://www.crystalknows.com/",
+    "favicon_url": "https://www.crystalknows.com/favicon.ico",
+    "tags": [
+      "crystal",
+      "sales"
+    ],
+    "category": "📈 Sales AI"
+  },
+  {
+    "name": "Enthought (Horizon)",
+    "url": "https://www.enthought.com/platform/horizon",
+    "favicon_url": "https://www.enthought.com/favicon.ico",
+    "tags": [
+      "enthought",
+      "horizon",
+      "scientific"
+    ],
+    "category": "✨ Scientific AI"
+  },
+  {
+    "name": "Google Search (RankBrain, MUM, BERT, Gemini integration)",
+    "url": "https://www.google.com/search",
+    "favicon_url": "https://www.google.com/favicon.ico",
+    "tags": [
+      "bert",
+      "gemini",
+      "google",
+      "integration",
+      "mum",
+      "rankbrain",
+      "search"
+    ],
+    "category": "🔎 Search AI"
+  },
+  {
+    "name": "NVIDIA Metropolis",
+    "url": "https://www.nvidia.com/en-us/industries/smart-cities/metropolis/",
+    "favicon_url": "https://www.nvidia.com/favicon.ico",
+    "tags": [
+      "city",
+      "metropolis",
+      "nvidia",
+      "smart",
+      "vision"
+    ],
+    "category": "🎨 Smart City/Vision AI"
+  },
+  {
+    "name": "Facebook Feed Ranking (AI-powered)",
+    "url": "https://www.facebook.com/help/110994966629156",
+    "favicon_url": "https://www.facebook.com/favicon.ico",
+    "tags": [
+      "facebook",
+      "feed",
+      "media",
+      "ranking",
+      "social"
+    ],
+    "category": "✨ Social Media AI"
+  },
+  {
+    "name": "Abridge",
+    "url": "https://abridge.com/",
+    "favicon_url": "https://abridge.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "healthcare",
+      "transcription"
+    ]
+  },
+  {
+    "name": "accessiBe",
+    "url": "https://accessibe.com/",
+    "favicon_url": "https://accessibe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "accessibility",
+      "web"
+    ]
+  },
+  {
+    "name": "Adobe Acrobat AI Assistant",
+    "url": "https://www.adobe.com/acrobat/ai-assistant.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "pdf",
+      "productivity"
+    ]
+  },
+  {
+    "name": "Adobe Experience Platform AI Services",
+    "url": "https://experience.adobe.com/solutions/experience-platform/services.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "marketing",
+      "analytics"
+    ]
+  },
+  {
+    "name": "Adobe Sensei",
+    "url": "https://www.adobe.com/sensei.html",
+    "favicon_url": "https://www.adobe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "adobe",
+      "framework"
+    ]
+  },
+  {
+    "name": "Aionics",
+    "url": "https://aionics.ai/",
+    "favicon_url": "https://aionics.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "materials",
+      "science"
+    ]
+  },
+  {
+    "name": "Amazon Lookout for Equipment",
+    "url": "https://aws.amazon.com/lookout-for-equipment/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "Amazon Monitron",
+    "url": "https://aws.amazon.com/monitron/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "Anyword",
+    "url": "https://anyword.com/",
+    "favicon_url": "https://anyword.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "marketing",
+      "copywriting"
+    ]
+  },
+  {
+    "name": "Arctic Wolf Aurora",
+    "url": "https://arcticwolf.com/aurora/",
+    "favicon_url": "https://arcticwolf.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "threatdetection"
+    ]
+  },
+  {
+    "name": "Asana AI",
+    "url": "https://asana.com/product/ai",
+    "favicon_url": "https://asana.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "projectmanagement",
+      "productivity"
+    ]
+  },
+  {
+    "name": "Atera",
+    "url": "https://www.atera.com/",
+    "favicon_url": "https://www.atera.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "itmanagement",
+      "automation"
+    ]
+  },
+  {
+    "name": "Augury",
+    "url": "https://www.augury.com/",
+    "favicon_url": "https://www.augury.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "Aura Intelligent Systems",
+    "url": "https://auraintelligent.com/",
+    "favicon_url": "https://auraintelligent.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "security",
+      "vision"
+    ]
+  },
+  {
+    "name": "Be My Eyes (Be My AI)",
+    "url": "https://www.bemyeyes.com/bemyai",
+    "favicon_url": "https://www.bemyeyes.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "accessibility",
+      "vision"
+    ]
+  },
+  {
+    "name": "Blue Prism",
+    "url": "https://www.blueprism.com/",
+    "favicon_url": "https://www.blueprism.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "rpa",
+      "automation"
+    ]
+  },
+  {
+    "name": "Carnegie Learning Mika",
+    "url": "https://www.carnegielearning.com/who-we-are/ai-in-education/",
+    "favicon_url": "https://www.carnegielearning.com/who-we-are/ai-in-education/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "education",
+      "learning"
+    ]
+  },
+  {
+    "name": "Century Tech",
+    "url": "https://www.century.tech/",
+    "favicon_url": "https://www.century.tech/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "education",
+      "learning"
+    ]
+  },
+  {
+    "name": "Chef Robotics",
+    "url": "https://www.chefrobotics.com/",
+    "favicon_url": "https://www.chefrobotics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "foodservice",
+      "robotics"
+    ]
+  },
+  {
+    "name": "Cisco Webex AI Agent",
+    "url": "https://www.webex.com/ai-agent.html",
+    "favicon_url": "https://www.webex.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "communication",
+      "contactcenter"
+    ]
+  },
+  {
+    "name": "Citrine Informatics",
+    "url": "https://citrine.io/",
+    "favicon_url": "https://citrine.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "materials",
+      "science"
+    ]
+  },
+  {
+    "name": "Clay",
+    "url": "https://clay.earth/ai",
+    "favicon_url": "https://clay.earth/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "personal",
+      "relationships"
+    ]
+  },
+  {
+    "name": "Cognito Forms",
+    "url": "https://www.cognitoforms.com/ai",
+    "favicon_url": "https://www.cognitoforms.com/ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "forms",
+      "automation"
+    ]
+  },
+  {
+    "name": "Concentric AI",
+    "url": "https://www.concentric.ai/",
+    "favicon_url": "https://www.concentric.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "datasecurity",
+      "governance"
+    ]
+  },
+  {
+    "name": "CrowdStrike",
+    "url": "https://www.crowdstrike.com/",
+    "favicon_url": "https://www.crowdstrike.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "endpointprotection"
+    ]
+  },
+  {
+    "name": "Crystal",
+    "url": "https://www.crystalknows.com/ai",
+    "favicon_url": "https://www.crystalknows.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "sales",
+      "communication"
+    ]
+  },
+  {
+    "name": "Cylance",
+    "url": "https://www.blackberry.com/us/en/products/cylance-ai",
+    "favicon_url": "https://www.blackberry.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "threatprevention"
+    ]
+  },
+  {
+    "name": "Darktrace",
+    "url": "https://www.darktrace.com/",
+    "favicon_url": "https://www.darktrace.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "threatdetection"
+    ]
+  },
+  {
+    "name": "Darktrace HEAL",
+    "url": "https://darktrace.com/products/darktrace-heal",
+    "favicon_url": "https://www.darktrace.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "incidentresponse"
+    ]
+  },
+  {
+    "name": "Deep Instinct",
+    "url": "https://www.deepinstinct.com/",
+    "favicon_url": "https://www.deepinstinct.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "threatprevention"
+    ]
+  },
+  {
+    "name": "DeepL",
+    "url": "https://www.deepl.com/",
+    "favicon_url": "https://www.deepl.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "translation",
+      "language"
+    ]
+  },
+  {
+    "name": "Diligent",
+    "url": "https://www.diligent.com/solutions/ai-insights/",
+    "favicon_url": "https://www.diligent.com/solutions/ai-insights/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "governance",
+      "riskmanagement"
+    ]
+  },
+  {
+    "name": "Drata",
+    "url": "https://drata.com/",
+    "favicon_url": "https://drata.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "compliance",
+      "automation"
+    ]
+  },
+  {
+    "name": "DreamBox Learning",
+    "url": "https://www.dreambox.com/",
+    "favicon_url": "https://www.dreambox.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "education",
+      "learning"
+    ]
+  },
+  {
+    "name": "DWE.ai",
+    "url": "https://dwe.ai/",
+    "favicon_url": "https://dwe.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "design",
+      "webdevelopment"
+    ]
+  },
+  {
+    "name": "Eightfold AI",
+    "url": "https://eightfold.ai/",
+    "favicon_url": "https://eightfold.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "talentmanagement"
+    ]
+  },
+  {
+    "name": "EliseAI",
+    "url": "https://eliseai.com/",
+    "favicon_url": "https://eliseai.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "automation"
+    ]
+  },
+  {
+    "name": "Exabeam",
+    "url": "https://www.exabeam.com/",
+    "favicon_url": "https://www.exabeam.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "siem"
+    ]
+  },
+  {
+    "name": "Final Round AI",
+    "url": "https://www.finalround.ai/",
+    "favicon_url": "https://www.finalround.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "interviewprep",
+      "career"
+    ]
+  },
+  {
+    "name": "Fireflies.ai",
+    "url": "https://fireflies.ai/",
+    "favicon_url": "https://fireflies.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "meetings",
+      "transcription"
+    ]
+  },
+  {
+    "name": "Flatfile",
+    "url": "https://flatfile.com/",
+    "favicon_url": "https://flatfile.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "dataimport",
+      "automation"
+    ]
+  },
+  {
+    "name": "Forethought",
+    "url": "https://forethought.ai/",
+    "favicon_url": "https://forethought.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "customerservice",
+      "automation"
+    ]
+  },
+  {
+    "name": "Formant",
+    "url": "https://formant.io/",
+    "favicon_url": "https://formant.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "robotics",
+      "operations"
+    ]
+  },
+  {
+    "name": "Freshworks",
+    "url": "https://www.freshworks.com/",
+    "favicon_url": "https://www.freshworks.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "customerservice",
+      "crm"
+    ]
+  },
+  {
+    "name": "Givaudan Carto",
+    "url": "https://www.givaudan.com/fragrance-beauty/active-beauty/carto-artificial-intelligence-fragrance-creation-tool",
+    "favicon_url": "https://www.givaudan.com/fragrance-beauty/active-beauty/carto-artificial-intelligence-fragrance-creation-tool/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "fragrance",
+      "creation"
+    ]
+  },
+  {
+    "name": "Glean",
+    "url": "https://www.glean.com/",
+    "favicon_url": "https://www.glean.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "enterprisesearch",
+      "knowledgemanagement"
+    ]
+  },
+  {
+    "name": "Gloat",
+    "url": "https://www.gloat.com/",
+    "favicon_url": "https://www.gloat.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "talentmarketplace"
+    ]
+  },
+  {
+    "name": "Gong.io",
+    "url": "https://www.gong.io/",
+    "favicon_url": "https://www.gong.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "sales",
+      "revenueintelligence"
+    ]
+  },
+  {
+    "name": "GrayMatter Robotics",
+    "url": "https://www.graymatter-robotics.com/",
+    "favicon_url": "https://www.graymatter-robotics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "robotics",
+      "manufacturing"
+    ]
+  },
+  {
+    "name": "Hailo",
+    "url": "https://www.hailo.ai/",
+    "favicon_url": "https://www.hailo.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "edgeai",
+      "hardware"
+    ]
+  },
+  {
+    "name": "Hebbia",
+    "url": "https://hebbia.ai/",
+    "favicon_url": "https://hebbia.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "research",
+      "knowledgemanagement"
+    ]
+  },
+  {
+    "name": "HubSpot CRM with AI",
+    "url": "https://www.hubspot.com/products/crm",
+    "favicon_url": "https://www.hubspot.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "crm",
+      "marketing"
+    ]
+  },
+  {
+    "name": "Hyperniche.ai",
+    "url": "https://hyperniche.ai/",
+    "favicon_url": "https://hyperniche.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "marketing",
+      "contentcreation"
+    ]
+  },
+  {
+    "name": "Hyperscience",
+    "url": "https://www.hyperscience.com/",
+    "favicon_url": "https://www.hyperscience.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "documentprocessing",
+      "automation"
+    ]
+  },
+  {
+    "name": "InOrbit",
+    "url": "https://www.inorbit.ai/",
+    "favicon_url": "https://www.inorbit.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "robotics",
+      "operations"
+    ]
+  },
+  {
+    "name": "Intellian",
+    "url": "https://intellian.com/",
+    "favicon_url": "https://intellian.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "maritime",
+      "satellitecommunication"
+    ]
+  },
+  {
+    "name": "Kebotix",
+    "url": "https://www.kebotix.com/",
+    "favicon_url": "https://www.kebotix.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "materials",
+      "science"
+    ]
+  },
+  {
+    "name": "Knewton Alta",
+    "url": "https://www.knewton.com/products/alta/",
+    "favicon_url": "https://www.knewton.com/products/alta/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "education",
+      "learning"
+    ]
+  },
+  {
+    "name": "Kustomer",
+    "url": "https://www.kustomer.com/",
+    "favicon_url": "https://www.kustomer.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "customerservice",
+      "crm"
+    ]
+  },
+  {
+    "name": "Lemonade",
+    "url": "https://www.lemonade.com/",
+    "favicon_url": "https://www.lemonade.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "insurance",
+      "fintech"
+    ]
+  },
+  {
+    "name": "Machina Labs",
+    "url": "https://machinalabs.com/",
+    "favicon_url": "https://machinalabs.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "manufacturing",
+      "robotics"
+    ]
+  },
+  {
+    "name": "Mailmodo",
+    "url": "https://www.mailmodo.com/",
+    "favicon_url": "https://www.mailmodo.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "emailmarketing",
+      "automation"
+    ]
+  },
+  {
+    "name": "MatterGen",
+    "url": "https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "materials",
+      "science"
+    ]
+  },
+  {
+    "name": "Memex",
+    "url": "https://getmemex.com/",
+    "favicon_url": "https://getmemex.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "knowledgemanagement",
+      "productivity"
+    ]
+  },
+  {
+    "name": "Metropolis Technologies",
+    "url": "https://metropolis.io/",
+    "favicon_url": "https://metropolis.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "smartcities",
+      "transportation"
+    ]
+  },
+  {
+    "name": "Microsoft Copilot Studio",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "chatbotbuilder",
+      "lowcode"
+    ]
+  },
+  {
+    "name": "Microsoft Dynamics 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/dynamics-365/solutions/ai",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "crm",
+      "erp"
+    ]
+  },
+  {
+    "name": "Microsoft Entra Verified ID",
+    "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "identitymanagement",
+      "security"
+    ]
+  },
+  {
+    "name": "Microsoft Power Automate (with AI Builder)",
+    "url": "https://powerautomate.microsoft.com/en-us/ai-builder/",
+    "favicon_url": "https://powerautomate.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "automation",
+      "rpa"
+    ]
+  },
+  {
+    "name": "Microsoft Security Copilot",
+    "url": "https://www.microsoft.com/en-us/security-copilot",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "threatdetection"
+    ]
+  },
+  {
+    "name": "Miro AI",
+    "url": "https://miro.com/ai/",
+    "favicon_url": "https://miro.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "collaboration",
+      "whiteboarding"
+    ]
+  },
+  {
+    "name": "Moveworks",
+    "url": "https://www.moveworks.com/",
+    "favicon_url": "https://www.moveworks.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "itsupport",
+      "automation"
+    ]
+  },
+  {
+    "name": "Nanonets",
+    "url": "https://nanonets.com/",
+    "favicon_url": "https://nanonets.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "documentprocessing",
+      "ocr"
+    ]
+  },
+  {
+    "name": "Nexthink",
+    "url": "https://www.nexthink.com/",
+    "favicon_url": "https://www.nexthink.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "itmanagement",
+      "employeeexperience"
+    ]
+  },
+  {
+    "name": "NIST AI-Driven Materials Science",
+    "url": "https://www.nist.gov/mml/mmsd/data-and-ai-driven-materials-science-group",
+    "favicon_url": "https://www.nist.gov/mml/mmsd/data-and-ai-driven-materials-science-group/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "materials",
+      "science"
+    ]
+  },
+  {
+    "name": "Nodalview",
+    "url": "https://nodalview.com/",
+    "favicon_url": "https://nodalview.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "virtualtours"
+    ]
+  },
+  {
+    "name": "NoTraffic",
+    "url": "https://notraffic.tech/",
+    "favicon_url": "https://notraffic.tech/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "smartcities",
+      "trafficmanagement"
+    ]
+  },
+  {
+    "name": "Nuance Mix",
+    "url": "https://www.nuance.com/omni-channel-customer-engagement/mix/",
+    "favicon_url": "https://www.nuance.com/omni-channel-customer-engagement/mix/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "conversationalai",
+      "customerexperience"
+    ]
+  },
+  {
+    "name": "Observe.ai",
+    "url": "https://www.observe.ai/",
+    "favicon_url": "https://www.observe.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "contactcenter",
+      "qualityassurance"
+    ]
+  },
+  {
+    "name": "Oolo AI",
+    "url": "https://oolo.ai/",
+    "favicon_url": "https://oolo.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "ecommerce",
+      "monitoring"
+    ]
+  },
+  {
+    "name": "Opendoor AI",
+    "url": "https://www.opendoor.com/ai",
+    "favicon_url": "https://www.opendoor.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "ibuying"
+    ]
+  },
+  {
+    "name": "OpenGrid",
+    "url": "https://opengrid.com/",
+    "favicon_url": "https://opengrid.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "energy",
+      "gridmanagement"
+    ]
+  },
+  {
+    "name": "Operator by OpenAI",
+    "url": "https://operator.openai.com/",
+    "favicon_url": "https://openai.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "automation",
+      "tasks"
+    ]
+  },
+  {
+    "name": "Outfunnel",
+    "url": "https://outfunnel.com/",
+    "favicon_url": "https://outfunnel.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "marketingautomation",
+      "crmintegration"
+    ]
+  },
+  {
+    "name": "Pitch",
+    "url": "https://pitch.com/ai",
+    "favicon_url": "https://pitch.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "presentations",
+      "productivity"
+    ]
+  },
+  {
+    "name": "PTV Group Optima",
+    "url": "https://www.ptvgroup.com/en/solutions/traffic-software/ptv-optima/",
+    "favicon_url": "https://www.ptvgroup.com/en/solutions/traffic-software/ptv-optima/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "trafficmanagement",
+      "smartcities"
+    ]
+  },
+  {
+    "name": "PwC",
+    "url": "https://www.pwc.com/",
+    "favicon_url": "https://www.pwc.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "consulting",
+      "professional_services"
+    ]
+  },
+  {
+    "name": "Pymetrics",
+    "url": "https://www.pymetrics.com/",
+    "favicon_url": "https://www.pymetrics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "talentassessment"
+    ]
+  },
+  {
+    "name": "Pypestream",
+    "url": "https://www.pypestream.com/",
+    "favicon_url": "https://www.pypestream.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "customerservice",
+      "automation"
+    ]
+  },
+  {
+    "name": "Qmunity",
+    "url": "https://quantum-machines.co/",
+    "favicon_url": "https://quantum-machines.co/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "quantumcomputing",
+      "hardware"
+    ]
+  },
+  {
+    "name": "Quantexa",
+    "url": "https://www.quantexa.com/",
+    "favicon_url": "https://www.quantexa.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "dataanalytics",
+      "riskmanagement"
+    ]
+  },
+  {
+    "name": "Querium",
+    "url": "https://querium.com/",
+    "favicon_url": "https://querium.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "education",
+      "stem"
+    ]
+  },
+  {
+    "name": "Read Easy.AI",
+    "url": "https://readeasy.ai/",
+    "favicon_url": "https://readeasy.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "accessibility",
+      "reading"
+    ]
+  },
+  {
+    "name": "Realtime Robotics",
+    "url": "https://rtr.ai/",
+    "favicon_url": "https://rtr.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "robotics",
+      "motionplanning"
+    ]
+  },
+  {
+    "name": "Realtor.com",
+    "url": "https://www.realtor.com/",
+    "favicon_url": "https://www.realtor.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "search"
+    ]
+  },
+  {
+    "name": "Reejig",
+    "url": "https://reejig.com/",
+    "favicon_url": "https://reejig.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "workforceintelligence"
+    ]
+  },
+  {
+    "name": "Roofstock",
+    "url": "https://www.roofstock.com/",
+    "favicon_url": "https://www.roofstock.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "investment"
+    ]
+  },
+  {
+    "name": "Saildrone",
+    "url": "https://www.saildrone.com/",
+    "favicon_url": "https://www.saildrone.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "maritime",
+      "datacollection"
+    ]
+  },
+  {
+    "name": "Sapient AI",
+    "url": "https://www.sapient.ai/",
+    "favicon_url": "https://www.sapient.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "robotics",
+      "perception"
+    ]
+  },
+  {
+    "name": "Seeing AI (Microsoft)",
+    "url": "https://www.microsoft.com/en-us/ai/seeing-ai",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "accessibility",
+      "vision"
+    ]
+  },
+  {
+    "name": "Seeq",
+    "url": "https://www.seeq.com/",
+    "favicon_url": "https://www.seeq.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrialanalytics",
+      "manufacturing"
+    ]
+  },
+  {
+    "name": "Senseye",
+    "url": "https://www.senseye.io/",
+    "favicon_url": "https://www.senseye.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "predictivemaintenance"
+    ]
+  },
+  {
+    "name": "Sewbo",
+    "url": "https://sewbo.com/",
+    "favicon_url": "https://sewbo.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "manufacturing",
+      "robotics"
+    ]
+  },
+  {
+    "name": "Shield AI",
+    "url": "https://shield.ai/",
+    "favicon_url": "https://shield.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "defense",
+      "autonomoussystems"
+    ]
+  },
+  {
+    "name": "Sierra",
+    "url": "https://sierra.ai/",
+    "favicon_url": "https://sierra.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "conversationalai",
+      "customerservice"
+    ]
+  },
+  {
+    "name": "SkyHive",
+    "url": "https://skyhive.ai/",
+    "favicon_url": "https://skyhive.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "workforceplanning"
+    ]
+  },
+  {
+    "name": "Slang.ai",
+    "url": "https://slang.ai/",
+    "favicon_url": "https://slang.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "voiceassistant",
+      "multilingual"
+    ]
+  },
+  {
+    "name": "Snyk",
+    "url": "https://snyk.io/",
+    "favicon_url": "https://snyk.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "developersecurity"
+    ]
+  },
+  {
+    "name": "Speak",
+    "url": "https://www.speak.com/",
+    "favicon_url": "https://www.speak.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "languagelearning",
+      "speechrecognition"
+    ]
+  },
+  {
+    "name": "Sportradar AI",
+    "url": "https://www.sportradar.com/ai",
+    "favicon_url": "https://www.sportradar.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "sportsanalytics",
+      "data"
+    ]
+  },
+  {
+    "name": "SPOTIO",
+    "url": "https://www.spotio.com/",
+    "favicon_url": "https://www.spotio.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "salesengagement",
+      "fieldsales"
+    ]
+  },
+  {
+    "name": "Tastewise",
+    "url": "https://tastewise.io/",
+    "favicon_url": "https://tastewise.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "foodandbeverage",
+      "marketresearch"
+    ]
+  },
+  {
+    "name": "Textio",
+    "url": "https://textio.com/",
+    "favicon_url": "https://textio.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "hr",
+      "augmentedwriting"
+    ]
+  },
+  {
+    "name": "Tractian",
+    "url": "https://tractian.com/",
+    "favicon_url": "https://tractian.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "industrial",
+      "predictivemaintenance"
+    ]
+  },
+  {
+    "name": "Trellix",
+    "url": "https://www.trellix.com/en-us/solutions/extended-detection-response/xdrs.html",
+    "favicon_url": "https://www.trellix.com/en-us/solutions/extended-detection-response/xdrs.html/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "cybersecurity",
+      "xdr"
+    ]
+  },
+  {
+    "name": "Vannevar Labs",
+    "url": "https://www.vannevarlabs.com/",
+    "favicon_url": "https://www.vannevarlabs.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "defense",
+      "nationalsecurity"
+    ]
+  },
+  {
+    "name": "Varda Space Industries",
+    "url": "https://www.varda.com/",
+    "favicon_url": "https://www.varda.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "space",
+      "manufacturing"
+    ]
+  },
+  {
+    "name": "Vellum",
+    "url": "https://www.vellum.ai/",
+    "favicon_url": "https://www.vellum.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "llmdevelopment",
+      "promptengineering"
+    ]
+  },
+  {
+    "name": "Voiceitt",
+    "url": "https://voiceitt.com/",
+    "favicon_url": "https://voiceitt.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "accessibility",
+      "speechrecognition"
+    ]
+  },
+  {
+    "name": "Waycare",
+    "url": "https://waycaretech.com/",
+    "favicon_url": "https://waycaretech.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "trafficmanagement",
+      "smartcities"
+    ]
+  },
+  {
+    "name": "WebWhiz AI",
+    "url": "https://webwhiz.ai/",
+    "favicon_url": "https://webwhiz.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "chatbot",
+      "customersupport"
+    ]
+  },
+  {
+    "name": "Whalesync",
+    "url": "https://www.whalesync.com/",
+    "favicon_url": "https://www.whalesync.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "datasync",
+      "automation"
+    ]
+  },
+  {
+    "name": "Workato",
+    "url": "https://www.workato.com/",
+    "favicon_url": "https://www.workato.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "automation",
+      "integration"
+    ]
+  },
+  {
+    "name": "World Labs",
+    "url": "https://worldlabs.org/",
+    "favicon_url": "https://worldlabs.org/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "socialimpact",
+      "innovation"
+    ]
+  },
+  {
+    "name": "XOCEAN",
+    "url": "https://www.xocean.com/",
+    "favicon_url": "https://www.xocean.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "maritime",
+      "oceanography"
+    ]
+  },
+  {
+    "name": "Zesty.ai",
+    "url": "https://www.zesty.ai/",
+    "favicon_url": "https://www.zesty.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "insurance",
+      "propertyrisk"
+    ]
+  },
+  {
+    "name": "Zoho CRM (Zia)",
+    "url": "https://www.zoho.com/crm/zia/",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "crm",
+      "salesautomation"
+    ]
+  },
+  {
+    "name": "Zoho Desk Answer Bot",
+    "url": "https://www.zoho.com/desk/answer-bot.html",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "customerservice",
+      "chatbot"
+    ]
+  },
+  {
+    "name": "Zoho Zia",
+    "url": "https://www.zoho.com/zia/",
+    "favicon_url": "https://www.zoho.com/zia/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "businessassistant",
+      "productivity"
+    ]
+  },
+  {
+    "name": "Zumper",
+    "url": "https://www.zumper.com/",
+    "favicon_url": "https://www.zumper.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "realestate",
+      "rentals"
+    ]
+  },
+  {
+    "name": "Amazon Supply Chain",
+    "url": "https://aws.amazon.com/aws-supply-chain/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "chain",
+      "supply"
+    ],
+    "category": "📊 Supply Chain AI"
+  },
+  {
+    "name": "Carbon Chain",
+    "url": "https://carbonchain.com/",
+    "favicon_url": "https://carbonchain.com/favicon.ico",
+    "tags": [
+      "carbon",
+      "chain",
+      "supply"
+    ],
+    "category": "📊 Supply Chain AI"
+  },
+  {
+    "name": "IBM Sterling Supply Chain Intelligence Suite (AI features)",
+    "url": "https://www.ibm.com/products/sterling-supply-chain-intelligence-suite",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "tags": [
+      "chain",
+      "ibm",
+      "sterling",
+      "supply"
+    ],
+    "category": "📊 Supply Chain AI"
+  },
+  {
+    "name": "Salesforce Net Zero Cloud (AI features)",
+    "url": "https://www.salesforce.com/products/net-zero-cloud/",
+    "favicon_url": "https://www.salesforce.com/favicon.ico",
+    "tags": [
+      "net",
+      "salesforce",
+      "sustainability",
+      "zero"
+    ],
+    "category": "🌎 Sustainability AI"
+  },
+  {
+    "name": "DeepMotion",
+    "url": "https://www.deepmotion.com/",
+    "favicon_url": "https://www.deepmotion.com/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "Fliki.ai",
+    "url": "https://fliki.ai/",
+    "favicon_url": "https://fliki.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "Hour One",
+    "url": "https://hourone.ai/",
+    "favicon_url": "https://hourone.ai/favicon.ico",
+    "tags": [
+      "generative",
+      "hour",
+      "one",
+      "video"
+    ],
+    "category": "🎬 Video Generation and Editing"
+  },
+  {
+    "name": "Move.ai",
+    "url": "https://www.move.ai/",
+    "favicon_url": "https://www.move.ai/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "ElevenLabs (Voice Library & API)",
+    "url": "https://elevenlabs.io/",
+    "favicon_url": "https://elevenlabs.io/favicon.ico",
+    "tags": [
+      "elevenlabs",
+      "library",
+      "voice"
+    ],
+    "category": "🔊 Voice AI"
+  },
+  {
+    "name": "Meta Reality Labs (AI for VR/AR)",
+    "url": "https://www.metarealitylabs.com/",
+    "favicon_url": "https://www.metarealitylabs.com/favicon.ico",
+    "tags": [
+      "ar",
+      "meta",
+      "reality",
+      "vr"
+    ],
+    "category": "✨ VR/AR AI"
+  },
+  {
+    "name": "Plus One Robotics (PickOne)",
+    "url": "https://plusonerobotics.com/",
+    "favicon_url": "https://plusonerobotics.com/favicon.ico",
+    "tags": [
+      "one",
+      "pickone",
+      "plus",
+      "robotics",
+      "warehouse"
+    ],
+    "category": "🤖 Warehouse Robotics AI"
+  },
+  {
+    "name": "Aquantix",
+    "url": "https://aquantix.ai/",
+    "favicon_url": "https://aquantix.ai/favicon.ico",
+    "tags": [
+      "aquantix",
+      "water"
+    ],
+    "category": "✨ Water Management AI"
+  },
+  {
+    "name": "Retrain.ai",
+    "url": "https://www.retrain.ai/",
+    "favicon_url": "https://www.retrain.ai/favicon.ico",
+    "tags": [
+      "retrain",
+      "workforce"
+    ],
+    "category": "👥 Workforce AI"
+  },
+  {
+    "name": "Workera",
+    "url": "https://www.workera.ai/",
+    "favicon_url": "https://www.workera.ai/favicon.ico",
+    "tags": [
+      "workera",
+      "workforce"
+    ],
+    "category": "👥 Workforce AI"
+  }
+]
   {
     "name": "Intercom",
     "url": "https://www.intercom.com/",
@@ -1168,6 +6433,16 @@
     "name": "Blue Vision Labs (acquired by Lyft)",
     "url": "(Service integrated into Lyft)",
     "favicon_url": "./favicon.ico",
+    "tags": [
+      "acquired",
+      "blue",
+      "environmental",
+      "lyft",
+      "vision"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "AI Pool Tools",
     "url": "https://tools.aipoool.com/",
     "favicon_url": "./favicon.ico",
@@ -1252,6 +6527,14 @@
     "name": "Bright Machines",
     "url": "https://www.brightmachines.com/",
     "favicon_url": "https://www.brightmachines.com/favicon.ico",
+    "tags": [
+      "bright",
+      "factory",
+      "machines"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Amper Music",
     "url": "https://www.ampermusic.com/",
     "favicon_url": "https://www.ampermusic.com/favicon.ico",
@@ -1278,6 +6561,14 @@
     "name": "Carbon Chain",
     "url": "https://carbonchain.com/",
     "favicon_url": "https://carbonchain.com/favicon.ico",
+    "tags": [
+      "carbon",
+      "chain",
+      "supply"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Audio Strip",
     "url": "https://audiostrip.co/",
     "favicon_url": "https://audiostrip.co/favicon.ico",
@@ -1342,8 +6633,17 @@
   },
   {
     "name": "Character.ai",
-    "url": "[suspicious link removed]",
-    "favicon_url": "./favicon.ico",
+    "url": "https://character.ai/",
+    "favicon_url": "https://character.ai/favicon.ico",
+    "tags": [
+      "character",
+      "language",
+      "large",
+      "models"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Hook",
     "url": "https://hook.ai/",
     "favicon_url": "https://hook.ai/favicon.ico",
@@ -1446,10 +6746,20 @@
     "url": "https://www.copy.ai/",
     "favicon_url": "https://www.copy.ai/favicon.ico",
     "category": "👽 All-in-One",
+    "tags": [
+      "allinone"
+    ]
+  },
+  {
     "name": "Soundry AI",
     "url": "https://soundry.ai/",
     "favicon_url": "https://soundry.ai/favicon.ico",
     "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
     "tags": [
       "allinone"
     ]
@@ -1458,6 +6768,15 @@
     "name": "Core ML (Apple)",
     "url": "https://developer.apple.com/documentation/coreml/",
     "favicon_url": "https://developer.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "core",
+      "device",
+      "ml"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Splice",
     "url": "https://splice.com/",
     "favicon_url": "https://splice.com/favicon.ico",
@@ -1586,7 +6905,19 @@
       "science"
     ],
     "category": "👽 All-in-One"
-
+  },
+  {
+    "name": "Face ID (Apple)",
+    "url": "https://support.apple.com/en-us/102551",
+    "favicon_url": "https://support.apple.com/favicon.ico",
+    "tags": [
+      "apple",
+      "biometric",
+      "face"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Truepic",
     "url": "https://www.truepic.com/",
     "favicon_url": "https://www.truepic.com/favicon.ico",
