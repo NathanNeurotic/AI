@@ -167,8 +167,10 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view" title="Toggle category view">☰</span>`;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Grid view active" title="Grid view active">☰</span>`;
             const viewToggle = categoryHeader.querySelector('.category-view-toggle');
+            viewToggle.title = 'Grid view active';
+            viewToggle.setAttribute('aria-label', 'Grid view active');
             viewToggle.addEventListener('click', (e) => {
                 e.stopPropagation();
                 toggleCategoryView(categoryId);
@@ -217,12 +219,17 @@ async function loadServices() {
             }
 
             const view = localStorage.getItem(`view-${id}`);
+            const toggle = header.querySelector('.category-view-toggle');
             if (view === 'list') {
                 category.classList.add('list-view');
-                const toggle = header.querySelector('.category-view-toggle');
                 if (toggle) {
                     toggle.classList.add('active');
+                    toggle.title = 'List view active';
+                    toggle.setAttribute('aria-label', 'List view active');
                 }
+            } else if (toggle) {
+                toggle.title = 'Grid view active';
+                toggle.setAttribute('aria-label', 'Grid view active');
             }
         });
 
@@ -629,7 +636,7 @@ function renderFavoritesCategory() {
             `<span class="category-emoji">⭐</span>
              <span class="category-title">Favorites</span>
              ${CHEVRON_SVG}
-             <span class="category-view-toggle" role="button" tabindex="0" aria-label="Toggle category view" title="Toggle category view">☰</span>`;
+             <span class="category-view-toggle" role="button" tabindex="0" aria-label="Grid view active" title="Grid view active">☰</span>`;
         header.setAttribute('aria-expanded', 'true');
         header.onclick = () => toggleCategory(header);
         header.tabIndex = 0;
@@ -641,6 +648,8 @@ function renderFavoritesCategory() {
         });
 
         const viewToggle = header.querySelector('.category-view-toggle');
+        viewToggle.title = 'Grid view active';
+        viewToggle.setAttribute('aria-label', 'Grid view active');
         viewToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             toggleCategoryView('favorites');
@@ -744,12 +753,16 @@ function renderFavoritesCategory() {
         const toggle = favoritesSection.querySelector('.category-view-toggle');
         if (toggle) {
             toggle.classList.add('active');
+            toggle.title = 'List view active';
+            toggle.setAttribute('aria-label', 'List view active');
         }
     } else {
         favoritesSection.classList.remove('list-view');
         const toggle = favoritesSection.querySelector('.category-view-toggle');
         if (toggle) {
             toggle.classList.remove('active');
+            toggle.title = 'Grid view active';
+            toggle.setAttribute('aria-label', 'Grid view active');
         }
     }
 }
@@ -812,6 +825,8 @@ function toggleCategoryView(categoryId) {
     const toggle = section.querySelector('.category-view-toggle');
     if (toggle) {
         toggle.classList.toggle('active', isList);
+        toggle.title = isList ? 'List view active' : 'Grid view active';
+        toggle.setAttribute('aria-label', toggle.title);
     }
 }
 
@@ -825,6 +840,8 @@ function updateToggleButtons() {
         themeBtn.innerHTML = isLight ?
             '<svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>' :
             '<svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        themeBtn.title = isLight ? 'Light theme active' : 'Dark theme active';
+        themeBtn.setAttribute('aria-label', themeBtn.title);
     }
     const viewBtn = document.getElementById('viewToggle');
     if (viewBtn) {
@@ -833,12 +850,14 @@ function updateToggleButtons() {
         viewBtn.innerHTML = isBlock ?
             '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>' :
             '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>';
+        viewBtn.title = isBlock ? 'List view active' : 'Grid view active';
+        viewBtn.setAttribute('aria-label', viewBtn.title);
     }
     const deviceBtn = document.getElementById('deviceToggle');
     if (deviceBtn) {
         const isMobile = document.body.classList.contains('mobile-view');
         deviceBtn.classList.toggle('active', isMobile);
-        deviceBtn.title = isMobile ? 'Switch to desktop view' : 'Switch to mobile view';
+        deviceBtn.title = isMobile ? 'Mobile view active' : 'Desktop view active';
         deviceBtn.setAttribute('aria-label', deviceBtn.title);
         deviceBtn.innerHTML = isMobile
             ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>'
