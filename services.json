@@ -5481,5 +5481,41 @@
     "tags": [
       "machinelearning"
     ]
+  },
+  {
+    "name": "LEGALFLY",
+    "url": "https://www.legalfly.com/",
+    "favicon_url": "https://cdn.prod.website-files.com/66f3b6326b31e9f8d22fe5b8/66f6e0dfcf563b42ac22fa56_Icon.png",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Legly",
+    "url": "https://www.legly.io/",
+    "favicon_url": "https://static.wixstatic.com/media/229713_8c0c15a0207748f98a5900a162c0b89b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/229713_8c0c15a0207748f98a5900a162c0b89b%7Emv2.png",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Spellbook",
+    "url": "https://www.spellbook.legal/",
+    "favicon_url": "https://cdn.prod.website-files.com/66fc4a00d70e086034b6699f/67194c71632aa74c8b08c797_favicon.png",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Evisort",
+    "url": "https://www.evisort.com/",
+    "favicon_url": "https://cdn.prod.website-files.com/63355c7f6c38375bc02dae6c/63b5a54f29eff824088a6624_evisort-favicon.png",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
   }
 ]
