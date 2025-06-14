@@ -418,6 +418,17 @@ function collapseAllCategories() {
     });
 }
 
+function clearSearch() {
+    const input = document.getElementById('searchInput');
+    if (!input) return;
+    input.value = '';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    const noResults = document.getElementById('noResults');
+    if (noResults) {
+        noResults.hidden = true;
+    }
+}
+
 function createServiceButton(service, favoritesSet, categoryName) {
     const serviceButton = document.createElement('a');
     serviceButton.className = 'service-button';
@@ -951,5 +962,6 @@ function populateTagDropdown() {
 window.populateTagDropdown = populateTagDropdown;
 window.expandAllCategories = expandAllCategories;
 window.collapseAllCategories = collapseAllCategories;
+window.clearSearch = clearSearch;
 window.setupSidebarHighlighting = setupSidebarHighlighting;
 
