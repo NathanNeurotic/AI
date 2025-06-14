@@ -118,6 +118,10 @@ async function loadServices() {
         }
         const services = await response.json();
         allServices = services;
+        const totalEl = document.getElementById('totalServices');
+        if (totalEl) {
+            totalEl.textContent = `${services.length} services`;
+        }
         const mainContainer = document.querySelector('main');
 
         // Clear existing static categories if any (optional, if HTML is pre-populated)
@@ -167,7 +171,8 @@ async function loadServices() {
                 textContent = categoryName.substring(emojiMatch[0].length).trim();
             }
 
-            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}</span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Grid view active" title="Grid view active">☰</span>`;
+            const count = servicesInCategory.length;
+            categoryHeader.innerHTML = `${emojiSpan}<span class="category-title">${textContent}<span class="service-count">(${count})</span></span> ${CHEVRON_SVG}<span class="category-view-toggle" role="button" tabindex="0" aria-label="Grid view active" title="Grid view active">☰</span>`;
             const viewToggle = categoryHeader.querySelector('.category-view-toggle');
             viewToggle.title = 'Grid view active';
             viewToggle.setAttribute('aria-label', 'Grid view active');
@@ -875,10 +880,8 @@ function buildSidebar() {
         if (!titleEl) return;
         const link = document.createElement('a');
         link.href = `#${section.id}`;
-        const count = section.querySelectorAll('.service-button').length;
-        link.textContent = section.id === 'favorites'
-            ? titleEl.textContent
-            : `${titleEl.textContent}(${count})`;
+        const plainText = titleEl.textContent.replace(/\(\d+\)$/, '').trim();
+        link.textContent = plainText;
         link.addEventListener('click', () => {
             toggleSidebar();
         });

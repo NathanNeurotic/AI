@@ -265,6 +265,12 @@ header h1 {
     animation: blink 0.7s infinite;
 }
 
+.service-total {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
 @keyframes blink {
     50% { opacity: 0; }
 }
@@ -397,6 +403,12 @@ body.block-view .category {
 .category-title {
     flex: 1;
     text-align: center;
+}
+
+.service-count {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--accent-color);
 }
 
 .category-emoji {
