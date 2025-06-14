@@ -64,16 +64,32 @@ function setupServiceWorker() {
 describe('service worker', () => {
   test('caches URLS_TO_CACHE on install', async () => {
     const ctx = setupServiceWorker();
-    const { listeners, caches, CACHE_NAME, URLS_TO_CACHE } = ctx;
+    const { listeners, caches, CACHE_NAME, URLS_TO_CACHE, fetch } = ctx; // Destructure fetch
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
+
+    // Mock the fetch for services.json specifically for the install phase
+    // This mock will be used by the sw's install event when it fetches services.json
+    fetch.mockResolvedValueOnce({
+      ok: true,
+      json: () => Promise.resolve([ // Simulate an empty array of services, or a minimal one
+        // { favicon_url: './public/icon-192x192.png', thumbnail_url: './public/logo.png'}
+        // For simplicity, an empty array is fine if the goal is just to prevent .json() error
+      ]),
+      clone: function() { return this; } // Add clone method
+    });
+
     listeners['install'](installEvent);
     await installPromise;
+
     const stored = caches._store.get(CACHE_NAME);
     expect(stored).toBeDefined();
     const cachedUrls = [...stored.keys()];
     const expected = URLS_TO_CACHE.map(toAbsolute);
     expected.forEach(url => expect(cachedUrls).toContain(url));
+
+    // Check if services.json itself was cached as part of URLS_TO_CACHE
+    expect(cachedUrls).toContain(toAbsolute('./services.json'));
   });
 
   test('fetch for script.js uses network-first strategy', async () => {
