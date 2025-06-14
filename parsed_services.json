@@ -1,0 +1,2832 @@
+[
+  {
+    "name": "3Play Media",
+    "url": "https://www.3playmedia.com/",
+    "category_description": "Media AI (AI for transcription and captioning)"
+  },
+  {
+    "name": "Acelab",
+    "url": "https://acelab.ai/",
+    "category_description": "Construction AI (AI for material specification and product discovery in architecture & construction)"
+  },
+  {
+    "name": "accessiBe",
+    "url": "https://accessibe.com/",
+    "category_description": "Accessibility AI (AI for Website ADA/WCAG Compliance)"
+  },
+  {
+    "name": "AccuWeather For Business (SkyGuard AI)",
+    "url": "https://www.accuweather.com/business/skyguard",
+    "category_description": "Weather AI (AI for hyper-local severe weather warnings and business impact prediction)"
+  },
+  {
+    "name": "Accentize (AI Audio Plugins)",
+    "url": "https://www.accentize.com/",
+    "category_description": "Audio AI (AI plugins for audio restoration, noise reduction, and de-reverberation for professional audio)"
+  },
+  {
+    "name": "Adobe Acrobat (AI Assistant)",
+    "url": "https://www.adobe.com/acrobat/ai-assistant.html",
+    "category_description": "Productivity AI (AI for summarizing PDFs, answering questions, and generating insights from documents)"
+  },
+  {
+    "name": "Adobe Experience Platform AI Services",
+    "url": "https://experience.adobe.com/solutions/experience-platform/services.html",
+    "category_description": "Marketing/Customer Experience AI (AI for customer journey analytics, personalization, and audience segmentation)"
+  },
+  {
+    "name": "Adobe Express (AI features)",
+    "url": "https://www.adobe.com/express/",
+    "category_description": "Creative AI (AI for quick content creation, text-to-image, text effects, and video generation for social media)"
+  },
+  {
+    "name": "Adobe Firefly",
+    "url": "https://www.adobe.com/sensei/generative-ai/firefly.html",
+    "category_description": "Generative AI (Generative AI for Creative Cloud apps (image generation, effects))"
+  },
+  {
+    "name": "Adobe Frame.io (AI features)",
+    "url": "https://www.adobe.com/products/video/frame-io/features.html",
+    "category_description": "Video Production AI (AI for automated transcription, content tagging, and project management in video workflows)"
+  },
+  {
+    "name": "Adobe Sensei (embedded in Creative Cloud)",
+    "url": "https://www.adobe.com/sensei.html",
+    "category_description": "Creative AI (Underlying AI/ML framework powering intelligent features across Adobe products)"
+  },
+  {
+    "name": "AeroVironment (Quantix Mapper)",
+    "url": "https://www.avinc.com/uas/quantix-mapper/",
+    "category_description": "Agriculture/Environmental AI (AI-powered drone for agricultural and environmental mapping)"
+  },
+  {
+    "name": "Aible",
+    "url": "https://www.aible.com/",
+    "category_description": "Business AI (Enterprise AI for analytics, GenAI for business impact)"
+  },
+  {
+    "name": "Aiberry",
+    "url": "https://www.aiberry.com/",
+    "category_description": "Healthcare AI (Mental Health Screening)"
+  },
+  {
+    "name": "AI.builders",
+    "url": "https://ai.builders/",
+    "category_description": "Construction AI (AI for automating construction planning, scheduling, and risk assessment)"
+  },
+  {
+    "name": "AI Tools Directory (AITools.fyi)",
+    "url": "https://aitools.fyi/",
+    "category_description": "AI Tool Directory (Comprehensive directory of AI tools)"
+  },
+  {
+    "name": "AIVA",
+    "url": "https://www.aiva.ai/",
+    "category_description": "Generative AI (AI for Music Composition)"
+  },
+  {
+    "name": "Alation (Data Intelligence Platform)",
+    "url": "https://www.alation.com/",
+    "category_description": "Data Governance AI (AI for data cataloging, search, and governance)"
+  },
+  {
+    "name": "Algolia (AI features)",
+    "url": "https://www.algolia.com/",
+    "category_description": "Search AI (AI-powered search and discovery for websites and apps)"
+  },
+  {
+    "name": "Alteryx AI Platform",
+    "url": "https://www.alteryx.com/products/alteryx-ai-platform",
+    "category_description": "Machine Learning Platforms (Low-code/no-code analytics and data science platform with AI)"
+  },
+  {
+    "name": "Amazon.com (Recommendation Engine)",
+    "url": "https://www.amazon.com/",
+    "category_description": "E-commerce AI (AI for personalized product recommendations)"
+  },
+  {
+    "name": "Amazon Alexa",
+    "url": "https://www.amazon.com/alexa",
+    "category_description": "Conversational AI/Smart Home AI (Amazon's voice assistant)"
+  },
+  {
+    "name": "Amazon CodeCatalyst (AI features)",
+    "url": "https://aws.amazon.com/codecatalyst/",
+    "category_description": "Developer AI (Unified software development service with AI-powered code suggestions and workflow automation)"
+  },
+  {
+    "name": "Amazon CodeWhisperer",
+    "url": "https://aws.amazon.com/codewhisperer/",
+    "category_description": "Generative AI (Generative AI coding assistant with real-time suggestions)"
+  },
+  {
+    "name": "Amazon Comprehend",
+    "url": "https://aws.amazon.com/comprehend/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Extracts meaning from text)"
+  },
+  {
+    "name": "Amazon DeepComposer",
+    "url": "https://aws.amazon.com/deepcomposer/",
+    "category_description": "Generative Music AI (AI-powered keyboard for composing music using generative AI)"
+  },
+  {
+    "name": "Amazon DeepRacer",
+    "url": "https://aws.amazon.com/deepracer/",
+    "category_description": "Reinforcement Learning AI (AI-powered 1/18th scale race car for learning reinforcement learning)"
+  },
+  {
+    "name": "Amazon Fraud Detector",
+    "url": "https://aws.amazon.com/fraud-detector/",
+    "category_description": "Fraud Prevention AI (AI for building, training, and deploying ML models to detect online fraud)"
+  },
+  {
+    "name": "Amazon Go Stores (Just Walk Out Technology)",
+    "url": "https://www.amazon.com/b?node=16008589011",
+    "category_description": "Retail AI (AI for computer vision and sensor fusion to enable cashier-less shopping)"
+  },
+  {
+    "name": "Amazon HealthScribe",
+    "url": "https://aws.amazon.com/blogs/aws/now-generally-available-aws-healthscribe/",
+    "category_description": "Healthcare AI (AI service for transcribing and structuring clinical conversations)"
+  },
+  {
+    "name": "Amazon Kinesis Video Streams with Rekognition Video",
+    "url": "https://aws.amazon.com/kinesis/video-streams/integrations/rekognition-video/",
+    "category_description": "Video Analytics AI (AI for real-time video analytics)"
+  },
+  {
+    "name": "Amazon Lex",
+    "url": "https://aws.amazon.com/lex/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Conversational AI platform for building chatbots)"
+  },
+  {
+    "name": "Amazon Lookout for Equipment",
+    "url": "https://aws.amazon.com/lookout-for-equipment/",
+    "category_description": "Industrial AI (AI for predictive maintenance for industrial equipment)"
+  },
+  {
+    "name": "Amazon Lookout for Metrics",
+    "url": "https://aws.amazon.com/lookout-for-metrics/",
+    "category_description": "Business Analytics AI (AI for automatically detecting anomalies in business and operational data)"
+  },
+  {
+    "name": "Amazon Monitron",
+    "url": "https://aws.amazon.com/monitron/",
+    "category_description": "Industrial AI (End-to-end system for predictive maintenance of industrial machinery)"
+  },
+  {
+    "name": "Amazon Prime Video / Music (AI for recommendations)",
+    "url": "https://www.amazon.com/primevideo",
+    "category_description": "Recommendation AI (AI for personalized movie, TV show, and music recommendations)"
+  },
+  {
+    "name": "Amazon Q Business",
+    "url": "https://aws.amazon.com/q/business/",
+    "category_description": "Generative AI (Business-focused generative AI assistant for content creation, summarization, and task completion)"
+  },
+  {
+    "name": "Amazon Q Developer",
+    "url": "https://aws.amazon.com/q/developer/",
+    "category_description": "Generative AI (Generative AI coding assistant for developers)"
+  },
+  {
+    "name": "Amazon Rekognition",
+    "url": "https://aws.amazon.com/rekognition/",
+    "category_description": "Computer Vision (Image and video analysis, object detection, facial recognition)"
+  },
+  {
+    "name": "Amazon Robotics",
+    "url": "https://www.amazonrobotics.com/",
+    "category_description": "Robotics/Warehouse AI (AI for optimizing warehouse operations)"
+  },
+  {
+    "name": "Amazon SageMaker",
+    "url": "https://aws.amazon.com/sagemaker/",
+    "category_description": "Machine Learning Platforms & MLOps (Fully integrated development environment for end-to-end ML workflows)"
+  },
+  {
+    "name": "Amazon Supply Chain",
+    "url": "https://aws.amazon.com/aws-supply-chain/",
+    "category_description": "Supply Chain AI (AI for end-to-end supply chain visibility and insights)"
+  },
+  {
+    "name": "Amper Music",
+    "url": "https://www.ampermusic.com/",
+    "category_description": "Generative AI (AI Music Composition Platform)"
+  },
+  {
+    "name": "AMP Robotics",
+    "url": "https://www.amprobotics.com/",
+    "category_description": "Waste Management AI (AI-powered robotics for material recovery facilities)"
+  },
+  {
+    "name": "Amplitude (AI features)",
+    "url": "https://amplitude.com/solutions/ai-for-product",
+    "category_description": "Product Analytics AI (AI for product analytics and growth insights)"
+  },
+  {
+    "name": "Amplify (Manufacturing Execution System with AI)",
+    "url": "https://www.amplify.ai/",
+    "category_description": "Manufacturing AI (AI for optimizing factory operations, scheduling, and performance)"
+  },
+  {
+    "name": "Anomalo",
+    "url": "https://www.anomalo.com/",
+    "category_description": "Data Quality AI (AI for automated data quality monitoring and anomaly detection)"
+  },
+  {
+    "name": "Anyword",
+    "url": "https://anyword.com/",
+    "category_description": "Generative AI (AI for crafting content optimized for conversions using data analysis)"
+  },
+  {
+    "name": "Apple Health (AI for health insights)",
+    "url": "https://www.apple.com/ios/health/",
+    "category_description": "Health AI (AI for analyzing health data from Apple Watch and other devices)"
+  },
+  {
+    "name": "Apple Keyboard (Predictive Text, Autocorrect)",
+    "url": "(Integrated into iOS/macOS)",
+    "category_description": "NLP/Productivity AI (AI for predictive text suggestions, autocorrection, and grammar checking)"
+  },
+  {
+    "name": "Apple Maps (AI for navigation, Look Around)",
+    "url": "https://www.apple.com/ios/maps/",
+    "category_description": "Geospatial/Navigation AI (AI for routing, traffic prediction, and immersive street-level views)"
+  },
+  {
+    "name": "Apple Music (AI for recommendations)",
+    "url": "https://www.apple.com/apple-music/",
+    "category_description": "Recommendation AI (AI for personalized music recommendations and curated playlists)"
+  },
+  {
+    "name": "Apple Photos (AI for recognition, search)",
+    "url": "https://www.apple.com/ios/photos/",
+    "category_description": "Image/Media AI (AI for facial recognition, object detection, scene analysis, and intelligent search)"
+  },
+  {
+    "name": "Arcwise AI",
+    "url": "https://www.arcwise.ai/",
+    "category_description": "Business AI (Excel-based AI Data Analysis)"
+  },
+  {
+    "name": "ARCHITEChTURES",
+    "url": "https://architechtures.com/",
+    "category_description": "Architectural AI (AI for Generative Architectural Design)"
+  },
+  {
+    "name": "ArchitectGPT",
+    "url": "https://www.architectgpt.ai/",
+    "category_description": "Architectural AI (AI-Powered Property Design)"
+  },
+  {
+    "name": "Arctic Wolf Aurora",
+    "url": "https://arcticwolf.com/solutions/platform/",
+    "category_description": "Cybersecurity AI (AI-driven threat detection for endpoint security)"
+  },
+  {
+    "name": "Arize AI",
+    "url": "https://www.arize.com/",
+    "category_description": "MLOps (AI Observability & Model Monitoring)"
+  },
+  {
+    "name": "Artbreeder",
+    "url": "https://www.artbreeder.com/",
+    "category_description": "Generative Art AI (AI for generating and manipulating images across various categories)"
+  },
+  {
+    "name": "Asana (AI features)",
+    "url": "https://asana.com/",
+    "category_description": "Productivity AI (Project management with AI for task automation, dependency suggestions)"
+  },
+  {
+    "name": "Ascent",
+    "url": "https://www.ascent.ai/",
+    "category_description": "Financial AI (AI for regulatory compliance)"
+  },
+  {
+    "name": "AssemblyAI",
+    "url": "https://www.assemblyai.com/",
+    "category_description": "Conversational AI (Advanced Speech-to-Text API)"
+  },
+  {
+    "name": "Atomic AI",
+    "url": "https://atomic.ai/",
+    "category_description": "Biotech AI (AI for RNA-Targeting Drug Discovery)"
+  },
+  {
+    "name": "Attestiv",
+    "url": "https://attestiv.com/",
+    "category_description": "Digital Forensics AI (AI for digital media authentication and deepfake detection)"
+  },
+  {
+    "name": "Audio.com (by Epidemic Sound)",
+    "url": "https://www.audio.com/",
+    "category_description": "Music AI (AI for music search, recommendations, and stem separation)"
+  },
+  {
+    "name": "AudioStack.ai",
+    "url": "https://audiostack.ai/",
+    "category_description": "Generative AI (AI for Audio Production & Advertising)"
+  },
+  {
+    "name": "Augury",
+    "url": "https://www.augury.com/",
+    "category_description": "Industrial AI (AI for machine health and performance, focusing on specific industrial assets)"
+  },
+  {
+    "name": "Aura Intelligent Systems",
+    "url": "https://auraintelligent.com/",
+    "category_description": "Manufacturing AI (AI for Industrial Process Optimization)"
+  },
+  {
+    "name": "Autodesk Forma",
+    "url": "https://www.autodesk.com/products/forma/overview",
+    "category_description": "Architectural AI (AI for Urban Planning & Environmental Analysis)"
+  },
+  {
+    "name": "Avandra",
+    "url": "https://www.avandra.com/",
+    "category_description": "Healthcare AI (AI-powered MRI interpretation and neuroimaging)"
+  },
+  {
+    "name": "Baseten",
+    "url": "https://www.baseten.co/",
+    "category_description": "Machine Learning Platforms & MLOps (AI app deployment software)"
+  },
+  {
+    "name": "Be My Eyes (Be My AI)",
+    "url": "https://www.bemyeyes.com/bemyai",
+    "category_description": "Accessibility AI (AI Assistant for Visually Impaired)"
+  },
+  {
+    "name": "BenevolentAI",
+    "url": "https://www.benevolent.com/",
+    "category_description": "Drug Discovery AI (AI for Accelerating Drug Discovery)"
+  },
+  {
+    "name": "BenchSci",
+    "url": "https://www.benchsci.com/",
+    "category_description": "Life Sciences AI (AI for antibody and reagent selection in research)"
+  },
+  {
+    "name": "BigID",
+    "url": "https://bigid.com/",
+    "category_description": "Data Privacy AI (AI for discovering, classifying, and protecting sensitive data for privacy compliance)"
+  },
+  {
+    "name": "BlackBox AI",
+    "url": "https://www.blackbox.ai/",
+    "category_description": "Generative AI (AI code generation and completion)"
+  },
+  {
+    "name": "Blackshark.ai",
+    "url": "https://blackshark.ai/",
+    "category_description": "Geospatial AI (AI for 3D digital twin creation from satellite imagery)"
+  },
+  {
+    "name": "Blockade Labs (Skybox AI)",
+    "url": "https://www.blockadelabs.com/",
+    "category_description": "3D Generative AI (AI for generating 360-degree interactive skyboxes/environments from text)"
+  },
+  {
+    "name": "Blue Prism",
+    "url": "https://www.blueprism.com/",
+    "category_description": "AI-Powered Automation (Robotic Process Automation (RPA))"
+  },
+  {
+    "name": "BrainBox AI (ARIA)",
+    "url": "https://brainboxai.com/",
+    "category_description": "Environmental AI (HVAC Optimization for Energy Efficiency)"
+  },
+  {
+    "name": "Bright Machines",
+    "url": "https://www.brightmachines.com/",
+    "category_description": "Factory Automation AI (AI-powered industrial automation for assembly and quality inspection)"
+  },
+  {
+    "name": "BuildFire AI",
+    "url": "https://buildfire.com/ai/",
+    "category_description": "Development AI (No-Code Mobile App Development)"
+  },
+  {
+    "name": "Camira AI",
+    "url": "https://camira.ai/",
+    "category_description": "Creative AI (Content Creation for Creatives)"
+  },
+  {
+    "name": "Canva (Magic Studio AI)",
+    "url": "https://www.canva.com/magic-studio/",
+    "category_description": "Design AI (AI suite for text-to-image, text-to-video, magic erase, etc.)"
+  },
+  {
+    "name": "Carbon Chain",
+    "url": "https://carbonchain.com/",
+    "category_description": "Supply Chain AI (AI for automated supply chain carbon emissions tracking and reporting)"
+  },
+  {
+    "name": "Carbon Robotics",
+    "url": "https://carbonrobotics.com/",
+    "category_description": "Agriculture AI (AI-Powered Laser Weeder)"
+  },
+  {
+    "name": "CarbonBright",
+    "url": "https://www.carbonbright.ai/",
+    "category_description": "Environmental AI (Product Carbon Footprint Assessment)"
+  },
+  {
+    "name": "Carnegie Learning (Mika)",
+    "url": "https://www.carnegielearning.com/who-we-are/ai-in-education/",
+    "category_description": "EdTech AI (AI-powered tutor for mathematics)"
+  },
+  {
+    "name": "Casetext (CoCounsel)",
+    "url": "https://casetext.com/",
+    "category_description": "Legal AI (Generative AI legal assistant for research, drafting, and analysis)"
+  },
+  {
+    "name": "CausaLens",
+    "url": "https://causalens.com/",
+    "category_description": "Explainable AI (XAI) (AI platform for causal AI)"
+  },
+  {
+    "name": "Century Tech",
+    "url": "https://www.century.tech/",
+    "category_description": "EdTech AI (AI-powered personalized learning platform for schools)"
+  },
+  {
+    "name": "Character.ai",
+    "url": "[suspicious link removed]",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (AI for role-play and interactive conversations)"
+  },
+  {
+    "name": "Charisma.ai",
+    "url": "https://charisma.ai/",
+    "category_description": "Game/Narrative AI (AI for creating interactive narratives and AI-driven characters)"
+  },
+  {
+    "name": "Checkstep",
+    "url": "https://www.checkstep.com/",
+    "category_description": "Content Moderation AI (AI for Automated Content Moderation)"
+  },
+  {
+    "name": "ChowNow (OrderBetter AI)",
+    "url": "https://orderbetter.ai/",
+    "category_description": "Food Service AI (AI for optimizing online ordering and delivery for restaurants)"
+  },
+  {
+    "name": "Cisco Webex AI Agent",
+    "url": "https://www.webex.com/products/calling/features/ai-voice-agent.html",
+    "category_description": "Conversational AI (Self-service options and automated customer support)"
+  },
+  {
+    "name": "Citrine Informatics",
+    "url": "https://citrine.io/",
+    "category_description": "Materials Science AI (AI for Materials Discovery & Optimization)"
+  },
+  {
+    "name": "Civitas (AI for Government)",
+    "url": "https://www.civitas.ai/",
+    "category_description": "Public Sector AI (AI for government data analysis and civic engagement)"
+  },
+  {
+    "name": "Clarifai",
+    "url": "https://www.clarifai.com/",
+    "category_description": "Computer Vision (AI for image and video recognition, custom model training)"
+  },
+  {
+    "name": "Clari",
+    "url": "https://www.clari.com/",
+    "category_description": "Sales AI (AI for revenue operations)"
+  },
+  {
+    "name": "Clay",
+    "url": "https://www.clay.com/",
+    "category_description": "AI-Powered Business Applications (AI go-to-market tools)"
+  },
+  {
+    "name": "Climate Engine",
+    "url": "https://climateengine.org/",
+    "category_description": "Environmental AI (Cloud-based platform for environmental data & analytics)"
+  },
+  {
+    "name": "Clipdrop (Stability AI)",
+    "url": "https://clipdrop.co/",
+    "category_description": "Generative Art AI (AI-powered tools for image editing, upscaling, and composition)"
+  },
+  {
+    "name": "Cloudera",
+    "url": "https://www.cloudera.com/",
+    "category_description": "Machine Learning Platforms (Hybrid cloud data platform investing in AI assistants and RAG studio)"
+  },
+  {
+    "name": "Coactive AI",
+    "url": "https://coactive.ai/",
+    "category_description": "Data AI (Data labeling software)"
+  },
+  {
+    "name": "Codeium",
+    "url": "https://codeium.com/",
+    "category_description": "Generative AI (AI Code Completion & Generation)"
+  },
+  {
+    "name": "Cognex (VisionPro Deep Learning)",
+    "url": "https://www.cognex.com/products/deep-learning",
+    "category_description": "Industrial AI (AI for complex defect detection and optical character recognition in manufacturing)"
+  },
+  {
+    "name": "Cognito Forms (AI Features)",
+    "url": "https://www.cognitoforms.com/ai",
+    "category_description": "Productivity AI (AI for Form Creation & Data Extraction)"
+  },
+  {
+    "name": "Cohere",
+    "url": "https://cohere.com/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Robust API for text generation, classification, summarization)"
+  },
+  {
+    "name": "Collibra (AI Governance)",
+    "url": "https://www.collibra.com/solutions/ai-governance",
+    "category_description": "Data Governance AI (AI for data governance, quality, and metadata management)"
+  },
+  {
+    "name": "Comet ML",
+    "url": "https://www.comet.com/site/",
+    "category_description": "MLOps (ML Experiment Tracking & Model Monitoring)"
+  },
+  {
+    "name": "Compliance.ai",
+    "url": "https://www.compliance.ai/",
+    "category_description": "Regulatory Compliance AI (AI for regulatory change management)"
+  },
+  {
+    "name": "Concentric AI",
+    "url": "https://www.concentric.ai/",
+    "category_description": "Data Security AI (AI for Sensitive Data Discovery & Protection in Healthcare)"
+  },
+  {
+    "name": "Consensus Cloud Solutions",
+    "url": "https://www.consensus.com/",
+    "category_description": "Healthcare IT (Secure Messaging & AI)"
+  },
+  {
+    "name": "Constructor.io",
+    "url": "https://constructor.io/",
+    "category_description": "E-commerce Search AI (AI for product search and discovery optimization)"
+  },
+  {
+    "name": "Contentsquare (AI features)",
+    "url": "https://contentsquare.com/",
+    "category_description": "Customer Experience AI (AI for digital experience analytics and insights)"
+  },
+  {
+    "name": "Copy.ai",
+    "url": "https://www.copy.ai/",
+    "category_description": "Generative AI (AI-powered writing assistant for marketing, sales, and content creation)"
+  },
+  {
+    "name": "Coqui",
+    "url": "https://coqui.ai/",
+    "category_description": "Generative AI (Open-Source AI Voice Synthesis - Commercial Services)"
+  },
+  {
+    "name": "Core ML (Apple)",
+    "url": "https://developer.apple.com/documentation/coreml/",
+    "category_description": "On-device ML (Framework for integrating machine learning models directly into Apple apps)"
+  },
+  {
+    "name": "Cortechs.ai (NeuroQuant)",
+    "url": "https://www.cortechs.ai/",
+    "category_description": "Neuroimaging AI (AI for quantitative brain MRI analysis for neurodegenerative diseases)"
+  },
+  {
+    "name": "Covariant.ai",
+    "url": "https://covariant.ai/",
+    "category_description": "Robotics AI (AI for robotic manipulation in warehouses)"
+  },
+  {
+    "name": "Credo AI",
+    "url": "https://credo.ai/",
+    "category_description": "AI Governance (Policy-Driven AI Governance & Compliance)"
+  },
+  {
+    "name": "CrowdStrike",
+    "url": "https://www.crowdstrike.com/",
+    "category_description": "Cybersecurity AI (AI-driven endpoint protection)"
+  },
+  {
+    "name": "Crystal (AI for Sales)",
+    "url": "https://www.crystalknows.com/",
+    "category_description": "Sales AI (AI for analyzing prospect personalities to customize communication strategies)"
+  },
+  {
+    "name": "Cursor",
+    "url": "https://www.cursor.sh/",
+    "category_description": "Generative AI (AI-powered code editor for writing, editing, refactoring code with AI assistance)"
+  },
+  {
+    "name": "DALL-E 3 (OpenAI)",
+    "url": "https://openai.com/dall-e-3",
+    "category_description": "Generative AI (Image generation from text descriptions)"
+  },
+  {
+    "name": "Darktrace HEAL",
+    "url": "https://darktrace.com/products/darktrace-heal",
+    "category_description": "Cybersecurity AI (AI-powered cyber threat response)"
+  },
+  {
+    "name": "Datafold",
+    "url": "https://datafold.com/",
+    "category_description": "Data Observability AI (AI for data testing, lineage, and observability in data pipelines)"
+  },
+  {
+    "name": "Dataiku",
+    "url": "https://www.dataiku.com/",
+    "category_description": "Machine Learning Platforms & MLOps (Visual and code-based interface for data science and AI solutions)"
+  },
+  {
+    "name": "Dataminr",
+    "url": "https://www.dataminr.com/",
+    "category_description": "Operations AI (AI platform for real-time event, risk, and threat discovery in public data)"
+  },
+  {
+    "name": "DataRobot",
+    "url": "https://www.datarobot.com/",
+    "category_description": "Machine Learning Platforms & MLOps (Automates end-to-end process of building, deploying, and maintaining ML models)"
+  },
+  {
+    "name": "Datature",
+    "url": "https://datature.io/",
+    "category_description": "Computer Vision (No-code computer vision platform)"
+  },
+  {
+    "name": "Databricks",
+    "url": "https://www.databricks.com/",
+    "category_description": "Machine Learning Platforms & MLOps (Unified analytics platform for data engineering, ML, and analytics)"
+  },
+  {
+    "name": "Daydream",
+    "url": "https://daydream.shop/",
+    "category_description": "Retail AI (AI Chat-to-Shop for personalized fashion discovery)"
+  },
+  {
+    "name": "Decagon",
+    "url": "https://www.decagon.ai/",
+    "category_description": "AI-Powered Business Applications (AI agents for customer service)"
+  },
+  {
+    "name": "Deep Instinct",
+    "url": "https://www.deepinstinct.com/",
+    "category_description": "Cybersecurity AI (Applies deep learning to cybersecurity for threat prevention)"
+  },
+  {
+    "name": "Deep 6 AI",
+    "url": "https://www.deep6.ai/",
+    "category_description": "Healthcare AI (Clinical data management, analyzing EHRs)"
+  },
+  {
+    "name": "DeepL",
+    "url": "https://www.deepl.com/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Highly accurate and naturally fluent language translation)"
+  },
+  {
+    "name": "DeepMotion",
+    "url": "https://www.deepmotion.com/",
+    "category_description": "Animation AI (AI for 3D animation from video or text)"
+  },
+  {
+    "name": "DeepSeek",
+    "url": "https://www.deepseek.com/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Cost-efficient, open-source LLMs)"
+  },
+  {
+    "name": "Deliveroo (AI-driven logistics)",
+    "url": "https://corporate.deliveroo.co.uk/technology/",
+    "category_description": "Food Delivery AI (AI for rider allocation and delivery route optimization)"
+  },
+  {
+    "name": "Descript",
+    "url": "https://www.descript.com/",
+    "category_description": "Media AI (AI for Audio/Video Editing, Transcription, Overdub)"
+  },
+  {
+    "name": "Diligent (AI insights)",
+    "url": "https://www.diligent.com/solutions/ai-insights/",
+    "category_description": "Governance AI (AI for board governance, risk, and compliance insights)"
+  },
+  {
+    "name": "DISCO (Cecilia AI)",
+    "url": "https://www.csdisco.com/products/cecilia-ai/",
+    "category_description": "Legal AI (Generative AI for legal document analysis, summarization, and query)"
+  },
+  {
+    "name": "DocJuris",
+    "url": "https://docjuris.com/",
+    "category_description": "Legal AI (Contract review and negotiation platform with AI for deviation identification)"
+  },
+  {
+    "name": "Drata",
+    "url": "https://drata.com/",
+    "category_description": "Security & Compliance AI (AI for automated compliance & risk management)"
+  },
+  {
+    "name": "DreamBox Learning",
+    "url": "https://www.dreambox.com/",
+    "category_description": "EdTech AI (AI-driven personalized math and reading instruction)"
+  },
+  {
+    "name": "DWE.ai (DeepWater Exploration)",
+    "url": "https://dwe.ai/",
+    "category_description": "Marine AI (AI-powered computer vision for subsea operations, 3D reconstruction)"
+  },
+  {
+    "name": "Eightfold AI",
+    "url": "https://eightfold.ai/",
+    "category_description": "HR AI (AI for Talent Intelligence Platform)"
+  },
+  {
+    "name": "EliseAI",
+    "url": "https://eliseai.com/",
+    "category_description": "Real Estate AI (AI for real estate and property management)"
+  },
+  {
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "category_description": "Generative AI (Ultra-realistic voice cloning and voice generation)"
+  },
+  {
+    "name": "Enthought (Horizon)",
+    "url": "https://www.enthought.com/platform/horizon",
+    "category_description": "Scientific AI (AI platform for scientific data analysis and engineering R&D)"
+  },
+  {
+    "name": "Envirosuite",
+    "url": "https://envirosuite.com/",
+    "category_description": "Environmental AI (Real-time Environmental Monitoring & Management)"
+  },
+  {
+    "name": "Evisort",
+    "url": "https://www.evisort.com/",
+    "category_description": "Legal AI (AI for automating contract lifecycle management with intelligent search)"
+  },
+  {
+    "name": "Exabyte.io",
+    "url": "https://www.exabyte.io/",
+    "category_description": "Materials Science AI (Cloud platform for materials modeling and simulation with AI for property prediction)"
+  },
+  {
+    "name": "Exabeam",
+    "url": "https://www.exabeam.com/",
+    "category_description": "Cybersecurity AI (Security information and event management (SIEM) with AI for threat detection)"
+  },
+  {
+    "name": "Exodigo",
+    "url": "https://www.exodigo.com/",
+    "category_description": "Construction AI (AI for Underground Mapping & Site Intelligence)"
+  },
+  {
+    "name": "Exscientia",
+    "url": "https://www.exscientia.ai/",
+    "category_description": "Drug Discovery AI (AI-Driven Drug Design & Development)"
+  },
+  {
+    "name": "Everlaw (AI Assistant)",
+    "url": "https://www.everlaw.com/platform/everlaw-ai-assistant/",
+    "category_description": "Legal AI (AI for eDiscovery review, critical information surfacing, and argument crafting)"
+  },
+  {
+    "name": "Everledger",
+    "url": "https://www.everledger.io/",
+    "category_description": "Supply Chain AI (AI for Supply Chain Traceability & Sustainability)"
+  },
+  {
+    "name": "Face ID (Apple)",
+    "url": "https://support.apple.com/en-us/102551",
+    "category_description": "Biometric AI (AI for secure facial recognition)"
+  },
+  {
+    "name": "FarmWise",
+    "url": "https://farmwise.io/",
+    "category_description": "Agriculture AI (AI-powered weeding and farming robotics)"
+  },
+  {
+    "name": "Fathom AI",
+    "url": "https://fathom.fm/",
+    "category_description": "AI for Meetings (AI Notetaker & Summarizer)"
+  },
+  {
+    "name": "Facebook Feed Ranking (AI-powered)",
+    "url": "https://www.facebook.com/help/110994966629156",
+    "category_description": "Social Media AI (AI for personalizing content in news feeds)"
+  },
+  {
+    "name": "Feedzai",
+    "url": "https://feedzai.com/",
+    "category_description": "Financial AI (AI for real-time fraud prevention and risk management in financial services)"
+  },
+  {
+    "name": "Fero Labs",
+    "url": "https://www.ferolabs.com/",
+    "category_description": "Industrial AI (AI for predictive quality and process optimization in complex manufacturing)"
+  },
+  {
+    "name": "Fiddler AI",
+    "url": "https://www.fiddler.ai/",
+    "category_description": "AI Governance (Model Explainability, Bias Detection, Performance Monitoring)"
+  },
+  {
+    "name": "Final Round AI",
+    "url": "https://www.finalround.ai/",
+    "category_description": "Career AI (AI for Interview Preparation & Career Assistance)"
+  },
+  {
+    "name": "Finch 3D",
+    "url": "https://finch3d.com/",
+    "category_description": "Architectural AI (AI for Building Design Optimization)"
+  },
+  {
+    "name": "Fireflies.ai",
+    "url": "https://fireflies.ai/",
+    "category_description": "Meeting AI (AI for transcribing, summarizing, and analyzing voice conversations from meetings)"
+  },
+  {
+    "name": "Fireworks AI",
+    "url": "https://www.fireworks.ai/",
+    "category_description": "Machine Learning Platforms & MLOps (AI app development software)"
+  },
+  {
+    "name": "Flatfile",
+    "url": "https://flatfile.com/",
+    "category_description": "Data Management AI (AI-Assisted Data Onboarding)"
+  },
+  {
+    "name": "Fliki.ai",
+    "url": "https://fliki.ai/",
+    "category_description": "Video Creation AI (AI for turning text/blogs into videos with lifelike voices)"
+  },
+  {
+    "name": "FlyPix AI",
+    "url": "https://flypix.ai/",
+    "category_description": "Environmental AI (Geospatial Analysis for Environmental Monitoring)"
+  },
+  {
+    "name": "Forethought",
+    "url": "https://forethought.ai/",
+    "category_description": "Customer Service AI (AI for Customer Service Automation & Insights)"
+  },
+  {
+    "name": "Formant",
+    "url": "https://formant.io/",
+    "category_description": "Robotics AI (Robotics Management Platform)"
+  },
+  {
+    "name": "Formlabs (Automation API with AI)",
+    "url": "https://formlabs.com/automation-ecosystem/api/",
+    "category_description": "Industrial AI (AI for optimizing 3D printing workflows and material usage)"
+  },
+  {
+    "name": "Forter",
+    "url": "https://www.forter.com/",
+    "category_description": "E-commerce Fraud AI (AI for fraud prevention in online transactions)"
+  },
+  {
+    "name": "FourKites",
+    "url": "https://www.fourkites.com/",
+    "category_description": "Logistics AI (AI for real-time supply chain visibility and predictive ETAs)"
+  },
+  {
+    "name": "Freshworks (Freddy AI)",
+    "url": "https://www.freshworks.com/freshsales-crm/freddy-ai/",
+    "category_description": "CRM/Customer Service AI (AI assistant for sales productivity, customer support automation)"
+  },
+  {
+    "name": "Futurepedia",
+    "url": "https://www.futurepedia.io/",
+    "category_description": "AI Tool Directory (Comprehensive directory for AI tools)"
+  },
+  {
+    "name": "GE Digital (GridOS)",
+    "url": "https://www.ge.com/digital/products/grid-software",
+    "category_description": "Energy AI (AI for grid orchestration, optimization, and DER management)"
+  },
+  {
+    "name": "Genies",
+    "url": "https://genies.com/",
+    "category_description": "Generative AI (AI for Digital Avatar Creation & Metaverse)"
+  },
+  {
+    "name": "Gencove",
+    "url": "https://www.gencove.com/",
+    "category_description": "Genomics AI (AI for low-pass genome sequencing and analysis)"
+  },
+  {
+    "name": "Gero.ai",
+    "url": "https://gero.ai/",
+    "category_description": "Longevity AI (AI for Anti-Aging Drug Discovery & Longevity Research)"
+  },
+  {
+    "name": "Getfloorplan",
+    "url": "https://getfloorplan.com/",
+    "category_description": "Design AI (AI for 2D/3D Floor Plans & Virtual Tours)"
+  },
+  {
+    "name": "Gingko Bioworks (Cell Engineering Platform with AI)",
+    "url": "https://www.gingkobioworks.com/",
+    "category_description": "Biotech AI (AI for designing and engineering organisms for various applications)"
+  },
+  {
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "category_description": "Generative AI (AI-powered coding assistant)"
+  },
+  {
+    "name": "Glean",
+    "url": "https://www.glean.com/",
+    "category_description": "Enterprise AI (Work AI platform for enterprise search, knowledge connection, content generation)"
+  },
+  {
+    "name": "Gloat",
+    "url": "https://gloat.com/",
+    "category_description": "HR AI (AI for Talent Marketplace & Career Development)"
+  },
+  {
+    "name": "Gong.io",
+    "url": "https://www.gong.io/",
+    "category_description": "Sales AI (Conversation Intelligence for Sales)"
+  },
+  {
+    "name": "Google AdSense (AI optimization)",
+    "url": "https://adsense.google.com/start/",
+    "category_description": "Advertising AI (AI for optimizing ad placement, targeting, and revenue)"
+  },
+  {
+    "name": "Google AI Studio",
+    "url": "https://aistudio.google.com/",
+    "category_description": "Machine Learning Platforms (AI model experimentation)"
+  },
+  {
+    "name": "Google Arts & Culture (AI features)",
+    "url": "https://artsandculture.google.com/",
+    "category_description": "Cultural AI (AI for art recognition, style transfer, and personalized recommendations)"
+  },
+  {
+    "name": "Google Assistant / Gemini in Android (On-device AI)",
+    "url": "https://assistant.google.com/, https://developer.android.com/ai",
+    "category_description": "Conversational AI/On-device AI (AI for voice commands, smart home control, app predictions)"
+  },
+  {
+    "name": "Google Chrome (AI features)",
+    "url": "https://www.google.com/chrome/",
+    "category_description": "Productivity AI (AI for tab organization, text summarization, smart autofill, phishing detection)"
+  },
+  {
+    "name": "Google Cloud Contact Center AI Platform",
+    "url": "https://cloud.google.com/contact-center-ai",
+    "category_description": "Conversational AI (AI for building intelligent contact center solutions)"
+  },
+  {
+    "name": "Google Cloud Document AI",
+    "url": "https://cloud.google.com/document-ai",
+    "category_description": "Document AI (AI for intelligent document processing, extracting data from various document types)"
+  },
+  {
+    "name": "Google Cloud Natural Language AI",
+    "url": "https://cloud.google.com/natural-language",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Advanced text processing)"
+  },
+  {
+    "name": "Google Cloud Vertex AI",
+    "url": "https://cloud.google.com/vertex-ai",
+    "category_description": "Machine Learning Platforms & MLOps (Unified environment for automated and custom ML model development)"
+  },
+  {
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Multimodal AI for natural conversations, information, creative text)"
+  },
+  {
+    "name": "Google Lens",
+    "url": "https://lens.google/",
+    "category_description": "Image AI (AI for visual search, object identification, text extraction from images, and translation)"
+  },
+  {
+    "name": "Google Maps (AI for Traffic, ETA, Live View)",
+    "url": "https://maps.google.com/",
+    "category_description": "Geospatial/Navigation AI (AI for real-time traffic prediction, optimized routing, AR navigation)"
+  },
+  {
+    "name": "Google Photos (AI features)",
+    "url": "https://photos.google.com/",
+    "category_description": "Image/Media AI (AI for facial recognition, object recognition, smart album creation, automatic photo enhancements)"
+  },
+  {
+    "name": "Google Play Store (AI for recommendations)",
+    "url": "https://play.google.com/store",
+    "category_description": "Recommendation AI (AI for personalized app and content recommendations)"
+  },
+  {
+    "name": "Google Search (RankBrain, MUM, BERT, Gemini integration)",
+    "url": "https://www.google.com/search",
+    "category_description": "Search AI (AI for understanding search queries, ranking results, providing direct answers)"
+  },
+  {
+    "name": "Google Translate (AI for real-time translation)",
+    "url": "https://translate.google.com/",
+    "category_description": "NLP/Translation AI (AI for real-time voice and image translation)"
+  },
+  {
+    "name": "Google Workspace (AI in Docs, Sheets, Slides, Gmail)",
+    "url": "https://workspace.google.com/",
+    "category_description": "Productivity AI (AI for smart compose, smart reply, grammar correction, data analysis)"
+  },
+  {
+    "name": "Grain.com",
+    "url": "https://grain.com/",
+    "category_description": "Meeting AI (AI for recording, transcribing, and sharing key moments from video meetings)"
+  },
+  {
+    "name": "Grammarly",
+    "url": "https://www.grammarly.com/",
+    "category_description": "Generative AI (AI writing partner for grammar, spelling, style, and tone)"
+  },
+  {
+    "name": "GrayMatter Robotics",
+    "url": "https://www.graymatter-robotics.com/",
+    "category_description": "Industrial AI (AI for industrial robots)"
+  },
+  {
+    "name": "Greenlight Guru",
+    "url": "https://www.greenlight.guru/",
+    "category_description": "Healthcare AI (AI for medical device quality management)"
+  },
+  {
+    "name": "Greyparrot",
+    "url": "https://greyparrot.ai/",
+    "category_description": "Waste Management AI (AI-powered waste analysis platform)"
+  },
+  {
+    "name": "Grubhub (AI features)",
+    "url": "https://www.grubhub.com/",
+    "category_description": "Food Delivery AI (AI for personalized recommendations and delivery optimization)"
+  },
+  {
+    "name": "H2O.ai",
+    "url": "https://h2o.ai/",
+    "category_description": "Machine Learning Platforms & MLOps (Open-source AI platforms and data science platforms)"
+  },
+  {
+    "name": "Harvey AI",
+    "url": "https://www.harvey.ai/",
+    "category_description": "Legal AI (Generative AI for Legal Professionals)"
+  },
+  {
+    "name": "HashiCorp",
+    "url": "https://www.hashicorp.com/",
+    "category_description": "Infrastructure AI (Automates and secures hybrid cloud infrastructure for GenAI)"
+  },
+  {
+    "name": "Hawk AI",
+    "url": "https://hawk.ai/",
+    "category_description": "Financial AI (AI for Anti-Money Laundering & Fraud Detection)"
+  },
+  {
+    "name": "Hebbia",
+    "url": "https://hebbia.com/",
+    "category_description": "AI-Powered Business Applications (General purpose AI for finance and legal)"
+  },
+  {
+    "name": "Heliogen",
+    "url": "https://heliogen.com/",
+    "category_description": "Clean Energy AI (AI for optimizing concentrated solar power systems and energy generation)"
+  },
+  {
+    "name": "Heuritech",
+    "url": "https://heuritech.com/",
+    "category_description": "Fashion AI (AI for fashion trend forecasting)"
+  },
+  {
+    "name": "Highspot",
+    "url": "https://www.highspot.com/",
+    "category_description": "Sales Enablement AI (AI for Sales Content & Guidance)"
+  },
+  {
+    "name": "Hippocratic AI",
+    "url": "https://www.hippocratic.ai/",
+    "category_description": "Healthcare AI (Generative AI for Healthcare)"
+  },
+  {
+    "name": "Hook (AI Music)",
+    "url": "https://hook.ai/",
+    "category_description": "Generative AI (AI-powered music remixing)"
+  },
+  {
+    "name": "HubSpot (Breeze AI)",
+    "url": "https://www.hubspot.com/ai",
+    "category_description": "Marketing/CRM AI (AI suite built into HubSpot CRM for content generation, task automation, and data insights)"
+  },
+  {
+    "name": "Hugging Face (Platform/API)",
+    "url": "https://huggingface.co/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Access to pre-trained NLP models, platform/API)"
+  },
+  {
+    "name": "Hypar",
+    "url": "https://hypar.io/",
+    "category_description": "Architectural AI (Generative Design for Buildings)"
+  },
+  {
+    "name": "Hyperscience",
+    "url": "https://www.hyperscience.com/",
+    "category_description": "Business AI (Intelligent Document Processing)"
+  },
+  {
+    "name": "IBM Environmental Intelligence Suite",
+    "url": "https://www.ibm.com/products/environmental-intelligence-suite",
+    "category_description": "Environmental AI (AI for climate risk assessment, environmental monitoring, and sustainability insights)"
+  },
+  {
+    "name": "IBM Garage (AI solutions)",
+    "url": "https://www.ibm.com/garage",
+    "category_description": "AI Consulting/Solutions (Methodology and service for rapid development and deployment of AI solutions)"
+  },
+  {
+    "name": "IBM Maximo Application Suite (AI features)",
+    "url": "https://www.ibm.com/products/maximo",
+    "category_description": "Industrial AI (AI for asset performance management, predictive maintenance)"
+  },
+  {
+    "name": "IBM Security QRadar Suite (AI features)",
+    "url": "https://www.ibm.com/products/qradar-suite",
+    "category_description": "Cybersecurity AI (AI for SIEM and SOAR)"
+  },
+  {
+    "name": "IBM Sterling Supply Chain Intelligence Suite (AI features)",
+    "url": "https://www.ibm.com/products/sterling-supply-chain-intelligence-suite",
+    "category_description": "Supply Chain AI (AI for supply chain visibility, risk detection, and optimization)"
+  },
+  {
+    "name": "IBM Turbonomic (AI for AIOps)",
+    "url": "https://www.ibm.com/cloud/turbonomic",
+    "category_description": "AIOps (AI for application resource management and network performance optimization)"
+  },
+  {
+    "name": "IBM Watson NLP",
+    "url": "https://www.ibm.com/cloud/watson-natural-language-processing",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Text analysis, emotion detection, relationship extraction)"
+  },
+  {
+    "name": "IBM Watson OpenScale",
+    "url": "https://www.ibm.com/cloud/watson-openscale",
+    "category_description": "AI Governance (AI Governance, Fairness Checks, Explainability)"
+  },
+  {
+    "name": "IBM Z and Cloud Modernization Stack (AI capabilities)",
+    "url": "https://www.ibm.com/products/z-and-cloud-modernization-stack",
+    "category_description": "Enterprise AI (AI for modernizing mainframe applications and integrating them with cloud AI services)"
+  },
+  {
+    "name": "ICEYE",
+    "url": "https://www.iceye.com/",
+    "category_description": "Geospatial AI (AI for Synthetic Aperture Radar (SAR) satellite imagery analysis)"
+  },
+  {
+    "name": "Image Creator in Bing (Microsoft)",
+    "url": "https://www.bing.com/create",
+    "category_description": "Generative Art AI (AI for generating images from text descriptions)"
+  },
+  {
+    "name": "Infogrid",
+    "url": "https://infogrid.io/",
+    "category_description": "Environmental AI (Smart Building Management & Energy Efficiency)"
+  },
+  {
+    "name": "Insilico Medicine",
+    "url": "https://www.insilico.com/",
+    "category_description": "Drug Discovery AI (AI for Drug Discovery & Development)"
+  },
+  {
+    "name": "Insitro",
+    "url": "https://www.insitro.com/",
+    "category_description": "Drug Discovery AI (Machine learning for drug discovery and development)"
+  },
+  {
+    "name": "Instrument Systems (Luminance Pro AI)",
+    "url": "https://www.instrumentsystems.com/en/products/light-measurement/luminance-and-color-measurement-cameras/luminance-pro-ai/",
+    "category_description": "Industrial AI (AI for optical quality control in displays and light sources)"
+  },
+  {
+    "name": "InstaDeep (acquired by BioNTech)",
+    "url": "https://www.instadeep.com/",
+    "category_description": "Biotech AI (AI for Drug Discovery & Reinforcement Learning in Biotech)"
+  },
+  {
+    "name": "Interior AI",
+    "url": "https://interiorai.com/",
+    "category_description": "Design AI (AI for Interior Design Concepts)"
+  },
+  {
+    "name": "Intercom",
+    "url": "https://www.intercom.com/",
+    "category_description": "AI-Powered Business Applications (AI-first customer service platform)"
+  },
+  {
+    "name": "IQVIA Healthcare-grade AI",
+    "url": "https://www.iqvia.com/solutions/innovative-models/artificial-intelligence-and-machine-learning",
+    "category_description": "Healthcare AI (AI solutions for life sciences and healthcare)"
+  },
+  {
+    "name": "Iterative.ai (DVC, CML)",
+    "url": "https://iterative.ai/",
+    "category_description": "MLOps (Open-source MLOps Tools for Data/Model Versioning)"
+  },
+  {
+    "name": "Jasper",
+    "url": "https://www.jasper.ai/",
+    "category_description": "Generative AI (AI assistant for generating on-brand online content)"
+  },
+  {
+    "name": "Jukebox (OpenAI)",
+    "url": "https://openai.com/research/jukebox",
+    "category_description": "Music AI (Generative AI that creates music, including singing, in various styles)"
+  },
+  {
+    "name": "Kaedim",
+    "url": "https://www.kaedim3d.com/",
+    "category_description": "3D Generative AI (AI for generating 3D models from 2D images)"
+  },
+  {
+    "name": "Katalist AI",
+    "url": "https://www.katalist.ai/",
+    "category_description": "Generative AI (YouTube Video Automation)"
+  },
+  {
+    "name": "Kayrros",
+    "url": "https://www.kayrros.com/",
+    "category_description": "Environmental AI (AI for global energy and environmental intelligence, including methane emissions tracking)"
+  },
+  {
+    "name": "Kebotix",
+    "url": "https://www.kebotix.com/",
+    "category_description": "Materials Science AI (AI for Autonomous Materials Discovery)"
+  },
+  {
+    "name": "Kensho Technologies",
+    "url": "https://kensho.com/",
+    "category_description": "Financial AI (AI for financial intelligence)"
+  },
+  {
+    "name": "Kira Systems (Litera)",
+    "url": "https://www.litera.com/",
+    "category_description": "Legal AI (AI for extracting and analyzing contract provisions for due diligence)"
+  },
+  {
+    "name": "Knewton Alta",
+    "url": "https://www.knewton.com/products/alta/",
+    "category_description": "EdTech AI (Adaptive learning platform using AI for personalized instruction)"
+  },
+  {
+    "name": "KNIME Analytics Platform",
+    "url": "https://www.knime.com/",
+    "category_description": "Machine Learning Platforms & MLOps (End-to-end data science platform)"
+  },
+  {
+    "name": "Kore.ai",
+    "url": "https://kore.ai/",
+    "category_description": "Conversational AI (Enterprise conversational AI platform for virtual assistants and process automation)"
+  },
+  {
+    "name": "Kustomer",
+    "url": "https://www.kustomer.com/",
+    "category_description": "AI-Powered Business Applications (AI-powered customer service platform)"
+  },
+  {
+    "name": "LabGenius",
+    "url": "https://www.labgenius.com/",
+    "category_description": "Biotech AI (AI-driven discovery platform for novel therapeutic proteins)"
+  },
+  {
+    "name": "Labelbox",
+    "url": "https://labelbox.com/",
+    "category_description": "Data AI (Training Data Platform for ML)"
+  },
+  {
+    "name": "LANDR (AI Mastering)",
+    "url": "https://www.landr.com/",
+    "category_description": "Music AI (AI for audio mastering)"
+  },
+  {
+    "name": "Landing.ai (LandingLens)",
+    "url": "https://landing.ai/landinglens/",
+    "category_description": "Industrial AI (Computer Vision platform for visual inspection in manufacturing)"
+  },
+  {
+    "name": "LangChain",
+    "url": "https://www.langchain.com/",
+    "category_description": "Machine Learning Platforms & MLOps (AI app development tools for building LLM-powered applications)"
+  },
+  {
+    "name": "Lawyer.com AI",
+    "url": "https://www.lawyer.com/ai/",
+    "category_description": "Legal AI (AI for Legal Research & Assistance)"
+  },
+  {
+    "name": "Lectra (Valia Fashion, AI features)",
+    "url": "https://www.lectra.com/en/solutions/valia-fashion",
+    "category_description": "Fashion AI (AI for pattern making, material estimation, and production optimization)"
+  },
+  {
+    "name": "LegalZoom (AI features)",
+    "url": "https://www.legalzoom.com/",
+    "category_description": "Legal AI (AI for guiding users through legal document creation and business formation)"
+  },
+  {
+    "name": "Legly",
+    "url": "https://legly.com/",
+    "category_description": "Legal AI (AI for contract analysis for small to mid-sized firms)"
+  },
+  {
+    "name": "Lexion",
+    "url": "https://www.lexion.ai/",
+    "category_description": "Legal AI (AI for contract management and legal agreement analysis)"
+  },
+  {
+    "name": "Lily AI",
+    "url": "https://www.lily.ai/",
+    "category_description": "Retail AI (AI for product descriptions in retail)"
+  },
+  {
+    "name": "Luma AI (Genie)",
+    "url": "https://lumalabs.ai/genie",
+    "category_description": "3D Generative AI (AI for generating 3D models and environments from text or images)"
+  },
+  {
+    "name": "Lumen5",
+    "url": "https://lumen5.com/",
+    "category_description": "Generative AI (AI for turning text/blogs into short videos)"
+  },
+  {
+    "name": "Luminance",
+    "url": "https://www.luminance.com/",
+    "category_description": "Legal AI (Enterprise contract automation)"
+  },
+  {
+    "name": "Machina Labs",
+    "url": "https://machinalabs.com/",
+    "category_description": "Manufacturing AI (AI for manufacturing)"
+  },
+  {
+    "name": "Mailmodo (AI Email Template Generator)",
+    "url": "https://www.mailmodo.com/",
+    "category_description": "Marketing AI (AI for email marketing templates)"
+  },
+  {
+    "name": "Maket.ai",
+    "url": "https://maket.ai/",
+    "category_description": "Architectural AI (AI for Floor Plan & Layout Generation)"
+  },
+  {
+    "name": "Materials Zone",
+    "url": "https://www.materials.zone/",
+    "category_description": "Materials Science AI (AI for materials data management and analysis)"
+  },
+  {
+    "name": "Memex",
+    "url": "(No direct service URL, research tool)",
+    "category_description": "AI-Powered Business Applications (AI research tool for gathering, organizing, synthesizing information)"
+  },
+  {
+    "name": "Mercor",
+    "url": "https://www.mercor.ai/",
+    "category_description": "AI-Powered Business Applications (AI-powered hiring platform)"
+  },
+  {
+    "name": "Meta AI (across apps)",
+    "url": "https://about.fb.com/news/2024/04/introducing-meta-ai-our-new-assistant/",
+    "category_description": "Conversational AI/Generative AI (Meta's AI assistant integrated into WhatsApp, Messenger, Instagram, and Facebook)"
+  },
+  {
+    "name": "Meta Reality Labs (AI for VR/AR)",
+    "url": "https://www.metarealitylabs.com/",
+    "category_description": "VR/AR AI (AI for hand tracking, eye tracking, spatial audio, and realistic avatar animation in VR/AR experiences)"
+  },
+  {
+    "name": "Metropolis Technologies",
+    "url": "https://metropolis.io/",
+    "category_description": "Smart City AI (AI for parking management)"
+  },
+  {
+    "name": "Microsoft 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot",
+    "category_description": "AI-Powered Business Applications (AI assistant integrated into Microsoft 365 for productivity)"
+  },
+  {
+    "name": "Microsoft Azure AI Language (Text Analytics)",
+    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-language",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Sentiment analysis, language detection, key phrase extraction)"
+  },
+  {
+    "name": "Microsoft Azure Machine Learning",
+    "url": "https://azure.microsoft.com/en-us/products/machine-learning",
+    "category_description": "Machine Learning Platforms & MLOps (Comprehensive MLaaS platform for developing, deploying, and managing ML models)"
+  },
+  {
+    "name": "Microsoft Azure Percept (Edge AI)",
+    "url": "https://azure.microsoft.com/en-us/products/azure-percept",
+    "category_description": "Edge AI (Platform for accelerating AI at the edge with pre-built models for vision and speech)"
+  },
+  {
+    "name": "Microsoft Copilot Studio",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
+    "category_description": "Conversational AI (Low-code platform for customizing Copilot and building custom AI assistants)"
+  },
+  {
+    "name": "Microsoft Defender for Cloud Apps (AI-powered)",
+    "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps",
+    "category_description": "Cybersecurity AI (AI for cloud security broker, threat detection, and compliance monitoring)"
+  },
+  {
+    "name": "Microsoft Designer",
+    "url": "https://designer.microsoft.com/",
+    "category_description": "Generative Art AI (AI for creating custom images from text descriptions, photo editing, background removal)"
+  },
+  {
+    "name": "Microsoft Dynamics 365 Copilot (Specific Modules)",
+    "url": "https://www.microsoft.com/en-us/dynamics-365/solutions/ai",
+    "category_description": "Enterprise AI (AI for various Dynamics 365 modules like Sales, Service, Finance, Supply Chain)"
+  },
+  {
+    "name": "Microsoft Entra Verified ID (AI features)",
+    "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "category_description": "Identity AI (AI for secure, decentralized identity verification)"
+  },
+  {
+    "name": "Microsoft FarmBeats for Azure Data Manager for Agriculture",
+    "url": "https://azure.microsoft.com/en-us/solutions/agriculture/",
+    "category_description": "Agriculture AI (AI for data integration, analytics, and insights for precision agriculture)"
+  },
+  {
+    "name": "Microsoft Immersive Reader (AI features)",
+    "url": "https://support.microsoft.com/en-us/topic/microsoft-immersive-reader-f967a5b3-2415-4673-bc97-f70355f30328",
+    "category_description": "EdTech AI/Accessibility AI (AI for enhanced reading, comprehension, and language translation)"
+  },
+  {
+    "name": "Microsoft Lens (AI features)",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-lens",
+    "category_description": "Productivity AI (AI for scanning documents, whiteboards, business cards)"
+  },
+  {
+    "name": "Microsoft Photo Editor (AI features)",
+    "url": "(Integrated into Windows Photos app)",
+    "category_description": "Image AI (AI for automatic image enhancement, background blur, object removal)"
+  },
+  {
+    "name": "Microsoft Project Cortex (SharePoint Syntex)",
+    "url": "(now integrated into Microsoft 365 services as part of Microsoft Viva Topics)",
+    "category_description": "Knowledge Management AI (AI for content understanding, classification, and knowledge discovery)"
+  },
+  {
+    "name": "Microsoft Security Copilot",
+    "url": "https://www.microsoft.com/en-us/security/business/ai-security/microsoft-security-copilot",
+    "category_description": "Cybersecurity AI (AI for cybersecurity threat identification, automated responses)"
+  },
+  {
+    "name": "Microsoft Teams AI Features (Granular)",
+    "url": "https://nboldapp.com/top-10-ai-features-in-microsoft-teams-for-better-teamwork/",
+    "category_description": "Communication AI (AI for meeting transcripts, auto-notes, live translation, smart task assignment)"
+  },
+  {
+    "name": "Microsoft To Do (AI suggestions)",
+    "url": "https://todo.microsoft.com/",
+    "category_description": "Productivity AI (AI for intelligent suggestions for tasks based on emails and calendar events)"
+  },
+  {
+    "name": "Midjourney",
+    "url": "https://www.midjourney.com/",
+    "category_description": "Generative AI (Artistic and dreamlike image generation)"
+  },
+  {
+    "name": "Mintlify",
+    "url": "https://mintlify.com/",
+    "category_description": "Generative AI (AI for simplifying documentation creation)"
+  },
+  {
+    "name": "Mistral AI (La Plateforme)",
+    "url": "https://mistral.ai/news/la-plateforme/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Access to Mistral's open-source LLMs)"
+  },
+  {
+    "name": "Mixpanel (AI features)",
+    "url": "https://mixpanel.com/solutions/ai-for-product-analytics/",
+    "category_description": "Product Analytics AI (AI for user behavior analysis and product decision making)"
+  },
+  {
+    "name": "Moixa",
+    "url": "https://www.moixa.com/",
+    "category_description": "Energy Storage AI (AI for optimizing battery storage and smart charging)"
+  },
+  {
+    "name": "Modl:test",
+    "url": "https://www.modl.ai/",
+    "category_description": "Game Development AI (AI for Game Testing & QA)"
+  },
+  {
+    "name": "Monday.com (AI features)",
+    "url": "https://monday.com/ai/",
+    "category_description": "Project Management AI (AI for task automation, intelligent summaries, and workflow optimization)"
+  },
+  {
+    "name": "Monte Carlo",
+    "url": "https://www.montecarlodata.com/",
+    "category_description": "Data Observability AI (AI for data reliability, monitoring data quality, and anomaly detection)"
+  },
+  {
+    "name": "Mostly AI",
+    "url": "https://mostly.ai/synthetic-data-generation",
+    "category_description": "Data AI (Synthetic Data Generation)"
+  },
+  {
+    "name": "Motive (formerly KeepTruckin)",
+    "url": "https://gomotive.com/",
+    "category_description": "Industrial AI (AI-powered fleet management and safety)"
+  },
+  {
+    "name": "Move.ai",
+    "url": "https://www.move.ai/",
+    "category_description": "Animation AI (AI for Motion Capture from Video)"
+  },
+  {
+    "name": "Moveworks",
+    "url": "https://www.moveworks.com/",
+    "category_description": "IT & HR AI (AI for Employee Support & Automation)"
+  },
+  {
+    "name": "Narvar (AI-powered post-purchase)",
+    "url": "https://corp.narvar.com/platform/ai/",
+    "category_description": "E-commerce AI (AI for post-purchase customer experience, tracking, returns)"
+  },
+  {
+    "name": "Nanonets",
+    "url": "https://nanonets.com/",
+    "category_description": "Business AI (AI-Powered Document Processing)"
+  },
+  {
+    "name": "Netflix Recommendation Engine",
+    "url": "https://help.netflix.com/en/node/100632",
+    "category_description": "Recommendation AI (AI for personalized movie and TV show recommendations)"
+  },
+  {
+    "name": "Nexthink",
+    "url": "https://www.nexthink.com/",
+    "category_description": "IT Operations AI (Digital Employee Experience Management)"
+  },
+  {
+    "name": "NoTraffic",
+    "url": "https://notraffic.tech/",
+    "category_description": "Urban Mobility AI (AI for optimizing traffic flow at intersections)"
+  },
+  {
+    "name": "Notion AI",
+    "url": "https://www.notion.so/product/ai",
+    "category_description": "AI-Powered Business Applications (AI-powered assistance for note-taking, document drafting, collaborative workspaces)"
+  },
+  {
+    "name": "Nuance Mix",
+    "url": "https://www.nuance.com/omni-channel-customer-engagement/mix/",
+    "category_description": "Conversational AI (AI for building conversational AI assistants)"
+  },
+  {
+    "name": "NVIDIA BioNeMo",
+    "url": "https://developer.nvidia.com/bionemo",
+    "category_description": "Drug Discovery AI (Generative AI framework for drug discovery)"
+  },
+  {
+    "name": "NVIDIA Earth-2",
+    "url": "https://www.nvidia.com/en-us/climatetech/earth-2/",
+    "category_description": "Climate AI (AI for high-resolution climate modeling and simulation)"
+  },
+  {
+    "name": "NVIDIA Metropolis",
+    "url": "https://www.nvidia.com/en-us/industries/smart-cities/metropolis/",
+    "category_description": "Smart City/Vision AI (AI application framework for video analytics)"
+  },
+  {
+    "name": "NVIDIA NeMo",
+    "url": "https://developer.nvidia.com/nemo",
+    "category_description": "Generative AI (Framework for building, customizing, and deploying generative AI models for speech and language)"
+  },
+  {
+    "name": "NVIDIA Omniverse (AI-enabled features)",
+    "url": "https://www.nvidia.com/en-us/omniverse/",
+    "category_description": "Digital Twin/Simulation AI (AI for building and operating industrial metaverse applications)"
+  },
+  {
+    "name": "NVIDIA Riva",
+    "url": "https://developer.nvidia.com/riva",
+    "category_description": "Conversational AI (SDK for building AI speech and translation services)"
+  },
+  {
+    "name": "NVIDIA TAO Toolkit",
+    "url": "https://developer.nvidia.com/tao",
+    "category_description": "MLOps/Vision AI (Low-code AI framework for building custom vision AI models)"
+  },
+  {
+    "name": "Objaverse (Google DeepMind)",
+    "url": "https://www.deepmind.com/open-source/objaverse",
+    "category_description": "3D Content AI (Large dataset of 3D objects for training generative AI)"
+  },
+  {
+    "name": "Observe.ai",
+    "url": "https://www.observe.ai/",
+    "category_description": "Customer Service AI (AI for Contact Center Automation & QA)"
+  },
+  {
+    "name": "OCI Anomaly Detection (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for detecting anomalies in time-series data)"
+  },
+  {
+    "name": "OCI Document Understanding (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for extracting data from documents)"
+  },
+  {
+    "name": "OCI Forecasting (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for time-series forecasting)"
+  },
+  {
+    "name": "OCI Language (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for text analysis)"
+  },
+  {
+    "name": "OCI Speech (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for converting speech to text)"
+  },
+  {
+    "name": "OCI Vision (Oracle)",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (AI for image recognition and analysis)"
+  },
+  {
+    "name": "Oolo AI",
+    "url": "https://oolo.ai/",
+    "category_description": "Customer Service AI (AI-Powered Customer Care Solutions)"
+  },
+  {
+    "name": "Ontra",
+    "url": "https://www.ontra.ai/",
+    "category_description": "Legal AI (AI for contract automation and insights for private markets)"
+  },
+  {
+    "name": "OpenAI API",
+    "url": "https://openai.com/docs/api-reference",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Access to GPT models for text generation, understanding)"
+  },
+  {
+    "name": "OpenGrid",
+    "url": "https://opengrid.com/",
+    "category_description": "Public Sector AI (AI for civic data analysis and smart city initiatives)"
+  },
+  {
+    "name": "OpenText EnCase Forensic",
+    "url": "https://www.opentext.com/products/forensic",
+    "category_description": "Digital Forensics AI (Digital Evidence & Forensics Software with AI capabilities)"
+  },
+  {
+    "name": "Operator by OpenAI",
+    "url": "(No direct service URL, often integrated via OpenAI API)",
+    "category_description": "Conversational AI (Automates routine customer service tasks)"
+  },
+  {
+    "name": "Oracle Digital Assistant",
+    "url": "https://www.oracle.com/chatbots/digital-assistant/",
+    "category_description": "Conversational AI (Platform for building enterprise chatbots and virtual assistants)"
+  },
+  {
+    "name": "Oracle Fusion Cloud Applications (AI features)",
+    "url": "https://www.oracle.com/applications/ai-ml.html",
+    "category_description": "Enterprise AI (AI for various Oracle Fusion Cloud Applications like ERP, HCM, SCM, CRM)"
+  },
+  {
+    "name": "Oracle Cloud Infrastructure (OCI) AI Services",
+    "url": "https://www.oracle.com/artificial-intelligence/ai-services/",
+    "category_description": "Cloud AI (Suite of AI services on OCI)"
+  },
+  {
+    "name": "Orbital Insight",
+    "url": "https://orbitalinsight.com/",
+    "category_description": "Geospatial AI (AI for geospatial intelligence and satellite imagery analysis)"
+  },
+  {
+    "name": "Orli",
+    "url": "https://orlifertility.com/",
+    "category_description": "Healthcare AI (AI in fertility tracking and reproductive health)"
+  },
+  {
+    "name": "Originality.ai",
+    "url": "https://originality.ai/",
+    "category_description": "Content AI (AI content and plagiarism detection)"
+  },
+  {
+    "name": "Otter.ai",
+    "url": "https://otter.ai/",
+    "category_description": "Conversational AI (Meeting Transcription & Summary)"
+  },
+  {
+    "name": "Outfunnel",
+    "url": "https://outfunnel.com/",
+    "category_description": "AI-Powered Automation (Sales and marketing data integration platform)"
+  },
+  {
+    "name": "Pachyderm",
+    "url": "https://www.pachyderm.com/",
+    "category_description": "MLOps (Data Versioning & Pipelines for ML)"
+  },
+  {
+    "name": "Path Robotics",
+    "url": "https://www.pathrobotics.com/",
+    "category_description": "Industrial Robotics AI (AI for autonomous welding robots)"
+  },
+  {
+    "name": "Pendo (AI features)",
+    "url": "https://www.pendo.io/platform/ai/",
+    "category_description": "Product Analytics AI (AI for product usage insights and user behavior analytics)"
+  },
+  {
+    "name": "Persefoni",
+    "url": "https://persefoni.com/",
+    "category_description": "Environmental AI (Carbon Accounting & Management Platform)"
+  },
+  {
+    "name": "Perplexity AI",
+    "url": "https://www.perplexity.ai/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (AI search engine)"
+  },
+  {
+    "name": "Photoroom",
+    "url": "https://www.photoroom.com/",
+    "category_description": "Image AI (Photo editing app)"
+  },
+  {
+    "name": "Phytoform Labs",
+    "url": "https://phytoformlabs.com/",
+    "category_description": "Agriculture Biotech AI (AI for Crop Trait Discovery & Gene Editing)"
+  },
+  {
+    "name": "Picarro",
+    "url": "https://www.picarro.com/",
+    "category_description": "Environmental AI (AI for high-precision gas analysis for greenhouse gas monitoring and leak detection)"
+  },
+  {
+    "name": "PicWish",
+    "url": "https://picwish.com/",
+    "category_description": "Image AI (AI for background removal, image enhancement, and object removal)"
+  },
+  {
+    "name": "Pictory AI",
+    "url": "https://pictory.ai/",
+    "category_description": "Generative AI (Turning long-form content into short videos)"
+  },
+  {
+    "name": "Pika Labs",
+    "url": "https://pika.art/",
+    "category_description": "Generative AI (Video generation service)"
+  },
+  {
+    "name": "Pitch (AI-powered presentations)",
+    "url": "https://pitch.com/",
+    "category_description": "Productivity AI (AI-powered presentations)"
+  },
+  {
+    "name": "Planet Labs (Planet Analytics)",
+    "url": "https://www.planet.com/products/planet-analytics/",
+    "category_description": "Geospatial AI (AI for satellite imagery analysis for environmental and agricultural insights)"
+  },
+  {
+    "name": "Planetary AI",
+    "url": "https://www.planetary.ai/",
+    "category_description": "Environmental AI (AI for Climate Risk & Resilience Planning)"
+  },
+  {
+    "name": "Playform.ai",
+    "url": "https://www.playform.ai/",
+    "category_description": "Creative AI (AI for Fine Art & Generative Design)"
+  },
+  {
+    "name": "Playground AI",
+    "url": "https://playground.ai/",
+    "category_description": "Generative Art AI (Online AI image creation tool)"
+  },
+  {
+    "name": "Plus One Robotics (PickOne)",
+    "url": "https://plusonerobotics.com/",
+    "category_description": "Warehouse Robotics AI (AI for vision-guided picking robots)"
+  },
+  {
+    "name": "Polis",
+    "url": "https://pol.is/",
+    "category_description": "Social AI (AI for identifying consensus and divisive topics in large-scale online conversations)"
+  },
+  {
+    "name": "Polymateria",
+    "url": "https://polymateria.com/",
+    "category_description": "Materials Science AI (AI for creating biodegradable plastics)"
+  },
+  {
+    "name": "PrecisionHawk",
+    "url": "https://precisionhawk.com/",
+    "category_description": "Agriculture AI (Drone Data Analytics for Agriculture)"
+  },
+  {
+    "name": "PredictNow.ai",
+    "url": "https://www.predictnow.ai/",
+    "category_description": "Financial AI (Hedge Fund Investment AI)"
+  },
+  {
+    "name": "Project44",
+    "url": "https://www.project44.com/",
+    "category_description": "Logistics AI (AI for real-time transportation visibility and predictive ETAs)"
+  },
+  {
+    "name": "Promethean AI",
+    "url": "https://prometheanai.com/",
+    "category_description": "Game Development AI (AI for Game Environment Creation)"
+  },
+  {
+    "name": "Prospera",
+    "url": "https://www.prospera.ag/",
+    "category_description": "Agriculture AI (AI for Crop Health & Yield Optimization)"
+  },
+  {
+    "name": "PTV Group (Optima)",
+    "url": "https://www.ptvgroup.com/en/solutions/traffic-software/ptv-optima/",
+    "category_description": "Urban Mobility AI (AI for real-time traffic management and forecasting)"
+  },
+  {
+    "name": "Pymetrics",
+    "url": "https://www.pymetrics.com/",
+    "category_description": "HR AI (AI for fair and bias-free talent assessment)"
+  },
+  {
+    "name": "Pypestream",
+    "url": "https://www.pypestream.com/",
+    "category_description": "Conversational AI (AI for Customer Service Automation)"
+  },
+  {
+    "name": "Quantexa",
+    "url": "https://www.quantexa.com/",
+    "category_description": "AI-Powered Business Applications (AI-powered data analytics for financial institutions, fraud detection)"
+  },
+  {
+    "name": "QuantumBlack (McKinsey & Company)",
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/overview",
+    "category_description": "AI Consulting/Solutions (Applies advanced AI to complex business problems)"
+  },
+  {
+    "name": "Querium",
+    "url": "https://querium.com/",
+    "category_description": "EdTech AI (AI tutor for STEM subjects)"
+  },
+  {
+    "name": "QuickBooks (AI features)",
+    "url": "https://quickbooks.intuit.com/",
+    "category_description": "AI-Powered Business Applications (AI automates invoicing, expense tracking, financial reporting)"
+  },
+  {
+    "name": "Qmunity (Quantum Machines)",
+    "url": "https://quantum-machines.co/",
+    "category_description": "Quantum AI (Quantum Control for AI & Scientific Research)"
+  },
+  {
+    "name": "Rasa",
+    "url": "https://rasa.com/",
+    "category_description": "Large Language Models (LLMs) & Conversational AI (Open-source conversational AI framework for chatbots)"
+  },
+  {
+    "name": "Read Easy.AI",
+    "url": "https://readeasy.ai/",
+    "category_description": "Accessibility AI (AI for Text Simplification & Readability)"
+  },
+  {
+    "name": "Realtime Robotics (RapidPlan)",
+    "url": "https://rtr.ai/",
+    "category_description": "Robotics AI (Motion Planning AI for Industrial Robots)"
+  },
+  {
+    "name": "Realtor.com (AI features)",
+    "url": "https://www.realtor.com/",
+    "category_description": "Real Estate AI (AI for home recommendations and market insights)"
+  },
+  {
+    "name": "Recycleye",
+    "url": "https://www.recycleye.com/",
+    "category_description": "Waste Management AI (AI & Robotics for Waste Classification and Sorting)"
+  },
+  {
+    "name": "Recursion Pharmaceuticals",
+    "url": "https://www.recursionpharma.com/",
+    "category_description": "Drug Discovery AI (AI-Driven Drug Discovery Platform)"
+  },
+  {
+    "name": "Reejig",
+    "url": "https://reejig.com/",
+    "category_description": "HR AI (AI for Workforce Intelligence & Sustainability Skills)"
+  },
+  {
+    "name": "Relativity (aiR)",
+    "url": "https://www.relativity.com/products/relativityone/ai/",
+    "category_description": "Legal AI (AI suite for eDiscovery, case strategy, and privilege review)"
+  },
+  {
+    "name": "Rephrase.ai",
+    "url": "https://rephrase.ai/",
+    "category_description": "Generative Video AI (AI for Personalized Video Creation)"
+  },
+  {
+    "name": "Replit (Ghostwriter)",
+    "url": "https://replit.com/site/ghostwriter",
+    "category_description": "Generative AI (AI for generating code from natural language prompts)"
+  },
+  {
+    "name": "Replica Studios",
+    "url": "https://www.replicastudios.com/",
+    "category_description": "Generative AI (AI Voice Actor Platform)"
+  },
+  {
+    "name": "Retrain.ai",
+    "url": "https://www.retrain.ai/",
+    "category_description": "Workforce AI (AI for workforce intelligence, skill identification, and talent mobility)"
+  },
+  {
+    "name": "Reveal",
+    "url": "https://www.revealdata.com/",
+    "category_description": "Legal AI (AI-powered eDiscovery platform for legal review and analysis)"
+  },
+  {
+    "name": "RightHand Robotics",
+    "url": "https://www.righthandrobotics.com/",
+    "category_description": "Robotics AI (AI for robotic piece-picking in logistics and e-commerce)"
+  },
+  {
+    "name": "Riskified",
+    "url": "https://www.riskified.com/",
+    "category_description": "E-commerce AI (AI for e-commerce fraud prevention)"
+  },
+  {
+    "name": "Roofstock (AI for Investment)",
+    "url": "https://www.roofstock.com/",
+    "category_description": "Real Estate AI (AI for single-family rental property investment analysis)"
+  },
+  {
+    "name": "Runway",
+    "url": "https://runwayml.com/",
+    "category_description": "Generative AI (AI-driven video editing and creation)"
+  },
+  {
+    "name": "Saildrone",
+    "url": "https://www.saildrone.com/",
+    "category_description": "Maritime AI (AI for uncrewed surface vehicles for ocean data collection)"
+  },
+  {
+    "name": "Salesforce Einstein (Sales Cloud)",
+    "url": "https://www.salesforce.com/solutions/ai/generative-ai/",
+    "category_description": "AI-Powered Business Applications (AI-powered CRM optimization, predictive analytics)"
+  },
+  {
+    "name": "Salesforce Net Zero Cloud (AI features)",
+    "url": "https://www.salesforce.com/products/net-zero-cloud/",
+    "category_description": "Sustainability AI (AI for tracking, managing, and reducing carbon emissions)"
+  },
+  {
+    "name": "Samsara",
+    "url": "https://www.samsara.com/",
+    "category_description": "Industrial AI (IoT platform with AI for operations and safety)"
+  },
+  {
+    "name": "SAP AI Core",
+    "url": "https://www.sap.com/products/technology-platform/ai-core.html",
+    "category_description": "MLOps/Enterprise AI (Platform for building and deploying enterprise-grade AI models)"
+  },
+  {
+    "name": "SAP Business AI",
+    "url": "https://www.sap.com/products/technology-platform/ai.html",
+    "category_description": "Enterprise AI (AI embedded across SAP's suite of business applications)"
+  },
+  {
+    "name": "SatSure",
+    "url": "https://satsure.co/",
+    "category_description": "Geospatial AI (AI for satellite-based analytics for agriculture, banking, and climate insights)"
+  },
+  {
+    "name": "Scale AI",
+    "url": "https://scale.com/",
+    "category_description": "Machine Learning Platforms & MLOps (Data labeling and AI infrastructure)"
+  },
+  {
+    "name": "Schrodinger (AI-enabled platform)",
+    "url": "https://www.schrodinger.com/",
+    "category_description": "Drug Discovery AI (AI-enabled computational platform for drug discovery)"
+  },
+  {
+    "name": "Seeq",
+    "url": "https://www.seeq.com/",
+    "category_description": "Industrial AI (Advanced Analytics for Process Manufacturing)"
+  },
+  {
+    "name": "Seeing AI (Microsoft)",
+    "url": "https://www.microsoft.com/en-us/ai/seeing-ai",
+    "category_description": "Accessibility AI (AI for Visually Impaired, describes surroundings)"
+  },
+  {
+    "name": "Sense (Home Energy AI)",
+    "url": "https://sense.com/",
+    "category_description": "Home Energy AI (AI for home energy monitoring and insights)"
+  },
+  {
+    "name": "Senseye (Siemens)",
+    "url": "https://www.senseye.io/",
+    "category_description": "Industrial AI (AI for predictive maintenance, acquired by Siemens)"
+  },
+  {
+    "name": "Seon",
+    "url": "https://seon.io/",
+    "category_description": "Fraud Prevention AI (AI for online fraud prevention based on digital footprints)"
+  },
+  {
+    "name": "ServiceNow (Now Platform AI)",
+    "url": "https://www.servicenow.com/ai.html",
+    "category_description": "IT/Workflow AI (AI for automating IT service management, customer service workflows)"
+  },
+  {
+    "name": "Sewbo",
+    "url": "(Website appears defunct, concept is AI-controlled robotic garment assembly)",
+    "category_description": "Manufacturing AI (AI for automated garment sewing)"
+  },
+  {
+    "name": "Shield AI",
+    "url": "https://shield.ai/",
+    "category_description": "Defense AI (Autonomous Drones & AI for Defense)"
+  },
+  {
+    "name": "Siemens Grid Software (AI capabilities)",
+    "url": "https://www.siemens.com/global/en/products/energy/grid-software.html",
+    "category_description": "Energy AI (AI for energy management, predictive maintenance, and grid stability)"
+  },
+  {
+    "name": "Sierra",
+    "url": "https://www.sierra.ai/",
+    "category_description": "AI-Powered Business Applications (Customer service software)"
+  },
+  {
+    "name": "Six Atomic",
+    "url": "https://www.sixatomic.com/",
+    "category_description": "Fashion AI (AI for streamlining design to manufacturing workflows in fashion)"
+  },
+  {
+    "name": "SkyHive",
+    "url": "https://skyhive.ai/",
+    "category_description": "HR AI (AI for skills-based workforce transformation)"
+  },
+  {
+    "name": "Slack (Slack GPT)",
+    "url": "https://slack.com/ai",
+    "category_description": "Communication AI (AI for summarizing conversations, drafting messages, and answering questions)"
+  },
+  {
+    "name": "SlidesAI",
+    "url": "https://slidesai.io/",
+    "category_description": "Productivity AI (AI for Presentations)"
+  },
+  {
+    "name": "Slang.ai",
+    "url": "https://slang.ai/",
+    "category_description": "Conversational AI (Digital phone concierge)"
+  },
+  {
+    "name": "Snorkel AI",
+    "url": "https://snorkel.ai/",
+    "category_description": "Data AI (Programmatic Data Labeling)"
+  },
+  {
+    "name": "Snyk (AI features)",
+    "url": "https://snyk.io/",
+    "category_description": "Cybersecurity AI (AI for code security analysis and vulnerability detection)"
+  },
+  {
+    "name": "Sophia Genetics",
+    "url": "https://www.sophiagenetics.com/",
+    "category_description": "Genomics AI (AI for data-driven medicine, particularly genomics and radiomics)"
+  },
+  {
+    "name": "Soundraw",
+    "url": "https://soundraw.io/",
+    "category_description": "Generative AI (AI Music Generator)"
+  },
+  {
+    "name": "Soundry AI",
+    "url": "https://soundry.ai/",
+    "category_description": "Generative AI (Text-to-Sound & Infinite Sample Packs)"
+  },
+  {
+    "name": "SPOTIO",
+    "url": "https://spotio.com/",
+    "category_description": "Sales AI (AI for lead generation, task automation, route planning)"
+  },
+  {
+    "name": "Spotify Recommendation Engine",
+    "url": "https://spotify.com/",
+    "category_description": "Recommendation AI (AI for personalized music recommendations)"
+  },
+  {
+    "name": "Spotify Podcast AI (Ad Insertion, Transcripts)",
+    "url": "(Integrated into platform)",
+    "category_description": "Audio AI (AI for dynamic ad insertion in podcasts, automated transcription)"
+  },
+  {
+    "name": "SpotDraft",
+    "url": "https://spotdraft.com/",
+    "category_description": "Legal AI (AI for end-to-end contract automation)"
+  },
+  {
+    "name": "Stable Diffusion",
+    "url": "https://stability.ai/stable-diffusion",
+    "category_description": "Generative AI (Open-source image generation)"
+  },
+  {
+    "name": "StackBlitz (AI features)",
+    "url": "https://stackblitz.com/",
+    "category_description": "Development AI (Web and mobile app development with AI features)"
+  },
+  {
+    "name": "StemRoller (Acon Digital)",
+    "url": "https://acondigital.com/products/stemroller/",
+    "category_description": "Audio AI (AI for high-quality audio stem separation)"
+  },
+  {
+    "name": "StormGeo (AI-powered Weather)",
+    "url": "https://www.stormgeo.com/",
+    "category_description": "Maritime/Energy AI (AI for weather forecasting and route optimization for shipping and offshore)"
+  },
+  {
+    "name": "Striveworks",
+    "url": "https://www.striveworks.com/",
+    "category_description": "MLOps (MLOps for government and defense)"
+  },
+  {
+    "name": "Suno",
+    "url": "https://www.suno.ai/",
+    "category_description": "Generative AI (Music and sound generation)"
+  },
+  {
+    "name": "Superb AI",
+    "url": "https://www.superb-ai.com/",
+    "category_description": "Data AI (Data Labeling & Annotation Platform)"
+  },
+  {
+    "name": "Symbio Robotics (SymbioDCS)",
+    "url": "https://symbiorobotics.com/",
+    "category_description": "Robotics AI (AI for industrial robot programming and optimization)"
+  },
+  {
+    "name": "Symbl.ai",
+    "url": "https://symbl.ai/",
+    "category_description": "Conversational AI (Conversational intelligence (speech-to-text, sentiment, topics))"
+  },
+  {
+    "name": "Synthesia",
+    "url": "https://www.synthesia.io/",
+    "category_description": "Generative AI (AI-powered platform for realistic human avatars and video creation)"
+  },
+  {
+    "name": "Tableau with AI",
+    "url": "https://www.tableau.com/products/features/ai",
+    "category_description": "Business Intelligence AI (AI capabilities for business intelligence, predictive insights)"
+  },
+  {
+    "name": "Tabnine",
+    "url": "https://www.tabnine.com/",
+    "category_description": "Generative AI (AI code assistant for intelligent code completion)"
+  },
+  {
+    "name": "Tamr",
+    "url": "https://www.tamr.com/",
+    "category_description": "Data Unification AI (AI for data mastering, cleaning, and unification from disparate sources)"
+  },
+  {
+    "name": "Taranis",
+    "url": "https://taranis.com/",
+    "category_description": "Agriculture AI (AI for Crop Monitoring & Disease Detection)"
+  },
+  {
+    "name": "Tastewise",
+    "url": "https://tastewise.io/",
+    "category_description": "Food Tech AI (AI for food trend analysis and new product development)"
+  },
+  {
+    "name": "Tavus",
+    "url": "https://www.tavus.io/",
+    "category_description": "Generative AI (Video Production & Personalization)"
+  },
+  {
+    "name": "Tempus",
+    "url": "https://www.tempus.com/",
+    "category_description": "Healthcare AI (Data-driven precision medicine for fighting disease)"
+  },
+  {
+    "name": "Tesla Autopilot / FSD (AI)",
+    "url": "https://www.tesla.com/autopilot",
+    "category_description": "Autonomous Driving AI (AI for advanced driver-assistance systems)"
+  },
+  {
+    "name": "Tesla Optimus (AI for Humanoid Robot)",
+    "url": "https://www.tesla.com/AI",
+    "category_description": "Robotics AI (AI for general-purpose humanoid robot)"
+  },
+  {
+    "name": "TestFit",
+    "url": "https://testfit.io/",
+    "category_description": "Architectural AI (AI for Feasibility Studies & Urban Planning)"
+  },
+  {
+    "name": "Textio",
+    "url": "https://textio.com/",
+    "category_description": "HR AI (AI for Inclusive Job Descriptions & Communications)"
+  },
+  {
+    "name": "The Climate Corporation (FieldView)",
+    "url": "https://climate.com/",
+    "category_description": "Agriculture/Environmental AI (AI for predictive insights on crop performance)"
+  },
+  {
+    "name": "There's An AI For That",
+    "url": "https://theresanaiforthat.com/",
+    "category_description": "AI Tool Directory (Directory for AI tools based on tasks)"
+  },
+  {
+    "name": "ThoughtRiver",
+    "url": "https://www.thoughtriver.com/",
+    "category_description": "Legal AI (AI for contract review and negotiation)"
+  },
+  {
+    "name": "TikTok For You Page Algorithm",
+    "url": "https://www.tiktok.com/for-you",
+    "category_description": "Recommendation AI (AI for highly personalized short-form video recommendations)"
+  },
+  {
+    "name": "TikTok Content Moderation (AI for harmful content)",
+    "url": "(Internal systems)",
+    "category_description": "Content Moderation AI (AI for identifying and removing harmful content)"
+  },
+  {
+    "name": "Toast (AI-powered scheduling)",
+    "url": "https://pos.toasttab.com/restaurant-management/schedules",
+    "category_description": "Food Service AI (AI for restaurant staff scheduling optimization)"
+  },
+  {
+    "name": "Tome",
+    "url": "https://tome.app/",
+    "category_description": "Generative AI (AI for Presentations & Storytelling)"
+  },
+  {
+    "name": "Topaz Labs (AI Image Suite)",
+    "url": "https://www.topazlabs.com/",
+    "category_description": "Image AI (AI for image upscaling, noise reduction, and sharpening)"
+  },
+  {
+    "name": "Tractian",
+    "url": "https://tractian.com/",
+    "category_description": "Industrial AI (Predictive maintenance using AI and IoT for industrial machinery)"
+  },
+  {
+    "name": "Trellix (AI-powered XDR)",
+    "url": "https://www.trellix.com/en-us/solutions/extended-detection-response/xdrs.html",
+    "category_description": "Cybersecurity AI (AI for extended detection and response across security layers)"
+  },
+  {
+    "name": "Truepic",
+    "url": "https://www.truepic.com/",
+    "category_description": "Authenticity AI (AI for image and video authentication, combating deepfakes)"
+  },
+  {
+    "name": "Two Hat (AI content moderation)",
+    "url": "https://www.twohat.com/",
+    "category_description": "Content Moderation AI (AI for online content moderation and community safety)"
+  },
+  {
+    "name": "Typeface",
+    "url": "https://www.typeface.ai/",
+    "category_description": "Generative AI (On-Brand Content for Enterprise)"
+  },
+  {
+    "name": "Unspun (FitOS)",
+    "url": "https://unspun.io/",
+    "category_description": "Retail AI (AI for personalized clothing sizing and custom production)"
+  },
+  {
+    "name": "UrbanFootprint",
+    "url": "https://urbanfootprint.com/",
+    "category_description": "Urban Planning AI (AI for Sustainable Urban Development & Resilience)"
+  },
+  {
+    "name": "Urbint",
+    "url": "https://www.urbint.com/",
+    "category_description": "Infrastructure AI (AI for predicting infrastructure risk and optimizing operations for utilities)"
+  },
+  {
+    "name": "Valo Health",
+    "url": "https://www.valohealth.com/",
+    "category_description": "Drug Discovery AI (AI-Powered Drug Discovery & Development)"
+  },
+  {
+    "name": "Vanti Analytics",
+    "url": "https://www.vantianalytics.com/",
+    "category_description": "Industrial AI (AI for predictive quality and root cause analysis in manufacturing)"
+  },
+  {
+    "name": "Varda Space Industries",
+    "url": "https://www.varda.com/",
+    "category_description": "Space AI (AI for In-space Manufacturing & Operations)"
+  },
+  {
+    "name": "VAST Data",
+    "url": "https://www.vastdata.com/",
+    "category_description": "Machine Learning Platforms & MLOps (AI data infrastructure software)"
+  },
+  {
+    "name": "Veras",
+    "url": "https://www.evolvelab.io/veras",
+    "category_description": "Architectural AI (AI for Architectural Visualization & Rendering)"
+  },
+  {
+    "name": "Verity (Exotec)",
+    "url": "https://www.exotec.com/verity/",
+    "category_description": "Warehouse AI (AI-powered drones for warehouse inventory management)"
+  },
+  {
+    "name": "Voiceitt",
+    "url": "https://voiceitt.com/",
+    "category_description": "Accessibility AI (Speech Recognition for Non-Standard Speech)"
+  },
+  {
+    "name": "Vortexa",
+    "url": "https://www.vortexa.com/",
+    "category_description": "Supply Chain AI (AI for optimizing supply chains and logistics)"
+  },
+  {
+    "name": "Waycare",
+    "url": "https://waycaretech.com/",
+    "category_description": "Urban Mobility AI (AI for predictive traffic analytics and incident prevention)"
+  },
+  {
+    "name": "Waymo (Autonomous Driving AI)",
+    "url": "https://waymo.com/",
+    "category_description": "Autonomous Driving AI (AI for self-driving vehicles, perception, prediction, and planning)"
+  },
+  {
+    "name": "WebWhiz AI",
+    "url": "https://webwhiz.ai/",
+    "category_description": "Conversational AI (AI Chatbot for Websites)"
+  },
+  {
+    "name": "Weights & Biases",
+    "url": "https://wandb.ai/",
+    "category_description": "MLOps (Experiment Tracking & Model Management)"
+  },
+  {
+    "name": "Whalesync",
+    "url": "https://whalesync.com/",
+    "category_description": "AI-Powered Automation (Bidirectional data synchronization platform)"
+  },
+  {
+    "name": "WhyLabs (whylogs)",
+    "url": "https://www.whylabs.ai/",
+    "category_description": "MLOps/Data AI (AI observability and data logging platform)"
+  },
+  {
+    "name": "Wonder Dynamics (Wonder Studio)",
+    "url": "https://wonderdynamics.com/",
+    "category_description": "Creative AI (AI for VFX & Animation)"
+  },
+  {
+    "name": "Workato",
+    "url": "https://workato.com/",
+    "category_description": "AI-Powered Automation (Enterprise-grade integration and automation platform with AI)"
+  },
+  {
+    "name": "Workday (AI for HR/Finance)",
+    "url": "https://www.workday.com/solutions/ai.html",
+    "category_description": "HR/Finance AI (AI for talent acquisition, workforce analytics, financial forecasting)"
+  },
+  {
+    "name": "Writer",
+    "url": "https://writer.com/",
+    "category_description": "Enterprise AI (Enterprise AI software for content creation and governance)"
+  },
+  {
+    "name": "Xero (AI features)",
+    "url": "https://www.xero.com/",
+    "category_description": "AI-Powered Business Applications (Cloud-based accounting software with AI)"
+  },
+  {
+    "name": "XOCEAN",
+    "url": "https://www.xocean.com/",
+    "category_description": "Maritime AI (AI-powered uncrewed surface vessels for hydrographic surveys)"
+  },
+  {
+    "name": "YouTube (AI for recommendations, Content ID, moderation)",
+    "url": "https://www.youtube.com/",
+    "category_description": "Recommendation/Content Moderation AI (AI for video recommendations, content identification, comment moderation)"
+  },
+  {
+    "name": "Zapier AI Integration",
+    "url": "https://zapier.com/ai",
+    "category_description": "AI-Powered Automation (Automates workflows by connecting different apps without coding)"
+  },
+  {
+    "name": "ZenRobotics",
+    "url": "https://zenrobotics.com/",
+    "category_description": "Waste Management AI (AI-powered robotic waste sorting systems)"
+  },
+  {
+    "name": "Zeni AI",
+    "url": "https://zeni.ai/",
+    "category_description": "Financial AI (AI for Bookkeeping & Finance Operations)"
+  },
+  {
+    "name": "Zesty.ai",
+    "url": "https://www.zesty.ai/",
+    "category_description": "Insurance AI (AI for property risk assessment from climate and natural disasters)"
+  },
+  {
+    "name": "Zoho Desk (Answer Bot)",
+    "url": "https://www.zoho.com/desk/",
+    "category_description": "Customer Service AI (Ticketing system with AI for customer support)"
+  },
+  {
+    "name": "Zoho Zia (AI Assistant)",
+    "url": "https://www.zoho.com/zia/",
+    "category_description": "Business AI (AI-powered assistant embedded across Zoho's suite)"
+  },
+  {
+    "name": "Zoom (AI Companion)",
+    "url": "https://www.zoom.us/ai-companion",
+    "category_description": "Meeting AI (AI for meeting summaries, intelligent recordings, and real-time coaching)"
+  },
+  {
+    "name": "Zumper (AI features)",
+    "url": "https://www.zumper.com/",
+    "category_description": "Real Estate AI (AI for rental search and personalized recommendations)"
+  },
+  {
+    "name": "ps2ai.com (PS2 Filter AI)",
+    "url": "https://ps2ai.com/",
+    "category_description": "Generative Art AI (AI for generating images in the style of PlayStation 2 graphics)"
+  },
+  {
+    "name": "Retro Diffusion (by Runware)",
+    "url": "https://runware.ai/blog/retro-diffusion-creating-authentic-pixel-art-with-ai-at-scale",
+    "category_description": "Generative Art AI (AI for creating authentic pixel art with consistent grid alignment and color limitations)"
+  },
+  {
+    "name": "ImagineArt AI Aesthetic Generator",
+    "url": "https://www.imagine.art/features/ai-aesthetic-generator",
+    "category_description": "Generative Art AI (AI for generating images based on specific aesthetic moods, themes, or styles)"
+  },
+  {
+    "name": "AnimeDiffusion",
+    "url": "(Often community-run or API-based, e.g., on Hugging Face)",
+    "category_description": "Generative Art AI (AI models and tools specifically for generating anime-style art)"
+  },
+  {
+    "name": "This Person Does Not Exist",
+    "url": "https://thispersondoesnotexist.com/",
+    "category_description": "Generative Art AI (AI for generating photorealistic images of non-existent human faces)"
+  },
+  {
+    "name": "This Cat Does Not Exist",
+    "url": "https://thiscatdoesnotexist.com/",
+    "category_description": "Generative Art AI (AI for generating photorealistic images of non-existent cats)"
+  },
+  {
+    "name": "TextFX (Google)",
+    "url": "https://textfx.withgoogle.com/",
+    "category_description": "Generative Text AI (AI experimentation tool for generating creative text, e.g., similes, proverbs, plot outlines)"
+  },
+  {
+    "name": "ElevenLabs (Voice Library & API)",
+    "url": "https://elevenlabs.io/",
+    "category_description": "Voice AI (Advanced voice cloning and highly customizable speech synthesis via API, beyond standard text-to-speech)"
+  },
+  {
+    "name": "D-ID (Creative Reality Studio)",
+    "url": "https://www.d-id.com/",
+    "category_description": "Generative Video AI (AI for creating talking avatars from images or video, with text-to-speech)"
+  },
+  {
+    "name": "Hour One",
+    "url": "https://hourone.ai/",
+    "category_description": "Generative Video AI (AI for creating AI presenters and videos for enterprise communication)"
+  },
+  {
+    "name": "Pictory AI",
+    "url": "https://pictory.ai/",
+    "category_description": "Generative Video AI (AI for converting text, articles, or scripts into video summaries)"
+  },
+  {
+    "name": "Exabyte.io",
+    "url": "https://www.exabyte.io/",
+    "category_description": "Materials Science AI (Cloud platform for materials modeling and simulation with AI for property prediction)"
+  },
+  {
+    "name": "Schrodinger (LiveDesign)",
+    "url": "https://www.schrodinger.com/livedesign",
+    "category_description": "Drug Discovery AI (AI-enabled computational platform for drug discovery collaboration)"
+  },
+  {
+    "name": "Recursion Pharmaceuticals (Phenom-seq)",
+    "url": "https://www.recursionpharma.com/platform/#phenom-seq",
+    "category_description": "Biotech AI (AI-enabled functional genomics screening platform)"
+  },
+  {
+    "name": "Enthought (Horizon)",
+    "url": "https://www.enthought.com/platform/horizon",
+    "category_description": "Scientific AI (AI platform for scientific data analysis and engineering R&D)"
+  },
+  {
+    "name": "Heliogen",
+    "url": "https://heliogen.com/",
+    "category_description": "Clean Energy AI (AI for optimizing concentrated solar power systems and energy generation)"
+  },
+  {
+    "name": "QuantumBlack (McKinsey & Company)",
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/overview",
+    "category_description": "AI Consulting/Solutions (Applies advanced AI to complex business problems, often building custom solutions as a service)"
+  },
+  {
+    "name": "Acelab",
+    "url": "https://acelab.ai/",
+    "category_description": "Construction AI (AI for material specification and product discovery in architecture & construction)"
+  },
+  {
+    "name": "Carbon Chain",
+    "url": "https://carbonchain.com/",
+    "category_description": "Supply Chain AI (AI for automated supply chain carbon emissions tracking and reporting)"
+  },
+  {
+    "name": "Ardoq (AI Features)",
+    "url": "https://www.ardoq.com/ai",
+    "category_description": "Enterprise Architecture AI (AI for understanding and mapping complex enterprise IT landscapes)"
+  },
+  {
+    "name": "Blue Vision Labs (acquired by Lyft)",
+    "url": "(Service integrated into Lyft)",
+    "category_description": "Environmental AI (AI for Real-time 3D Mapping for Smart Cities)"
+  },
+  {
+    "name": "The Climate Corporation (FieldView)",
+    "url": "https://climate.com/",
+    "category_description": "Agriculture/Environmental AI (AI for predictive insights on crop performance based on climate and field data)"
+  },
+  {
+    "name": "SatSure",
+    "url": "https://satsure.co/",
+    "category_description": "Geospatial AI (AI for satellite-based analytics for agriculture, banking, and climate insights)"
+  },
+  {
+    "name": "Aquantix",
+    "url": "https://aquantix.ai/",
+    "category_description": "Water Management AI (AI for water resource management, leak detection, and demand forecasting)"
+  },
+  {
+    "name": "Picarro",
+    "url": "https://www.picarro.com/",
+    "category_description": "Environmental AI (AI for high-precision gas analysis for greenhouse gas monitoring and leak detection)"
+  },
+  {
+    "name": "Kayrros",
+    "url": "https://www.kayrros.com/",
+    "category_description": "Environmental AI (AI for global energy and environmental intelligence, including methane emissions tracking)"
+  },
+  {
+    "name": "Instrument Systems (Luminance Pro AI)",
+    "url": "https://www.instrumentsystems.com/en/products/light-measurement/luminance-and-color-measurement-cameras/luminance-pro-ai/",
+    "category_description": "Industrial AI (AI for optical quality control in displays and light sources)"
+  },
+  {
+    "name": "Cognex (VisionPro Deep Learning)",
+    "url": "https://www.cognex.com/products/deep-learning",
+    "category_description": "Industrial AI (AI for complex defect detection and optical character recognition in manufacturing)"
+  },
+  {
+    "name": "Vanti Analytics",
+    "url": "https://www.vantianalytics.com/",
+    "category_description": "Industrial AI (AI for predictive quality and root cause analysis in manufacturing)"
+  },
+  {
+    "name": "Landing.ai (LandingLens)",
+    "url": "https://landing.ai/landinglens/",
+    "category_description": "Industrial AI (Computer Vision platform for visual inspection in manufacturing)"
+  },
+  {
+    "name": "Covariant.ai",
+    "url": "https://covariant.ai/",
+    "category_description": "Robotics AI (AI for robotic manipulation in warehouses and fulfillment centers)"
+  },
+  {
+    "name": "RightHand Robotics",
+    "url": "https://www.righthandrobotics.com/",
+    "category_description": "Robotics AI (AI for robotic piece-picking in logistics and e-commerce)"
+  },
+  {
+    "name": "Symbio Robotics (SymbioDCS)",
+    "url": "https://symbiorobotics.com/",
+    "category_description": "Robotics AI (AI for industrial robot programming and optimization)"
+  },
+  {
+    "name": "ZenRobotics",
+    "url": "https://zenrobotics.com/",
+    "category_description": "Waste Management AI (AI-powered robotic waste sorting systems)"
+  },
+  {
+    "name": "Recycleye",
+    "url": "https://www.recycleye.com/",
+    "category_description": "Waste Management AI (AI & Robotics for Waste Classification and Sorting)"
+  },
+  {
+    "name": "AMP Robotics",
+    "url": "https://www.amprobotics.com/",
+    "category_description": "Waste Management AI (AI-powered robotics for material recovery facilities)"
+  },
+  {
+    "name": "Greyparrot",
+    "url": "https://greyparrot.ai/",
+    "category_description": "Waste Management AI (AI-powered waste analysis platform)"
+  },
+  {
+    "name": "Urbint",
+    "url": "https://www.urbint.com/",
+    "category_description": "Infrastructure AI (AI for predicting infrastructure risk and optimizing operations for utilities)"
+  },
+  {
+    "name": "Sense (Home Energy AI)",
+    "url": "https://sense.com/",
+    "category_description": "Home Energy AI (AI for home energy monitoring and insights)"
+  },
+  {
+    "name": "Span.IO (AI features)",
+    "url": "https://www.span.io/",
+    "category_description": "Home Energy AI (Smart electrical panel with AI for energy management)"
+  },
+  {
+    "name": "Moixa",
+    "url": "https://www.moixa.com/",
+    "category_description": "Energy Storage AI (AI for optimizing battery storage and smart charging)"
+  },
+  {
+    "name": "Tamr",
+    "url": "https://www.tamr.com/",
+    "category_description": "Data Unification AI (AI for data mastering, cleaning, and unification from disparate sources)"
+  },
+  {
+    "name": "BigID",
+    "url": "https://bigid.com/",
+    "category_description": "Data Privacy AI (AI for discovering, classifying, and protecting sensitive data for privacy compliance)"
+  },
+  {
+    "name": "Monte Carlo",
+    "url": "https://www.montecarlodata.com/",
+    "category_description": "Data Observability AI (AI for data reliability, monitoring data quality, and anomaly detection)"
+  },
+  {
+    "name": "Datafold",
+    "url": "https://datafold.com/",
+    "category_description": "Data Observability AI (AI for data testing, lineage, and observability in data pipelines)"
+  },
+  {
+    "name": "Anomalo",
+    "url": "https://www.anomalo.com/",
+    "category_description": "Data Quality AI (AI for automated data quality monitoring and anomaly detection)"
+  },
+  {
+    "name": "WhyLabs (whylogs)",
+    "url": "https://www.whylabs.ai/",
+    "category_description": "MLOps/Data AI (AI observability and data logging platform)"
+  },
+  {
+    "name": "CausaLens",
+    "url": "https://causalens.com/",
+    "category_description": "Explainable AI (XAI) (AI platform for causal AI)"
+  },
+  {
+    "name": "ChowNow (OrderBetter AI)",
+    "url": "https://orderbetter.ai/",
+    "category_description": "Food Service AI (AI for optimizing online ordering and delivery for restaurants)"
+  },
+  {
+    "name": "Toast (AI-powered scheduling)",
+    "url": "https://pos.toasttab.com/restaurant-management/schedules",
+    "category_description": "Food Service AI (AI for restaurant staff scheduling optimization)"
+  },
+  {
+    "name": "Pendo (AI features)",
+    "url": "https://www.pendo.io/platform/ai/",
+    "category_description": "Product Analytics AI (AI for product usage insights and user behavior analytics)"
+  },
+  {
+    "name": "Amplitude (AI features)",
+    "url": "https://amplitude.com/solutions/ai-for-product",
+    "category_description": "Product Analytics AI (AI for product analytics and growth insights)"
+  },
+  {
+    "name": "Mixpanel (AI features)",
+    "url": "https://mixpanel.com/solutions/ai-for-product-analytics/",
+    "category_description": "Product Analytics AI (AI for user behavior analysis and product decision making)"
+  },
+  {
+    "name": "Kore.ai",
+    "url": "https://kore.ai/",
+    "category_description": "Conversational AI (Enterprise conversational AI platform for virtual assistants and process automation)"
+  },
+  {
+    "name": "Civitas (AI for Government)",
+    "url": "https://www.civitas.ai/",
+    "category_description": "Public Sector AI (AI for government data analysis and civic engagement)"
+  },
+  {
+    "name": "Polis",
+    "url": "https://pol.is/",
+    "category_description": "Social AI (AI for identifying consensus and divisive topics in large-scale online conversations)"
+  },
+  {
+    "name": "AI.builders",
+    "url": "https://ai.builders/",
+    "category_description": "Construction AI (AI for automating construction planning, scheduling, and risk assessment)"
+  },
+  {
+    "name": "Unspun (FitOS)",
+    "url": "https://unspun.io/",
+    "category_description": "Retail AI (AI for personalized clothing sizing and custom production)"
+  },
+  {
+    "name": "Daydream",
+    "url": "https://daydream.shop/",
+    "category_description": "Retail AI (AI Chat-to-Shop for personalized fashion discovery)"
+  },
+  {
+    "name": "PredictNow.ai",
+    "url": "https://www.predictnow.ai/",
+    "category_description": "Financial AI (Hedge Fund Investment AI for predictive analytics)"
+  },
+  {
+    "name": "Fathom AI",
+    "url": "https://fathom.fm/",
+    "category_description": "AI for Meetings (AI Notetaker & Summarizer for virtual meetings)"
+  },
+  {
+    "name": "Rephrase.ai",
+    "url": "https://rephrase.ai/",
+    "category_description": "Generative Video AI (AI for personalized video creation using synthetic media)"
+  },
+  {
+    "name": "Fireflies.ai",
+    "url": "https://fireflies.ai/",
+    "category_description": "Meeting AI (AI for transcribing, summarizing, and analyzing voice conversations from meetings)"
+  },
+  {
+    "name": "Grain.com",
+    "url": "https://grain.com/",
+    "category_description": "Meeting AI (AI for recording, transcribing, and sharing key moments from video meetings)"
+  },
+  {
+    "name": "Truepic",
+    "url": "https://www.truepic.com/",
+    "category_description": "Authenticity AI (AI for image and video authentication, combating deepfakes and manipulated media)"
+  },
+  {
+    "name": "Lexion",
+    "url": "https://www.lexion.ai/",
+    "category_description": "Legal AI (AI for contract management and legal agreement analysis)"
+  },
+  {
+    "name": "LegalZoom (AI features)",
+    "url": "https://www.legalzoom.com/",
+    "category_description": "Legal AI (AI for guiding users through legal document creation and business formation)"
+  },
+  {
+    "name": "Everlaw (AI Assistant)",
+    "url": "https://www.everlaw.com/",
+    "category_description": "Legal AI (AI for eDiscovery review and litigation support)"
+  },
+  {
+    "name": "Workera",
+    "url": "https://www.workera.ai/",
+    "category_description": "Workforce AI (AI for skill assessment, development, and talent strategy)"
+  },
+  {
+    "name": "Retrain.ai",
+    "url": "https://www.retrain.ai/",
+    "category_description": "Workforce AI (AI for workforce intelligence, skill identification, and talent mobility)"
+  }
+]
