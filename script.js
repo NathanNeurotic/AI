@@ -880,8 +880,8 @@ function buildSidebar() {
         if (!titleEl) return;
         const link = document.createElement('a');
         link.href = `#${section.id}`;
-        const plainText = titleEl.textContent.replace(/\(\d+\)$/, '').trim();
-        link.textContent = plainText;
+        // Include the service count in the sidebar link text
+        link.textContent = titleEl.textContent.trim();
         link.addEventListener('click', () => {
             toggleSidebar();
         });
