@@ -57,16 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const textToType = 'AI Services Dashboard';
 
     if (headerTextElement) {
-        headerTextElement.textContent = '';
-        let charIndex = 0;
-        function typeEffect() {
-            if (charIndex < textToType.length) {
-                headerTextElement.textContent += textToType.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeEffect, 100);
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) {
+            headerTextElement.textContent = textToType;
+        } else {
+            headerTextElement.textContent = '';
+            let charIndex = 0;
+            function typeEffect() {
+                if (charIndex < textToType.length) {
+                    headerTextElement.textContent += textToType.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeEffect, 100);
+                }
             }
+            typeEffect();
         }
-        typeEffect();
     }
 
     // Load services and set up functionalities only if a <main> element exists
