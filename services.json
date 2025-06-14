@@ -6257,6 +6257,14 @@
     "name": "Amazon Robotics",
     "url": "https://www.amazonrobotics.com/",
     "favicon_url": "https://www.amazonrobotics.com/favicon.ico",
+    "tags": [
+      "amazon",
+      "robotics",
+      "warehouse"
+    ],
+    "category": "👽 All-in-One"
+  },
+  {
     "name": "Kore.ai",
     "url": "https://kore.ai/",
     "favicon_url": "https://kore.ai/favicon.ico",
