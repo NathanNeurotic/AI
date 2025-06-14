@@ -22,7 +22,7 @@ describe('mobile/desktop view persists after reload', () => {
     scriptEl.textContent = scriptContent;
     document.body.appendChild(scriptEl);
 
-    window.toggleMobileView();
+    window.toggleDeviceView();
     const stored = window.localStorage.getItem('mobileView');
     dom.window.close();
 

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
-describe('toggleMobileView', () => {
+describe('toggleDeviceView', () => {
   let window, document, dom;
 
   beforeEach(() => {
@@ -22,20 +22,20 @@ describe('toggleMobileView', () => {
   });
 
   test('toggles view classes and saves state', () => {
-    expect(document.body.classList.contains('mobile-view')).toBe(false);
     expect(document.body.classList.contains('desktop-view')).toBe(true);
+    expect(document.body.classList.contains('mobile-view')).toBe(false);
     expect(window.localStorage.getItem('mobileView')).toBe(null);
 
-    window.toggleMobileView();
+    window.toggleDeviceView();
 
-    expect(document.body.classList.contains('mobile-view')).toBe(true);
     expect(document.body.classList.contains('desktop-view')).toBe(false);
+    expect(document.body.classList.contains('mobile-view')).toBe(true);
     expect(window.localStorage.getItem('mobileView')).toBe('mobile');
 
-    window.toggleMobileView();
+    window.toggleDeviceView();
 
-    expect(document.body.classList.contains('mobile-view')).toBe(false);
     expect(document.body.classList.contains('desktop-view')).toBe(true);
+    expect(document.body.classList.contains('mobile-view')).toBe(false);
     expect(window.localStorage.getItem('mobileView')).toBe('desktop');
   });
 });

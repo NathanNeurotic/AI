@@ -783,6 +783,7 @@ function applySavedMobileView() {
     const isMobile = saved === 'mobile';
     document.body.classList.toggle('mobile-view', isMobile);
     document.body.classList.toggle('desktop-view', !isMobile);
+    updateToggleButtons();
 }
 
 function toggleView() {
@@ -793,25 +794,15 @@ function toggleView() {
 
 window.toggleView = toggleView;
 
-function toggleMobileView() {
-    const isMobile = !document.body.classList.contains('mobile-view');
-    document.body.classList.toggle('mobile-view', isMobile);
-    document.body.classList.toggle('desktop-view', !isMobile);
-    localStorage.setItem('mobileView', isMobile ? 'mobile' : 'desktop');
+function toggleDeviceView() {
+    const isMobile = document.body.classList.contains('mobile-view');
+    document.body.classList.toggle('mobile-view', !isMobile);
+    document.body.classList.toggle('desktop-view', isMobile);
+    localStorage.setItem('mobileView', !isMobile ? 'mobile' : 'desktop');
     updateToggleButtons();
 }
 
-window.toggleMobileView = toggleMobileView;
-
-function toggleDesktopView() {
-    const isDesktop = !document.body.classList.contains('desktop-view');
-    document.body.classList.toggle('desktop-view', isDesktop);
-    document.body.classList.toggle('mobile-view', !isDesktop);
-    localStorage.setItem('mobileView', isDesktop ? 'desktop' : 'mobile');
-    updateToggleButtons();
-}
-
-window.toggleDesktopView = toggleDesktopView;
+window.toggleDeviceView = toggleDeviceView;
 
 function toggleCategoryView(categoryId) {
     const section = document.getElementById(categoryId);
@@ -843,21 +834,15 @@ function updateToggleButtons() {
             '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>' :
             '<svg id="viewIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>';
     }
-    const mobileBtn = document.getElementById('mobileToggle');
-    if (mobileBtn) {
+    const deviceBtn = document.getElementById('deviceToggle');
+    if (deviceBtn) {
         const isMobile = document.body.classList.contains('mobile-view');
-        mobileBtn.classList.toggle('active', isMobile);
-        mobileBtn.title = isMobile ? 'Switch to desktop view' : 'Switch to mobile view';
-        mobileBtn.setAttribute('aria-label', mobileBtn.title);
-        mobileBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
-    }
-    const desktopBtn = document.getElementById('desktopToggle');
-    if (desktopBtn) {
-        const isDesktop = document.body.classList.contains('desktop-view');
-        desktopBtn.classList.toggle('active', isDesktop);
-        desktopBtn.title = isDesktop ? 'Switch to mobile view' : 'Switch to desktop view';
-        desktopBtn.setAttribute('aria-label', desktopBtn.title);
-        desktopBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>';
+        deviceBtn.classList.toggle('active', isMobile);
+        deviceBtn.title = isMobile ? 'Switch to desktop view' : 'Switch to mobile view';
+        deviceBtn.setAttribute('aria-label', deviceBtn.title);
+        deviceBtn.innerHTML = isMobile
+            ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>'
+            : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
     }
 }
 
