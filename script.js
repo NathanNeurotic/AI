@@ -116,18 +116,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function loadServices() {
+    const mainContainer = document.querySelector('main'); // Define and check mainContainer once at the top
+    if (!mainContainer) {
+        console.error('Fatal Error: <main> element not found in the DOM.');
+        document.body.innerHTML = '<p class="error-message">Fatal Error: Application structure missing. Cannot load services.</p>';
+        const style = document.createElement('style');
+        style.textContent = '.error-message { color: red; font-size: 1.2em; text-align: center; padding: 20px; }';
+        document.head.appendChild(style);
+        return;
+    }
+
     try {
-        const response = await fetch('./services.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        let services;
+        try {
+            const response = await fetch('./services.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status} while fetching services.json`);
+            }
+            services = await response.json();
+            if (!services || (Array.isArray(services) && services.length === 0)) {
+                 console.warn('services.json is empty or not a valid array.');
+                 throw new Error('services.json is empty or invalid.');
+            }
+        } catch (fetchError) {
+            console.error('Fetch or JSON parse error for services.json:', fetchError);
+            mainContainer.innerHTML = `<p class="error-message">Error loading essential service data: ${fetchError.message}. Please check network or file access.</p>`;
+            return;
         }
-        const services = await response.json();
+
         allServices = services;
         const totalEl = document.getElementById('totalServices');
         if (totalEl) {
             totalEl.textContent = `${services.length} services`;
         }
-        const mainContainer = document.querySelector('main');
+        // mainContainer is already defined above
 
         // Clear existing static categories if any (optional, if HTML is pre-populated)
         const existingCategories = mainContainer.querySelectorAll('.category');
@@ -250,10 +272,11 @@ async function loadServices() {
         setupSearch();
         populateTagDropdown();
 
-    } catch (error) {
+    } catch (error) { // This is the main outer catch
         console.error('Failed to load services:', error);
-        const mainContainer = document.querySelector('main');
-        mainContainer.innerHTML = '<p class="error-message">Failed to load services. Please try again later.</p>';
+        // mainContainer is already defined and checked at the function start
+        const errorMessage = '<p class="error-message">Failed to load services. Critical error during initialization. Please try again later.</p>';
+        mainContainer.innerHTML = errorMessage;
     }
 }
 
