@@ -2515,8 +2515,7 @@
       "3d",
       "modeling"
     ]
-  }
-,
+  },
   {
     "name": "Amazon Comprehend",
     "url": "https://aws.amazon.com/comprehend/",
@@ -3790,6 +3789,563 @@
       "video",
       "generation",
       "editing"
+    ]
+  },
+  {
+    "name": "Envirosuite",
+    "url": "https://envirosuite.com/",
+    "favicon_url": "https://envirosuite.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Persefoni",
+    "url": "https://persefoni.com/",
+    "favicon_url": "https://persefoni.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "BrainBox AI (ARIA)",
+    "url": "https://brainboxai.com/",
+    "favicon_url": "https://brainboxai.com/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Atmo (by Tomorrow.io)",
+    "url": "https://www.tomorrow.io/atmo/",
+    "favicon_url": "https://www.tomorrow.io/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "IBM Environmental Intelligence Suite",
+    "url": "https://www.ibm.com/products/environmental-intelligence-suite",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "FlyPix AI",
+    "url": "https://flypix.ai/",
+    "favicon_url": "https://flypix.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "CarbonBright",
+    "url": "https://www.carbonbright.ai/",
+    "favicon_url": "https://www.carbonbright.ai/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Infogrid",
+    "url": "https://infogrid.io/",
+    "favicon_url": "https://infogrid.io/favicon.ico",
+    "category": "💡 Energy",
+    "tags": [
+      "energy"
+    ]
+  },
+  {
+    "name": "Sylvera",
+    "url": "https://www.sylvera.com/",
+    "favicon_url": "https://www.sylvera.com/favicon.ico",
+    "category": "🌎 Climate",
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "name": "Insilico Medicine",
+    "url": "https://www.insilico.com/",
+    "favicon_url": "https://www.insilico.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Recursion Pharmaceuticals",
+    "url": "https://www.recursionpharma.com/",
+    "favicon_url": "https://www.recursionpharma.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "BenevolentAI",
+    "url": "https://www.benevolent.com/",
+    "favicon_url": "https://www.benevolent.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Exscientia",
+    "url": "https://www.exscientia.ai/",
+    "favicon_url": "https://www.exscientia.ai/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "AbCellera",
+    "url": "https://www.abcellera.com/",
+    "favicon_url": "https://www.abcellera.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Atomic AI",
+    "url": "https://atomic.ai/",
+    "favicon_url": "https://atomic.ai/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Taranis",
+    "url": "https://taranis.com/",
+    "favicon_url": "https://taranis.com/favicon.ico",
+    "category": "🌲 Agriculture",
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "name": "PrecisionHawk",
+    "url": "https://precisionhawk.com/",
+    "favicon_url": "https://precisionhawk.com/favicon.ico",
+    "category": "🌲 Agriculture",
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "name": "FarmWise",
+    "url": "https://farmwise.io/",
+    "favicon_url": "https://farmwise.io/favicon.ico",
+    "category": "🌲 Agriculture",
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "name": "Prospera",
+    "url": "https://www.prospera.ag/",
+    "favicon_url": "https://www.prospera.ag/favicon.ico",
+    "category": "🌲 Agriculture",
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "name": "Carbon Robotics",
+    "url": "https://carbonrobotics.com/",
+    "favicon_url": "https://carbonrobotics.com/favicon.ico",
+    "category": "🌲 Agriculture",
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "name": "Vortexa",
+    "url": "https://www.vortexa.com/",
+    "favicon_url": "https://www.vortexa.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Maket.ai",
+    "url": "https://maket.ai/",
+    "favicon_url": "https://maket.ai/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "ARCHITEChTURES",
+    "url": "https://architechtures.com/",
+    "favicon_url": "https://architechtures.com/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Archistar",
+    "url": "https://www.archistar.ai/",
+    "favicon_url": "https://www.archistar.ai/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Finch 3D",
+    "url": "https://finch3d.com/",
+    "favicon_url": "https://finch3d.com/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Interior AI",
+    "url": "https://interiorai.com/",
+    "favicon_url": "https://interiorai.com/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "TestFit",
+    "url": "https://testfit.io/",
+    "favicon_url": "https://testfit.io/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Autodesk Forma",
+    "url": "https://www.autodesk.com/products/forma/overview",
+    "favicon_url": "https://www.autodesk.com/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Hypar",
+    "url": "https://hypar.io/",
+    "favicon_url": "https://hypar.io/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Veras",
+    "url": "https://www.evolvelab.io/veras",
+    "favicon_url": "https://www.evolvelab.io/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "ArchitectGPT",
+    "url": "https://www.architectgpt.ai/",
+    "favicon_url": "https://www.architectgpt.ai/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Getfloorplan",
+    "url": "https://getfloorplan.com/",
+    "favicon_url": "https://getfloorplan.com/favicon.ico",
+    "category": "🔮 3D Modeling",
+    "tags": [
+      "3d",
+      "design"
+    ]
+  },
+  {
+    "name": "Soundry AI",
+    "url": "https://soundry.ai/",
+    "favicon_url": "https://soundry.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "AudioStack.ai",
+    "url": "https://audiostack.ai/",
+    "favicon_url": "https://audiostack.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Amper Music",
+    "url": "https://www.ampermusic.com/",
+    "favicon_url": "https://www.ampermusic.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "accessiBe",
+    "url": "https://accessibe.com/",
+    "favicon_url": "https://accessibe.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Be My Eyes (Be My AI)",
+    "url": "https://www.bemyeyes.com/bemyai",
+    "favicon_url": "https://www.bemyeyes.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Read Easy.AI",
+    "url": "https://readeasy.ai/",
+    "favicon_url": "https://readeasy.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Seeing AI (Microsoft)",
+    "url": "https://www.microsoft.com/en-us/ai/seeing-ai",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Voiceitt",
+    "url": "https://voiceitt.com/",
+    "favicon_url": "https://voiceitt.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Dataminr for Nonprofits",
+    "url": "https://www.dataminr.com/company/dataminr-for-nonprofits/",
+    "favicon_url": "https://www.dataminr.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Fiddler AI",
+    "url": "https://www.fiddler.ai/",
+    "favicon_url": "https://www.fiddler.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Credo AI",
+    "url": "https://credo.ai/",
+    "favicon_url": "https://credo.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "IBM Watson OpenScale",
+    "url": "https://www.ibm.com/cloud/watson-openscale",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Arthur AI",
+    "url": "https://www.arthur.ai/",
+    "favicon_url": "https://www.arthur.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Attestiv",
+    "url": "https://attestiv.com/",
+    "favicon_url": "https://attestiv.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Checkstep",
+    "url": "https://www.checkstep.com/",
+    "favicon_url": "https://www.checkstep.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "OpenText EnCase Forensic",
+    "url": "https://www.opentext.com/products/forensic",
+    "favicon_url": "https://www.opentext.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Hyperniche.ai",
+    "url": "https://hyperniche.ai/",
+    "favicon_url": "https://hyperniche.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Playform.ai",
+    "url": "https://www.playform.ai/",
+    "favicon_url": "https://www.playform.ai/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "modl.ai",
+    "url": "https://www.modl.ai/",
+    "favicon_url": "https://www.modl.ai/favicon.ico",
+    "category": "🎮 Games",
+    "tags": [
+      "games"
+    ]
+  },
+  {
+    "name": "Charisma.ai",
+    "url": "https://charisma.ai/",
+    "favicon_url": "https://charisma.ai/favicon.ico",
+    "category": "🎮 Games",
+    "tags": [
+      "games"
+    ]
+  },
+  {
+    "name": "Hippocratic AI",
+    "url": "https://www.hippocratic.ai/",
+    "favicon_url": "https://www.hippocratic.ai/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Final Round AI",
+    "url": "https://www.finalround.ai/",
+    "favicon_url": "https://www.finalround.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Oolo AI",
+    "url": "https://oolo.ai/",
+    "favicon_url": "https://oolo.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Shield AI",
+    "url": "https://shield.ai/",
+    "favicon_url": "https://shield.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Aionics",
+    "url": "https://aionics.ai/",
+    "favicon_url": "https://aionics.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "MatterGen",
+    "url": "https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "SpinQ",
+    "url": "https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence",
+    "favicon_url": "https://www.spinquanta.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
     ]
   }
 ]
