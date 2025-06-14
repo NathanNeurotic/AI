@@ -2516,4 +2516,598 @@
       "modeling"
     ]
   }
+,
+  {
+    "name": "Amazon Comprehend",
+    "url": "https://aws.amazon.com/comprehend/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Amazon Lex",
+    "url": "https://aws.amazon.com/lex/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Amazon Q Developer",
+    "url": "https://aws.amazon.com/q/developer/",
+    "favicon_url": "https://aws.amazon.com/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Anyword",
+    "url": "https://anyword.com/",
+    "favicon_url": "https://anyword.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Abridge",
+    "url": "https://abridge.com/",
+    "favicon_url": "https://abridge.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Arctic Wolf Aurora",
+    "url": "https://arcticwolf.com/aurora/",
+    "favicon_url": "https://arcticwolf.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Asana AI",
+    "url": "https://asana.com/product/ai",
+    "favicon_url": "https://asana.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Atera",
+    "url": "https://www.atera.com/",
+    "favicon_url": "https://www.atera.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Baseten",
+    "url": "https://www.baseten.co/",
+    "favicon_url": "https://www.baseten.co/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Blackbox AI",
+    "url": "https://www.useblackbox.io/",
+    "favicon_url": "https://www.useblackbox.io/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Blue Prism",
+    "url": "https://www.blueprism.com/",
+    "favicon_url": "https://www.blueprism.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Cisco Webex AI Agent",
+    "url": "https://www.webex.com/ai-agent.html",
+    "favicon_url": "https://www.webex.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Clay",
+    "url": "https://clay.earth/ai",
+    "favicon_url": "https://clay.earth/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "CodiumAI",
+    "url": "https://www.codium.ai/",
+    "favicon_url": "https://www.codium.ai/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Coactive AI",
+    "url": "https://coactive.ai/",
+    "favicon_url": "https://coactive.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Crystal",
+    "url": "https://www.crystalknows.com/ai",
+    "favicon_url": "https://www.crystalknows.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Dataiku",
+    "url": "https://www.dataiku.com/",
+    "favicon_url": "https://www.dataiku.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "DALL-E 3",
+    "url": "https://openai.com/dall-e-3",
+    "favicon_url": "https://openai.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "DeepL",
+    "url": "https://www.deepl.com/",
+    "favicon_url": "https://www.deepl.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Decagon",
+    "url": "https://www.decagon.ai/",
+    "favicon_url": "https://www.decagon.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Fireworks AI",
+    "url": "https://fireworks.ai/",
+    "favicon_url": "https://fireworks.ai/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Glean",
+    "url": "https://www.glean.com/",
+    "favicon_url": "https://www.glean.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Google Assistant API",
+    "url": "https://developers.google.com/assistant",
+    "favicon_url": "https://developers.google.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Google Cloud Natural Language AI",
+    "url": "https://cloud.google.com/natural-language",
+    "favicon_url": "https://cloud.google.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "H2O.ai",
+    "url": "https://www.h2o.ai/",
+    "favicon_url": "https://www.h2o.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Hebbia",
+    "url": "https://hebbia.ai/",
+    "favicon_url": "https://hebbia.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "HubSpot CRM with AI",
+    "url": "https://www.hubspot.com/products/crm",
+    "favicon_url": "https://www.hubspot.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "IBM Watson NLP",
+    "url": "https://www.ibm.com/watson",
+    "favicon_url": "https://www.ibm.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Kustomer",
+    "url": "https://www.kustomer.com/",
+    "favicon_url": "https://www.kustomer.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "KNIME",
+    "url": "https://www.knime.com/",
+    "favicon_url": "https://www.knime.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "LangChain",
+    "url": "https://www.langchain.com/",
+    "favicon_url": "https://www.langchain.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Lexalytics",
+    "url": "https://www.lexalytics.com/",
+    "favicon_url": "https://www.lexalytics.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Memex",
+    "url": "https://getmemex.com/",
+    "favicon_url": "https://getmemex.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Microsoft Azure AI Language",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/azure-ai-language/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Microsoft Azure Machine Learning",
+    "url": "https://azure.microsoft.com/en-us/products/machine-learning/",
+    "favicon_url": "https://azure.microsoft.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Microsoft Security Copilot",
+    "url": "https://www.microsoft.com/en-us/security-copilot",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Mintlify",
+    "url": "https://www.mintlify.com/",
+    "favicon_url": "https://www.mintlify.com/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "OpenAI API",
+    "url": "https://platform.openai.com/docs/api-reference",
+    "favicon_url": "https://openai.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "OpenEvidence",
+    "url": "https://openevidence.com/",
+    "favicon_url": "https://openevidence.com/favicon.ico",
+    "category": "💼 Legal",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "name": "Operator by OpenAI",
+    "url": "https://operator.openai.com/",
+    "favicon_url": "https://openai.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Outfunnel",
+    "url": "https://outfunnel.com/",
+    "favicon_url": "https://outfunnel.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Photoroom",
+    "url": "https://www.photoroom.com/",
+    "favicon_url": "https://www.photoroom.com/favicon.ico",
+    "category": "🎨 Image Generation and Design",
+    "tags": [
+      "image",
+      "generation",
+      "design"
+    ]
+  },
+  {
+    "name": "Pitch",
+    "url": "https://pitch.com/ai",
+    "favicon_url": "https://pitch.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "QuickBooks AI",
+    "url": "https://quickbooks.intuit.com/ai/",
+    "favicon_url": "https://quickbooks.intuit.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Quantexa",
+    "url": "https://www.quantexa.com/",
+    "favicon_url": "https://www.quantexa.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Rasa",
+    "url": "https://rasa.com/",
+    "favicon_url": "https://rasa.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Replit Ghostwriter",
+    "url": "https://replit.com/ghostwriter",
+    "favicon_url": "https://replit.com/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Scale AI",
+    "url": "https://scale.com/",
+    "favicon_url": "https://scale.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Sierra",
+    "url": "https://sierra.ai/",
+    "favicon_url": "https://sierra.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Snorkel AI",
+    "url": "https://snorkel.ai/",
+    "favicon_url": "https://snorkel.ai/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Speak",
+    "url": "https://www.speak.com/",
+    "favicon_url": "https://www.speak.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "SPOTIO",
+    "url": "https://www.spotio.com/",
+    "favicon_url": "https://www.spotio.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "StackBlitz",
+    "url": "https://stackblitz.com/",
+    "favicon_url": "https://stackblitz.com/favicon.ico",
+    "category": "💻 Coding and Development",
+    "tags": [
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "name": "Together AI",
+    "url": "https://www.together.ai/",
+    "favicon_url": "https://www.together.ai/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Vannevar Labs",
+    "url": "https://www.vannevarlabs.com/",
+    "favicon_url": "https://www.vannevarlabs.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "VAST Data",
+    "url": "https://vastdata.com/",
+    "favicon_url": "https://vastdata.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Whalesync",
+    "url": "https://www.whalesync.com/",
+    "favicon_url": "https://www.whalesync.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Workato",
+    "url": "https://www.workato.com/",
+    "favicon_url": "https://www.workato.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "World Labs",
+    "url": "https://worldlabs.org/",
+    "favicon_url": "https://worldlabs.org/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Zoho CRM (Zia)",
+    "url": "https://www.zoho.com/crm/zia/",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Zoho Desk Answer Bot",
+    "url": "https://www.zoho.com/desk/answer-bot.html",
+    "favicon_url": "https://www.zoho.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  }
 ]
