@@ -3109,5 +3109,504 @@
     "tags": [
       "specialized"
     ]
+  },
+  {
+    "name": "Hook",
+    "url": "https://hook.ai/",
+    "favicon_url": "https://hook.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "Tavus",
+    "url": "https://www.tavus.io/",
+    "favicon_url": "https://www.tavus.io/favicon.ico",
+    "category": "🎬 Video Generation and Editing",
+    "tags": [
+      "video",
+      "generation",
+      "editing"
+    ]
+  },
+  {
+    "name": "Twelve Labs",
+    "url": "https://twelvelabs.io/",
+    "favicon_url": "https://twelvelabs.io/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Datature",
+    "url": "https://datature.io/",
+    "favicon_url": "https://datature.io/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Symbl.ai",
+    "url": "https://symbl.ai/",
+    "favicon_url": "https://symbl.ai/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
+  },
+  {
+    "name": "OpenRouter",
+    "url": "https://openrouter.ai/",
+    "favicon_url": "https://openrouter.ai/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Mistral AI (La Plateforme)",
+    "url": "https://mistral.ai/news/la-plateforme/",
+    "favicon_url": "https://mistral.ai/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Cerebras",
+    "url": "https://www.cerebras.net/",
+    "favicon_url": "https://www.cerebras.net/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Groq",
+    "url": "https://groq.com/",
+    "favicon_url": "https://groq.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Scaleway Generative AI",
+    "url": "https://www.scaleway.com/en/generative-ai/",
+    "favicon_url": "https://www.scaleway.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "OVH AI Endpoints",
+    "url": "https://www.ovhcloud.com/en/ai/",
+    "favicon_url": "https://www.ovhcloud.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "Orli",
+    "url": "https://orlifertility.com/",
+    "favicon_url": "https://orlifertility.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Avandra",
+    "url": "https://www.avandra.com/",
+    "favicon_url": "https://www.avandra.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "IQVIA AI",
+    "url": "https://www.iqvia.com/solutions/innovative-models/artificial-intelligence-and-machine-learning",
+    "favicon_url": "https://www.iqvia.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Deep 6 AI",
+    "url": "https://www.deep6.ai/",
+    "favicon_url": "https://www.deep6.ai/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Artera",
+    "url": "https://www.wellapp.com/",
+    "favicon_url": "https://www.wellapp.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Laudio",
+    "url": "https://laudio.com/",
+    "favicon_url": "https://laudio.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Darktrace HEAL",
+    "url": "https://darktrace.com/products/darktrace-heal",
+    "favicon_url": "https://www.darktrace.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Deep Instinct",
+    "url": "https://www.deepinstinct.com/",
+    "favicon_url": "https://www.deepinstinct.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "CrowdStrike",
+    "url": "https://www.crowdstrike.com/",
+    "favicon_url": "https://www.crowdstrike.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Exabeam",
+    "url": "https://www.exabeam.com/",
+    "favicon_url": "https://www.exabeam.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Cylance",
+    "url": "https://www.blackberry.com/us/en/products/cylance-ai",
+    "favicon_url": "https://www.blackberry.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Tractian",
+    "url": "https://tractian.com/",
+    "favicon_url": "https://tractian.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Dataminr",
+    "url": "https://www.dataminr.com/",
+    "favicon_url": "https://www.dataminr.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Motive",
+    "url": "https://gomotive.com/",
+    "favicon_url": "https://gomotive.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Samsara",
+    "url": "https://www.samsara.com/",
+    "favicon_url": "https://www.samsara.com/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "GrayMatter Robotics",
+    "url": "https://www.graymatter-robotics.com/",
+    "favicon_url": "https://www.graymatter-robotics.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Vorto",
+    "url": "https://www.vorto.ai/",
+    "favicon_url": "https://www.vorto.ai/favicon.ico",
+    "category": "📊 Logistics",
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "name": "Originality.ai",
+    "url": "https://originality.ai/",
+    "favicon_url": "https://originality.ai/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Mailmodo",
+    "url": "https://www.mailmodo.com/",
+    "favicon_url": "https://www.mailmodo.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Zoho Zia",
+    "url": "https://www.zoho.com/zia/",
+    "favicon_url": "https://www.zoho.com/zia/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Slang.ai",
+    "url": "https://slang.ai/",
+    "favicon_url": "https://slang.ai/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Aible",
+    "url": "https://www.aible.com/",
+    "favicon_url": "https://www.aible.com/favicon.ico",
+    "category": "🔍 Research and Data Analysis",
+    "tags": [
+      "research",
+      "data",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Cloudera",
+    "url": "https://www.cloudera.com/",
+    "favicon_url": "https://www.cloudera.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "HashiCorp",
+    "url": "https://www.hashicorp.com/",
+    "favicon_url": "https://www.hashicorp.com/favicon.ico",
+    "category": "🌐 Developer Platforms and APIs",
+    "tags": [
+      "developer",
+      "platforms",
+      "apis"
+    ]
+  },
+  {
+    "name": "EliseAI",
+    "url": "https://eliseai.com/",
+    "favicon_url": "https://eliseai.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Nexthink",
+    "url": "https://www.nexthink.com/",
+    "favicon_url": "https://www.nexthink.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Flatfile",
+    "url": "https://flatfile.com/",
+    "favicon_url": "https://flatfile.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Greenlight Guru",
+    "url": "https://www.greenlight.guru/",
+    "favicon_url": "https://www.greenlight.guru/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Kensho Technologies",
+    "url": "https://kensho.com/",
+    "favicon_url": "https://kensho.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Machina Labs",
+    "url": "https://machinalabs.com/",
+    "favicon_url": "https://machinalabs.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "PwC",
+    "url": "https://www.pwc.com/",
+    "favicon_url": "https://www.pwc.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Drata",
+    "url": "https://drata.com/",
+    "favicon_url": "https://drata.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Hyperscience",
+    "url": "https://www.hyperscience.com/",
+    "favicon_url": "https://www.hyperscience.com/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Striveworks",
+    "url": "https://www.striveworks.com/",
+    "favicon_url": "https://www.striveworks.com/favicon.ico",
+    "category": "🧠 Machine Learning Platforms",
+    "tags": [
+      "machinelearning",
+      "platform"
+    ]
+  },
+  {
+    "name": "Consensus Cloud Solutions",
+    "url": "https://www.consensus.com/",
+    "favicon_url": "https://www.consensus.com/favicon.ico",
+    "category": "🩺 Healthcare",
+    "tags": [
+      "healthcare"
+    ]
+  },
+  {
+    "name": "Ascent",
+    "url": "https://www.ascent.ai/",
+    "favicon_url": "https://www.ascent.ai/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Clari",
+    "url": "https://www.clari.com/",
+    "favicon_url": "https://www.clari.com/favicon.ico",
+    "category": "💰 Financial",
+    "tags": [
+      "financial"
+    ]
+  },
+  {
+    "name": "Metropolis Technologies",
+    "url": "https://metropolis.io/",
+    "favicon_url": "https://metropolis.io/favicon.ico",
+    "category": "🤖 Specialized",
+    "tags": [
+      "specialized"
+    ]
+  },
+  {
+    "name": "Lily AI",
+    "url": "https://www.lily.ai/",
+    "favicon_url": "https://www.lily.ai/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "Riskified",
+    "url": "https://www.riskified.com/",
+    "favicon_url": "https://www.riskified.com/favicon.ico",
+    "category": "🛒 Retail",
+    "tags": [
+      "retail"
+    ]
+  },
+  {
+    "name": "3Play Media",
+    "url": "https://www.3playmedia.com/",
+    "favicon_url": "https://www.3playmedia.com/favicon.ico",
+    "category": "🔊 Audio, Music, and Speech",
+    "tags": [
+      "audio",
+      "music",
+      "speech"
+    ]
   }
 ]
