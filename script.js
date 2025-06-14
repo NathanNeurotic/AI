@@ -241,6 +241,22 @@ async function loadServices() {
 }
 
 
+function fuzzyScore(text, pattern) {
+    if (!pattern) return 0;
+    text = text.toLowerCase();
+    pattern = pattern.toLowerCase();
+    let score = 0;
+    let ti = 0;
+    for (let pi = 0; pi < pattern.length; pi++) {
+        const ch = pattern[pi];
+        const idx = text.indexOf(ch, ti);
+        if (idx === -1) return -1;
+        score += (idx === ti) ? 2 : 1;
+        ti = idx + 1;
+    }
+    return score;
+}
+
 function setupSearch() {
     const searchInput = document.getElementById('searchInput');
     if (!searchInput) return; // Guard clause if search input is not found
@@ -248,22 +264,58 @@ function setupSearch() {
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase().trim();
         const tokens = query.split(',').map(t => t.trim()).filter(Boolean);
+
         document.querySelectorAll('.service-button').forEach(button => {
+            if (query === '') {
+                button.style.display = 'flex';
+                button.dataset.score = 0;
+                return;
+            }
+
             const name = button.querySelector('.service-name').textContent.toLowerCase();
             const url = button.querySelector('.service-url').textContent.toLowerCase();
             const tagsSpan = button.querySelector('.service-tags');
+
+            let score = 0;
+            let matched = false;
             let tagsMatch = false;
             if (tagsSpan && tagsSpan.textContent) {
                 const tagsArray = tagsSpan.textContent.toLowerCase().split(',').map(tag => tag.trim());
                 if (tokens.length > 0) {
-                    tagsMatch = tokens.every(token => tagsArray.some(tag => tag.includes(token)));
+                    tagsMatch = tokens.every(token => tagsArray.some(tag => fuzzyScore(tag, token) > 0));
+                    if (tagsMatch) {
+                        score += tokens.reduce((acc, token) => {
+                            return acc + Math.max(0, Math.max(...tagsArray.map(tag => fuzzyScore(tag, token))));
+                        }, 0);
+                    }
                 } else {
-                    tagsMatch = tagsArray.some(tag => tag.includes(query));
+                    const tagScore = Math.max(...tagsArray.map(tag => fuzzyScore(tag, query)));
+                    if (tagScore > 0) {
+                        tagsMatch = true;
+                        score += tagScore;
+                    }
                 }
             }
-            const textMatch = name.includes(query) || url.includes(query);
-            // Show button if query matches name, URL, or tags
-            button.style.display = (textMatch || tagsMatch) ? 'flex' : 'none';
+
+            const nameScore = fuzzyScore(name, query);
+            const urlScore = fuzzyScore(url, query);
+            if (nameScore > 0) {
+                matched = true;
+                score += nameScore;
+            }
+            if (urlScore > 0) {
+                matched = true;
+                score += urlScore;
+            }
+            if (tagsMatch) matched = true;
+
+            if (matched) {
+                button.style.display = 'flex';
+                button.dataset.score = score;
+            } else {
+                button.style.display = 'none';
+                button.dataset.score = -1;
+            }
         });
 
         const visibleButtons = Array.from(document.querySelectorAll('.service-button'))
@@ -299,6 +351,16 @@ function setupSearch() {
                 }
             }
         });
+
+        if (query !== '') {
+            document.querySelectorAll('.category').forEach(category => {
+                const container = category.querySelector('.category-content');
+                const buttons = Array.from(container.querySelectorAll('.service-button'))
+                    .filter(btn => btn.style.display !== 'none')
+                    .sort((a, b) => parseFloat(b.dataset.score) - parseFloat(a.dataset.score));
+                buttons.forEach(btn => container.appendChild(btn));
+            });
+        }
     });
 }
 

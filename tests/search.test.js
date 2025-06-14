@@ -104,4 +104,22 @@ describe('search filtering', () => {
 
     buttons.forEach(btn => expect(btn.style.display).toBe('none'));
   });
+
+  test('handles partial and fuzzy matches', () => {
+    const buttons = document.querySelectorAll('.service-button');
+    const [alphaBtn, betaBtn] = buttons;
+
+    searchInput.value = 'alp';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+    expect(alphaBtn.style.display).toBe('flex');
+    expect(betaBtn.style.display).toBe('none');
+
+    searchInput.value = 'ne';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+    expect(alphaBtn.style.display).toBe('flex');
+
+    searchInput.value = 'ne, cat';
+    searchInput.dispatchEvent(new window.Event('input', { bubbles: true }));
+    expect(alphaBtn.style.display).toBe('flex');
+  });
 });
