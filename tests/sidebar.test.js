@@ -37,9 +37,9 @@ describe('sidebar navigation', () => {
     expect(links[0].getAttribute('href')).toBe('#favorites');
     expect(links[0].textContent).toBe('Favorites');
     expect(links[1].getAttribute('href')).toBe('#alpha');
-    expect(links[1].textContent).toBe('Alpha');
+    expect(links[1].textContent).toBe('Alpha(1)');
     expect(links[2].getAttribute('href')).toBe('#beta');
-    expect(links[2].textContent).toBe('Beta');
+    expect(links[2].textContent).toBe('Beta(1)');
     expect(links[3].getAttribute('href')).toBe('https://www.github.com/NathanNeurotic/AI');
   });
 
