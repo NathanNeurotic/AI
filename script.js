@@ -273,9 +273,11 @@ async function loadServices() {
         populateTagDropdown();
 
     } catch (error) { // This is the main outer catch
-        console.error('Failed to load services (outer catch):', error);
+
+        console.error('Failed to load services:', error);
         // mainContainer is already defined and checked at the function start
-        mainContainer.innerHTML = `<p class="error-message">An unexpected error occurred while displaying services: ${error.message}.</p>`;
+        const errorMessage = '<p class="error-message">Failed to load services. Critical error during initialization. Please try again later.</p>';
+        mainContainer.innerHTML = errorMessage;
     }
 }
 
