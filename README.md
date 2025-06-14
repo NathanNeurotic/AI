@@ -53,8 +53,16 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
     ```
     *(Replace `your-repository-name` with the actual directory name).*
 
-3.  **Open the site:**
-    Simply open the `index.html` file in your web browser. No special server is needed as it's a static website.
+3.  **Open the site with a local server:**
+    Features like the service worker and the install button only work when the page is served over HTTP.
+    You can start a simple server from the project directory with:
+    ```bash
+    npx serve .
+    # or
+    python -m http.server
+    ```
+    Then visit the displayed URL (typically http://localhost:3000 or :8000).
+    Opening `index.html` directly will disable PWA install features.
 
 ### Running Tests
 
