@@ -1627,7 +1627,7 @@
     "name": "Veo",
     "url": "https://deepmind.google/technologies/veo/",
     "favicon_url": "https://deepmind.google/favicon.ico",
-    "category": "✨ Google Ecosystem",
+    "category": "🎬 Video Generation and Editing",
     "tags": [
       "google",
       "ecosystem"
@@ -2555,17 +2555,6 @@
     "name": "Veed.io",
     "url": "https://www.veed.io/",
     "favicon_url": "https://www.veed.io/favicon.ico",
-    "category": "🎬 Video Generation and Editing",
-    "tags": [
-      "video",
-      "generation",
-      "editing"
-    ]
-  },
-  {
-    "name": "Veo-2",
-    "url": "https://deepmind.google/technologies/veo/",
-    "favicon_url": "https://deepmind.google/favicon.ico",
     "category": "🎬 Video Generation and Editing",
     "tags": [
       "video",
