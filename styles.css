@@ -143,21 +143,37 @@ header {
 body {
     top: 0 !important;
 }
-.goog-te-combo {
+.goog-te-gadget {
+    font-size: 0; /* hide default label text */
+}
+
+#google_translate_element {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#google_translate_element .goog-te-combo {
     background: none;
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 0.5rem !important;
-    width: 4.5rem !important; /* reduce dropdown width */
+    font-size: 0.55rem !important;
+    width: 5rem !important;
     padding: 0.05rem 0.15rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-body.mobile-view .goog-te-combo {
-    font-size: 0.45rem;
+body.mobile-view #google_translate_element .goog-te-combo {
+    font-size: 0.5rem;
     padding: 0.05rem 0.15rem;
+}
+
+.goog-te-menu-frame {
+    transform: scale(0.85);
+    transform-origin: top left;
 }
 
 
