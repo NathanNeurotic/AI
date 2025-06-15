@@ -91,19 +91,6 @@
     ]
   },
   {
-    "name": "Blue Vision Labs (acquired by Lyft)",
-    "url": "(Service integrated into Lyft)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "acquired",
-      "blue",
-      "environmental",
-      "lyft",
-      "vision"
-    ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
-  },
-  {
     "name": "Carbon Chain",
     "url": "https://carbonchain.com/",
     "favicon_url": "https://carbonchain.com/favicon.ico",
@@ -923,17 +910,6 @@
       "music",
       "speech"
     ]
-  },
-  {
-    "name": "AnimeDiffusion",
-    "url": "(Often community-run or API-based, e.g., on Hugging Face)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "animediffusion",
-      "art",
-      "generative"
-    ],
-    "category": "🎨 Media & Generative Creativity"
   },
   {
     "name": "Apple Music (AI for recommendations)",
@@ -1923,32 +1899,6 @@
     ]
   },
   {
-    "name": "Microsoft Photo Editor (AI features)",
-    "url": "(Integrated into Windows Photos app)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "editor",
-      "image",
-      "microsoft",
-      "photo"
-    ],
-    "category": "🎨 Media & Generative Creativity"
-  },
-  {
-    "name": "Microsoft Project Cortex (SharePoint Syntex)",
-    "url": "(now integrated into Microsoft 365 services as part of Microsoft Viva Topics)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "cortex",
-      "knowledge",
-      "microsoft",
-      "project",
-      "sharepoint",
-      "syntex"
-    ],
-    "category": "🎨 Media & Generative Creativity"
-  },
-  {
     "name": "MidJourney",
     "url": "https://www.midjourney.com/explore?tab=top_month",
     "favicon_url": "https://www.midjourney.com/favicon.ico",
@@ -2464,19 +2414,6 @@
       "generation",
       "design"
     ]
-  },
-  {
-    "name": "Spotify Podcast AI (Ad Insertion, Transcripts)",
-    "url": "(Integrated into platform)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "audio",
-      "insertion",
-      "podcast",
-      "spotify",
-      "transcripts"
-    ],
-    "category": "🎨 Media & Generative Creativity"
   },
   {
     "name": "Stability AI Clipdrop",
@@ -3678,21 +3615,6 @@
       "maritime",
       "oceanography"
     ]
-  },
-  {
-    "name": "Apple Keyboard (Predictive Text, Autocorrect)",
-    "url": "(Integrated into iOS/macOS)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "apple",
-      "autocorrect",
-      "keyboard",
-      "nlp",
-      "predictive",
-      "productivity",
-      "text"
-    ],
-    "category": "💬 Language, Communication & Interaction"
   },
   {
     "name": "Azure AI Speech",
@@ -7887,18 +7809,6 @@
     "tags": [
       "legal"
     ]
-  },
-  {
-    "name": "TikTok Content Moderation (AI for harmful content)",
-    "url": "(Internal systems)",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "content",
-      "harmful",
-      "moderation",
-      "tiktok"
-    ],
-    "category": "🧩 Miscellaneous / Specialized"
   },
   {
     "name": "Together AI",
