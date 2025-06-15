@@ -6111,7 +6111,7 @@
     "name": "AI21 Labs",
     "url": "https://www.ai21.com/",
     "favicon_url": "https://www.ai21.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6127,13 +6127,13 @@
       "codecatalyst",
       "developer"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "🧠 Core AI Technologies"
   },
   {
     "name": "Amazon Comprehend",
     "url": "https://aws.amazon.com/comprehend/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6144,7 +6144,7 @@
     "name": "Amazon Lex",
     "url": "https://aws.amazon.com/lex/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6155,7 +6155,7 @@
     "name": "Amazon Q Business",
     "url": "https://aws.amazon.com/q/business/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💬 Language, Communication & Interaction",
     "tags": [
       "assistant",
       "business"
@@ -6165,7 +6165,7 @@
     "name": "Amazon Q Developer",
     "url": "https://aws.amazon.com/q/developer/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "coding",
       "development"
@@ -6187,7 +6187,7 @@
     "name": "Amazon SageMaker",
     "url": "https://aws.amazon.com/sagemaker/",
     "favicon_url": "https://aws.amazon.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6237,7 +6237,7 @@
     "name": "Attestiv",
     "url": "https://attestiv.com/",
     "favicon_url": "https://attestiv.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6246,7 +6246,7 @@
     "name": "Azure AI Bot Service",
     "url": "https://azure.microsoft.com/en-us/products/bot-services/",
     "favicon_url": "https://azure.microsoft.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6257,7 +6257,7 @@
     "name": "Azure AI Services",
     "url": "https://azure.microsoft.com/en-us/products/ai-services/",
     "favicon_url": "https://azure.microsoft.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6323,7 +6323,7 @@
     "name": "Casetext",
     "url": "https://www.casetext.com/",
     "favicon_url": "https://www.casetext.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6337,7 +6337,7 @@
       "cocounsel",
       "legal"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Character AI",
@@ -6370,7 +6370,7 @@
     "name": "Checkstep",
     "url": "https://www.checkstep.com/",
     "favicon_url": "https://www.checkstep.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6411,7 +6411,7 @@
     "name": "Clarifai",
     "url": "https://www.clarifai.com/",
     "favicon_url": "https://www.clarifai.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6422,7 +6422,7 @@
     "name": "Clio",
     "url": "https://www.clio.com/",
     "favicon_url": "https://www.clio.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6471,7 +6471,7 @@
     "name": "Cohere",
     "url": "https://cohere.com/",
     "favicon_url": "https://cohere.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6506,13 +6506,13 @@
       "device",
       "ml"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "🧠 Core AI Technologies"
   },
   {
     "name": "Cortical",
     "url": "https://www.cortical.io/",
     "favicon_url": "https://www.cortical.io/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6533,7 +6533,7 @@
     "name": "Databricks (Mosaic AI)",
     "url": "https://www.databricks.com/product/ai",
     "favicon_url": "https://www.databricks.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6544,7 +6544,7 @@
     "name": "DataRobot",
     "url": "https://www.datarobot.com/",
     "favicon_url": "https://www.datarobot.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6579,7 +6579,7 @@
       "disco",
       "legal"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "DocJuris",
@@ -6589,13 +6589,13 @@
       "docjuris",
       "legal"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Everlaw",
     "url": "https://www.everlaw.com/",
     "favicon_url": "https://www.everlaw.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6609,13 +6609,13 @@
       "everlaw",
       "legal"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💬 Language, Communication & Interaction"
   },
   {
     "name": "Evisort",
     "url": "https://www.evisort.com/",
     "favicon_url": "https://cdn.prod.website-files.com/63355c7f6c38375bc02dae6c/63b5a54f29eff824088a6624_evisort-favicon.png",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6655,7 +6655,7 @@
     "name": "Fireworks AI",
     "url": "https://fireworks.ai/",
     "favicon_url": "https://fireworks.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6684,7 +6684,7 @@
     "name": "Gemini API Docs (Garden)",
     "url": "https://ai.google.dev/gemini-api/docs?utm_source=gfd&amp;utm_medium=referral&amp;utm_campaign=ai_logo_garden&amp;utm_content",
     "favicon_url": "https://ai.google.dev/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6695,7 +6695,7 @@
     "name": "Gemini Nano (Android)",
     "url": "https://developer.android.com/ai/gemini-nano",
     "favicon_url": "https://developer.android.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6736,7 +6736,7 @@
     "name": "Google AI Edge",
     "url": "https://ai.google.dev/edge",
     "favicon_url": "https://ai.google.dev/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6747,7 +6747,7 @@
     "name": "Google AI Studio",
     "url": "https://aistudio.google.com/prompts/new_chat",
     "favicon_url": "https://aistudio.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6758,7 +6758,7 @@
     "name": "Google AI Studio (Garden)",
     "url": "https://aistudio.google.com/app/prompts/new_chat?utm_source=gfd&amp;utm_medium=referral&amp;utm_campaign=home_garden&amp;utm_content=",
     "favicon_url": "https://aistudio.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6769,7 +6769,7 @@
     "name": "Google Assistant API",
     "url": "https://developers.google.com/assistant",
     "favicon_url": "https://developers.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6780,7 +6780,7 @@
     "name": "Google Cloud Shell",
     "url": "https://shell.cloud.google.com/",
     "favicon_url": "https://shell.cloud.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6791,7 +6791,7 @@
     "name": "Google Cloud Solutions Catalog",
     "url": "https://console.cloud.google.com/products/solutions/catalog?inv=1&amp;invt=Aby_hw&amp;project=engaged-timing-jxcbk",
     "favicon_url": "https://console.cloud.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6813,7 +6813,7 @@
     "name": "Google Developers",
     "url": "https://developers.google.com/",
     "favicon_url": "https://developers.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6833,7 +6833,7 @@
     "name": "Google Home Projects Console",
     "url": "https://console.home.google.com/projects?pli=1",
     "favicon_url": "https://console.home.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6859,7 +6859,7 @@
     "name": "Google Vertex AI",
     "url": "https://console.cloud.google.com/vertex-ai/studio/overview",
     "favicon_url": "https://console.cloud.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6870,7 +6870,7 @@
     "name": "Google Vertex AI Studio (Engaged)",
     "url": "https://console.cloud.google.com/vertex-ai/studio/overview?inv=1&amp;invt=Aby_kQ&amp;project=engaged-timing-jxcbk",
     "favicon_url": "https://console.cloud.google.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6909,7 +6909,7 @@
     "name": "Harvey",
     "url": "https://www.harvey.ai/",
     "favicon_url": "https://www.harvey.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -6918,7 +6918,7 @@
     "name": "HashiCorp",
     "url": "https://www.hashicorp.com/",
     "favicon_url": "https://www.hashicorp.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6958,7 +6958,7 @@
     "name": "Hume AI",
     "url": "https://www.hume.ai/",
     "favicon_url": "https://www.hume.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -6991,7 +6991,7 @@
     "name": "Inflection AI",
     "url": "https://developers.inflection.ai/login",
     "favicon_url": "https://developers.inflection.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "allinone"
     ]
@@ -7028,7 +7028,7 @@
     "name": "Ironclad",
     "url": "https://ironcladapp.com/",
     "favicon_url": "https://ironcladapp.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7080,7 +7080,7 @@
       "legal",
       "litera"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Klarna AI",
@@ -7104,7 +7104,7 @@
     "name": "LangChain",
     "url": "https://www.langchain.com/",
     "favicon_url": "https://www.langchain.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7115,7 +7115,7 @@
     "name": "Lawgeex",
     "url": "https://www.lawgeex.com/",
     "favicon_url": "https://www.lawgeex.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7124,7 +7124,7 @@
     "name": "Lawyer.com AI",
     "url": "https://www.lawyer.com/ai/",
     "favicon_url": "https://www.lawyer.com/ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7133,7 +7133,7 @@
     "name": "LEGALFLY",
     "url": "https://www.legalfly.com/",
     "favicon_url": "https://cdn.prod.website-files.com/66f3b6326b31e9f8d22fe5b8/66f6e0dfcf563b42ac22fa56_Icon.png",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7146,13 +7146,13 @@
       "legal",
       "legalzoom"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Legly",
     "url": "https://www.legly.io/",
     "favicon_url": "https://static.wixstatic.com/media/229713_8c0c15a0207748f98a5900a162c0b89b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/229713_8c0c15a0207748f98a5900a162c0b89b%7Emv2.png",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7171,7 +7171,7 @@
     "name": "Lexalytics",
     "url": "https://www.lexalytics.com/",
     "favicon_url": "https://www.lexalytics.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7186,7 +7186,7 @@
       "legal",
       "lexion"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Luma AI Genie",
@@ -7205,7 +7205,7 @@
       "legal",
       "luminance"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Mercor",
@@ -7266,7 +7266,7 @@
     "name": "Minimax",
     "url": "https://www.minimax.io/",
     "favicon_url": "https://www.minimax.io/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7305,7 +7305,7 @@
     "name": "Mistral AI (La Plateforme)",
     "url": "https://mistral.ai/news/la-plateforme/",
     "favicon_url": "https://mistral.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7357,7 +7357,7 @@
     "name": "NexLaw",
     "url": "https://www.nexlaw.ai/",
     "favicon_url": "https://www.nexlaw.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7419,7 +7419,7 @@
     "name": "Ollama",
     "url": "https://ollama.com/",
     "favicon_url": "https://ollama.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7430,7 +7430,7 @@
     "name": "Ontra",
     "url": "https://www.ontra.ai/",
     "favicon_url": "https://www.ontra.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7439,7 +7439,7 @@
     "name": "OpenAI API",
     "url": "https://platform.openai.com/docs/api-reference",
     "favicon_url": "https://openai.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7460,7 +7460,7 @@
     "name": "OpenEvidence",
     "url": "https://openevidence.com/",
     "favicon_url": "https://openevidence.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7469,7 +7469,7 @@
     "name": "OpenRouter",
     "url": "https://openrouter.ai/",
     "favicon_url": "https://openrouter.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7480,7 +7480,7 @@
     "name": "OpenText EnCase Forensic",
     "url": "https://www.opentext.com/products/forensic",
     "favicon_url": "https://www.opentext.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7489,7 +7489,7 @@
     "name": "OVH AI Endpoints",
     "url": "https://www.ovhcloud.com/en/ai/",
     "favicon_url": "https://www.ovhcloud.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7657,7 +7657,7 @@
     "name": "Rasa",
     "url": "https://rasa.com/",
     "favicon_url": "https://rasa.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7693,7 +7693,7 @@
       "legal",
       "relativity"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Replit",
@@ -7733,7 +7733,7 @@
       "legal",
       "reveal"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "💼 Enterprise & Productivity Solutions"
   },
   {
     "name": "Roofstock",
@@ -7805,7 +7805,7 @@
     "name": "Slang.ai",
     "url": "https://slang.ai/",
     "favicon_url": "https://slang.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💬 Language, Communication & Interaction",
     "tags": [
       "voiceassistant",
       "multilingual"
@@ -7815,7 +7815,7 @@
     "name": "Spellbook",
     "url": "https://www.spellbook.legal/",
     "favicon_url": "https://cdn.prod.website-files.com/66fc4a00d70e086034b6699f/67194c71632aa74c8b08c797_favicon.png",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7834,7 +7834,7 @@
     "name": "Stability AI",
     "url": "https://stability.ai/",
     "favicon_url": "https://stability.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7906,7 +7906,7 @@
     "name": "ThoughtRiver",
     "url": "https://www.thoughtriver.com/",
     "favicon_url": "https://www.thoughtriver.com/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "legal"
     ]
@@ -7927,7 +7927,7 @@
     "name": "Together AI",
     "url": "https://www.together.ai/",
     "favicon_url": "https://www.together.ai/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
@@ -7947,7 +7947,7 @@
     "name": "Twelve Labs",
     "url": "https://twelvelabs.io/",
     "favicon_url": "https://twelvelabs.io/favicon.ico",
-    "category": "🧩 Miscellaneous / Specialized",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "developer",
       "platforms",
