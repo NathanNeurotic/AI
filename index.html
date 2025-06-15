@@ -35,11 +35,8 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </button>
         <button id="installBtn" aria-label="Install app" title="Install app">Install App</button>
-        <div class="translate-widget">
-            <select id="languageSelect" aria-label="Select language"></select>
-        </div>
     </header>
-    <div id="google_translate_element" style="display: none"></div>
+    <div id="google_translate_element"></div>
     <main>
         <div class="search-container">
             <input id="searchInput" type="text" placeholder="Search services..." aria-label="Search AI services" list="tagOptions" />
@@ -61,27 +58,6 @@
     </div>
     <script src="./script.js"></script>
     <script>
-      function setupLanguageSelect() {
-        const googleSelect = document.querySelector('#google_translate_element .goog-te-combo');
-        const customSelect = document.getElementById('languageSelect');
-        if (!googleSelect || !customSelect) {
-          return;
-        }
-        if (googleSelect.options.length === 0) {
-          setTimeout(setupLanguageSelect, 50);
-          return;
-        }
-        customSelect.innerHTML = '';
-        Array.from(googleSelect.options).forEach(opt => {
-          customSelect.appendChild(opt.cloneNode(true));
-        });
-        customSelect.value = googleSelect.value;
-        customSelect.addEventListener('change', () => {
-          googleSelect.value = customSelect.value;
-          googleSelect.dispatchEvent(new Event('change'));
-        });
-      }
-
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {
@@ -90,7 +66,6 @@
           },
           'google_translate_element'
         );
-        setupLanguageSelect();
       }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

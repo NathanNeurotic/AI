@@ -33,24 +33,23 @@ describe('google translate dropdown', () => {
     dom.window.close();
   });
 
-  test('dropdown populated after init', () => {
-    const customSelect = document.getElementById('languageSelect');
-    expect(customSelect.options.length).toBe(0);
+  test('google widget populated after init', () => {
+    const container = document.getElementById('google_translate_element');
+    expect(container.querySelector('.goog-te-combo')).toBeNull();
 
     window.googleTranslateElementInit();
 
-    expect(customSelect.options.length).toBe(2);
-    const googleSelect = document.querySelector('#google_translate_element .goog-te-combo');
+    const googleSelect = container.querySelector('.goog-te-combo');
     expect(googleSelect).not.toBeNull();
+    expect(googleSelect.options.length).toBe(2);
   });
 
-  test('selecting language updates google widget', () => {
+  test('selecting language updates value', () => {
     window.googleTranslateElementInit();
-    const customSelect = document.getElementById('languageSelect');
     const googleSelect = document.querySelector('#google_translate_element .goog-te-combo');
 
-    customSelect.value = 'es';
-    customSelect.dispatchEvent(new window.Event('change'));
+    googleSelect.value = 'es';
+    googleSelect.dispatchEvent(new window.Event('change'));
 
     expect(googleSelect.value).toBe('es');
   });
