@@ -81,6 +81,7 @@ header {
     text-align: center;
     border-bottom: 2px solid var(--text-color);
     box-shadow: 0 0 10px rgba(102, 178, 102, 0.3);
+    position: relative;
 }
 
 .toggle-button {
@@ -136,9 +137,13 @@ header {
 .translate-widget {
     display: inline-flex;
     align-items: center;
-    margin-left: 0.5rem;
     vertical-align: middle;
     font-size: 0.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin-left: 0;
+    z-index: 1000;
 }
 
 .translate-widget select {
@@ -146,15 +151,15 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 0.8rem;
-    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 body.mobile-view .translate-widget select {
-    font-size: 0.6rem;
-    padding: 0.1rem 0.2rem;
+    font-size: 0.5rem;
+    padding: 0.05rem 0.15rem;
 }
 
 #expandAllBtn,
