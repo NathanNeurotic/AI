@@ -634,7 +634,7 @@
     "name": "Veo",
     "url": "https://deepmind.google/technologies/veo/",
     "favicon_url": "https://deepmind.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "🎨 Media & Generative Creativity",
     "tags": [
       "google",
       "ecosystem"
@@ -2736,17 +2736,6 @@
     "name": "Veed.io",
     "url": "https://www.veed.io/",
     "favicon_url": "https://www.veed.io/favicon.ico",
-    "category": "🎨 Media & Generative Creativity",
-    "tags": [
-      "video",
-      "generation",
-      "editing"
-    ]
-  },
-  {
-    "name": "Veo-2",
-    "url": "https://deepmind.google/technologies/veo/",
-    "favicon_url": "https://deepmind.google/favicon.ico",
     "category": "🎨 Media & Generative Creativity",
     "tags": [
       "video",
