@@ -72,7 +72,8 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
 
 ### Running Tests
 
-If you have Node.js installed (version 18 or newer), first install the dev dependencies:
+If you have Node.js installed (version 18 or newer), **run `npm install` first** to install the dev dependencies.
+Skipping this step will cause `npm test` to fail.
 *Note: The tests require Node.js version 18 or later.*
 
 ```bash
@@ -90,13 +91,16 @@ They cover category toggling and the search filtering behavior.
 
 ### Linting
 
-Ensure dependencies are installed with `npm install` and run ESLint to check for code quality issues:
+As with testing, make sure you have run `npm install` before linting.
+Then run ESLint to check for code quality issues:
 
 ```bash
 npm run lint
 ```
 
 The configuration uses the recommended rules for browser environments and includes overrides for the test suite.
+If you encounter errors about mismatched ESLint versions, you might be using a globally installed `eslint`.
+Use the local copy via `npm run lint` or `npx eslint` instead.
 
 ## Using Favorites
 
