@@ -28,27 +28,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const installBtn = document.getElementById('installBtn');
     if (installBtn) {
+        console.log('Attempting to set installBtn style to none initially.');
         installBtn.style.display = 'none';
+        console.log('Install button initial display set to:', installBtn.style.display);
         installBtn.addEventListener('click', async () => {
             if (!deferredPrompt) return;
             deferredPrompt.prompt();
             await deferredPrompt.userChoice;
             deferredPrompt = null;
             installBtn.style.display = 'none';
+            console.log('Install button display set to: none - prompt dismissed');
         });
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
+        console.log('beforeinstallprompt event fired');
         e.preventDefault();
         deferredPrompt = e;
         if (installBtn) {
             installBtn.style.display = 'inline-block';
+            console.log('Install button display set to: inline-block');
         }
     });
 
     window.addEventListener('appinstalled', () => {
         if (installBtn) {
             installBtn.style.display = 'none';
+            console.log('Install button display set to: none - app installed');
         }
         deferredPrompt = null;
     });

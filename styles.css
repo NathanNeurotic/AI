@@ -131,7 +131,6 @@ header {
     cursor: pointer;
     margin-top: 1rem;
     margin-left: 0.5rem;
-    display: none;
 }
 
 
@@ -159,20 +158,27 @@ body {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 0.55rem !important;
-    width: 5rem !important;
-    padding: 0.05rem 0.15rem;
+    font-size: 0.5rem;
+    width: 4rem;
+    padding: 0.1rem 0.2rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 body.mobile-view #google_translate_element .goog-te-combo {
-    font-size: 0.5rem;
-    padding: 0.05rem 0.15rem;
+    font-size: 0.5rem; /* Consistent with the general rule */
+    padding: 0.1rem 0.2rem; /* Consistent with the general rule */
+}
+
+#google_translate_element .goog-te-combo:hover,
+#google_translate_element .goog-te-combo:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(95, 170, 111, 0.4);
 }
 
 .goog-te-menu-frame {
-    transform: scale(0.85);
+    transform: scale(0.8);
     transform-origin: top left;
 }
 
