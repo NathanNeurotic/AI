@@ -139,7 +139,7 @@ header {
     align-items: center;
     vertical-align: middle;
     font-size: 0.7rem;
-    position: fixed;
+    position: absolute;
     top: 0.5rem;
     right: 0.5rem;
     margin-left: 0;
@@ -155,6 +155,17 @@ header {
     padding: 0.05rem 0.15rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Hide default Google banner and shrink dropdown */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0 !important;
+}
+.goog-te-combo {
+    font-size: 0.5rem !important;
 }
 
 body.mobile-view .translate-widget select {
