@@ -127,6 +127,12 @@ header {
     display: none;
 }
 
+.translate-widget {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
 #expandAllBtn,
 #collapseAllBtn {
     background: none;
