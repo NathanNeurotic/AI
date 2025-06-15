@@ -131,13 +131,16 @@ The AI Services Dashboard is built with standard HTML, CSS, and JavaScript. Here
 Service data is stored in `services.json`. To add a new service or update an existing one:
 
 1.  Open `services.json` in a text editor.
-2.  Add or edit an object in the JSON array with the fields `name`, `url`, `favicon_url`, and `category`. Optionally include `tags` for improved search results and a `thumbnail_url` to display a preview image.
+2.  Add or edit an object in the JSON array with the fields `name`, `url`, `favicon_url`, and either `category` or `categories`. Use `category` when a service belongs to a single category, or `categories` to specify multiple category names. Optionally include `tags` for improved search results and a `thumbnail_url` to display a preview image.
     ```json
     {
         "name": "Example Service",
         "url": "https://example.com/",
         "favicon_url": "https://example.com/favicon.ico",
-        "category": "My Category",
+        "categories": [
+            "💬 Language, Communication & Interaction",
+            "💼 Enterprise & Productivity Solutions"
+        ],
         "tags": ["example", "demo"],
         "thumbnail_url": "https://example.com/thumb.png"
     }
