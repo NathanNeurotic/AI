@@ -3718,18 +3718,6 @@
   },
   {
     "name": "Character.ai",
-    "url": "[suspicious link removed]",
-    "favicon_url": "./favicon.ico",
-    "tags": [
-      "character",
-      "language",
-      "large",
-      "models"
-    ],
-    "category": "💬 Language, Communication & Interaction"
-  },
-  {
-    "name": "Character.ai",
     "url": "https://character.ai/",
     "favicon_url": "https://character.ai/favicon.ico",
     "tags": [
