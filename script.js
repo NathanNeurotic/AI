@@ -1007,3 +1007,39 @@ window.collapseAllCategories = collapseAllCategories;
 window.clearSearch = clearSearch;
 window.setupSidebarHighlighting = setupSidebarHighlighting;
 
+/* global google */
+
+function setupLanguageSelect() {
+    const googleSelect = document.querySelector('#google_translate_element .goog-te-combo');
+    const customSelect = document.getElementById('languageSelect');
+    if (!googleSelect || !customSelect) {
+        return;
+    }
+    if (googleSelect.options.length === 0) {
+        setTimeout(setupLanguageSelect, 50);
+        return;
+    }
+    customSelect.innerHTML = '';
+    Array.from(googleSelect.options).forEach(opt => {
+        customSelect.appendChild(opt.cloneNode(true));
+    });
+    customSelect.value = googleSelect.value;
+    customSelect.addEventListener('change', () => {
+        googleSelect.value = customSelect.value;
+        googleSelect.dispatchEvent(new Event('change'));
+    });
+}
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        'google_translate_element'
+    );
+    setupLanguageSelect();
+}
+
+window.googleTranslateElementInit = googleTranslateElementInit;
+

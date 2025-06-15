@@ -144,8 +144,6 @@ header {
     right: 0.5rem;
     margin-left: 0;
     z-index: 1000;
-    transform: scale(0.8); /* shrink Google Translate widget */
-    transform-origin: top right;
 }
 
 .translate-widget select {
@@ -154,6 +152,7 @@ header {
     color: var(--text-color);
     font-family: var(--font-family);
     font-size: 0.5rem;
+    width: 4.5rem;
     padding: 0.05rem 0.15rem;
     border-radius: 5px;
     cursor: pointer;
