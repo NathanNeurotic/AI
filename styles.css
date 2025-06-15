@@ -128,9 +128,27 @@ header {
 }
 
 .translate-widget {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin-left: 0.5rem;
+    vertical-align: middle;
     font-size: 0.8rem;
+}
+
+.translate-widget select {
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.mobile-view .translate-widget select {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
 }
 
 #expandAllBtn,
