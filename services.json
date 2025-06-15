@@ -6080,7 +6080,7 @@
       "rekognition",
       "vision"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "🧠 Core AI Technologies"
   },
   {
     "name": "Amazon SageMaker",
@@ -6752,7 +6752,7 @@
       "rankbrain",
       "search"
     ],
-    "category": "🧩 Miscellaneous / Specialized"
+    "category": "🧠 Core AI Technologies"
   },
   {
     "name": "Google Vertex AI",
