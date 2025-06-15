@@ -7,7 +7,8 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "npx serve ."
   },
   "devDependencies": {
     "eslint": "^8.57.1",
