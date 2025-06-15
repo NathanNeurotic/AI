@@ -155,13 +155,21 @@ async function loadServices() {
         const existingCategories = mainContainer.querySelectorAll('.category');
         existingCategories.forEach(cat => cat.remove());
 
-        // Group services by category
+        // Group services by category. Support `category` as a string or
+        // `categories` as an array. When an array is provided, add the service
+        // to each category listed.
         const categories = services.reduce((acc, service) => {
-            const category = service.category;
-            if (!acc[category]) {
-                acc[category] = [];
+            let cats = service.categories || service.category;
+            if (!cats) return acc;
+            if (!Array.isArray(cats)) {
+                cats = [cats];
             }
-            acc[category].push(service);
+            cats.forEach(cat => {
+                if (!acc[cat]) {
+                    acc[cat] = [];
+                }
+                acc[cat].push(service);
+            });
             return acc;
         }, {});
 

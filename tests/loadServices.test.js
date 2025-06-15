@@ -24,7 +24,13 @@ describe('loadServices', () => {
         category: 'Banana',
         thumbnail_url: 'thumb-one.png'
       },
-      { name: 'Two', url: 'http://two.com', favicon_url: 'two.ico', category: 'Apple' }
+      { name: 'Two', url: 'http://two.com', favicon_url: 'two.ico', category: 'Apple' },
+      {
+        name: 'Multi',
+        url: 'http://multi.com',
+        favicon_url: 'multi.ico',
+        categories: ['Apple', 'Banana']
+      }
     ];
 
     window.fetch = jest.fn(() =>
@@ -73,5 +79,14 @@ describe('loadServices', () => {
     const thumb = target.querySelector('img.service-thumbnail');
     expect(thumb).not.toBeNull();
     expect(thumb.getAttribute('src')).toBe('thumb-one.png');
+  });
+
+  test('services with multiple categories render in all specified sections', () => {
+    const appleSection = document.getElementById('apple');
+    const bananaSection = document.getElementById('banana');
+    const appleNames = Array.from(appleSection.querySelectorAll('.service-name')).map(n => n.textContent);
+    const bananaNames = Array.from(bananaSection.querySelectorAll('.service-name')).map(n => n.textContent);
+    expect(appleNames).toContain('Multi');
+    expect(bananaNames).toContain('Multi');
   });
 });
