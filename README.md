@@ -54,7 +54,12 @@ Follow these instructions to get a local copy of the AI Services Dashboard up an
     ```
     *(Replace `your-repository-name` with the actual directory name).*
 
-3.  **Open the site with a local server:**
+3.  **Install dependencies (required for linting and testing):**
+    ```bash
+    npm install
+    ```
+
+4.  **Open the site with a local server:**
     Features like the service worker and the install button only work when the page is served over HTTP.
     You can start a simple server from the project directory with:
     ```bash
@@ -85,7 +90,7 @@ They cover category toggling and the search filtering behavior.
 
 ### Linting
 
-Run ESLint to check for code quality issues:
+Ensure dependencies are installed with `npm install` and run ESLint to check for code quality issues:
 
 ```bash
 npm run lint
