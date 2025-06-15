@@ -31,7 +31,7 @@
     "name": "AI Google",
     "url": "https://ai.google/",
     "favicon_url": "https://ai.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "google",
       "ecosystem"
@@ -42,7 +42,6 @@
     "url": "https://www.amazon.com/",
     "favicon_url": "https://www.amazon.com/favicon.ico",
     "categories": [
-      "🌱 Environmental, Agricultural & Climate Solutions",
       "🛒 Commerce, Retail & Logistics"
     ],
     "tags": [
@@ -51,7 +50,7 @@
       "commerce",
       "recommendation"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🛒 Commerce, Retail & Logistics"
   },
   {
     "name": "AMP Robotics",
@@ -74,7 +73,7 @@
       "maps",
       "navigation"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🧩 Miscellaneous / Specialized"
   },
   {
     "name": "Atmo (by Tomorrow.io)",
@@ -190,7 +189,7 @@
     "name": "Google Cloud",
     "url": "https://cloud.google.com/",
     "favicon_url": "https://cloud.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "google",
       "ecosystem"
@@ -200,7 +199,7 @@
     "name": "Google Code",
     "url": "https://code.google.com/",
     "favicon_url": "https://code.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "google",
       "ecosystem"
@@ -210,7 +209,7 @@
     "name": "Google Code Archive",
     "url": "https://code.google.com/archive/",
     "favicon_url": "https://code.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "google",
       "ecosystem"
@@ -220,7 +219,7 @@
     "name": "Google DeepMind",
     "url": "https://deepmind.google/",
     "favicon_url": "https://deepmind.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -230,7 +229,7 @@
     "name": "Google Labs",
     "url": "https://labs.google.com/",
     "favicon_url": "https://labs.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -240,7 +239,7 @@
     "name": "Google Labs Experiments",
     "url": "https://labs.google.com/experiments",
     "favicon_url": "https://labs.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -250,7 +249,7 @@
     "name": "Google Labs Search",
     "url": "https://labs.google.com/search/",
     "favicon_url": "https://labs.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -260,7 +259,7 @@
     "name": "Google Labs Sessions",
     "url": "https://labs.google.com/sessions",
     "favicon_url": "https://labs.google.com/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -279,13 +278,13 @@
       "navigation",
       "traffic"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🧩 Miscellaneous / Specialized"
   },
   {
     "name": "Google Open Source",
     "url": "https://opensource.google/",
     "favicon_url": "https://opensource.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -302,13 +301,13 @@
       "recommendations",
       "store"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🛒 Commerce, Retail & Logistics"
   },
   {
     "name": "Google Research",
     "url": "https://research.google/",
     "favicon_url": "https://research.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -399,13 +398,13 @@
       "netflix",
       "recommendation"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🎨 Media & Generative Creativity"
   },
   {
     "name": "NotebookLM",
     "url": "https://notebooklm.google/",
     "favicon_url": "https://notebooklm.google/favicon.ico",
-    "category": "🌱 Environmental, Agricultural & Climate Solutions",
+    "category": "📚 Research, Education & Exploration",
     "tags": [
       "google",
       "ecosystem"
@@ -558,14 +557,13 @@
     "url": "https://spotify.com/",
     "favicon_url": "https://spotify.com/favicon.ico",
     "categories": [
-      "🌱 Environmental, Agricultural & Climate Solutions",
       "🎨 Media & Generative Creativity"
     ],
     "tags": [
       "recommendation",
       "spotify"
     ],
-    "category": "🌱 Environmental, Agricultural & Climate Solutions"
+    "category": "🎨 Media & Generative Creativity"
   },
   {
     "name": "Sylvera",
@@ -3230,7 +3228,7 @@
     "name": "Meta AI",
     "url": "https://www.meta.ai/",
     "favicon_url": "https://www.meta.ai/favicon.ico",
-    "category": "🏭 Industry & Manufacturing",
+    "category": "🧠 Core AI Technologies",
     "tags": [
       "amazon",
       "robotics",
@@ -3491,7 +3489,7 @@
       "stormgeo",
       "weather"
     ],
-    "category": "🏭 Industry & Manufacturing"
+    "category": "🌱 Environmental, Agricultural & Climate Solutions"
   },
   {
     "name": "Symbio Robotics (SymbioDCS)",
