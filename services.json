@@ -3645,6 +3645,10 @@
       "large",
       "models"
     ],
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "🧠 Core AI Technologies"
+    ],
     "category": "💬 Language, Communication & Interaction"
   },
   {
@@ -3669,6 +3673,10 @@
     "tags": [
       "anthropic",
       "chatbot"
+    ],
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -4239,7 +4247,8 @@
     "favicon_url": "https://www.perplexity.ai/favicon.ico",
     "categories": [
       "💼 Enterprise & Productivity Solutions",
-      "📚 Research, Education & Exploration"
+      "📚 Research, Education & Exploration",
+        "🧠 Core AI Technologies"
     ],
     "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
@@ -5059,6 +5068,10 @@
       "deepracer",
       "learning",
       "reinforcement"
+    ],
+    "categories": [
+      "📚 Research, Education & Exploration",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -5526,6 +5539,10 @@
       "research",
       "data",
       "analysis"
+    ],
+    "categories": [
+      "📚 Research, Education & Exploration",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6296,7 +6313,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6652,6 +6670,9 @@
       "developer",
       "platforms",
       "apis"
+    ],
+    "categories": [
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6663,6 +6684,9 @@
       "developer",
       "platforms",
       "apis"
+    ],
+    "categories": [
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6801,7 +6825,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+        "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6866,7 +6891,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+        "🧠 Core AI Technologies"
     ]
   },
   {
@@ -6879,7 +6905,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -7290,7 +7317,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -7325,6 +7353,9 @@
       "developer",
       "platforms",
       "apis"
+    ],
+    "categories": [
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -7463,6 +7494,9 @@
       "developer",
       "platforms",
       "apis"
+    ],
+    "categories": [
+      "🧠 Core AI Technologies"
     ]
   },
   {
@@ -7564,7 +7598,8 @@
     ],
     "categories": [
       "🧩 Miscellaneous / Specialized",
-      "💬 Language, Communication & Interaction"
+      "💬 Language, Communication & Interaction",
+        "🧠 Core AI Technologies"
     ]
   },
   {
