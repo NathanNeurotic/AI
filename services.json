@@ -41,6 +41,10 @@
     "name": "Amazon.com (Recommendation Engine)",
     "url": "https://www.amazon.com/",
     "favicon_url": "https://www.amazon.com/favicon.ico",
+    "categories": [
+      "🌱 Environmental, Agricultural & Climate Solutions",
+      "🛒 Commerce, Retail & Logistics"
+    ],
     "tags": [
       "amazon",
       "com",
@@ -553,6 +557,10 @@
     "name": "Spotify Recommendation Engine",
     "url": "https://spotify.com/",
     "favicon_url": "https://spotify.com/favicon.ico",
+    "categories": [
+      "🌱 Environmental, Agricultural & Climate Solutions",
+      "🎨 Media & Generative Creativity"
+    ],
     "tags": [
       "recommendation",
       "spotify"
@@ -3643,6 +3651,10 @@
     "name": "Cisco Webex AI Agent",
     "url": "https://www.webex.com/ai-agent.html",
     "favicon_url": "https://www.webex.com/favicon.ico",
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "category": "💬 Language, Communication & Interaction",
     "tags": [
       "communication",
@@ -3707,6 +3719,10 @@
     "name": "Google Cloud Contact Center AI Platform",
     "url": "https://cloud.google.com/contact-center-ai",
     "favicon_url": "https://cloud.google.com/favicon.ico",
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "tags": [
       "center",
       "contact",
@@ -3801,6 +3817,10 @@
     "name": "Microsoft Teams AI Features (Granular)",
     "url": "https://nboldapp.com/top-10-ai-features-in-microsoft-teams-for-better-teamwork/",
     "favicon_url": "https://nboldapp.com/favicon.ico",
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "tags": [
       "communication",
       "granular",
@@ -3856,6 +3876,10 @@
     "name": "Slack (Slack GPT)",
     "url": "https://slack.com/ai",
     "favicon_url": "https://slack.com/favicon.ico",
+    "categories": [
+      "💬 Language, Communication & Interaction",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "tags": [
       "communication",
       "gpt",
@@ -4031,6 +4055,10 @@
     "name": "Google Cloud Document AI",
     "url": "https://cloud.google.com/document-ai",
     "favicon_url": "https://cloud.google.com/favicon.ico",
+    "categories": [
+      "💼 Enterprise & Productivity Solutions",
+      "🧠 Core AI Technologies"
+    ],
     "tags": [
       "document",
       "google"
@@ -4041,6 +4069,10 @@
     "name": "Google Workspace (AI in Docs, Sheets, Slides, Gmail)",
     "url": "https://workspace.google.com/",
     "favicon_url": "https://workspace.google.com/favicon.ico",
+    "categories": [
+      "💼 Enterprise & Productivity Solutions",
+      "💬 Language, Communication & Interaction"
+    ],
     "tags": [
       "docs",
       "gmail",
@@ -4205,6 +4237,10 @@
     "name": "Perplexity",
     "url": "https://www.perplexity.ai/",
     "favicon_url": "https://www.perplexity.ai/favicon.ico",
+    "categories": [
+      "💼 Enterprise & Productivity Solutions",
+      "📚 Research, Education & Exploration"
+    ],
     "category": "💼 Enterprise & Productivity Solutions",
     "tags": [
       "allinone"
@@ -4397,6 +4433,10 @@
     "name": "Zoom (AI Companion)",
     "url": "https://www.zoom.us/ai-companion",
     "favicon_url": "https://www.zoom.us/favicon.ico",
+    "categories": [
+      "💼 Enterprise & Productivity Solutions",
+      "💬 Language, Communication & Interaction"
+    ],
     "tags": [
       "companion",
       "meeting",
@@ -5252,6 +5292,10 @@
     "name": "Otter.ai",
     "url": "https://otter.ai/",
     "favicon_url": "https://otter.ai/favicon.ico",
+    "categories": [
+      "📚 Research, Education & Exploration",
+      "💬 Language, Communication & Interaction"
+    ],
     "category": "📚 Research, Education & Exploration",
     "tags": [
       "research",
@@ -6260,6 +6304,10 @@
     "name": "ChatGPT",
     "url": "https://www.chatgpt.com/",
     "favicon_url": "https://www.chatgpt.com/favicon.ico",
+    "categories": [
+      "🧠 Core AI Technologies",
+      "💬 Language, Communication & Interaction"
+    ],
     "category": "🧠 Core AI Technologies",
     "tags": [
       "allinone"
@@ -6615,6 +6663,10 @@
     "name": "GitHub Copilot",
     "url": "https://github.com/features/copilot",
     "favicon_url": "https://github.com/favicon.ico",
+    "categories": [
+      "🧩 Miscellaneous / Specialized",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "category": "🧩 Miscellaneous / Specialized",
     "tags": [
       "coding",
@@ -6625,6 +6677,10 @@
     "name": "GitHub Copilot Repo",
     "url": "https://github.com/copilot",
     "favicon_url": "https://github.com/favicon.ico",
+    "categories": [
+      "🧩 Miscellaneous / Specialized",
+      "💼 Enterprise & Productivity Solutions"
+    ],
     "category": "🧩 Miscellaneous / Specialized",
     "tags": [
       "coding",
@@ -6743,6 +6799,10 @@
     "name": "Google Search (RankBrain, MUM, BERT, Gemini integration)",
     "url": "https://www.google.com/search",
     "favicon_url": "https://www.google.com/favicon.ico",
+    "categories": [
+      "🧠 Core AI Technologies",
+      "📚 Research, Education & Exploration"
+    ],
     "tags": [
       "bert",
       "gemini",
