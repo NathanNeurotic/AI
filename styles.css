@@ -138,10 +138,10 @@ header {
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-    font-size: 0.8rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    font-size: 0.7rem;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
     margin-left: 0;
     z-index: 1000;
 }
@@ -151,14 +151,14 @@ header {
     border: 2px solid var(--text-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    font-size: 0.6rem;
-    padding: 0.1rem 0.2rem;
+    font-size: 0.5rem;
+    padding: 0.05rem 0.15rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 body.mobile-view .translate-widget select {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     padding: 0.05rem 0.15rem;
 }
 
