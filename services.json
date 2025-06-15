@@ -775,7 +775,7 @@
   {
     "name": "AI Pool Tools",
     "url": "https://tools.aipoool.com/",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://tools.aipoool.com/favicon.ico",
     "category": "🎨 Media & Generative Creativity",
     "tags": [
       "articles",
@@ -2344,7 +2344,7 @@
   {
     "name": "SongBeast AI Review by Decortweaks",
     "url": "https://decortweaks.com/songbeast-ai-review/",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://decortweaks.com/wp-content/uploads/2023/04/favicon-dark.png",
     "category": "🎨 Media & Generative Creativity",
     "tags": [
       "articles",

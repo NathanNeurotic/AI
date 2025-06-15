@@ -207,7 +207,7 @@
   {
     "name": "Apple Keyboard (Predictive Text, Autocorrect)",
     "url": "(Integrated into iOS/macOS)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://www.apple.com/favicon.ico",
     "category": "\ud83d\udde3\ufe0f NLP/Productivity AI",
     "tags": [
       "apple",
@@ -340,7 +340,7 @@
   {
     "name": "Character.ai",
     "url": "[suspicious link removed]",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://character.ai/favicon.ico",
     "category": "\u2728 Large Language Models",
     "tags": [
       "character",
@@ -1125,7 +1125,7 @@
   {
     "name": "Microsoft Photo Editor (AI features)",
     "url": "(Integrated into Windows Photos app)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
     "category": "\ud83c\udfa8 Image Generation and Design",
     "tags": [
       "editor",
@@ -1137,7 +1137,7 @@
   {
     "name": "Microsoft Project Cortex (SharePoint Syntex)",
     "url": "(now integrated into Microsoft 365 services as part of Microsoft Viva Topics)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://www.microsoft.com/favicon.ico",
     "category": "\u2728 Knowledge Management AI",
     "tags": [
       "cortex",
@@ -1599,7 +1599,7 @@
   {
     "name": "Spotify Podcast AI (Ad Insertion, Transcripts)",
     "url": "(Integrated into platform)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://spotify.com/favicon.ico",
     "category": "\ud83d\udd0a Audio AI",
     "tags": [
       "audio",
@@ -1709,7 +1709,7 @@
   {
     "name": "TikTok Content Moderation (AI for harmful content)",
     "url": "(Internal systems)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://www.tiktok.com/favicon.ico",
     "category": "\u270d\ufe0f Content Moderation AI",
     "tags": [
       "content",
@@ -1845,7 +1845,7 @@
   {
     "name": "AnimeDiffusion",
     "url": "(Often community-run or API-based, e.g., on Hugging Face)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://huggingface.co/favicon.ico",
     "category": "\ud83c\udfa8 Generative Art AI",
     "tags": [
       "animediffusion",
@@ -1939,7 +1939,7 @@
   {
     "name": "Blue Vision Labs (acquired by Lyft)",
     "url": "(Service integrated into Lyft)",
-    "favicon_url": "./favicon.ico",
+    "favicon_url": "https://www.lyft.com/favicon.ico",
     "category": "\ud83c\udf0e Environmental AI",
     "tags": [
       "acquired",
