@@ -131,8 +131,8 @@ header {
     cursor: pointer;
     margin-top: 1rem;
     margin-left: 0.5rem;
+    display: none; /* Default to hidden */
 }
-
 
 
 /* Hide default Google banner and shrink dropdown */

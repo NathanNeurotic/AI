@@ -6,20 +6,20 @@ let sidebarObserver = null;
 function updateInstallButtonVisibility() {
     const installBtn = document.getElementById('installBtn');
     if (!installBtn) {
-        console.warn('updateInstallButtonVisibility: Install button not found.');
+        console.warn('Install App button (installBtn) not found in the DOM during updateInstallButtonVisibility. Cannot update visibility.');
         return;
     }
+
+    console.log(`[InstallButton] updateInstallButtonVisibility called. deferredPrompt is ${deferredPrompt ? 'AVAILABLE' : 'NULL'}.`);
 
     if (deferredPrompt) {
         installBtn.classList.add('install-btn-visible');
         installBtn.classList.remove('install-btn-hidden');
-        installBtn.style.display = 'inline-block'; // Explicit display for robustness
-        console.log('updateInstallButtonVisibility: Button made VISIBLE');
+        console.log('[InstallButton] Set to VISIBLE.');
     } else {
         installBtn.classList.add('install-btn-hidden');
         installBtn.classList.remove('install-btn-visible');
-        installBtn.style.display = 'none'; // Explicit display for robustness
-        console.log('updateInstallButtonVisibility: Button made HIDDEN');
+        console.log('[InstallButton] Set to HIDDEN.');
     }
 }
 
@@ -56,44 +56,45 @@ document.addEventListener('DOMContentLoaded', () => {
         updateInstallButtonVisibility();
 
         installBtn.addEventListener('click', async () => {
-            console.log('Install App button clicked.');
+            console.log('[InstallButton] installBtn CLICKED.');
             if (!deferredPrompt) {
-                console.log('Deferred prompt not available, cannot show install dialog.');
+                console.log('[InstallButton] Deferred prompt not available, cannot show install dialog.');
                 return;
             }
-            console.log('Showing install prompt...');
+            console.log('[InstallButton] Showing install prompt (before deferredPrompt.prompt())...');
             deferredPrompt.prompt();
+            console.log('[InstallButton] Showing install prompt (after deferredPrompt.prompt())...');
             try {
                 const { outcome } = await deferredPrompt.userChoice;
-                console.log(`User choice for installation: ${outcome}`);
+                console.log(`[InstallButton] User choice for installation: ${outcome}`);
                 if (outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt');
+                    console.log('[InstallButton] User accepted the A2HS prompt');
                 } else {
-                    console.log('User dismissed the A2HS prompt');
+                    console.log('[InstallButton] User dismissed the A2HS prompt');
                 }
             } catch (error) {
-                console.error('Error during install prompt:', error);
+                console.error('[InstallButton] Error during install prompt:', error);
             }
             deferredPrompt = null; // Consume the prompt
             updateInstallButtonVisibility(); // Update button state
-            console.log('Install App button state updated after prompt interaction.');
+            console.log('[InstallButton] Install App button state updated after prompt interaction.');
         });
     } else {
         console.warn('Install App button (installBtn) not found in the DOM.');
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
-        console.log('`beforeinstallprompt` event fired. Current deferredPrompt:', deferredPrompt);
+        console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
         // Prevent Chrome 67 and earlier from automatically showing the prompt
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        console.log('Deferred prompt saved:', deferredPrompt);
+        // console.log('Deferred prompt saved:', deferredPrompt); // Kept original log for object details if needed for debugging
         updateInstallButtonVisibility(); // Update button state
     });
 
     window.addEventListener('appinstalled', () => {
-        console.log('`appinstalled` event fired.');
+        console.log('[InstallButton] appinstalled event FIRED.');
         // Log install to analytics or update UI
         deferredPrompt = null; // Clear the deferred prompt
         updateInstallButtonVisibility(); // Update button state
