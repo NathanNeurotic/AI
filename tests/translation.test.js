@@ -54,4 +54,20 @@ describe('google translate dropdown', () => {
     expect(googleSelect.value).toBe('es');
   });
 
+  test('adds class when toolbar appears', done => {
+    window.googleTranslateElementInit();
+    const frame = document.createElement('iframe');
+    frame.className = 'goog-te-banner-frame';
+    document.documentElement.appendChild(frame);
+
+    setTimeout(() => {
+      expect(document.body.classList.contains('translate-bar-active')).toBe(true);
+      frame.remove();
+      setTimeout(() => {
+        expect(document.body.classList.contains('translate-bar-active')).toBe(false);
+        done();
+      }, 0);
+    }, 0);
+  });
+
 });

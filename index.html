@@ -135,6 +135,19 @@
       });
 
       observer.observe(translateElement, { childList: true, subtree: true });
+
+      const checkToolbar = () => {
+        const banner = document.querySelector('.goog-te-banner-frame');
+        if (banner) {
+          document.body.classList.add('translate-bar-active');
+        } else {
+          document.body.classList.remove('translate-bar-active');
+        }
+      };
+
+      const toolbarObserver = new MutationObserver(checkToolbar);
+      toolbarObserver.observe(document.documentElement, { childList: true, subtree: true });
+      checkToolbar();
     }
   }
 </script>
