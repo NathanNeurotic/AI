@@ -19,6 +19,7 @@
     --card-min-width: 300px;
     --card-max-width: 400px;
     --category-min-width: 300px;
+    --translate-bar-height: 40px;
 }
 
 body {
@@ -298,6 +299,19 @@ body.sidebar-open footer {
     margin-left: 200px;
     width: calc(100% - 200px);
     transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Offset elements when Google Translate toolbar is visible */
+body.translate-bar-active {
+    padding-top: var(--translate-bar-height);
+}
+
+body.translate-bar-active #sidebarToggle {
+    top: calc(1rem + var(--translate-bar-height));
+}
+
+body.translate-bar-active #sidebar {
+    top: var(--translate-bar-height);
 }
 
 /* Prevent layout shift on small screens when sidebar is open */
