@@ -893,8 +893,13 @@ function renderFavoritesCategory() {
 
 function applySavedTheme() {
     const saved = localStorage.getItem('theme');
-    const osPrefersLight = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: light)').matches;
+    let osPrefersLight = false; // Default to not preferring light if detection fails
+    if (typeof window.matchMedia === 'function') {
+        osPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    } else {
+        console.warn('window.matchMedia is not available. OS theme preference detection skipped.');
+    }
+
     if (saved === 'light' || (saved === null && osPrefersLight)) {
         document.body.classList.add('light-mode');
         document.documentElement.classList.add('light-mode');
@@ -928,8 +933,13 @@ function applySavedMobileView() {
             isMobile = navigator.userAgentData.mobile;
             console.log('Detected view via userAgentData.mobile:', isMobile ? 'mobile' : 'desktop');
         } else {
-            isMobile = window.matchMedia("(max-width: 768px)").matches;
-            console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+            if (typeof window.matchMedia === 'function') {
+                isMobile = window.matchMedia("(max-width: 768px)").matches;
+                console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+            } else {
+                isMobile = false; // Default to desktop if matchMedia is not available
+                console.warn('window.matchMedia is not available. Defaulting to desktop view for initial detection.');
+            }
         }
         // Do NOT save this auto-detected preference to localStorage here.
     }
