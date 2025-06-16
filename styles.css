@@ -792,7 +792,7 @@ body.mobile-view #viewToggle {
 
 /* Make "Powered by" text smaller and less prominent */
 .google-translate-powered-by {
-    font-size: 0.6em; /* Adjust as needed for visual balance */
+    font-size: 0.2em; /* Adjust as needed for visual balance */
     color: #999;     /* Lighter color for less emphasis */
     display: inline;  /* Keep it inline with "Google Translate" */
     margin-left: 4px; /* Add a small space if needed */
