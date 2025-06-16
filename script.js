@@ -1,6 +1,28 @@
 let allServices = [];
 let deferredPrompt = null;
 let sidebarObserver = null;
+
+// Function to update install button visibility
+function updateInstallButtonVisibility() {
+    const installBtn = document.getElementById('installBtn');
+    if (!installBtn) {
+        console.warn('updateInstallButtonVisibility: Install button not found.');
+        return;
+    }
+
+    if (deferredPrompt) {
+        installBtn.classList.add('install-btn-visible');
+        installBtn.classList.remove('install-btn-hidden');
+        installBtn.style.display = 'inline-block'; // Explicit display for robustness
+        console.log('updateInstallButtonVisibility: Button made VISIBLE');
+    } else {
+        installBtn.classList.add('install-btn-hidden');
+        installBtn.classList.remove('install-btn-visible');
+        installBtn.style.display = 'none'; // Explicit display for robustness
+        console.log('updateInstallButtonVisibility: Button made HIDDEN');
+    }
+}
+
 const MAX_CATEGORY_HEIGHT =
     parseInt(
         getComputedStyle(document.documentElement).getPropertyValue(
@@ -30,10 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (installBtn) {
         console.log('Install App button found in DOM.');
-        installBtn.classList.add('install-btn-hidden'); // Initially hide
-        installBtn.classList.remove('install-btn-visible');
-        installBtn.style.display = 'none'; // Explicitly set display for hidden state
-        console.log('Install App button initialized with class: install-btn-hidden and display: none');
+        // Initial state set by updateInstallButtonVisibility
+        updateInstallButtonVisibility();
 
         installBtn.addEventListener('click', async () => {
             console.log('Install App button clicked.');
@@ -55,10 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Error during install prompt:', error);
             }
             deferredPrompt = null; // Consume the prompt
-            installBtn.classList.add('install-btn-hidden');
-            installBtn.classList.remove('install-btn-visible');
-            installBtn.style.display = 'none'; // Explicitly set display
-            console.log('Install App button hidden after prompt interaction, class set to: install-btn-hidden');
+            updateInstallButtonVisibility(); // Update button state
+            console.log('Install App button state updated after prompt interaction.');
         });
     } else {
         console.warn('Install App button (installBtn) not found in the DOM.');
@@ -71,33 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
         console.log('Deferred prompt saved:', deferredPrompt);
-
-        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
-        if (installBtn) {
-            console.log('Install button found in `beforeinstallprompt`. Current classes:', installBtn.className);
-            installBtn.classList.add('install-btn-visible');
-            installBtn.classList.remove('install-btn-hidden');
-            // Ensure no conflicting styles are hiding it if logic is correct
-            installBtn.style.display = 'inline-block'; // Explicitly set display
-            console.log('Install App button made visible. New classes:', installBtn.className);
-        } else {
-            console.warn('`beforeinstallprompt` fired, but installBtn was not found in this event listener to make it visible.');
-        }
+        updateInstallButtonVisibility(); // Update button state
     });
 
     window.addEventListener('appinstalled', () => {
         console.log('`appinstalled` event fired.');
         // Log install to analytics or update UI
         deferredPrompt = null; // Clear the deferred prompt
-        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
-        if (installBtn) {
-            installBtn.classList.add('install-btn-hidden');
-            installBtn.classList.remove('install-btn-visible');
-            installBtn.style.display = 'none'; // Explicitly set display
-            console.log('App installed, Install App button hidden, class set to: install-btn-hidden');
-        } else {
-            console.warn('`appinstalled` fired, but installBtn was not found to hide it.');
-        }
+        updateInstallButtonVisibility(); // Update button state
     });
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
@@ -945,6 +944,7 @@ function toggleView() {
     const isBlock = document.body.classList.toggle('block-view');
     localStorage.setItem('view', isBlock ? 'block' : 'list');
     updateToggleButtons();
+    updateInstallButtonVisibility(); // Update button state
 }
 
 window.toggleView = toggleView;
@@ -955,6 +955,7 @@ function toggleDeviceView() {
     document.body.classList.toggle('desktop-view', isMobile);
     localStorage.setItem('mobileView', !isMobile ? 'mobile' : 'desktop');
     updateToggleButtons();
+    updateInstallButtonVisibility(); // Update button state
 }
 
 window.toggleDeviceView = toggleDeviceView;
