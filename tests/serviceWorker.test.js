@@ -52,7 +52,21 @@ function setupServiceWorker() {
       location: new URL('https://example.com/')
     },
     caches,
-    fetch: jest.fn(() => Promise.resolve('network')), // will be overridden per test
+    fetch: jest.fn(url => {
+      const absoluteUrl = toAbsolute(url.url || url); // Ensure absolute URL for comparison
+      if (absoluteUrl.endsWith('services.json')) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve([]), // Default empty services
+          clone: function() { return this; }
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        text: () => Promise.resolve('mock network response'), // Generic response
+        clone: function() { return this; }
+      });
+    }),
     console
   };
   const swCode = fs.readFileSync(path.join(__dirname, '../service-worker.js'), 'utf8');
@@ -68,16 +82,19 @@ describe('service worker', () => {
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
 
-    // Mock the fetch for services.json specifically for the install phase
-    // This mock will be used by the sw's install event when it fetches services.json
-    fetch.mockResolvedValueOnce({
-      ok: true,
-      json: () => Promise.resolve([ // Simulate an empty array of services, or a minimal one
-        // { favicon_url: './public/icon-192x192.png', thumbnail_url: './public/logo.png'}
-        // For simplicity, an empty array is fine if the goal is just to prevent .json() error
-      ]),
-      clone: function() { return this; } // Add clone method
-    });
+    // This specific mockResolvedValueOnce for services.json during install
+    // should still take precedence over the general mock in setupServiceWorker
+    // if the timing is correct (i.e., this is the *next* call to fetch).
+    // The general mock provides a fallback.
+    // For the 'install' event, the service worker fetches './services.json'.
+    // We ensure this specific mock is used for that fetch.
+    if (fetch.mockResolvedValueOnce) { // Check if it's a Jest mock
+        fetch.mockResolvedValueOnce({ // This mock is specific to the install phase fetch of services.json
+            ok: true,
+            json: () => Promise.resolve([]),
+            clone: function() { return this; }
+        });
+    }
 
     listeners['install'](installEvent);
     await installPromise;
@@ -98,7 +115,12 @@ describe('service worker', () => {
     // populate cache via install
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
-    ctx.fetch.mockResolvedValueOnce({ json: () => Promise.resolve([]) });
+    // The general fetch mock in setupServiceWorker handles services.json by default.
+    // If a specific override for services.json is needed for this install, it should be here.
+    // However, the default mock now returns a valid Response for services.json,
+    // so a specific mockResolvedValueOnce for services.json here might be redundant
+    // unless a different .json() payload is needed for this specific test.
+    // For now, relying on the general mock. If tests fail, this might need adjustment.
     listeners['install'](installEvent);
     await installPromise;
 
@@ -109,11 +131,16 @@ describe('service worker', () => {
     listeners['fetch'](fetchEvent);
     const result = await fetchEvent.response;
     expect(ctx.fetch).toHaveBeenCalledWith(fetchEvent.request);
-    expect(result).toBe('network');
+    // Expect a Response object, not the string 'network'
+    expect(result.ok).toBe(true);
+    const text = await result.text();
+    expect(text).toBe('mock network response');
     expect(caches.match).not.toHaveBeenCalled();
 
     // simulate network failure fallback to cache
-    ctx.fetch.mockRejectedValueOnce(new Error('fail'));
+    if (ctx.fetch.mockRejectedValueOnce) { // Check if it's a Jest mock
+      ctx.fetch.mockRejectedValueOnce(new Error('fail'));
+    }
     const fetchEventFail = {
       request: { url: 'https://example.com/script.js' },
       respondWith: p => { fetchEventFail.response = p; }
@@ -130,11 +157,19 @@ describe('service worker', () => {
     const { listeners, caches, CACHE_NAME } = ctx;
     let installPromise;
     const installEvent = { waitUntil: p => { installPromise = p; } };
-    ctx.fetch.mockResolvedValueOnce({ json: () => Promise.resolve([]) });
+    // Similar to the above test, relying on the general mock for services.json during install.
     listeners['install'](installEvent);
     await installPromise;
 
-    ctx.fetch.mockResolvedValueOnce('network-services');
+    // This mockResolvedValueOnce is for the specific fetch call in this test.
+    // It should override the general fetch mock for this instance.
+    if (ctx.fetch.mockResolvedValueOnce) { // Check if it's a Jest mock
+      ctx.fetch.mockResolvedValueOnce({
+        ok: true,
+        json: () => Promise.resolve({ data: 'specific network services response' }),
+        clone: function() { return this; }
+      });
+    }
     const fetchEvent = {
       request: { url: 'https://example.com/services.json' },
       respondWith: p => { fetchEvent.response = p; }
@@ -142,11 +177,16 @@ describe('service worker', () => {
     listeners['fetch'](fetchEvent);
     const result = await fetchEvent.response;
     expect(ctx.fetch).toHaveBeenCalledWith(fetchEvent.request);
-    expect(result).toBe('network-services');
+    // Expect a Response object
+    expect(result.ok).toBe(true);
+    const json = await result.json();
+    expect(json).toEqual({ data: 'specific network services response' });
     expect(caches.match).not.toHaveBeenCalled();
 
     // failure path
-    ctx.fetch.mockRejectedValueOnce(new Error('fail'));
+    if (ctx.fetch.mockRejectedValueOnce) { // Check if it's a Jest mock
+      ctx.fetch.mockRejectedValueOnce(new Error('fail'));
+    }
     const fetchEventFail = {
       request: { url: 'https://example.com/services.json' },
       respondWith: p => { fetchEventFail.response = p; }
