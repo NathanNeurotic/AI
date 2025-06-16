@@ -66,6 +66,13 @@
           },
           'google_translate_element'
         );
+        const interval = setInterval(() => {
+          const logo = document.querySelector('.goog-logo-link');
+          if (logo) {
+            logo.textContent = logo.textContent.replace('Powered by', '').trim();
+            clearInterval(interval);
+          }
+        }, 100);
       }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
