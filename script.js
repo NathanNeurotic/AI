@@ -197,16 +197,32 @@ async function loadServices() {
         // mainContainer is already defined above
 
         // Clear existing static categories if any (optional, if HTML is pre-populated)
-        const existingCategories = mainContainer.querySelectorAll('.category');
-        existingCategories.forEach(cat => cat.remove());
+        // const existingCategories = mainContainer.querySelectorAll('.category'); // Keep this commented or remove if not needed
+        // existingCategories.forEach(cat => cat.remove()); // Keep this commented or remove if not needed
+        mainContainer.innerHTML = ''; // Clear main container once before adding new content
 
         // Group services by category. Support `category` as a string or
         // `categories` as an array. When an array is provided, add the service
         // to each category listed.
         const categories = services.reduce((acc, service) => {
+            // 1. Check service object validity
+            if (!service || typeof service !== 'object') {
+                console.warn('[DataCheck] Invalid service object encountered. Skipping.', service);
+                return acc;
+            }
+            // Check for essential service properties
+            if (typeof service.name !== 'string' || service.name.trim() === '') {
+                console.warn('[DataCheck] Service is missing a name or name is invalid. Skipping.', service);
+                return acc;
+            }
+            if (typeof service.url !== 'string' || service.url.trim() === '') {
+                console.warn(`[DataCheck] Service "${service.name}" is missing a URL or URL is invalid. Skipping.`, service);
+                return acc;
+            }
+
             let cats = service.categories || service.category;
             if (!cats) { // If no categories are defined for the service, skip it.
-                console.warn(`Service "${service.name}" has no categories defined. Skipping.`);
+                console.warn(`[DataCheck] Service "${service.name}" has no categories defined. Skipping.`);
                 return acc;
             }
             if (!Array.isArray(cats)) {
@@ -217,7 +233,9 @@ async function loadServices() {
 
             uniqueCategories.forEach(cat => {
                 if (typeof cat !== 'string' || cat.trim() === '') {
-                    console.warn(`Service "${service.name}" has an invalid category: "${cat}". Skipping this category entry.`);
+                    // Ensure service.name is available for the warning
+                    const serviceNameForWarning = service && typeof service.name === 'string' ? service.name : 'Unknown service';
+                    console.warn(`[DataCheck] Service "${serviceNameForWarning}" has an invalid category: "${cat}". Skipping this category entry.`);
                     return; // Skip invalid category names
                 }
 
@@ -246,10 +264,16 @@ async function loadServices() {
                 .trim()
                 .toLowerCase();
         const sortedCategoryNames = Object.keys(categories).sort((a, b) => normalize(a).localeCompare(normalize(b)));
+        const mainFragment = document.createDocumentFragment(); // 1. Create mainFragment
         for (const categoryName of sortedCategoryNames) {
             const servicesInCategory = categories[categoryName];
             servicesInCategory.sort((a, b) => a.name.localeCompare(b.name));
-            const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            let categoryId = categoryName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
+            if (!categoryId) {
+                console.warn(`[DataCheck] Category name "${categoryName}" resulted in an empty ID after normalization. Using a default or skipping might be needed if issues arise.`);
+                // categoryId = 'default-category-id'; // Optionally provide a fallback
+            }
 
             const categorySection = document.createElement('section');
             categorySection.className = 'category';
@@ -297,19 +321,24 @@ async function loadServices() {
             const categoryContent = document.createElement('div');
             categoryContent.className = 'category-content';
 
+            const servicesFragment = document.createDocumentFragment(); // 2.a. Create servicesFragment
             servicesInCategory.forEach(service => {
                 const serviceButton = createServiceButton(
                     service,
                     new Set(JSON.parse(localStorage.getItem('favorites') || '[]')),
                     categoryName
                 );
-                categoryContent.appendChild(serviceButton);
+                if (serviceButton) { // Handle if createServiceButton returns null
+                    servicesFragment.appendChild(serviceButton); // 2.b.i. Append to servicesFragment
+                }
             });
+            categoryContent.appendChild(servicesFragment); // 2.c. Append servicesFragment to categoryContent
 
             categorySection.appendChild(categoryHeader);
             categorySection.appendChild(categoryContent);
-            mainContainer.appendChild(categorySection);
+            mainFragment.appendChild(categorySection); // 2.d. Append categorySection to mainFragment
         }
+        mainContainer.appendChild(mainFragment); // 3. Append mainFragment to mainContainer
 
         renderFavoritesCategory();
 
@@ -537,6 +566,20 @@ function clearSearch() {
 }
 
 function createServiceButton(service, favoritesSet, categoryName) {
+    // 3. Re-verify service.name and service.url at the beginning of createServiceButton
+    if (!service || typeof service !== 'object') {
+        console.error('[DataCheck] createServiceButton: Invalid service object received.', service);
+        return null;
+    }
+    if (typeof service.name !== 'string' || service.name.trim() === '') {
+        console.error('[DataCheck] createServiceButton: Service name is invalid. Cannot create button.', service);
+        return null;
+    }
+    if (typeof service.url !== 'string' || service.url.trim() === '') {
+        console.error(`[DataCheck] createServiceButton: Service URL is invalid for service "${service.name}". Cannot create button.`, service);
+        return null;
+    }
+
     const serviceButton = document.createElement('a');
     serviceButton.className = 'service-button';
     serviceButton.href = service.url;
@@ -545,12 +588,19 @@ function createServiceButton(service, favoritesSet, categoryName) {
     serviceButton.dataset.url = service.url;
 
     let thumbnail;
-    if (service.thumbnail_url) {
+    // Ensure thumbnail_url is a string before creating img element
+    if (service.thumbnail_url && typeof service.thumbnail_url === 'string') {
         thumbnail = document.createElement('img');
         thumbnail.className = 'service-thumbnail';
         thumbnail.alt = `${service.name} thumbnail`;
         thumbnail.src = service.thumbnail_url;
-        thumbnail.onerror = () => { thumbnail.style.display = 'none'; };
+        thumbnail.onerror = () => {
+            console.warn(`[DataCheck] Failed to load thumbnail for service "${service.name}" from URL: ${service.thumbnail_url}. Hiding thumbnail.`);
+            thumbnail.style.display = 'none';
+        };
+    } else if (service.thumbnail_url) {
+        // Log if thumbnail_url is present but not a string
+        console.warn(`[DataCheck] Invalid thumbnail_url for service "${service.name}": not a string. Thumbnail will not be displayed.`, service.thumbnail_url);
     }
 
     const serviceNameSpan = document.createElement('span');
@@ -559,8 +609,19 @@ function createServiceButton(service, favoritesSet, categoryName) {
     const favicon = document.createElement('img');
     favicon.alt = `${service.name} favicon`;
     favicon.className = 'service-favicon';
-    favicon.src = service.favicon_url || './public/favicon.ico';
-    favicon.onerror = () => { favicon.src = './public/favicon.ico'; };
+    // Ensure favicon_url is a string, otherwise use default. Fallback is already in place.
+    if (service.favicon_url && typeof service.favicon_url === 'string') {
+        favicon.src = service.favicon_url;
+    } else {
+        if (service.favicon_url) { // Log if it exists but isn't a string
+             console.warn(`[DataCheck] Invalid favicon_url for service "${service.name}": not a string. Using default favicon.`, service.favicon_url);
+        }
+        favicon.src = './public/favicon.ico';
+    }
+    favicon.onerror = () => {
+        console.warn(`[DataCheck] Failed to load favicon for service "${service.name}" from URL: ${favicon.src}. Using default favicon.`);
+        favicon.src = './public/favicon.ico';
+    };
 
     serviceNameSpan.appendChild(favicon);
     serviceNameSpan.appendChild(document.createTextNode(service.name));
@@ -627,6 +688,9 @@ function createServiceButton(service, favoritesSet, categoryName) {
     let tags = [];
     if (service.tags && Array.isArray(service.tags)) {
         tags = service.tags.slice();
+    } else if (service.tags) {
+        // Log if tags are present but not an array
+        console.warn(`[DataCheck] Invalid tags format for service "${service.name}": not an array. No tags will be processed.`, service.tags);
     }
 
     if (categoryName) {
@@ -807,18 +871,22 @@ function renderFavoritesCategory() {
 
     const content = favoritesSection.querySelector('.category-content');
     content.innerHTML = '';
+    const favoritesFragment = document.createDocumentFragment(); // 4.a. Create favoritesFragment
 
     if (favoriteServices.length === 0) {
         const msg = document.createElement('p');
         msg.id = 'noFavoritesMsg';
         msg.textContent = 'No favorites saved.';
-        content.appendChild(msg);
+        favoritesFragment.appendChild(msg); // Append msg to fragment
     } else {
         favoriteServices.forEach(service => {
             const btn = createServiceButton(service, favoritesSet);
-            content.appendChild(btn);
+            if (btn) { // Handle if createServiceButton returns null
+                favoritesFragment.appendChild(btn); // 4.b. Append to favoritesFragment
+            }
         });
     }
+    content.appendChild(favoritesFragment); // 4.c. Append fragment to content
 
     ensureClearFavoritesButton(header);
     const btn = header.querySelector('#clearFavoritesBtn');
