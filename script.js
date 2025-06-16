@@ -34,6 +34,20 @@ const STAR_FILLED_PATH = '<svg viewBox="0 0 24 24" width="16" height="16" fill="
 const STAR_OUTLINE_PATH = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4806 3.4987C11.6728 3.03673 12.3272 3.03673 12.5193 3.4987L14.6453 8.61016C14.7263 8.80492 14.9095 8.93799 15.1197 8.95485L20.638 9.39724C21.1367 9.43722 21.339 10.0596 20.959 10.3851L16.7546 13.9866C16.5945 14.1238 16.5245 14.3391 16.5734 14.5443L17.8579 19.9292C17.974 20.4159 17.4446 20.8005 17.0176 20.5397L12.2932 17.6541C12.1132 17.5441 11.8868 17.5441 11.7068 17.6541L6.98238 20.5397C6.55539 20.8005 6.02594 20.4159 6.14203 19.9292L7.42652 14.5443C7.47546 14.3391 7.4055 14.1238 7.24531 13.9866L3.04099 10.3851C2.661 10.0596 2.86323 9.43722 3.36197 9.39724L8.88022 8.95485C9.09048 8.93799 9.27363 8.80492 9.35464 8.61016L11.4806 3.4987Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const CHEVRON_SVG = '<svg class="chevron" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5303 16.2803C12.2374 16.5732 11.7626 16.5732 11.4697 16.2803L3.96967 8.78033C3.67678 8.48744 3.67678 8.01256 3.96967 7.71967C4.26256 7.42678 4.73744 7.42678 5.03033 7.71967L12 14.6893L18.9697 7.71967C19.2626 7.42678 19.7374 7.42678 20.0303 7.71967C20.3232 8.01256 20.3232 8.48744 20.0303 8.78033L12.5303 16.2803Z"/></svg>';
 
+// Register PWA install events immediately so we don't miss them
+window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
+    e.preventDefault(); // Prevent automatic prompt
+    deferredPrompt = e; // Stash for later use
+    updateInstallButtonVisibility();
+});
+
+window.addEventListener('appinstalled', () => {
+    console.log('[InstallButton] appinstalled event FIRED.');
+    deferredPrompt = null; // Clear the deferred prompt
+    updateInstallButtonVisibility();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     applySavedTheme();
     applySavedView();
@@ -83,22 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Install App button (installBtn) not found in the DOM.');
     }
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-        console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
-        e.preventDefault();
-        // Stash the event so it can be triggered later.
-        deferredPrompt = e;
-        // console.log('Deferred prompt saved:', deferredPrompt); // Kept original log for object details if needed for debugging
-        updateInstallButtonVisibility(); // Update button state
-    });
-
-    window.addEventListener('appinstalled', () => {
-        console.log('[InstallButton] appinstalled event FIRED.');
-        // Log install to analytics or update UI
-        deferredPrompt = null; // Clear the deferred prompt
-        updateInstallButtonVisibility(); // Update button state
-    });
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
     const textToType = 'AI Services Dashboard';
