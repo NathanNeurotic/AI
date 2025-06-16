@@ -1,6 +1,28 @@
 let allServices = [];
 let deferredPrompt = null;
 let sidebarObserver = null;
+
+// Function to update install button visibility
+function updateInstallButtonVisibility() {
+    const installBtn = document.getElementById('installBtn');
+    if (!installBtn) {
+        console.warn('Install App button (installBtn) not found in the DOM during updateInstallButtonVisibility. Cannot update visibility.');
+        return;
+    }
+
+    console.log(`[InstallButton] updateInstallButtonVisibility called. deferredPrompt is ${deferredPrompt ? 'AVAILABLE' : 'NULL'}.`);
+
+    if (deferredPrompt) {
+        installBtn.classList.add('install-btn-visible');
+        installBtn.classList.remove('install-btn-hidden');
+        console.log('[InstallButton] Set to VISIBLE.');
+    } else {
+        installBtn.classList.add('install-btn-hidden');
+        installBtn.classList.remove('install-btn-visible');
+        console.log('[InstallButton] Set to HIDDEN.');
+    }
+}
+
 const MAX_CATEGORY_HEIGHT =
     parseInt(
         getComputedStyle(document.documentElement).getPropertyValue(
@@ -30,74 +52,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (installBtn) {
         console.log('Install App button found in DOM.');
-        installBtn.classList.add('install-btn-hidden'); // Initially hide
-        installBtn.classList.remove('install-btn-visible');
-        installBtn.style.display = 'none'; // Explicitly set display for hidden state
-        console.log('Install App button initialized with class: install-btn-hidden and display: none');
+        // Initial state set by updateInstallButtonVisibility
+        updateInstallButtonVisibility();
 
         installBtn.addEventListener('click', async () => {
-            console.log('Install App button clicked.');
+            console.log('[InstallButton] installBtn CLICKED.');
             if (!deferredPrompt) {
-                console.log('Deferred prompt not available, cannot show install dialog.');
+                console.log('[InstallButton] Deferred prompt not available, cannot show install dialog.');
                 return;
             }
-            console.log('Showing install prompt...');
+            console.log('[InstallButton] Showing install prompt (before deferredPrompt.prompt())...');
             deferredPrompt.prompt();
+            console.log('[InstallButton] Showing install prompt (after deferredPrompt.prompt())...');
             try {
                 const { outcome } = await deferredPrompt.userChoice;
-                console.log(`User choice for installation: ${outcome}`);
+                console.log(`[InstallButton] User choice for installation: ${outcome}`);
                 if (outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt');
+                    console.log('[InstallButton] User accepted the A2HS prompt');
                 } else {
-                    console.log('User dismissed the A2HS prompt');
+                    console.log('[InstallButton] User dismissed the A2HS prompt');
                 }
             } catch (error) {
-                console.error('Error during install prompt:', error);
+                console.error('[InstallButton] Error during install prompt:', error);
             }
             deferredPrompt = null; // Consume the prompt
-            installBtn.classList.add('install-btn-hidden');
-            installBtn.classList.remove('install-btn-visible');
-            installBtn.style.display = 'none'; // Explicitly set display
-            console.log('Install App button hidden after prompt interaction, class set to: install-btn-hidden');
+            updateInstallButtonVisibility(); // Update button state
+            console.log('[InstallButton] Install App button state updated after prompt interaction.');
         });
     } else {
         console.warn('Install App button (installBtn) not found in the DOM.');
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
-        console.log('`beforeinstallprompt` event fired. Current deferredPrompt:', deferredPrompt);
+        console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
         // Prevent Chrome 67 and earlier from automatically showing the prompt
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        console.log('Deferred prompt saved:', deferredPrompt);
-
-        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
-        if (installBtn) {
-            console.log('Install button found in `beforeinstallprompt`. Current classes:', installBtn.className);
-            installBtn.classList.add('install-btn-visible');
-            installBtn.classList.remove('install-btn-hidden');
-            // Ensure no conflicting styles are hiding it if logic is correct
-            installBtn.style.display = 'inline-block'; // Explicitly set display
-            console.log('Install App button made visible. New classes:', installBtn.className);
-        } else {
-            console.warn('`beforeinstallprompt` fired, but installBtn was not found in this event listener to make it visible.');
-        }
+        // console.log('Deferred prompt saved:', deferredPrompt); // Kept original log for object details if needed for debugging
+        updateInstallButtonVisibility(); // Update button state
     });
 
     window.addEventListener('appinstalled', () => {
-        console.log('`appinstalled` event fired.');
+        console.log('[InstallButton] appinstalled event FIRED.');
         // Log install to analytics or update UI
         deferredPrompt = null; // Clear the deferred prompt
-        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
-        if (installBtn) {
-            installBtn.classList.add('install-btn-hidden');
-            installBtn.classList.remove('install-btn-visible');
-            installBtn.style.display = 'none'; // Explicitly set display
-            console.log('App installed, Install App button hidden, class set to: install-btn-hidden');
-        } else {
-            console.warn('`appinstalled` fired, but installBtn was not found to hide it.');
-        }
+        updateInstallButtonVisibility(); // Update button state
     });
     // Typing Effect for Header
     const headerTextElement = document.querySelector('.typing-effect');
@@ -894,8 +894,13 @@ function renderFavoritesCategory() {
 
 function applySavedTheme() {
     const saved = localStorage.getItem('theme');
-    const osPrefersLight = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: light)').matches;
+    let osPrefersLight = false; // Default to not preferring light if detection fails
+    if (typeof window.matchMedia === 'function') {
+        osPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    } else {
+        console.warn('window.matchMedia is not available. OS theme preference detection skipped.');
+    }
+
     if (saved === 'light' || (saved === null && osPrefersLight)) {
         document.body.classList.add('light-mode');
         document.documentElement.classList.add('light-mode');
@@ -929,8 +934,13 @@ function applySavedMobileView() {
             isMobile = navigator.userAgentData.mobile;
             console.log('Detected view via userAgentData.mobile:', isMobile ? 'mobile' : 'desktop');
         } else {
-            isMobile = window.matchMedia("(max-width: 768px)").matches;
-            console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+            if (typeof window.matchMedia === 'function') {
+                isMobile = window.matchMedia("(max-width: 768px)").matches;
+                console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+            } else {
+                isMobile = false; // Default to desktop if matchMedia is not available
+                console.warn('window.matchMedia is not available. Defaulting to desktop view for initial detection.');
+            }
         }
         // Do NOT save this auto-detected preference to localStorage here.
     }
@@ -945,6 +955,7 @@ function toggleView() {
     const isBlock = document.body.classList.toggle('block-view');
     localStorage.setItem('view', isBlock ? 'block' : 'list');
     updateToggleButtons();
+    updateInstallButtonVisibility(); // Update button state
 }
 
 window.toggleView = toggleView;
@@ -955,6 +966,7 @@ function toggleDeviceView() {
     document.body.classList.toggle('desktop-view', isMobile);
     localStorage.setItem('mobileView', !isMobile ? 'mobile' : 'desktop');
     updateToggleButtons();
+    updateInstallButtonVisibility(); // Update button state
 }
 
 window.toggleDeviceView = toggleDeviceView;
