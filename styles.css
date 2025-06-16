@@ -283,7 +283,7 @@ body.mobile-view #google_translate_element .goog-te-combo {
     position: fixed;
     top: 1rem;
     left: 1rem;
-    z-index: 1100;
+    z-index: 1300;
     transition: left 0.3s ease;
 }
 
