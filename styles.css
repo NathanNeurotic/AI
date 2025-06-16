@@ -149,14 +149,10 @@ body {
 */
 
 #google_translate_element {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    margin: 0;
-    z-index: 1200;
-    display: flex; /* Kept to allow alignment if needed, though with absolute positioning it might be less relevant */
-    flex-direction: column; /* Kept for consistency, might be removed if not needed */
-    align-items: flex-start; /* Kept for consistency */
+    margin: 0.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 #google_translate_element .goog-te-combo {
