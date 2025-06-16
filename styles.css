@@ -778,3 +778,12 @@ body.mobile-view #viewToggle {
 #updateNotification[hidden] {
     display: none;
 }
+
+/* Install button visibility classes */
+.install-btn-hidden {
+    display: none !important;
+}
+
+.install-btn-visible {
+    display: inline-block !important;
+}
