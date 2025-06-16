@@ -142,9 +142,11 @@ header {
 body {
     top: 0 !important;
 }
+/*
 .goog-te-gadget {
-    font-size: 1px; /* hide default label text */
+    font-size: 1px; // hide default label text
 }
+*/
 
 #google_translate_element {
     position: absolute;
@@ -786,4 +788,21 @@ body.mobile-view #viewToggle {
 
 .install-btn-visible {
     display: inline-block !important;
+}
+
+/* Make "Powered by" text smaller and less prominent */
+.google-translate-powered-by {
+    font-size: 0.6em; /* Adjust as needed for visual balance */
+    color: #999;     /* Lighter color for less emphasis */
+    display: inline;  /* Keep it inline with "Google Translate" */
+    margin-left: 4px; /* Add a small space if needed */
+}
+
+/* Ensure the main translate link text is legible if it was affected */
+#google_translate_element .goog-logo-link,
+#google_translate_element .goog-logo-link:link,
+#google_translate_element .goog-logo-link:visited {
+    /* font-size: inherit; */ /* Or a specific small but legible size like 0.8em or 10px */
+    /* color: inherit; */ /* Or your desired link color */
+    /* No special styling needed here if the default/inherited styles are okay after removing .goog-te-gadget rule */
 }
