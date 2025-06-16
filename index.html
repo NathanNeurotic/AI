@@ -66,15 +66,31 @@
           },
           'google_translate_element'
         );
-        const interval = setInterval(() => {
-          const logo = document.querySelector('.goog-logo-link');
-          if (logo) {
+
+    const translateElement = document.getElementById('google_translate_element');
+
+    if (translateElement) {
+      const observer = new MutationObserver((mutationsList, obs) => {
+        const logo = translateElement.querySelector('.goog-logo-link');
+        if (logo) {
+          // Check if "Powered by" is part of the text content
+          if (logo.textContent.includes('Powered by')) {
             logo.textContent = logo.textContent.replace('Powered by', '').trim();
-            clearInterval(interval);
+            console.log('Google Translate "Powered by" removed.');
           }
-        }, 100);
-      }
-    </script>
+          // You might also want to ensure it's just "Google Translate"
+          // For example, if Google changes the string to "Provided by Google Translate"
+          // A more robust way could be to find the first text node and ensure it's just "Google Translate"
+          // For now, replacing "Powered by" is the direct request.
+
+          obs.disconnect(); // Disconnect once the logo is found and modified.
+        }
+      });
+
+      observer.observe(translateElement, { childList: true, subtree: true });
+    }
+  }
+</script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
