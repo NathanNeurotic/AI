@@ -73,6 +73,13 @@
       const observer = new MutationObserver((mutationsList, obs) => {
         const logoLink = translateElement.querySelector('.goog-logo-link');
 
+        if (logoLink) {
+          // Inline style ensures the branding is visibly scaled down
+          logoLink.style.transform = 'scale(0.5)';
+          logoLink.style.transformOrigin = 'left top';
+          logoLink.style.display = 'inline-block';
+        }
+
         // Check if the logo link exists and hasn't been processed yet
         if (logoLink && !logoLink.querySelector('.google-translate-powered-by')) {
           const originalText = logoLink.textContent;
