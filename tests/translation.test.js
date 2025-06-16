@@ -53,4 +53,5 @@ describe('google translate dropdown', () => {
 
     expect(googleSelect.value).toBe('es');
   });
+
 });
