@@ -136,18 +136,23 @@
 
       observer.observe(translateElement, { childList: true, subtree: true });
 
-      const checkToolbar = () => {
-        const banner = document.querySelector('.goog-te-banner-frame');
-        if (banner) {
+      const updateToolbarState = () => {
+        const frame = document.querySelector('.goog-te-banner-frame');
+        if (frame && frame.style.display !== 'none') {
+          const height = Math.ceil(frame.getBoundingClientRect().height);
+          if (height) {
+            document.documentElement.style.setProperty('--translate-bar-height', `${height}px`);
+          }
           document.body.classList.add('translate-bar-active');
         } else {
+          document.documentElement.style.removeProperty('--translate-bar-height');
           document.body.classList.remove('translate-bar-active');
         }
       };
 
-      const toolbarObserver = new MutationObserver(checkToolbar);
-      toolbarObserver.observe(document.documentElement, { childList: true, subtree: true });
-      checkToolbar();
+      const toolbarObserver = new MutationObserver(updateToolbarState);
+      toolbarObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
+      updateToolbarState();
     }
   }
 </script>

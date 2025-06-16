@@ -58,13 +58,16 @@ describe('google translate dropdown', () => {
     window.googleTranslateElementInit();
     const frame = document.createElement('iframe');
     frame.className = 'goog-te-banner-frame';
+    frame.style.height = '55px';
     document.documentElement.appendChild(frame);
 
     setTimeout(() => {
       expect(document.body.classList.contains('translate-bar-active')).toBe(true);
+      expect(document.documentElement.style.getPropertyValue('--translate-bar-height')).toBe('55px');
       frame.remove();
       setTimeout(() => {
         expect(document.body.classList.contains('translate-bar-active')).toBe(false);
+        expect(document.documentElement.style.getPropertyValue('--translate-bar-height')).toBe('');
         done();
       }, 0);
     }, 0);

@@ -302,8 +302,8 @@ body.sidebar-open footer {
 }
 
 /* Offset elements when Google Translate toolbar is visible */
-body.translate-bar-active header {
-    margin-top: var(--translate-bar-height);
+body.translate-bar-active {
+    padding-top: var(--translate-bar-height);
 }
 
 body.translate-bar-active #sidebarToggle {
