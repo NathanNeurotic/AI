@@ -71,19 +71,55 @@
 
     if (translateElement) {
       const observer = new MutationObserver((mutationsList, obs) => {
-        const logo = translateElement.querySelector('.goog-logo-link');
-        if (logo) {
-          // Check if "Powered by" is part of the text content
-          if (logo.textContent.includes('Powered by')) {
-            logo.textContent = logo.textContent.replace('Powered by', '').trim();
-            console.log('Google Translate "Powered by" removed.');
-          }
-          // You might also want to ensure it's just "Google Translate"
-          // For example, if Google changes the string to "Provided by Google Translate"
-          // A more robust way could be to find the first text node and ensure it's just "Google Translate"
-          // For now, replacing "Powered by" is the direct request.
+        const logoLink = translateElement.querySelector('.goog-logo-link');
 
-          obs.disconnect(); // Disconnect once the logo is found and modified.
+        // Check if the logo link exists and hasn't been processed yet
+        if (logoLink && !logoLink.querySelector('.google-translate-powered-by')) {
+          const originalText = logoLink.textContent;
+          const poweredByString = "Powered by"; // Case-sensitive match for "Powered by"
+
+          if (originalText.includes(poweredByString)) {
+            // Preserve the text that is NOT "Powered by"
+            // const mainTranslateText = originalText.replace(poweredByString, "").trim(); // Not used directly with split logic
+
+            // Clear the logo link's current children to rebuild
+            while (logoLink.firstChild) {
+              logoLink.removeChild(logoLink.firstChild);
+            }
+
+            // A more robust way if order can change: split and reconstruct
+            const parts = originalText.split(poweredByString);
+
+            if (parts.length === 2) { // "Powered by" was found and split the string
+                // Text before "Powered by"
+                if (parts[0].trim() !== "") {
+                    logoLink.appendChild(document.createTextNode(parts[0].trim() + " "));
+                }
+
+                // The "Powered by" span
+                const poweredBySpan = document.createElement('span');
+                poweredBySpan.className = 'google-translate-powered-by';
+                poweredBySpan.textContent = poweredByString;
+                logoLink.appendChild(poweredBySpan);
+
+                // Text after "Powered by"
+                if (parts[1].trim() !== "") {
+                    logoLink.appendChild(document.createTextNode(" " + parts[1].trim()));
+                }
+                 console.log('Google Translate "Powered by" text styled.');
+
+            } else {
+                 // Fallback to add original text if splitting wasn't as expected (e.g. "Powered by" not found by split)
+                 // This case should ideally not be hit if originalText.includes(poweredByString) is true
+                 // and poweredByString is a simple string without special regex chars.
+                 logoLink.appendChild(document.createTextNode(originalText));
+                 console.warn('Google Translate "Powered by" text found but not split as expected. Displaying original.');
+            }
+
+            // obs.disconnect(); // Disconnect once the modification is done to prevent re-triggering.
+            // Keeping the observer active might be necessary if Google Translate re-renders its widget dynamically.
+            // If it causes issues by re-processing, then disconnect.
+          }
         }
       });
 
@@ -91,6 +127,6 @@
     }
   }
 </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
