@@ -102,23 +102,6 @@ The configuration uses the recommended rules for browser environments and includ
 If you encounter errors about mismatched ESLint versions, you might be using a globally installed `eslint`.
 Use the local copy via `npm run lint` or `npx eslint` instead.
 
-## Utility Scripts
-
-Several Python scripts in the `scripts/` directory help manage and transform the
-`services.json` data. Run them from the repository root so relative paths
-resolve correctly.
-
-| Script | Description | Example Command |
-| ------ | ----------- | --------------- |
-| `add_and_sort_services.py` | Adds the hard-coded `NEW_SERVICE_ENTRIES` to `services.json` and resorts the file. | `python scripts/add_and_sort_services.py` |
-| `extract_original_categories.py` | Reads `services_at_parent.json` and writes unique category names to `original_categories.json`. | `python scripts/extract_original_categories.py` |
-| `flatten_services.py` | Converts the nested category structure in `services.json` to a flat list of services. | `python scripts/flatten_services.py` |
-| `parser.py` | Parses a text blob of services into `parsed_services.json`. | `python scripts/parser.py < input.txt` |
-| `process_services.py` | Deduplicates services from `parsed_services.json` and merges them into `services.json`. | `python scripts/process_services.py` |
-| `recategorize_services.py` | Example logic for mapping services to new categories; useful for experimentation. | `python scripts/recategorize_services.py` |
-| `remap_services.py` | Maps services back to their original categories using `original_categories.json`. | `python scripts/remap_services.py` |
-| `update_main_services.py` | Merges `new_services_processed.json` into `services.json` and removes duplicates. | `python scripts/update_main_services.py` |
-
 ## Using Favorites
 
 Click the star icon next to any service to mark it as a favorite. Favorited services appear in the "Favorites" category directly below the search box. Your selections are stored locally in your browser's `localStorage`, so they remain available on future visits.
