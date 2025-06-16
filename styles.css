@@ -802,7 +802,7 @@ body.mobile-view #viewToggle {
 #google_translate_element .goog-logo-link,
 #google_translate_element .goog-logo-link:link,
 #google_translate_element .goog-logo-link:visited {
-    font-size: 0.5em; /* Shrink branding text for better header fit */
+    font-size: 0.25em !important; /* Further reduce Google branding size */
     /* color: inherit; */ /* Or your desired link color */
     /* No special styling needed here if the default/inherited styles are okay after removing .goog-te-gadget rule */
 }
