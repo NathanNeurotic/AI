@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Install App button found in DOM.');
         installBtn.classList.add('install-btn-hidden'); // Initially hide
         installBtn.classList.remove('install-btn-visible');
-        console.log('Install App button initialized with class: install-btn-hidden');
+        installBtn.style.display = 'none'; // Explicitly set display for hidden state
+        console.log('Install App button initialized with class: install-btn-hidden and display: none');
 
         installBtn.addEventListener('click', async () => {
             console.log('Install App button clicked.');
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             deferredPrompt = null; // Consume the prompt
             installBtn.classList.add('install-btn-hidden');
             installBtn.classList.remove('install-btn-visible');
+            installBtn.style.display = 'none'; // Explicitly set display
             console.log('Install App button hidden after prompt interaction, class set to: install-btn-hidden');
         });
     } else {
@@ -63,19 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
-        console.log('`beforeinstallprompt` event fired.');
+        console.log('`beforeinstallprompt` event fired. Current deferredPrompt:', deferredPrompt);
         // Prevent Chrome 67 and earlier from automatically showing the prompt
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        console.log('Deferred prompt saved.');
+        console.log('Deferred prompt saved:', deferredPrompt);
 
+        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
         if (installBtn) {
+            console.log('Install button found in `beforeinstallprompt`. Current classes:', installBtn.className);
             installBtn.classList.add('install-btn-visible');
             installBtn.classList.remove('install-btn-hidden');
-            console.log('Install App button made visible, class set to: install-btn-visible');
+            // Ensure no conflicting styles are hiding it if logic is correct
+            installBtn.style.display = 'inline-block'; // Explicitly set display
+            console.log('Install App button made visible. New classes:', installBtn.className);
         } else {
-            console.warn('`beforeinstallprompt` fired, but installBtn was not found to make it visible.');
+            console.warn('`beforeinstallprompt` fired, but installBtn was not found in this event listener to make it visible.');
         }
     });
 
@@ -83,9 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('`appinstalled` event fired.');
         // Log install to analytics or update UI
         deferredPrompt = null; // Clear the deferred prompt
+        const installBtn = document.getElementById('installBtn'); // Re-fetch or ensure it's available
         if (installBtn) {
             installBtn.classList.add('install-btn-hidden');
             installBtn.classList.remove('install-btn-visible');
+            installBtn.style.display = 'none'; // Explicitly set display
             console.log('App installed, Install App button hidden, class set to: install-btn-hidden');
         } else {
             console.warn('`appinstalled` fired, but installBtn was not found to hide it.');
@@ -199,15 +207,35 @@ async function loadServices() {
         // to each category listed.
         const categories = services.reduce((acc, service) => {
             let cats = service.categories || service.category;
-            if (!cats) return acc;
-            if (!Array.isArray(cats)) {
-                cats = [cats];
+            if (!cats) { // If no categories are defined for the service, skip it.
+                console.warn(`Service "${service.name}" has no categories defined. Skipping.`);
+                return acc;
             }
-            cats.forEach(cat => {
-                if (!acc[cat]) {
-                    acc[cat] = [];
+            if (!Array.isArray(cats)) {
+                cats = [cats]; // Convert to array if it's a single string
+            }
+
+            const uniqueCategories = [...new Set(cats)]; // Ensure unique category names from the service's own list
+
+            uniqueCategories.forEach(cat => {
+                if (typeof cat !== 'string' || cat.trim() === '') {
+                    console.warn(`Service "${service.name}" has an invalid category: "${cat}". Skipping this category entry.`);
+                    return; // Skip invalid category names
                 }
-                acc[cat].push(service);
+
+                const trimmedCat = cat.trim(); // Use trimmed category name for consistency
+
+                if (!acc[trimmedCat]) {
+                    acc[trimmedCat] = [];
+                }
+
+                // Check if this service (by URL) is already in this specific category's list
+                if (!acc[trimmedCat].some(existingService => existingService.url === service.url)) {
+                    acc[trimmedCat].push(service);
+                } else {
+                    // Optional: Log if a duplicate was prevented for the same category
+                    // console.log(`Prevented duplicate: Service "${service.name}" (${service.url}) already in category "${trimmedCat}".`);
+                }
             });
             return acc;
         }, {});
@@ -892,10 +920,25 @@ function applySavedView() {
 
 function applySavedMobileView() {
     const saved = localStorage.getItem('mobileView');
-    const isMobile = saved === 'mobile';
+    let isMobile;
+
+    if (saved) { // If a preference is saved, use it
+        isMobile = saved === 'mobile';
+    } else { // No saved preference, so auto-detect
+        if (navigator.userAgentData && typeof navigator.userAgentData.mobile !== 'undefined') {
+            isMobile = navigator.userAgentData.mobile;
+            console.log('Detected view via userAgentData.mobile:', isMobile ? 'mobile' : 'desktop');
+        } else {
+            isMobile = window.matchMedia("(max-width: 768px)").matches;
+            console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+        }
+        // Do NOT save this auto-detected preference to localStorage here.
+    }
+
     document.body.classList.toggle('mobile-view', isMobile);
     document.body.classList.toggle('desktop-view', !isMobile);
-    updateToggleButtons();
+    // updateToggleButtons(); // This will be called by DOMContentLoaded or if needed, can be called here too.
+                           // The original call in DOMContentLoaded after applySavedMobileView should be sufficient.
 }
 
 function toggleView() {
