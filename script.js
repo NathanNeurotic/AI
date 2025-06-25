@@ -1,3 +1,4 @@
+const DEBUG = false; // Set to true to enable console debug logs
 let allServices = [];
 let deferredPrompt = null;
 let sidebarObserver = null;
@@ -10,16 +11,22 @@ function updateInstallButtonVisibility() {
         return;
     }
 
-    console.log(`[InstallButton] updateInstallButtonVisibility called. deferredPrompt is ${deferredPrompt ? 'AVAILABLE' : 'NULL'}.`);
+    if (DEBUG) {
+        console.log(`[InstallButton] updateInstallButtonVisibility called. deferredPrompt is ${deferredPrompt ? 'AVAILABLE' : 'NULL'}.`);
+    }
 
     if (deferredPrompt) {
         installBtn.classList.add('install-btn-visible');
         installBtn.classList.remove('install-btn-hidden');
-        console.log('[InstallButton] Set to VISIBLE.');
+        if (DEBUG) {
+            console.log('[InstallButton] Set to VISIBLE.');
+        }
     } else {
         installBtn.classList.add('install-btn-hidden');
         installBtn.classList.remove('install-btn-visible');
-        console.log('[InstallButton] Set to HIDDEN.');
+        if (DEBUG) {
+            console.log('[InstallButton] Set to HIDDEN.');
+        }
     }
 }
 
@@ -36,14 +43,18 @@ const CHEVRON_SVG = '<svg class="chevron" viewBox="0 0 24 24" width="16" height=
 
 // Register PWA install events immediately so we don't miss them
 window.addEventListener('beforeinstallprompt', (e) => {
-    console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
+    if (DEBUG) {
+        console.log('[InstallButton] beforeinstallprompt event FIRED. deferredPrompt stashed.');
+    }
     e.preventDefault(); // Prevent automatic prompt
     deferredPrompt = e; // Stash for later use
     updateInstallButtonVisibility();
 });
 
 window.addEventListener('appinstalled', () => {
-    console.log('[InstallButton] appinstalled event FIRED.');
+    if (DEBUG) {
+        console.log('[InstallButton] appinstalled event FIRED.');
+    }
     deferredPrompt = null; // Clear the deferred prompt
     updateInstallButtonVisibility();
 });
@@ -65,33 +76,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const installBtn = document.getElementById('installBtn');
 
     if (installBtn) {
-        console.log('Install App button found in DOM.');
+        if (DEBUG) {
+            console.log('Install App button found in DOM.');
+        }
         // Initial state set by updateInstallButtonVisibility
         updateInstallButtonVisibility();
 
         installBtn.addEventListener('click', async () => {
-            console.log('[InstallButton] installBtn CLICKED.');
+            if (DEBUG) {
+                console.log('[InstallButton] installBtn CLICKED.');
+            }
             if (!deferredPrompt) {
-                console.log('[InstallButton] Deferred prompt not available, cannot show install dialog.');
+                if (DEBUG) {
+                    console.log('[InstallButton] Deferred prompt not available, cannot show install dialog.');
+                }
                 return;
             }
-            console.log('[InstallButton] Showing install prompt (before deferredPrompt.prompt())...');
+            if (DEBUG) {
+                console.log('[InstallButton] Showing install prompt (before deferredPrompt.prompt())...');
+            }
             deferredPrompt.prompt();
-            console.log('[InstallButton] Showing install prompt (after deferredPrompt.prompt())...');
+            if (DEBUG) {
+                console.log('[InstallButton] Showing install prompt (after deferredPrompt.prompt())...');
+            }
             try {
                 const { outcome } = await deferredPrompt.userChoice;
-                console.log(`[InstallButton] User choice for installation: ${outcome}`);
+                if (DEBUG) {
+                    console.log(`[InstallButton] User choice for installation: ${outcome}`);
+                }
                 if (outcome === 'accepted') {
-                    console.log('[InstallButton] User accepted the A2HS prompt');
+                    if (DEBUG) {
+                        console.log('[InstallButton] User accepted the A2HS prompt');
+                    }
                 } else {
-                    console.log('[InstallButton] User dismissed the A2HS prompt');
+                    if (DEBUG) {
+                        console.log('[InstallButton] User dismissed the A2HS prompt');
+                    }
                 }
             } catch (error) {
                 console.error('[InstallButton] Error during install prompt:', error);
             }
             deferredPrompt = null; // Consume the prompt
             updateInstallButtonVisibility(); // Update button state
-            console.log('[InstallButton] Install App button state updated after prompt interaction.');
+            if (DEBUG) {
+                console.log('[InstallButton] Install App button state updated after prompt interaction.');
+            }
         });
     } else {
         console.warn('Install App button (installBtn) not found in the DOM.');
@@ -930,11 +959,15 @@ function applySavedMobileView() {
     } else { // No saved preference, so auto-detect
         if (navigator.userAgentData && typeof navigator.userAgentData.mobile !== 'undefined') {
             isMobile = navigator.userAgentData.mobile;
-            console.log('Detected view via userAgentData.mobile:', isMobile ? 'mobile' : 'desktop');
+            if (DEBUG) {
+                console.log('Detected view via userAgentData.mobile:', isMobile ? 'mobile' : 'desktop');
+            }
         } else {
             if (typeof window.matchMedia === 'function') {
                 isMobile = window.matchMedia("(max-width: 768px)").matches;
-                console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+                if (DEBUG) {
+                    console.log('Detected view via matchMedia (max-width: 768px):', isMobile ? 'mobile' : 'desktop');
+                }
             } else {
                 isMobile = false; // Default to desktop if matchMedia is not available
                 console.warn('window.matchMedia is not available. Defaulting to desktop view for initial detection.');
